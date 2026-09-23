@@ -1,0 +1,113 @@
+{
+  "chapter": "物体的运动",
+  "order": 5,
+  "intro": "围绕长度和时间的测量、速度单位换算与平均速度，建立描述机械运动的基本量化方法。",
+  "points": [
+    {
+      "id": "motion-01",
+      "title": "速度与单位换算",
+      "level": "基础",
+      "definition": "速度表示物体运动的快慢，等于物体在一段时间内通过的路程与所用时间之比。国际单位是米每秒，生活中也常用千米每小时；换算时 1 m/s 等于 3.6 km/h。",
+      "meaning": "测速度前要明确所测路程和计时区间对应同一段运动。平均速度描述整段过程，不能随意当作每一时刻的速度。单位换算时，m/s 换成 km/h 数值乘 3.6，反向换算则除以 3.6；先统一单位可减少计算错误。",
+      "symbols": {
+        "s": {"desc": "物体在计时区间内通过的路程", "unit": "m"},
+        "t": {"desc": "通过路程 s 所用时间", "unit": "s"},
+        "v": {"desc": "以米每秒表示的速度", "unit": "m/s"},
+        "v_k": {"desc": "同一速度以千米每小时表示", "unit": "km/h"}
+      },
+      "scenarios": {
+        "步行测量": {"s": 100, "t": 20, "v": 5, "v_k": 18},
+        "操场跑步": {"s": 500, "t": 100, "v": 5, "v_k": 18}
+      },
+      "formulas": [
+        {
+          "name": "由路程和时间求速度",
+          "expr": "v = s/t",
+          "when": "路程和时间来自同一运动区间，s 用 m、t 用 s。",
+          "checks": [
+            {"type": "numeric", "scenario": "步行测量", "expr": "s/t", "ref": 5, "note": "100 m ÷ 20 s = 5 m/s。"},
+            {"type": "numeric", "scenario": "操场跑步", "expr": "s/t", "ref": 5, "note": "500 m ÷ 100 s = 5 m/s，另一组测量复算。"},
+            {"type": "direction", "scenario": "步行测量", "var": "s", "lo": 50, "hi": 200, "expr": "s/t", "expect": "up", "note": "计时相同时，路程越长，平均速度越大。"},
+            {"type": "scan", "scenario": "步行测量", "var": "t", "lo": 1, "hi": 200, "note": "扫描正计时范围，检查速度计算稳定。"},
+            {"type": "consistency", "scenario": "步行测量", "expr": "s/t", "with": "motion-01|米每秒换算为千米每小时", "with_expr": "v_k/3.6", "target": "同一速度的两种单位表示", "note": "直接以路程时间求 m/s，再用 km/h 换算回 m/s，结果应相同。"}
+          ]
+        },
+        {
+          "name": "米每秒换算为千米每小时",
+          "expr": "v_k = 3.6*v",
+          "when": "v 用 m/s 表示，v_k 用 km/h 表示。",
+          "checks": [
+            {"type": "numeric", "scenario": "步行测量", "expr": "3.6*v", "ref": 18, "note": "5 m/s × 3.6 = 18 km/h。"},
+            {"type": "numeric", "scenario": "操场跑步", "expr": "3.6*v", "ref": 18, "note": "同一速度的换算值保持一致。"},
+            {"type": "direction", "scenario": "步行测量", "var": "v", "lo": 1, "hi": 20, "expr": "3.6*v", "expect": "up", "note": "正比例换算，原速度增大时 km/h 数值增大。"},
+            {"type": "scan", "scenario": "步行测量", "var": "v", "lo": 0, "hi": 50, "note": "扫描非负速度范围，换算结果保持有限。"}
+          ]
+        }
+      ],
+      "derivation": ["速度定义为路程与时间的比值。", "将 s 用 m、t 用 s 代入，所得速度单位为 m/s。", "把 m/s 换成 km/h 时同时换算长度和时间，数值比例为 3.6。"],
+      "errors": [
+        {"wrong": "把速度写成路程乘时间。", "wrong_expr": "v = s*t", "why": "速度是单位时间内通过的路程，需用路程除以时间；相乘的单位也不再是 m/s。", "caught_by": "量纲一致性", "trap_test": {"scenario": "步行测量", "expr": "s*t", "ref": 5}},
+        {"wrong": "将 m/s 换成 km/h 时除以 3.6。", "wrong_expr": "v_k = v/3.6", "why": "5 m/s 应为 18 km/h；除以 3.6 会得到约 1.39，方向相反。", "caught_by": "数值代入", "trap_test": {"scenario": "步行测量", "expr": "v/3.6", "ref": 18}}
+      ],
+      "example": {"stem": "一名学生 20 s 走过 100 m，求速度并换算为 km/h。", "solution": ["v=100/20=5 m/s。", "5×3.6=18 km/h。"], "answer": "速度为 5 m/s，即 18 km/h。"},
+      "prereq": [],
+      "next": ["motion-02"],
+      "tags": ["机械运动", "路程", "时间", "速度", "单位换算"]
+    },
+    {
+      "id": "motion-02",
+      "title": "平均速度与分段运动",
+      "level": "基础",
+      "definition": "物体在一段运动过程中，通过的总路程除以这段运动的总时间，得到这段过程的平均速度。分段运动时应先分别累计路程和时间，再求总路程与总时间之比。",
+      "meaning": "平均速度由整段运动决定，不是各段速度不加条件地做算术平均。只有特定条件（例如各段用时相同）下，算术平均速度才可能与整段平均速度相同。停车时间是否计入，要按题目给出的“全程”计时范围判断。",
+      "symbols": {
+        "s1": {"desc": "第一段路程", "unit": "m"},
+        "s2": {"desc": "第二段路程", "unit": "m"},
+        "t1": {"desc": "第一段用时", "unit": "s"},
+        "t2": {"desc": "第二段用时", "unit": "s"},
+        "s_total": {"desc": "全程总路程", "unit": "m"},
+        "t_total": {"desc": "全程总时间", "unit": "s"},
+        "v_avg": {"desc": "全程平均速度", "unit": "m/s"},
+        "v1": {"desc": "第一段平均速度", "unit": "m/s"},
+        "v2": {"desc": "第二段平均速度", "unit": "m/s"}
+      },
+      "scenarios": {
+        "两段各100米": {"s1": 100, "s2": 100, "t1": 10, "t2": 50, "s_total": 200, "t_total": 60, "v_avg": 3.3333333333333335, "v1": 10, "v2": 2},
+        "两段等时": {"s1": 60, "s2": 20, "t1": 10, "t2": 10, "s_total": 80, "t_total": 20, "v_avg": 4, "v1": 6, "v2": 2}
+      },
+      "formulas": [
+        {
+          "name": "分段路程和时间求全程平均速度",
+          "expr": "v_avg = (s1+s2)/(t1+t2)",
+          "when": "总路程为各段路程之和，总时间为各段用时之和。",
+          "checks": [
+            {"type": "numeric", "scenario": "两段各100米", "expr": "(s1+s2)/(t1+t2)", "ref": 3.3333333333333335, "note": "200 m ÷ 60 s ≈ 3.33 m/s。"},
+            {"type": "numeric", "scenario": "两段等时", "expr": "(s1+s2)/(t1+t2)", "ref": 4, "note": "80 m ÷ 20 s = 4 m/s。"},
+            {"type": "direction", "scenario": "两段等时", "var": "s1", "lo": 10, "hi": 100, "expr": "(s1+s2)/(t1+t2)", "expect": "up", "note": "其余量固定时，增加一段路程会增加全程平均速度。"},
+            {"type": "scan", "scenario": "两段等时", "var": "t1", "lo": 1, "hi": 100, "note": "扫描正分段用时，平均速度计算保持有限。"},
+            {"type": "consistency", "scenario": "两段等时", "expr": "(s1+s2)/(t1+t2)", "with": "motion-02|分段路程与时间的累计", "with_expr": "s_total/t_total", "target": "同一全程的平均速度", "note": "分段相加后计算，与直接用总路程除以总时间交叉核对。"}
+          ]
+        },
+        {
+          "name": "分段路程与时间的累计",
+          "expr": "s_total = s1+s2",
+          "when": "各段路程不重叠且覆盖整个计时区间。",
+          "checks": [
+            {"type": "numeric", "scenario": "两段各100米", "expr": "s1+s2", "ref": 200, "note": "100 m+100 m=200 m。"},
+            {"type": "numeric", "scenario": "两段等时", "expr": "s1+s2", "ref": 80, "note": "60 m+20 m=80 m。"},
+            {"type": "scan", "scenario": "两段等时", "var": "s1", "lo": 1, "hi": 500, "note": "扫描正路程范围，分段累计无异常。"}
+          ]
+        }
+      ],
+      "derivation": ["按每段路程与用时分别计算分段速度。", "把没有重复计算的各段路程相加，并把各段用时相加。", "用总路程除以总时间，得到全程平均速度。"],
+      "errors": [
+        {"wrong": "不看分段时间和路程条件，直接把两段速度做算术平均。", "wrong_expr": "v_avg = (v1+v2)/2", "why": "两段各 100 m 时，10 m/s 与 2 m/s 的算术平均为 6 m/s，但全程平均速度是 200/60≈3.33 m/s。", "caught_by": "数值代入", "trap_test": {"scenario": "两段各100米", "expr": "(v1+v2)/2", "ref": 3.3333333333333335}},
+        {"wrong": "计算全程平均速度时漏掉中途一段或漏计题目要求包含的时间。", "why": "平均速度必须与题目界定的整段总路程和总时间对应，计时范围要先确认。", "caught_by": "人工审核"}
+      ],
+      "example": {"stem": "物体先以 10 m/s 运动 10 s，再以 2 m/s 运动 50 s，求全程平均速度。", "solution": ["第一段路程 100 m，第二段路程 100 m。", "总路程 200 m，总时间 60 s。", "平均速度为 200/60≈3.33 m/s。"], "answer": "全程平均速度约为 3.33 m/s。"},
+      "prereq": ["motion-01"],
+      "next": [],
+      "tags": ["平均速度", "分段运动", "总路程", "总时间"]
+    }
+  ]
+}

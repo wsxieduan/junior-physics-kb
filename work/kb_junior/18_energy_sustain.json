@@ -1,0 +1,122 @@
+{
+  "chapter": "能源与可持续发展",
+  "order": 18,
+  "intro": "用能耗估算和能量转化效率解释节能选择；同时区分可再生能源与不可再生能源，强调能源利用的环境影响。",
+  "points": [
+    {
+      "id": "sustain-01",
+      "title": "功率、使用时间与节能量",
+      "level": "基础",
+      "definition": "用电器消耗的电能与其功率和使用时间有关。在功率单位为 kW、时间单位为 h 时，二者乘积直接得到电能表常用的 kWh。降低用电器功率或缩短不必要的使用时间可以减少能耗。",
+      "meaning": "比较节能效果时，应在提供相同服务的前提下比较能耗，例如相同照明时间下比较不同功率灯具。功率较小的设备连续使用很久，耗电量仍可能较大。能源选择还需考虑发电来源、设备效率、制造和环境影响，不能只凭单一功率值判断整体可持续性。",
+      "symbols": {
+        "P": {"desc": "用电器功率", "unit": "kW"},
+        "t": {"desc": "使用时间", "unit": "h"},
+        "E": {"desc": "使用期间消耗的电能", "unit": "kWh"},
+        "P_old": {"desc": "原用电器功率", "unit": "kW"},
+        "P_new": {"desc": "替换后用电器功率", "unit": "kW"},
+        "E_save": {"desc": "替换后节省的电能", "unit": "kWh"}
+      },
+      "scenarios": {
+        "LED灯五小时": {"P": 0.01, "t": 5, "E": 0.05, "P_old": 0.06, "P_new": 0.01, "E_save": 0.25},
+        "教室照明十小时": {"P": 0.04, "t": 10, "E": 0.4, "P_old": 0.1, "P_new": 0.04, "E_save": 0.6}
+      },
+      "formulas": [
+        {
+          "name": "功率和时间求耗电量",
+          "expr": "E = P*t",
+          "when": "P 用 kW、t 用 h，所得电能 E 用 kWh。",
+          "checks": [
+            {"type": "numeric", "scenario": "LED灯五小时", "expr": "P*t", "ref": 0.05, "note": "0.01 kW×5 h=0.05 kWh。"},
+            {"type": "numeric", "scenario": "教室照明十小时", "expr": "P*t", "ref": 0.4, "note": "0.04 kW×10 h=0.4 kWh。"},
+            {"type": "direction", "scenario": "LED灯五小时", "var": "t", "lo": 0, "hi": 100, "expr": "P*t", "expect": "up", "note": "功率固定时，使用时间越长，耗电量越多。"},
+            {"type": "scan", "scenario": "LED灯五小时", "var": "t", "lo": 0, "hi": 10000, "note": "扫描非负使用时间，电能计算线性稳定。"}
+          ]
+        },
+        {
+          "name": "替换低功率设备的节能量",
+          "expr": "E_save = (P_old-P_new)*t",
+          "when": "新旧设备提供相同服务且使用时间相同，原设备功率大于替换后功率。",
+          "checks": [
+            {"type": "numeric", "scenario": "LED灯五小时", "expr": "(P_old-P_new)*t", "ref": 0.25, "note": "(0.06-0.01) kW×5 h=0.25 kWh。"},
+            {"type": "numeric", "scenario": "教室照明十小时", "expr": "(P_old-P_new)*t", "ref": 0.6, "note": "(0.1-0.04) kW×10 h=0.6 kWh。"},
+            {"type": "direction", "scenario": "LED灯五小时", "var": "t", "lo": 0, "hi": 100, "expr": "(P_old-P_new)*t", "expect": "up", "note": "功率差为正时，使用时间越长，累计节能量越大。"},
+            {"type": "scan", "scenario": "LED灯五小时", "var": "t", "lo": 0, "hi": 10000, "note": "扫描非负运行时间，节能量计算稳定。"},
+            {"type": "consistency", "scenario": "LED灯五小时", "expr": "(P_old-P_new)*t", "with": "sustain-01|新旧设备耗电差", "with_expr": "(P_old-P_new)*t", "target": "相同服务下节省的电能", "note": "按功率差乘使用时间估算节能量，并与新旧设备分别计量后的耗电差核对。"}
+          ]
+        },
+        {
+          "name": "新旧设备耗电差",
+          "expr": "E_save = P_old*t-P_new*t",
+          "when": "比较的新旧设备使用时间相同，功率按 kW、时间按 h。",
+          "checks": [
+            {"type": "numeric", "scenario": "LED灯五小时", "expr": "P_old*t-P_new*t", "ref": 0.25, "note": "旧灯 0.3 kWh 减 LED 灯 0.05 kWh，节省 0.25 kWh。"},
+            {"type": "numeric", "scenario": "教室照明十小时", "expr": "P_old*t-P_new*t", "ref": 0.6, "note": "1 kWh 减 0.4 kWh，节省 0.6 kWh。"},
+            {"type": "scan", "scenario": "LED灯五小时", "var": "P_old", "lo": 0, "hi": 100, "note": "扫描非负原设备功率，耗电差保持可计算。"}
+          ]
+        }
+      ],
+      "derivation": ["读取设备功率，统一为 kW。", "记录提供相同服务的使用时间，统一为 h。", "功率乘时间得到耗电量；比较替换前后耗电量得到节能量。", "节能估算是给定功率和时长下的用电比较，不等同于全生命周期环境评估。"],
+      "errors": [
+        {"wrong": "计算耗电量时把功率除以时间。", "wrong_expr": "E = P/t", "why": "电能等于功率乘时间；功率除时间既不符合单位，也不符合时间越长耗电越多的事实。", "caught_by": "量纲一致性"},
+        {"wrong": "功率已用 kW 计算出 kWh 后，又乘 1000 却仍把结果标成 kWh。", "wrong_expr": "E = 1000*P*t", "why": "0.01 kW×5 h=0.05 kWh；乘 1000 后的数值相当于 Wh，不能继续标作 kWh。", "caught_by": "数值代入", "trap_test": {"scenario": "LED灯五小时", "expr": "1000*P*t", "ref": 0.05}},
+        {"wrong": "只看额定功率就判断设备一定更节能，不考虑使用时间和提供的服务。", "why": "能耗取决于功率和使用时间；比较节能还须确保照明等服务相同，并考虑设备效率和环境影响。", "caught_by": "人工审核"}
+      ],
+      "example": {"stem": "用 10 W 的 LED 灯替代 60 W 灯泡，每天使用 5 h，估算每天节省多少电能。", "solution": ["功率统一为 kW：10 W=0.01 kW，60 W=0.06 kW。", "节省电能=(0.06-0.01)×5=0.25 kWh。"], "answer": "每天约节省 0.25 kWh。"},
+      "prereq": ["power-01", "power-02"],
+      "next": ["sustain-02"],
+      "tags": ["节能", "电能", "功率", "使用时间", "千瓦时"]
+    },
+    {
+      "id": "sustain-02",
+      "title": "能量转化效率与能源选择",
+      "level": "基础",
+      "definition": "能源使用过程中，输入能量会转化为有用能量和其他形式的能量。能量不会凭空产生或消失，但转换和传递时会有一部分散失到环境中；能量利用效率等于有用能量与输入能量之比。",
+      "meaning": "煤、石油和天然气等化石能源属于不可再生能源，燃烧会排放污染物和温室气体；太阳能、风能、水能等属于可再生能源，但利用仍需设备、场地和储能等条件。提高转换效率、减少浪费、合理选择能源可以降低资源消耗和环境负担；效率不能超过 100%，也不等同于功率。",
+      "symbols": {
+        "E_in": {"desc": "设备输入的能量", "unit": "J"},
+        "E_use": {"desc": "转化得到的有用能量", "unit": "J"},
+        "E_loss": {"desc": "未成为目标有用输出的能量", "unit": "J"},
+        "eta": {"desc": "能量利用效率，以小数表示", "unit": "1"}
+      },
+      "scenarios": {
+        "高效电机": {"E_in": 100, "E_use": 80, "E_loss": 20, "eta": 0.8},
+        "发电装置": {"E_in": 100, "E_use": 60, "E_loss": 40, "eta": 0.6}
+      },
+      "formulas": [
+        {
+          "name": "能量输入与各输出的平衡",
+          "expr": "E_in = E_use+E_loss",
+          "when": "按给定系统边界统计全部有用输出与损耗，能量单位一致。",
+          "checks": [
+            {"type": "numeric", "scenario": "高效电机", "expr": "E_use+E_loss", "ref": 100, "note": "80 J 有用输出+20 J 其他转化=100 J 输入。"},
+            {"type": "numeric", "scenario": "发电装置", "expr": "E_use+E_loss", "ref": 100, "note": "60 J 有用输出+40 J 其他转化=100 J 输入。"},
+            {"type": "scan", "scenario": "高效电机", "var": "E_use", "lo": 0, "hi": 1000, "note": "扫描非负有用输出，按能量账目计算输入。"},
+            {"type": "consistency", "scenario": "高效电机", "expr": "E_use+E_loss", "with": "sustain-02|能量利用效率", "with_expr": "E_in", "target": "同一能量转换装置的输入能量", "note": "分别把有用输出与其他能量相加，再与效率情境中的输入能量记录核对。"}
+          ]
+        },
+        {
+          "name": "能量利用效率",
+          "expr": "eta = E_use/E_in",
+          "when": "有用能量与输入能量使用相同单位，输入能量大于零。",
+          "checks": [
+            {"type": "numeric", "scenario": "高效电机", "expr": "E_use/E_in", "ref": 0.8, "note": "80 J÷100 J=0.8，即 80%。"},
+            {"type": "numeric", "scenario": "发电装置", "expr": "E_use/E_in", "ref": 0.6, "note": "60 J÷100 J=0.6，即 60%。"},
+            {"type": "direction", "scenario": "高效电机", "var": "E_use", "lo": 0, "hi": 100, "expr": "E_use/E_in", "expect": "up", "note": "输入能量固定时，有用输出增加，效率提高。"},
+            {"type": "scan", "scenario": "高效电机", "var": "E_in", "lo": 1, "hi": 10000, "note": "扫描正输入能量，效率计算不会除以零。"},
+            {"type": "compare", "scenario": "高效电机", "expr": "eta", "op": "<=", "vs": "1", "note": "有用输出不超过输入能量，效率不大于 1。"}
+          ]
+        }
+      ],
+      "derivation": ["给能量转换过程划定系统边界，统计输入能量。", "把输出分成完成目标的有用能量与其他转化能量。", "能量守恒要求输入与全部输出相等。", "有用输出除以输入能量得到效率，可乘 100% 表示百分数。"],
+      "errors": [
+        {"wrong": "把能量利用效率写成输入能量除以有用能量。", "wrong_expr": "eta = E_in/E_use", "why": "效率是有用输出占输入的比例；高效电机情境中为 80/100=0.8，而不是 1.25。", "caught_by": "数值代入", "trap_test": {"scenario": "高效电机", "expr": "E_in/E_use", "ref": 0.8}},
+        {"wrong": "认为可再生能源没有任何环境影响，或认为能量损耗意味着能量消失。", "why": "可再生能源的利用仍可能影响生态和土地；损耗能量通常转化为不易利用的热、声等形式，并未违反能量守恒。", "caught_by": "人工审核"}
+      ],
+      "example": {"stem": "一台装置输入 100 J 能量，其中 80 J 转化为有用输出，求效率和其他能量。", "solution": ["效率 eta=80/100=0.8=80%。", "其他转化能量为 100-80=20 J。"], "answer": "效率为 80%，其他能量为 20 J。"},
+      "prereq": ["energy-01", "machine-03"],
+      "next": [],
+      "tags": ["可再生能源", "不可再生能源", "能量守恒", "能源效率", "可持续发展"]
+    }
+  ]
+}

@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>高中物理知识库 · 自动校验版</title>
+<title>初中物理知识库 · 自动校验版</title>
 <style>
 :root{
   --bg:#f7f8fa; --panel:#ffffff; --ink:#1b1f24; --ink2:#4a5560; --ink3:#7b8794;
@@ -54,6 +54,31 @@ math{font-size:1.12em}
 .chip.on{background:var(--brand);border-color:var(--brand);color:#fff}
 .tgl{display:flex;align-items:center;gap:6px;font-size:12.5px;color:var(--ink2);cursor:pointer;
   white-space:nowrap}
+
+/* ---------- 目录按钮与目录面板 ---------- */
+/* 2026-09-26 新增：目录的 HTML 以前就生成了，但既没样式也没插入页面，等于没有。 */
+.tbtn{border:1px solid var(--line);background:#fff;border-radius:8px;padding:7px 14px;
+  font-size:13px;cursor:pointer;color:var(--ink2);white-space:nowrap;font-family:inherit}
+.tbtn:hover{border-color:var(--brand);color:var(--brand)}
+.tbtn.on{background:var(--brand);border-color:var(--brand);color:#fff}
+.toc{display:none;max-width:1080px;margin:16px auto 0;background:var(--panel);
+  border:1px solid var(--line);border-radius:12px;padding:14px 20px 18px}
+.toc.open{display:block}
+.toc-h{display:flex;align-items:center;justify-content:space-between;
+  font-size:13px;font-weight:600;color:var(--ink2);
+  padding-bottom:10px;border-bottom:1px solid var(--line2)}
+.toc-close{cursor:pointer;color:var(--brand);font-weight:400;font-size:12.5px}
+.toc-close:hover{text-decoration:underline}
+.toc-in{display:grid;grid-template-columns:repeat(auto-fill,minmax(225px,1fr));
+  gap:12px 24px;padding-top:12px;max-height:56vh;overflow-y:auto}
+.toc-g{margin-bottom:4px}
+.toc-g h4{margin:0 0 5px;font-size:13px;color:var(--ink);font-weight:600}
+.toc-n{margin-left:6px;font-size:11.5px;color:var(--ink3);font-weight:400}
+.toc a{display:block;font-size:12.5px;color:var(--ink2);padding:1px 0;line-height:1.55}
+.toc a:hover{color:var(--brand);text-decoration:none}
+.toc .tid{margin-left:6px;font-size:11px;color:var(--ink3);
+  font-family:"Cascadia Mono",Consolas,monospace}
+@media print{.toc{display:none!important}}
 .tgl input{cursor:pointer}
 #count{font-size:12.5px;color:var(--ink3);white-space:nowrap}
 
@@ -238,10 +263,8 @@ footer b{color:var(--ink2)}
 <header class="hero">
   <div class="hero-in">
     <div class="eyebrow">离线可用 · 单文件 · 内容逐条自动校验</div>
-    <h1>高中物理知识库</h1>
-    <p class="sub">高中物理（力学 · 电磁学 · 光学 · 热学 · 近代物理）的公式、推导、常见错误与典型例题。
-    每一条公式都经过量纲一致性、单位标注、数值代入、变化方向、跨公式互证、极端参数扫描六类自动检查；
-    每一条「常见错误」都真的被当作错误公式跑过一遍，验证它确实会被对应检查抓住。</p>
+    <h1>初中物理知识库</h1>
+    <p class="sub">初中物理（苏科版 2024 新版：声学 · 光学 · 物态变化 · 力与运动 · 压强浮力 · 电学 · 能量）的公式、推导、常见错误与典型例题。每一条公式都经过量纲一致性、单位标注、数值代入、变化方向、跨公式互证、极端参数扫描六类自动检查；每一条「常见错误」都真的被当作错误公式跑过一遍，验证它确实会被对应检查抓住。</p>
     <div class="hstats"><div class="hstat"><b>74</b><span>知识点</span></div><div class="hstat"><b>143</b><span>公式</span></div><div class="hstat"><b>914</b><span>项自动校验</span></div><div class="hstat"><b>100%</b><span>校验通过率</span></div><div class="hstat"><b>94</b><span>条常见错误实测抓住</span></div></div>
   </div>
 </header>
@@ -253,6 +276,7 @@ footer b{color:var(--ink2)}
       <button class="vbtn" data-view="formula">只看公式</button>
       <button class="vbtn" data-view="symbol">只看符号</button>
     </div>
+    <button class="tbtn" id="tocbtn" type="button">目录</button>
     <input id="q" type="search" placeholder="搜索知识点、公式、符号、错误写法…" autocomplete="off">
     <div class="chips"><button class="chip on" data-chapter="all">全部</button><button class="chip" data-chapter="引言 · 第一章 声现象">第一章 声现象</button><button class="chip" data-chapter="光现象">光现象</button><button class="chip" data-chapter="光的折射 透镜">光的折射 透镜</button><button class="chip" data-chapter="物态变化">物态变化</button><button class="chip" data-chapter="物体的运动">物体的运动</button><button class="chip" data-chapter="物质的物理属性">物质的物理属性</button><button class="chip" data-chapter="力">力</button><button class="chip" data-chapter="力与运动">力与运动</button><button class="chip" data-chapter="压强和浮力">压强和浮力</button><button class="chip" data-chapter="从粒子到宇宙">从粒子到宇宙</button><button class="chip" data-chapter="简单机械和功">简单机械和功</button><button class="chip" data-chapter="机械能和内能">机械能和内能</button><button class="chip" data-chapter="简单电路">简单电路</button><button class="chip" data-chapter="欧姆定律">欧姆定律</button><button class="chip" data-chapter="电功和电热">电功和电热</button><button class="chip" data-chapter="电和磁">电和磁</button><button class="chip" data-chapter="电磁波与现代通信">电磁波与现代通信</button><button class="chip" data-chapter="能源与可持续发展">能源与可持续发展</button></div>
     <label class="tgl"><input type="checkbox" id="expand"> 展开校验记录</label>
@@ -261,6 +285,120 @@ footer b{color:var(--ink2)}
 </div>
 
 <main>
+  <nav class="toc" id="toc" aria-label="知识点目录">
+<div class="toc-h">全部知识点<span class="toc-close" id="tocclose">收起</span></div>
+<div class="toc-in">
+<div class="toc-g"><h4>引言 · 第一章 声现象<span class="toc-n">3</span></h4>
+<a href="#sound-01">声音的产生、传播与声速<span class="tid">sound-01</span></a>
+<a href="#sound-02">回声与声呐测距<span class="tid">sound-02</span></a>
+<a href="#sound-03">音调、响度、音色与听觉范围<span class="tid">sound-03</span></a>
+</div>
+<div class="toc-g"><h4>光现象<span class="toc-n">4</span></h4>
+<a href="#light-04">光的色彩<span class="tid">light-04</span></a>
+<a href="#light-01">光的直线传播<span class="tid">light-01</span></a>
+<a href="#light-02">平面镜<span class="tid">light-02</span></a>
+<a href="#light-03">光的反射<span class="tid">light-03</span></a>
+</div>
+<div class="toc-g"><h4>光的折射 透镜<span class="toc-n">5</span></h4>
+<a href="#lens-03">光的折射<span class="tid">lens-03</span></a>
+<a href="#lens-02">透镜<span class="tid">lens-02</span></a>
+<a href="#lens-01">凸透镜成像的规律<span class="tid">lens-01</span></a>
+<a href="#lens-04">透镜的应用<span class="tid">lens-04</span></a>
+<a href="#lens-05">人眼看不见的光<span class="tid">lens-05</span></a>
+</div>
+<div class="toc-g"><h4>物态变化<span class="toc-n">5</span></h4>
+<a href="#state-01">物质的三态 温度的测量<span class="tid">state-01</span></a>
+<a href="#state-02">汽化和液化<span class="tid">state-02</span></a>
+<a href="#state-03">熔化和凝固<span class="tid">state-03</span></a>
+<a href="#state-04">升华和凝华<span class="tid">state-04</span></a>
+<a href="#state-05">水循环<span class="tid">state-05</span></a>
+</div>
+<div class="toc-g"><h4>物体的运动<span class="toc-n">4</span></h4>
+<a href="#motion-03">长度与时间的测量<span class="tid">motion-03</span></a>
+<a href="#motion-01">速度<span class="tid">motion-01</span></a>
+<a href="#motion-02">直线运动<span class="tid">motion-02</span></a>
+<a href="#motion-04">运动的相对性<span class="tid">motion-04</span></a>
+</div>
+<div class="toc-g"><h4>物质的物理属性<span class="toc-n">3</span></h4>
+<a href="#prop-03">质量及其测量<span class="tid">prop-03</span></a>
+<a href="#prop-01">密度<span class="tid">prop-01</span></a>
+<a href="#prop-02">密度知识的应用与物质的物理属性<span class="tid">prop-02</span></a>
+</div>
+<div class="toc-g"><h4>力<span class="toc-n">4</span></h4>
+<a href="#force-03">力 弹力<span class="tid">force-03</span></a>
+<a href="#force-01">重力 力的示意图<span class="tid">force-01</span></a>
+<a href="#force-04">摩擦力<span class="tid">force-04</span></a>
+<a href="#force-02">力的作用是相互的<span class="tid">force-02</span></a>
+</div>
+<div class="toc-g"><h4>力与运动<span class="toc-n">3</span></h4>
+<a href="#fmotion-01">二力平衡<span class="tid">fmotion-01</span></a>
+<a href="#fmotion-02">牛顿第一定律<span class="tid">fmotion-02</span></a>
+<a href="#fmotion-03">力与运动的关系<span class="tid">fmotion-03</span></a>
+</div>
+<div class="toc-g"><h4>压强和浮力<span class="toc-n">5</span></h4>
+<a href="#pressure-01">压强<span class="tid">pressure-01</span></a>
+<a href="#pressure-02">液体的压强<span class="tid">pressure-02</span></a>
+<a href="#pressure-03">气体的压强<span class="tid">pressure-03</span></a>
+<a href="#pressure-04">浮力<span class="tid">pressure-04</span></a>
+<a href="#pressure-05">物体的浮与沉<span class="tid">pressure-05</span></a>
+</div>
+<div class="toc-g"><h4>从粒子到宇宙<span class="toc-n">5</span></h4>
+<a href="#particle-01">走进分子世界<span class="tid">particle-01</span></a>
+<a href="#particle-03">静电现象<span class="tid">particle-03</span></a>
+<a href="#particle-04">探索更小的微粒<span class="tid">particle-04</span></a>
+<a href="#particle-05">日心说与太阳系<span class="tid">particle-05</span></a>
+<a href="#particle-02">宇宙探秘<span class="tid">particle-02</span></a>
+</div>
+<div class="toc-g"><h4>简单机械和功<span class="toc-n">5</span></h4>
+<a href="#machine-01">杠杆<span class="tid">machine-01</span></a>
+<a href="#machine-04">滑轮<span class="tid">machine-04</span></a>
+<a href="#machine-02">功<span class="tid">machine-02</span></a>
+<a href="#machine-05">功率<span class="tid">machine-05</span></a>
+<a href="#machine-03">机械效率<span class="tid">machine-03</span></a>
+</div>
+<div class="toc-g"><h4>机械能和内能<span class="toc-n">4</span></h4>
+<a href="#energy-01">机械能<span class="tid">energy-01</span></a>
+<a href="#energy-03">内能 热传递<span class="tid">energy-03</span></a>
+<a href="#energy-02">物质的比热容<span class="tid">energy-02</span></a>
+<a href="#energy-04">机械能与内能的相互转化<span class="tid">energy-04</span></a>
+</div>
+<div class="toc-g"><h4>简单电路<span class="toc-n">4</span></h4>
+<a href="#circuit-03">初识家用电器和电路 · 电路连接方式<span class="tid">circuit-03</span></a>
+<a href="#circuit-01">电流和电流表<span class="tid">circuit-01</span></a>
+<a href="#circuit-04">电压和电压表<span class="tid">circuit-04</span></a>
+<a href="#circuit-02">串、并联电路的特点<span class="tid">circuit-02</span></a>
+</div>
+<div class="toc-g"><h4>欧姆定律<span class="toc-n">4</span></h4>
+<a href="#ohm-01">电阻<span class="tid">ohm-01</span></a>
+<a href="#ohm-03">变阻器<span class="tid">ohm-03</span></a>
+<a href="#ohm-04">欧姆定律<span class="tid">ohm-04</span></a>
+<a href="#ohm-02">欧姆定律的应用<span class="tid">ohm-02</span></a>
+</div>
+<div class="toc-g"><h4>电功和电热<span class="toc-n">4</span></h4>
+<a href="#power-01">电能表与电功<span class="tid">power-01</span></a>
+<a href="#power-02">电功率<span class="tid">power-02</span></a>
+<a href="#power-03">电热器 电流的热效应<span class="tid">power-03</span></a>
+<a href="#power-04">家庭电路与安全用电<span class="tid">power-04</span></a>
+</div>
+<div class="toc-g"><h4>电和磁<span class="toc-n">4</span></h4>
+<a href="#magnet-01">磁体、磁场与电流的磁场<span class="tid">magnet-01</span></a>
+<a href="#magnet-03">磁场对电流的作用与电动机<span class="tid">magnet-03</span></a>
+<a href="#magnet-04">安装直流电动机模型<span class="tid">magnet-04</span></a>
+<a href="#magnet-02">电磁感应与发电机<span class="tid">magnet-02</span></a>
+</div>
+<div class="toc-g"><h4>电磁波与现代通信<span class="toc-n">3</span></h4>
+<a href="#emwave-03">信息与信息传播<span class="tid">emwave-03</span></a>
+<a href="#emwave-01">电磁波的波速、频率和波长<span class="tid">emwave-01</span></a>
+<a href="#emwave-02">电磁波传播与通信时延<span class="tid">emwave-02</span></a>
+</div>
+<div class="toc-g"><h4>能源与可持续发展<span class="toc-n">5</span></h4>
+<a href="#sustain-01">能源利用与社会发展中的耗电估算<span class="tid">sustain-01</span></a>
+<a href="#sustain-03">核能<span class="tid">sustain-03</span></a>
+<a href="#sustain-04">太阳能<span class="tid">sustain-04</span></a>
+<a href="#sustain-02">能量转化的基本规律<span class="tid">sustain-02</span></a>
+<a href="#sustain-05">能源与可持续发展<span class="tid">sustain-05</span></a>
+</div>
+</div></nav>
   
     <section class="method" id="method">
       <h2>这台机器在检查什么</h2>
@@ -6723,6 +6861,23 @@ footer b{color:var(--ink2)}
   }
   expand.addEventListener('change',syncExpand);
 
+  // ---------- 目录面板（2026-09-26 新增） ----------
+  // 上面那段「.toc a」的点击处理一直都在，但页面上从来没有 .toc 元素，等于白写。
+  var tocbtn=document.getElementById('tocbtn');
+  var toc=document.getElementById('toc');
+  var tocclose=document.getElementById('tocclose');
+  function closeToc(){
+    if(toc)toc.classList.remove('open');
+    if(tocbtn)tocbtn.classList.remove('on');
+  }
+  if(tocbtn&&toc){
+    tocbtn.addEventListener('click',function(){
+      var open=toc.classList.toggle('open');
+      tocbtn.classList.toggle('on',open);
+    });
+  }
+  if(tocclose){tocclose.addEventListener('click',closeToc);}
+
   document.querySelectorAll('.kp-nav a, .toc a').forEach(function(a){
     a.addEventListener('click',function(e){
       var id=a.getAttribute('href').slice(1);
@@ -6747,6 +6902,11 @@ footer b{color:var(--ink2)}
         cur = 'all';
         chips.forEach(function(x){ x.classList.remove('on'); });
         if(chips[0]) chips[0].classList.add('on');
+        // 公式/符号视图下知识点卡片都被隐藏，目录点了也没地方跳，直接收起并隐藏按钮
+        closeToc();
+        if(tocbtn) tocbtn.style.display = 'none';
+      }else{
+        if(tocbtn) tocbtn.style.display = '';
       }
       apply();
       // 「显示 N / M 个知识点」这句在索引视图里不成立，清掉

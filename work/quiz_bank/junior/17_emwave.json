@@ -1,0 +1,328 @@
+{
+  "segment": "初中",
+  "chapter": "电磁波与现代通信",
+  "source_file": "17_emwave.json",
+  "questions": [
+    {
+      "id": "diagnostic-emwave-03-1",
+      "point_id": "emwave-03",
+      "point_title": "信息与信息传播",
+      "chapter": "电磁波与现代通信",
+      "stem": "【电磁波与现代通信 · 信息与信息传播】学生的错误做法：把每秒传送的符号数误当成整段信息的符号总数。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
+      "options": [
+        {
+          "label": "A",
+          "text": "量纲一致性：波速关系为波长乘频率；f/lambda 的单位不是 m/s。"
+        },
+        {
+          "label": "B",
+          "text": "数值代入：通信单程时延只对应单程路径；若题目明确发射后返回的回波才计算往返。"
+        },
+        {
+          "label": "C",
+          "text": "数值代入：情境中的 100 000 000 已是 Hz；与 3 m 相乘应得到 3.0×10^8 m/s，不应重复换算。"
+        },
+        {
+          "label": "D",
+          "text": "概念混淆：符号总数还要乘以传送时间；只写每秒速率会漏掉时间因素，题目问总量时尤其要注意。"
+        }
+      ],
+      "correct_answer": "D",
+      "explanation": "符号总数还要乘以传送时间；只写每秒速率会漏掉时间因素，题目问总量时尤其要注意。",
+      "error_type": "概念混淆",
+      "judging": "teacher",
+      "source_error_index": 0,
+      "source_caught_by": "人工审核",
+      "wrong_expr": null,
+      "trap_test": null,
+      "review": {
+        "confidence": "medium",
+        "checks": {
+          "answer_unique": true,
+          "distractors_plausible": true,
+          "stem_clear": true,
+          "no_cross_segment": true
+        },
+        "note": "本章可用类型不足四类，干扰项包含同章其他错误的类别与原解释；答案按“类别+依据”唯一匹配，建议抽查教学区分度。"
+      }
+    },
+    {
+      "id": "diagnostic-emwave-03-2",
+      "point_id": "emwave-03",
+      "point_title": "信息与信息传播",
+      "chapter": "电磁波与现代通信",
+      "stem": "【电磁波与现代通信 · 信息与信息传播】学生的错误做法：把传送 5 s 当成 5 ms，再把符号总数少算 1000 倍（错误表达式：N_sym = R_sym*(t_info/1000)）。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
+      "options": [
+        {
+          "label": "A",
+          "text": "概念混淆：互联网通信还包含路由、排队和设备处理时间，理想传播时延只是其中一部分。"
+        },
+        {
+          "label": "B",
+          "text": "概念混淆：电磁波能够在真空中传播；声波需要介质，两类波的传播条件不同。"
+        },
+        {
+          "label": "C",
+          "text": "数值代入：情境时间已经用秒表示，不能再次按毫秒缩小；重复换算会让估算结果少 1000 倍。"
+        },
+        {
+          "label": "D",
+          "text": "量纲一致性：波速关系为波长乘频率；f/lambda 的单位不是 m/s。"
+        }
+      ],
+      "correct_answer": "C",
+      "explanation": "情境时间已经用秒表示，不能再次按毫秒缩小；重复换算会让估算结果少 1000 倍。\n知识库校验证据：情境：短消息传输；代入错误式：R_sym*(t_info/1000)；校验参照值：3000。",
+      "error_type": "数值代入",
+      "judging": "auto",
+      "source_error_index": 1,
+      "source_caught_by": "数值代入",
+      "wrong_expr": "N_sym = R_sym*(t_info/1000)",
+      "trap_test": {
+        "scenario": "短消息传输",
+        "expr": "R_sym*(t_info/1000)",
+        "ref": 3000
+      },
+      "review": {
+        "confidence": "medium",
+        "checks": {
+          "answer_unique": true,
+          "distractors_plausible": true,
+          "stem_clear": true,
+          "no_cross_segment": true
+        },
+        "note": "本章可用类型不足四类，干扰项包含同章其他错误的类别与原解释；答案按“类别+依据”唯一匹配，建议抽查教学区分度。"
+      }
+    },
+    {
+      "id": "diagnostic-emwave-03-3",
+      "point_id": "emwave-03",
+      "point_title": "信息与信息传播",
+      "chapter": "电磁波与现代通信",
+      "stem": "【电磁波与现代通信 · 信息与信息传播】学生的错误做法：把符号传送速率等同于电磁波载波频率或每秒比特数。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
+      "options": [
+        {
+          "label": "A",
+          "text": "数值代入：情境中的 100 000 000 已是 Hz；与 3 m 相乘应得到 3.0×10^8 m/s，不应重复换算。"
+        },
+        {
+          "label": "B",
+          "text": "概念混淆：符号速率、载波频率和比特率的定义不同；没有调制和编码信息时，不能把三者数值直接等同。"
+        },
+        {
+          "label": "C",
+          "text": "量纲一致性：波速关系为波长乘频率；f/lambda 的单位不是 m/s。"
+        },
+        {
+          "label": "D",
+          "text": "数值代入：通信单程时延只对应单程路径；若题目明确发射后返回的回波才计算往返。"
+        }
+      ],
+      "correct_answer": "B",
+      "explanation": "符号速率、载波频率和比特率的定义不同；没有调制和编码信息时，不能把三者数值直接等同。",
+      "error_type": "概念混淆",
+      "judging": "teacher",
+      "source_error_index": 2,
+      "source_caught_by": "人工审核",
+      "wrong_expr": null,
+      "trap_test": null,
+      "review": {
+        "confidence": "medium",
+        "checks": {
+          "answer_unique": true,
+          "distractors_plausible": true,
+          "stem_clear": true,
+          "no_cross_segment": true
+        },
+        "note": "本章可用类型不足四类，干扰项包含同章其他错误的类别与原解释；答案按“类别+依据”唯一匹配，建议抽查教学区分度。"
+      }
+    },
+    {
+      "id": "diagnostic-emwave-01-2",
+      "point_id": "emwave-01",
+      "point_title": "电磁波的波速、频率和波长",
+      "chapter": "电磁波与现代通信",
+      "stem": "【电磁波与现代通信 · 电磁波的波速、频率和波长】学生的错误做法：频率已用 Hz 代入后，又按 MHz 再除以 1 000 000，造成波速少算百万倍（错误表达式：c = lambda*f/1000000）。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
+      "options": [
+        {
+          "label": "A",
+          "text": "概念混淆：符号总数还要乘以传送时间；只写每秒速率会漏掉时间因素，题目问总量时尤其要注意。"
+        },
+        {
+          "label": "B",
+          "text": "概念混淆：互联网通信还包含路由、排队和设备处理时间，理想传播时延只是其中一部分。"
+        },
+        {
+          "label": "C",
+          "text": "概念混淆：符号速率、载波频率和比特率的定义不同；没有调制和编码信息时，不能把三者数值直接等同。"
+        },
+        {
+          "label": "D",
+          "text": "数值代入：情境中的 100 000 000 已是 Hz；与 3 m 相乘应得到 3.0×10^8 m/s，不应重复换算。"
+        }
+      ],
+      "correct_answer": "D",
+      "explanation": "情境中的 100 000 000 已是 Hz；与 3 m 相乘应得到 3.0×10^8 m/s，不应重复换算。\n知识库校验证据：情境：无线电波；代入错误式：lambda*f/1000000；校验参照值：300000000。",
+      "error_type": "数值代入",
+      "judging": "auto",
+      "source_error_index": 1,
+      "source_caught_by": "数值代入",
+      "wrong_expr": "c = lambda*f/1000000",
+      "trap_test": {
+        "scenario": "无线电波",
+        "expr": "lambda*f/1000000",
+        "ref": 300000000
+      },
+      "review": {
+        "confidence": "medium",
+        "checks": {
+          "answer_unique": true,
+          "distractors_plausible": true,
+          "stem_clear": true,
+          "no_cross_segment": true
+        },
+        "note": "本章可用类型不足四类，干扰项包含同章其他错误的类别与原解释；答案按“类别+依据”唯一匹配，建议抽查教学区分度。"
+      }
+    },
+    {
+      "id": "diagnostic-emwave-01-3",
+      "point_id": "emwave-01",
+      "point_title": "电磁波的波速、频率和波长",
+      "chapter": "电磁波与现代通信",
+      "stem": "【电磁波与现代通信 · 电磁波的波速、频率和波长】学生的错误做法：认为电磁波传播必须依赖空气或其他介质。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
+      "options": [
+        {
+          "label": "A",
+          "text": "数值代入：情境时间已经用秒表示，不能再次按毫秒缩小；重复换算会让估算结果少 1000 倍。"
+        },
+        {
+          "label": "B",
+          "text": "量纲一致性：波速关系为波长乘频率；f/lambda 的单位不是 m/s。"
+        },
+        {
+          "label": "C",
+          "text": "概念混淆：电磁波能够在真空中传播；声波需要介质，两类波的传播条件不同。"
+        },
+        {
+          "label": "D",
+          "text": "数值代入：通信单程时延只对应单程路径；若题目明确发射后返回的回波才计算往返。"
+        }
+      ],
+      "correct_answer": "C",
+      "explanation": "电磁波能够在真空中传播；声波需要介质，两类波的传播条件不同。",
+      "error_type": "概念混淆",
+      "judging": "teacher",
+      "source_error_index": 2,
+      "source_caught_by": "人工审核",
+      "wrong_expr": null,
+      "trap_test": null,
+      "review": {
+        "confidence": "medium",
+        "checks": {
+          "answer_unique": true,
+          "distractors_plausible": true,
+          "stem_clear": true,
+          "no_cross_segment": true
+        },
+        "note": "本章可用类型不足四类，干扰项包含同章其他错误的类别与原解释；答案按“类别+依据”唯一匹配，建议抽查教学区分度。"
+      }
+    },
+    {
+      "id": "diagnostic-emwave-02-1",
+      "point_id": "emwave-02",
+      "point_title": "电磁波传播与通信时延",
+      "chapter": "电磁波与现代通信",
+      "stem": "【电磁波与现代通信 · 电磁波传播与通信时延】学生的错误做法：把单程传播距离误当成往返距离，计算时多乘 2（错误表达式：t = 2*d/c）。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
+      "options": [
+        {
+          "label": "A",
+          "text": "概念混淆：电磁波能够在真空中传播；声波需要介质，两类波的传播条件不同。"
+        },
+        {
+          "label": "B",
+          "text": "数值代入：通信单程时延只对应单程路径；若题目明确发射后返回的回波才计算往返。"
+        },
+        {
+          "label": "C",
+          "text": "量纲一致性：波速关系为波长乘频率；f/lambda 的单位不是 m/s。"
+        },
+        {
+          "label": "D",
+          "text": "概念混淆：符号总数还要乘以传送时间；只写每秒速率会漏掉时间因素，题目问总量时尤其要注意。"
+        }
+      ],
+      "correct_answer": "B",
+      "explanation": "通信单程时延只对应单程路径；若题目明确发射后返回的回波才计算往返。\n知识库校验证据：情境：传播3千米；代入错误式：2*d/c；校验参照值：1e-05。",
+      "error_type": "数值代入",
+      "judging": "auto",
+      "source_error_index": 0,
+      "source_caught_by": "数值代入",
+      "wrong_expr": "t = 2*d/c",
+      "trap_test": {
+        "scenario": "传播3千米",
+        "expr": "2*d/c",
+        "ref": 1e-05
+      },
+      "review": {
+        "confidence": "medium",
+        "checks": {
+          "answer_unique": true,
+          "distractors_plausible": true,
+          "stem_clear": true,
+          "no_cross_segment": true
+        },
+        "note": "本章可用类型不足四类，干扰项包含同章其他错误的类别与原解释；答案按“类别+依据”唯一匹配，建议抽查教学区分度。"
+      }
+    },
+    {
+      "id": "diagnostic-emwave-02-2",
+      "point_id": "emwave-02",
+      "point_title": "电磁波传播与通信时延",
+      "chapter": "电磁波与现代通信",
+      "stem": "【电磁波与现代通信 · 电磁波传播与通信时延】学生的错误做法：把光速传播时间当成端到端网络响应时间。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
+      "options": [
+        {
+          "label": "A",
+          "text": "概念混淆：互联网通信还包含路由、排队和设备处理时间，理想传播时延只是其中一部分。"
+        },
+        {
+          "label": "B",
+          "text": "量纲一致性：波速关系为波长乘频率；f/lambda 的单位不是 m/s。"
+        },
+        {
+          "label": "C",
+          "text": "数值代入：情境中的 100 000 000 已是 Hz；与 3 m 相乘应得到 3.0×10^8 m/s，不应重复换算。"
+        },
+        {
+          "label": "D",
+          "text": "数值代入：情境时间已经用秒表示，不能再次按毫秒缩小；重复换算会让估算结果少 1000 倍。"
+        }
+      ],
+      "correct_answer": "A",
+      "explanation": "互联网通信还包含路由、排队和设备处理时间，理想传播时延只是其中一部分。",
+      "error_type": "概念混淆",
+      "judging": "teacher",
+      "source_error_index": 1,
+      "source_caught_by": "人工审核",
+      "wrong_expr": null,
+      "trap_test": null,
+      "review": {
+        "confidence": "medium",
+        "checks": {
+          "answer_unique": true,
+          "distractors_plausible": true,
+          "stem_clear": true,
+          "no_cross_segment": true
+        },
+        "note": "本章可用类型不足四类，干扰项包含同章其他错误的类别与原解释；答案按“类别+依据”唯一匹配，建议抽查教学区分度。"
+      }
+    }
+  ],
+  "skipped": [
+    {
+      "point_id": "emwave-01",
+      "point_title": "电磁波的波速、频率和波长",
+      "source_error_index": 0,
+      "reason": "自动判定条目没有 trap_test 可执行证据；不把校验标签代替实测证据。"
+    }
+  ]
+}

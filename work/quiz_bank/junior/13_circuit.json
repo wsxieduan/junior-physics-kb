@@ -1,0 +1,368 @@
+{
+  "segment": "初中",
+  "chapter": "简单电路",
+  "source_file": "13_circuit.json",
+  "questions": [
+    {
+      "id": "diagnostic-circuit-03-1",
+      "point_id": "circuit-03",
+      "point_title": "初识家用电器和电路 · 电路连接方式",
+      "chapter": "简单电路",
+      "stem": "【简单电路 · 初识家用电器和电路 · 电路连接方式】学生的错误做法：把并联干路电流误认为两支路电流的乘积（错误表达式：It = I1*I2）。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
+      "options": [
+        {
+          "label": "A",
+          "text": "概念混淆：电流表内阻很小，直接并联会形成近似短路并损坏仪表或电源。"
+        },
+        {
+          "label": "B",
+          "text": "概念混淆：电压表应并联在被测元件两端；串联接入会显著改变电路状态。"
+        },
+        {
+          "label": "C",
+          "text": "概念混淆：并联支路电压相等，但支路电流还取决于各支路元件的电阻和电路条件。"
+        },
+        {
+          "label": "D",
+          "text": "数值代入：并联支路汇流时干路电流等于各支路电流之和；0.2 A 和 0.3 A 合为 0.5 A。"
+        }
+      ],
+      "correct_answer": "D",
+      "explanation": "并联支路汇流时干路电流等于各支路电流之和；0.2 A 和 0.3 A 合为 0.5 A。\n知识库校验证据：情境：两支路并联一；代入错误式：I1*I2；校验参照值：0.5。",
+      "error_type": "数值代入",
+      "judging": "auto",
+      "source_error_index": 0,
+      "source_caught_by": "数值代入",
+      "wrong_expr": "It = I1*I2",
+      "trap_test": {
+        "scenario": "两支路并联一",
+        "expr": "I1*I2",
+        "ref": 0.5
+      },
+      "review": {
+        "confidence": "medium",
+        "checks": {
+          "answer_unique": true,
+          "distractors_plausible": true,
+          "stem_clear": true,
+          "no_cross_segment": true
+        },
+        "note": "本章可用类型不足四类，干扰项包含同章其他错误的类别与原解释；答案按“类别+依据”唯一匹配，建议抽查教学区分度。"
+      }
+    },
+    {
+      "id": "diagnostic-circuit-03-2",
+      "point_id": "circuit-03",
+      "point_title": "初识家用电器和电路 · 电路连接方式",
+      "chapter": "简单电路",
+      "stem": "【简单电路 · 初识家用电器和电路 · 电路连接方式】学生的错误做法：认为家庭电路中的各用电器都串联，一个坏了全部熄灭。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
+      "options": [
+        {
+          "label": "A",
+          "text": "数值代入：读数应按量程乘偏转格数占满量程格数的比例；倒置比例会把读数放大。"
+        },
+        {
+          "label": "B",
+          "text": "数值代入：量程 12 V、满量程 30 格偏转 15 格时，正确读数为 6 V；倒置比例会得到 24 V。"
+        },
+        {
+          "label": "C",
+          "text": "概念混淆：家庭用电器通常并联接入，支路可独立工作；电路图要结合实际连接辨析。"
+        },
+        {
+          "label": "D",
+          "text": "数值代入：干路电流是分流前各支路电流的和；0.2 A 与 0.3 A 相加为 0.5 A。"
+        }
+      ],
+      "correct_answer": "C",
+      "explanation": "家庭用电器通常并联接入，支路可独立工作；电路图要结合实际连接辨析。",
+      "error_type": "概念混淆",
+      "judging": "teacher",
+      "source_error_index": 1,
+      "source_caught_by": "人工审核",
+      "wrong_expr": null,
+      "trap_test": null,
+      "review": {
+        "confidence": "medium",
+        "checks": {
+          "answer_unique": true,
+          "distractors_plausible": true,
+          "stem_clear": true,
+          "no_cross_segment": true
+        },
+        "note": "本章可用类型不足四类，干扰项包含同章其他错误的类别与原解释；答案按“类别+依据”唯一匹配，建议抽查教学区分度。"
+      }
+    },
+    {
+      "id": "diagnostic-circuit-01-1",
+      "point_id": "circuit-01",
+      "point_title": "电流和电流表",
+      "chapter": "简单电路",
+      "stem": "【简单电路 · 电流和电流表】学生的错误做法：将电流表误并联到电源两端。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
+      "options": [
+        {
+          "label": "A",
+          "text": "数值代入：量程 12 V、满量程 30 格偏转 15 格时，正确读数为 6 V；倒置比例会得到 24 V。"
+        },
+        {
+          "label": "B",
+          "text": "概念混淆：电流表内阻很小，直接并联会形成近似短路并损坏仪表或电源。"
+        },
+        {
+          "label": "C",
+          "text": "数值代入：干路电流是分流前各支路电流的和；0.2 A 与 0.3 A 相加为 0.5 A。"
+        },
+        {
+          "label": "D",
+          "text": "数值代入：并联支路汇流时干路电流等于各支路电流之和；0.2 A 和 0.3 A 合为 0.5 A。"
+        }
+      ],
+      "correct_answer": "B",
+      "explanation": "电流表内阻很小，直接并联会形成近似短路并损坏仪表或电源。接线前要看清仪表符号和它的接入位置。",
+      "error_type": "概念混淆",
+      "judging": "teacher",
+      "source_error_index": 0,
+      "source_caught_by": "人工审核",
+      "wrong_expr": null,
+      "trap_test": null,
+      "review": {
+        "confidence": "medium",
+        "checks": {
+          "answer_unique": true,
+          "distractors_plausible": true,
+          "stem_clear": true,
+          "no_cross_segment": true
+        },
+        "note": "本章可用类型不足四类，干扰项包含同章其他错误的类别与原解释；答案按“类别+依据”唯一匹配，建议抽查教学区分度。"
+      }
+    },
+    {
+      "id": "diagnostic-circuit-01-2",
+      "point_id": "circuit-01",
+      "point_title": "电流和电流表",
+      "chapter": "简单电路",
+      "stem": "【简单电路 · 电流和电流表】学生的错误做法：读电流表时把指针格数当成电流数值，未按量程换算（错误表达式：I_read = I_range*N/n）。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
+      "options": [
+        {
+          "label": "A",
+          "text": "数值代入：读数应按量程乘偏转格数占满量程格数的比例；倒置比例会把读数放大。"
+        },
+        {
+          "label": "B",
+          "text": "概念混淆：电压表应并联在被测元件两端；串联接入会显著改变电路状态。"
+        },
+        {
+          "label": "C",
+          "text": "概念混淆：并联支路电压相等，但支路电流还取决于各支路元件的电阻和电路条件。"
+        },
+        {
+          "label": "D",
+          "text": "概念混淆：家庭用电器通常并联接入，支路可独立工作；电路图要结合实际连接辨析。"
+        }
+      ],
+      "correct_answer": "A",
+      "explanation": "读数应按量程乘偏转格数占满量程格数的比例；倒置比例会把读数放大。\n知识库校验证据：情境：两灯串联一；代入错误式：I_range*N/n；校验参照值：0.2。",
+      "error_type": "数值代入",
+      "judging": "auto",
+      "source_error_index": 1,
+      "source_caught_by": "数值代入",
+      "wrong_expr": "I_read = I_range*N/n",
+      "trap_test": {
+        "scenario": "两灯串联一",
+        "expr": "I_range*N/n",
+        "ref": 0.2
+      },
+      "review": {
+        "confidence": "medium",
+        "checks": {
+          "answer_unique": true,
+          "distractors_plausible": true,
+          "stem_clear": true,
+          "no_cross_segment": true
+        },
+        "note": "本章可用类型不足四类，干扰项包含同章其他错误的类别与原解释；答案按“类别+依据”唯一匹配，建议抽查教学区分度。"
+      }
+    },
+    {
+      "id": "diagnostic-circuit-04-1",
+      "point_id": "circuit-04",
+      "point_title": "电压和电压表",
+      "chapter": "简单电路",
+      "stem": "【简单电路 · 电压和电压表】学生的错误做法：把电压表误串联接入被测电路。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
+      "options": [
+        {
+          "label": "A",
+          "text": "数值代入：干路电流是分流前各支路电流的和；0.2 A 与 0.3 A 相加为 0.5 A。"
+        },
+        {
+          "label": "B",
+          "text": "数值代入：并联支路汇流时干路电流等于各支路电流之和；0.2 A 和 0.3 A 合为 0.5 A。"
+        },
+        {
+          "label": "C",
+          "text": "数值代入：读数应按量程乘偏转格数占满量程格数的比例；倒置比例会把读数放大。"
+        },
+        {
+          "label": "D",
+          "text": "概念混淆：电压表应并联在被测元件两端；串联接入会显著改变电路状态。"
+        }
+      ],
+      "correct_answer": "D",
+      "explanation": "电压表应并联在被测元件两端；串联接入会显著改变电路状态。接线前要看清仪表符号和它的接入位置。",
+      "error_type": "概念混淆",
+      "judging": "teacher",
+      "source_error_index": 0,
+      "source_caught_by": "人工审核",
+      "wrong_expr": null,
+      "trap_test": null,
+      "review": {
+        "confidence": "medium",
+        "checks": {
+          "answer_unique": true,
+          "distractors_plausible": true,
+          "stem_clear": true,
+          "no_cross_segment": true
+        },
+        "note": "本章可用类型不足四类，干扰项包含同章其他错误的类别与原解释；答案按“类别+依据”唯一匹配，建议抽查教学区分度。"
+      }
+    },
+    {
+      "id": "diagnostic-circuit-04-2",
+      "point_id": "circuit-04",
+      "point_title": "电压和电压表",
+      "chapter": "简单电路",
+      "stem": "【简单电路 · 电压和电压表】学生的错误做法：把电压表格数与满量程格数的比例倒过来（错误表达式：U_read = U_range*N/n）。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
+      "options": [
+        {
+          "label": "A",
+          "text": "概念混淆：并联支路电压相等，但支路电流还取决于各支路元件的电阻和电路条件。"
+        },
+        {
+          "label": "B",
+          "text": "概念混淆：家庭用电器通常并联接入，支路可独立工作；电路图要结合实际连接辨析。"
+        },
+        {
+          "label": "C",
+          "text": "数值代入：量程 12 V、满量程 30 格偏转 15 格时，正确读数为 6 V；倒置比例会得到 24 V。"
+        },
+        {
+          "label": "D",
+          "text": "概念混淆：电流表内阻很小，直接并联会形成近似短路并损坏仪表或电源。"
+        }
+      ],
+      "correct_answer": "C",
+      "explanation": "量程 12 V、满量程 30 格偏转 15 格时，正确读数为 6 V；倒置比例会得到 24 V。\n知识库校验证据：情境：串联电压读数一；代入错误式：U_range*N/n；校验参照值：6。",
+      "error_type": "数值代入",
+      "judging": "auto",
+      "source_error_index": 1,
+      "source_caught_by": "数值代入",
+      "wrong_expr": "U_read = U_range*N/n",
+      "trap_test": {
+        "scenario": "串联电压读数一",
+        "expr": "U_range*N/n",
+        "ref": 6
+      },
+      "review": {
+        "confidence": "medium",
+        "checks": {
+          "answer_unique": true,
+          "distractors_plausible": true,
+          "stem_clear": true,
+          "no_cross_segment": true
+        },
+        "note": "本章可用类型不足四类，干扰项包含同章其他错误的类别与原解释；答案按“类别+依据”唯一匹配，建议抽查教学区分度。"
+      }
+    },
+    {
+      "id": "diagnostic-circuit-02-1",
+      "point_id": "circuit-02",
+      "point_title": "串、并联电路的特点",
+      "chapter": "简单电路",
+      "stem": "【简单电路 · 串、并联电路的特点】学生的错误做法：把并联干路电流写成各支路电流的乘积（错误表达式：It = I1*I2）。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
+      "options": [
+        {
+          "label": "A",
+          "text": "概念混淆：家庭用电器通常并联接入，支路可独立工作；电路图要结合实际连接辨析。"
+        },
+        {
+          "label": "B",
+          "text": "数值代入：干路电流是分流前各支路电流的和；0.2 A 与 0.3 A 相加为 0.5 A。"
+        },
+        {
+          "label": "C",
+          "text": "概念混淆：电流表内阻很小，直接并联会形成近似短路并损坏仪表或电源。"
+        },
+        {
+          "label": "D",
+          "text": "概念混淆：电压表应并联在被测元件两端；串联接入会显著改变电路状态。"
+        }
+      ],
+      "correct_answer": "B",
+      "explanation": "干路电流是分流前各支路电流的和；0.2 A 与 0.3 A 相加为 0.5 A。\n知识库校验证据：情境：两支路并联一；代入错误式：I1*I2；校验参照值：0.5。",
+      "error_type": "数值代入",
+      "judging": "auto",
+      "source_error_index": 0,
+      "source_caught_by": "数值代入",
+      "wrong_expr": "It = I1*I2",
+      "trap_test": {
+        "scenario": "两支路并联一",
+        "expr": "I1*I2",
+        "ref": 0.5
+      },
+      "review": {
+        "confidence": "medium",
+        "checks": {
+          "answer_unique": true,
+          "distractors_plausible": true,
+          "stem_clear": true,
+          "no_cross_segment": true
+        },
+        "note": "本章可用类型不足四类，干扰项包含同章其他错误的类别与原解释；答案按“类别+依据”唯一匹配，建议抽查教学区分度。"
+      }
+    },
+    {
+      "id": "diagnostic-circuit-02-2",
+      "point_id": "circuit-02",
+      "point_title": "串、并联电路的特点",
+      "chapter": "简单电路",
+      "stem": "【简单电路 · 串、并联电路的特点】学生的错误做法：误以为并联电路各支路电流一定相等。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
+      "options": [
+        {
+          "label": "A",
+          "text": "概念混淆：并联支路电压相等，但支路电流还取决于各支路元件的电阻和电路条件。"
+        },
+        {
+          "label": "B",
+          "text": "数值代入：并联支路汇流时干路电流等于各支路电流之和；0.2 A 和 0.3 A 合为 0.5 A。"
+        },
+        {
+          "label": "C",
+          "text": "数值代入：读数应按量程乘偏转格数占满量程格数的比例；倒置比例会把读数放大。"
+        },
+        {
+          "label": "D",
+          "text": "数值代入：量程 12 V、满量程 30 格偏转 15 格时，正确读数为 6 V；倒置比例会得到 24 V。"
+        }
+      ],
+      "correct_answer": "A",
+      "explanation": "并联支路电压相等，但支路电流还取决于各支路元件的电阻和电路条件。",
+      "error_type": "概念混淆",
+      "judging": "teacher",
+      "source_error_index": 1,
+      "source_caught_by": "人工审核",
+      "wrong_expr": null,
+      "trap_test": null,
+      "review": {
+        "confidence": "medium",
+        "checks": {
+          "answer_unique": true,
+          "distractors_plausible": true,
+          "stem_clear": true,
+          "no_cross_segment": true
+        },
+        "note": "本章可用类型不足四类，干扰项包含同章其他错误的类别与原解释；答案按“类别+依据”唯一匹配，建议抽查教学区分度。"
+      }
+    }
+  ],
+  "skipped": []
+}

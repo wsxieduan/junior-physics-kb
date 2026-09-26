@@ -1,0 +1,368 @@
+{
+  "segment": "初中",
+  "chapter": "光现象",
+  "source_file": "02_light.json",
+  "questions": [
+    {
+      "id": "diagnostic-light-04-1",
+      "point_id": "light-04",
+      "point_title": "光的色彩",
+      "chapter": "光现象",
+      "stem": "【光现象 · 光的色彩】学生的错误做法：把频率误算为波速乘波长，混淆了相除关系（错误表达式：f = c/(2*lambda)）。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
+      "options": [
+        {
+          "label": "A",
+          "text": "概念混淆：光斜射入另一种介质时可能发生折射；直线传播规律只适用于同种均匀介质。"
+        },
+        {
+          "label": "B",
+          "text": "概念混淆：平面镜像是反射光线反向延长线的交点，属于虚像；应通过成像实验和光线图辨析。"
+        },
+        {
+          "label": "C",
+          "text": "概念混淆：漫反射和镜面反射都遵守反射定律，差别在于表面是否平整以及反射光的方向分布。"
+        },
+        {
+          "label": "D",
+          "text": "数值代入：真空光速和波长确定后，频率应为 c/lambda；多除以 2 会使结果恰好减半。"
+        }
+      ],
+      "correct_answer": "D",
+      "explanation": "真空光速和波长确定后，频率应为 c/lambda；多除以 2 会使结果恰好减半。\n知识库校验证据：情境：红光近似值；代入错误式：c/(2*lambda)；校验参照值：400000000000000。",
+      "error_type": "数值代入",
+      "judging": "auto",
+      "source_error_index": 0,
+      "source_caught_by": "数值代入",
+      "wrong_expr": "f = c/(2*lambda)",
+      "trap_test": {
+        "scenario": "红光近似值",
+        "expr": "c/(2*lambda)",
+        "ref": 400000000000000
+      },
+      "review": {
+        "confidence": "medium",
+        "checks": {
+          "answer_unique": true,
+          "distractors_plausible": true,
+          "stem_clear": true,
+          "no_cross_segment": true
+        },
+        "note": "本章可用类型不足四类，干扰项包含同章其他错误的类别与原解释；答案按“类别+依据”唯一匹配，建议抽查教学区分度。"
+      }
+    },
+    {
+      "id": "diagnostic-light-04-2",
+      "point_id": "light-04",
+      "point_title": "光的色彩",
+      "chapter": "光现象",
+      "stem": "【光现象 · 光的色彩】学生的错误做法：认为白光本身只有一种颜色，或把色光混合与颜料混合规律混为一谈。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
+      "options": [
+        {
+          "label": "A",
+          "text": "数值代入：平面镜成像关于镜面对称，像距等于物距；物距 0.5 m 时像距应是 0.5 m。"
+        },
+        {
+          "label": "B",
+          "text": "数值代入：入射角和反射角都从法线量起；入射角为 30° 时反射角仍是 30°。"
+        },
+        {
+          "label": "C",
+          "text": "概念混淆：棱镜色散可观察到白光分解出的多种色光；色光的叠加与颜料混合不是同一过程。"
+        },
+        {
+          "label": "D",
+          "text": "数值代入：题目若只描述光从发出到到达一次，路程就是 c*t；额外乘 2 会把单程误算成往返。"
+        }
+      ],
+      "correct_answer": "C",
+      "explanation": "棱镜色散可观察到白光分解出的多种色光；色光的叠加与颜料混合不是同一过程。",
+      "error_type": "概念混淆",
+      "judging": "teacher",
+      "source_error_index": 1,
+      "source_caught_by": "人工审核",
+      "wrong_expr": null,
+      "trap_test": null,
+      "review": {
+        "confidence": "medium",
+        "checks": {
+          "answer_unique": true,
+          "distractors_plausible": true,
+          "stem_clear": true,
+          "no_cross_segment": true
+        },
+        "note": "本章可用类型不足四类，干扰项包含同章其他错误的类别与原解释；答案按“类别+依据”唯一匹配，建议抽查教学区分度。"
+      }
+    },
+    {
+      "id": "diagnostic-light-01-1",
+      "point_id": "light-01",
+      "point_title": "光的直线传播",
+      "chapter": "光现象",
+      "stem": "【光现象 · 光的直线传播】学生的错误做法：把单程传播误写成往返路程，平白多乘 2（错误表达式：s = 2*c*t）。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
+      "options": [
+        {
+          "label": "A",
+          "text": "概念混淆：棱镜色散可观察到白光分解出的多种色光；色光的叠加与颜料混合不是同一过程。"
+        },
+        {
+          "label": "B",
+          "text": "数值代入：题目若只描述光从发出到到达一次，路程就是 c*t；额外乘 2 会把单程误算成往返。"
+        },
+        {
+          "label": "C",
+          "text": "概念混淆：平面镜像是反射光线反向延长线的交点，属于虚像；应通过成像实验和光线图辨析。"
+        },
+        {
+          "label": "D",
+          "text": "概念混淆：漫反射和镜面反射都遵守反射定律，差别在于表面是否平整以及反射光的方向分布。"
+        }
+      ],
+      "correct_answer": "B",
+      "explanation": "题目若只描述光从发出到到达一次，路程就是 c*t；额外乘 2 会把单程误算成往返。\n知识库校验证据：情境：光传播1微秒；代入错误式：2*c*t；校验参照值：300。",
+      "error_type": "数值代入",
+      "judging": "auto",
+      "source_error_index": 0,
+      "source_caught_by": "数值代入",
+      "wrong_expr": "s = 2*c*t",
+      "trap_test": {
+        "scenario": "光传播1微秒",
+        "expr": "2*c*t",
+        "ref": 300
+      },
+      "review": {
+        "confidence": "medium",
+        "checks": {
+          "answer_unique": true,
+          "distractors_plausible": true,
+          "stem_clear": true,
+          "no_cross_segment": true
+        },
+        "note": "本章可用类型不足四类，干扰项包含同章其他错误的类别与原解释；答案按“类别+依据”唯一匹配，建议抽查教学区分度。"
+      }
+    },
+    {
+      "id": "diagnostic-light-01-2",
+      "point_id": "light-01",
+      "point_title": "光的直线传播",
+      "chapter": "光现象",
+      "stem": "【光现象 · 光的直线传播】学生的错误做法：认为光在任何介质交界处都不会改变传播方向。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
+      "options": [
+        {
+          "label": "A",
+          "text": "概念混淆：光斜射入另一种介质时可能发生折射；直线传播规律只适用于同种均匀介质。"
+        },
+        {
+          "label": "B",
+          "text": "数值代入：平面镜成像关于镜面对称，像距等于物距；物距 0.5 m 时像距应是 0.5 m。"
+        },
+        {
+          "label": "C",
+          "text": "数值代入：入射角和反射角都从法线量起；入射角为 30° 时反射角仍是 30°。"
+        },
+        {
+          "label": "D",
+          "text": "数值代入：真空光速和波长确定后，频率应为 c/lambda；多除以 2 会使结果恰好减半。"
+        }
+      ],
+      "correct_answer": "A",
+      "explanation": "光斜射入另一种介质时可能发生折射；直线传播规律只适用于同种均匀介质。",
+      "error_type": "概念混淆",
+      "judging": "teacher",
+      "source_error_index": 1,
+      "source_caught_by": "人工审核",
+      "wrong_expr": null,
+      "trap_test": null,
+      "review": {
+        "confidence": "medium",
+        "checks": {
+          "answer_unique": true,
+          "distractors_plausible": true,
+          "stem_clear": true,
+          "no_cross_segment": true
+        },
+        "note": "本章可用类型不足四类，干扰项包含同章其他错误的类别与原解释；答案按“类别+依据”唯一匹配，建议抽查教学区分度。"
+      }
+    },
+    {
+      "id": "diagnostic-light-02-1",
+      "point_id": "light-02",
+      "point_title": "平面镜",
+      "chapter": "光现象",
+      "stem": "【光现象 · 平面镜】学生的错误做法：误认为像距只有物距的一半（错误表达式：d2 = d1/2）。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
+      "options": [
+        {
+          "label": "A",
+          "text": "概念混淆：光斜射入另一种介质时可能发生折射；直线传播规律只适用于同种均匀介质。"
+        },
+        {
+          "label": "B",
+          "text": "概念混淆：漫反射和镜面反射都遵守反射定律，差别在于表面是否平整以及反射光的方向分布。"
+        },
+        {
+          "label": "C",
+          "text": "概念混淆：棱镜色散可观察到白光分解出的多种色光；色光的叠加与颜料混合不是同一过程。"
+        },
+        {
+          "label": "D",
+          "text": "数值代入：平面镜成像关于镜面对称，像距等于物距；物距 0.5 m 时像距应是 0.5 m。"
+        }
+      ],
+      "correct_answer": "D",
+      "explanation": "平面镜成像关于镜面对称，像距等于物距；物距 0.5 m 时像距应是 0.5 m。\n知识库校验证据：情境：物距半米；代入错误式：d1/2；校验参照值：0.5。",
+      "error_type": "数值代入",
+      "judging": "auto",
+      "source_error_index": 0,
+      "source_caught_by": "数值代入",
+      "wrong_expr": "d2 = d1/2",
+      "trap_test": {
+        "scenario": "物距半米",
+        "expr": "d1/2",
+        "ref": 0.5
+      },
+      "review": {
+        "confidence": "medium",
+        "checks": {
+          "answer_unique": true,
+          "distractors_plausible": true,
+          "stem_clear": true,
+          "no_cross_segment": true
+        },
+        "note": "本章可用类型不足四类，干扰项包含同章其他错误的类别与原解释；答案按“类别+依据”唯一匹配，建议抽查教学区分度。"
+      }
+    },
+    {
+      "id": "diagnostic-light-02-2",
+      "point_id": "light-02",
+      "point_title": "平面镜",
+      "chapter": "光现象",
+      "stem": "【光现象 · 平面镜】学生的错误做法：认为平面镜所成的像可以用光屏接收到。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
+      "options": [
+        {
+          "label": "A",
+          "text": "数值代入：入射角和反射角都从法线量起；入射角为 30° 时反射角仍是 30°。"
+        },
+        {
+          "label": "B",
+          "text": "数值代入：真空光速和波长确定后，频率应为 c/lambda；多除以 2 会使结果恰好减半。"
+        },
+        {
+          "label": "C",
+          "text": "概念混淆：平面镜像是反射光线反向延长线的交点，属于虚像；应通过成像实验和光线图辨析。"
+        },
+        {
+          "label": "D",
+          "text": "数值代入：题目若只描述光从发出到到达一次，路程就是 c*t；额外乘 2 会把单程误算成往返。"
+        }
+      ],
+      "correct_answer": "C",
+      "explanation": "平面镜像是反射光线反向延长线的交点，属于虚像；应通过成像实验和光线图辨析。",
+      "error_type": "概念混淆",
+      "judging": "teacher",
+      "source_error_index": 1,
+      "source_caught_by": "人工审核",
+      "wrong_expr": null,
+      "trap_test": null,
+      "review": {
+        "confidence": "medium",
+        "checks": {
+          "answer_unique": true,
+          "distractors_plausible": true,
+          "stem_clear": true,
+          "no_cross_segment": true
+        },
+        "note": "本章可用类型不足四类，干扰项包含同章其他错误的类别与原解释；答案按“类别+依据”唯一匹配，建议抽查教学区分度。"
+      }
+    },
+    {
+      "id": "diagnostic-light-03-1",
+      "point_id": "light-03",
+      "point_title": "光的反射",
+      "chapter": "光现象",
+      "stem": "【光现象 · 光的反射】学生的错误做法：把角度从镜面而不是法线量起，误写成反射角是入射角的两倍（错误表达式：r = 2*i）。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
+      "options": [
+        {
+          "label": "A",
+          "text": "概念混淆：棱镜色散可观察到白光分解出的多种色光；色光的叠加与颜料混合不是同一过程。"
+        },
+        {
+          "label": "B",
+          "text": "数值代入：入射角和反射角都从法线量起；入射角为 30° 时反射角仍是 30°。"
+        },
+        {
+          "label": "C",
+          "text": "概念混淆：光斜射入另一种介质时可能发生折射；直线传播规律只适用于同种均匀介质。"
+        },
+        {
+          "label": "D",
+          "text": "概念混淆：平面镜像是反射光线反向延长线的交点，属于虚像；应通过成像实验和光线图辨析。"
+        }
+      ],
+      "correct_answer": "B",
+      "explanation": "入射角和反射角都从法线量起；入射角为 30° 时反射角仍是 30°。\n知识库校验证据：情境：入射角30度；代入错误式：2*i；校验参照值：30。",
+      "error_type": "数值代入",
+      "judging": "auto",
+      "source_error_index": 0,
+      "source_caught_by": "数值代入",
+      "wrong_expr": "r = 2*i",
+      "trap_test": {
+        "scenario": "入射角30度",
+        "expr": "2*i",
+        "ref": 30
+      },
+      "review": {
+        "confidence": "medium",
+        "checks": {
+          "answer_unique": true,
+          "distractors_plausible": true,
+          "stem_clear": true,
+          "no_cross_segment": true
+        },
+        "note": "本章可用类型不足四类，干扰项包含同章其他错误的类别与原解释；答案按“类别+依据”唯一匹配，建议抽查教学区分度。"
+      }
+    },
+    {
+      "id": "diagnostic-light-03-2",
+      "point_id": "light-03",
+      "point_title": "光的反射",
+      "chapter": "光现象",
+      "stem": "【光现象 · 光的反射】学生的错误做法：认为只有光滑表面才发生反射。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
+      "options": [
+        {
+          "label": "A",
+          "text": "概念混淆：漫反射和镜面反射都遵守反射定律，差别在于表面是否平整以及反射光的方向分布。"
+        },
+        {
+          "label": "B",
+          "text": "数值代入：题目若只描述光从发出到到达一次，路程就是 c*t；额外乘 2 会把单程误算成往返。"
+        },
+        {
+          "label": "C",
+          "text": "数值代入：平面镜成像关于镜面对称，像距等于物距；物距 0.5 m 时像距应是 0.5 m。"
+        },
+        {
+          "label": "D",
+          "text": "数值代入：真空光速和波长确定后，频率应为 c/lambda；多除以 2 会使结果恰好减半。"
+        }
+      ],
+      "correct_answer": "A",
+      "explanation": "漫反射和镜面反射都遵守反射定律，差别在于表面是否平整以及反射光的方向分布。",
+      "error_type": "概念混淆",
+      "judging": "teacher",
+      "source_error_index": 1,
+      "source_caught_by": "人工审核",
+      "wrong_expr": null,
+      "trap_test": null,
+      "review": {
+        "confidence": "medium",
+        "checks": {
+          "answer_unique": true,
+          "distractors_plausible": true,
+          "stem_clear": true,
+          "no_cross_segment": true
+        },
+        "note": "本章可用类型不足四类，干扰项包含同章其他错误的类别与原解释；答案按“类别+依据”唯一匹配，建议抽查教学区分度。"
+      }
+    }
+  ],
+  "skipped": []
+}

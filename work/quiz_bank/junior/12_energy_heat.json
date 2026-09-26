@@ -1,0 +1,415 @@
+{
+  "segment": "初中",
+  "chapter": "机械能和内能",
+  "source_file": "12_energy_heat.json",
+  "questions": [
+    {
+      "id": "diagnostic-energy-01-1",
+      "point_id": "energy-01",
+      "point_title": "机械能",
+      "chapter": "机械能和内能",
+      "stem": "【机械能和内能 · 机械能】学生的错误做法：把动能写成质量与速度的一次方相乘，漏掉速度平方和二分之一（错误表达式：Ek = m*v）。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
+      "options": [
+        {
+          "label": "A",
+          "text": "数值代入：比热容描述单位质量的吸热量，整块物体还要乘质量；半千克水升温 10℃ 吸热 21 000 J。"
+        },
+        {
+          "label": "B",
+          "text": "数值代入：封闭近似绝热系统的能量账目应相等；额外乘 2 会破坏热量平衡。"
+        },
+        {
+          "label": "C",
+          "text": "数值代入：本情境机械能从 100 J 降至 80 J，减少量为 20 J，转化为内能应为正的 20 J。"
+        },
+        {
+          "label": "D",
+          "text": "量纲一致性：动能的单位应为 J，m*v 的单位是 kg·m/s；量纲与数值关系都不符。"
+        }
+      ],
+      "correct_answer": "D",
+      "explanation": "动能的单位应为 J，m*v 的单位是 kg·m/s；量纲与数值关系都不符。\n知识库校验证据：情境：高处小球；代入错误式：m*v；校验参照值：9。",
+      "error_type": "量纲一致性",
+      "judging": "auto",
+      "source_error_index": 0,
+      "source_caught_by": "量纲一致性",
+      "wrong_expr": "Ek = m*v",
+      "trap_test": {
+        "scenario": "高处小球",
+        "expr": "m*v",
+        "ref": 9
+      },
+      "review": {
+        "confidence": "medium",
+        "checks": {
+          "answer_unique": true,
+          "distractors_plausible": true,
+          "stem_clear": true,
+          "no_cross_segment": true
+        },
+        "note": "本章可用类型不足四类，干扰项包含同章其他错误的类别与原解释；答案按“类别+依据”唯一匹配，建议抽查教学区分度。"
+      }
+    },
+    {
+      "id": "diagnostic-energy-01-2",
+      "point_id": "energy-01",
+      "point_title": "机械能",
+      "chapter": "机械能和内能",
+      "stem": "【机械能和内能 · 机械能】学生的错误做法：写动能公式时漏掉系数二分之一，只保留质量乘速度平方（错误表达式：Ek = m*v^2）。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
+      "options": [
+        {
+          "label": "A",
+          "text": "概念混淆：热量描述热传递过程中转移的能量；物体具有内能，而不是“含有热量”。"
+        },
+        {
+          "label": "B",
+          "text": "概念混淆：摩擦可使机械能转化为内能；把系统边界和其他能量形式计入后，能量总量仍守恒。"
+        },
+        {
+          "label": "C",
+          "text": "数值代入：高处小球的动能为 0.5×2×3^2=9 J；漏掉二分之一会得到 18 J，量纲仍正确但数值翻倍。"
+        },
+        {
+          "label": "D",
+          "text": "概念混淆：本式需要温度变化量，且适用于比热容近似不变、没有物态变化的过程；相变时需另行分析。"
+        }
+      ],
+      "correct_answer": "C",
+      "explanation": "高处小球的动能为 0.5×2×3^2=9 J；漏掉二分之一会得到 18 J，量纲仍正确但数值翻倍。\n知识库校验证据：情境：高处小球；代入错误式：m*v^2；校验参照值：9。",
+      "error_type": "数值代入",
+      "judging": "auto",
+      "source_error_index": 1,
+      "source_caught_by": "数值代入",
+      "wrong_expr": "Ek = m*v^2",
+      "trap_test": {
+        "scenario": "高处小球",
+        "expr": "m*v^2",
+        "ref": 9
+      },
+      "review": {
+        "confidence": "medium",
+        "checks": {
+          "answer_unique": true,
+          "distractors_plausible": true,
+          "stem_clear": true,
+          "no_cross_segment": true
+        },
+        "note": "本章可用类型不足四类，干扰项包含同章其他错误的类别与原解释；答案按“类别+依据”唯一匹配，建议抽查教学区分度。"
+      }
+    },
+    {
+      "id": "diagnostic-energy-01-3",
+      "point_id": "energy-01",
+      "point_title": "机械能",
+      "chapter": "机械能和内能",
+      "stem": "【机械能和内能 · 机械能】学生的错误做法：认为物体高度变化时重力势能与参考面无关。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
+      "options": [
+        {
+          "label": "A",
+          "text": "数值代入：本情境机械能从 100 J 降至 80 J，减少量为 20 J，转化为内能应为正的 20 J。"
+        },
+        {
+          "label": "B",
+          "text": "概念混淆：重力势能数值依赖所选零势能参考面；比较同一过程能量变化时要保持参考面一致。"
+        },
+        {
+          "label": "C",
+          "text": "数值代入：比热容描述单位质量的吸热量，整块物体还要乘质量；半千克水升温 10℃ 吸热 21 000 J。"
+        },
+        {
+          "label": "D",
+          "text": "数值代入：封闭近似绝热系统的能量账目应相等；额外乘 2 会破坏热量平衡。"
+        }
+      ],
+      "correct_answer": "B",
+      "explanation": "重力势能数值依赖所选零势能参考面；比较同一过程能量变化时要保持参考面一致。",
+      "error_type": "概念混淆",
+      "judging": "teacher",
+      "source_error_index": 2,
+      "source_caught_by": "人工审核",
+      "wrong_expr": null,
+      "trap_test": null,
+      "review": {
+        "confidence": "medium",
+        "checks": {
+          "answer_unique": true,
+          "distractors_plausible": true,
+          "stem_clear": true,
+          "no_cross_segment": true
+        },
+        "note": "本章可用类型不足四类，干扰项包含同章其他错误的类别与原解释；答案按“类别+依据”唯一匹配，建议抽查教学区分度。"
+      }
+    },
+    {
+      "id": "diagnostic-energy-03-1",
+      "point_id": "energy-03",
+      "point_title": "内能 热传递",
+      "chapter": "机械能和内能",
+      "stem": "【机械能和内能 · 内能 热传递】学生的错误做法：在忽略散热的热平衡问题中把吸热量误写成放热量的两倍（错误表达式：Q_lost = 2*Q_gained）。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
+      "options": [
+        {
+          "label": "A",
+          "text": "数值代入：封闭近似绝热系统的能量账目应相等；额外乘 2 会破坏热量平衡。"
+        },
+        {
+          "label": "B",
+          "text": "量纲一致性：动能的单位应为 J，m*v 的单位是 kg·m/s；量纲与数值关系都不符。"
+        },
+        {
+          "label": "C",
+          "text": "概念混淆：本式需要温度变化量，且适用于比热容近似不变、没有物态变化的过程；相变时需另行分析。"
+        },
+        {
+          "label": "D",
+          "text": "概念混淆：摩擦可使机械能转化为内能；把系统边界和其他能量形式计入后，能量总量仍守恒。"
+        }
+      ],
+      "correct_answer": "A",
+      "explanation": "封闭近似绝热系统的能量账目应相等；额外乘 2 会破坏热量平衡。\n知识库校验证据：情境：水吸热与热水放热；代入错误式：2*Q_gained；校验参照值：42000。",
+      "error_type": "数值代入",
+      "judging": "auto",
+      "source_error_index": 0,
+      "source_caught_by": "数值代入",
+      "wrong_expr": "Q_lost = 2*Q_gained",
+      "trap_test": {
+        "scenario": "水吸热与热水放热",
+        "expr": "2*Q_gained",
+        "ref": 42000
+      },
+      "review": {
+        "confidence": "medium",
+        "checks": {
+          "answer_unique": true,
+          "distractors_plausible": true,
+          "stem_clear": true,
+          "no_cross_segment": true
+        },
+        "note": "本章可用类型不足四类，干扰项包含同章其他错误的类别与原解释；答案按“类别+依据”唯一匹配，建议抽查教学区分度。"
+      }
+    },
+    {
+      "id": "diagnostic-energy-03-2",
+      "point_id": "energy-03",
+      "point_title": "内能 热传递",
+      "chapter": "机械能和内能",
+      "stem": "【机械能和内能 · 内能 热传递】学生的错误做法：认为热量是物体本身储存的一种物质。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
+      "options": [
+        {
+          "label": "A",
+          "text": "量纲一致性：动能的单位应为 J，m*v 的单位是 kg·m/s；量纲与数值关系都不符。"
+        },
+        {
+          "label": "B",
+          "text": "数值代入：比热容描述单位质量的吸热量，整块物体还要乘质量；半千克水升温 10℃ 吸热 21 000 J。"
+        },
+        {
+          "label": "C",
+          "text": "数值代入：本情境机械能从 100 J 降至 80 J，减少量为 20 J，转化为内能应为正的 20 J。"
+        },
+        {
+          "label": "D",
+          "text": "概念混淆：热量描述热传递过程中转移的能量；物体具有内能，而不是“含有热量”。"
+        }
+      ],
+      "correct_answer": "D",
+      "explanation": "热量描述热传递过程中转移的能量；物体具有内能，而不是“含有热量”。",
+      "error_type": "概念混淆",
+      "judging": "teacher",
+      "source_error_index": 1,
+      "source_caught_by": "人工审核",
+      "wrong_expr": null,
+      "trap_test": null,
+      "review": {
+        "confidence": "medium",
+        "checks": {
+          "answer_unique": true,
+          "distractors_plausible": true,
+          "stem_clear": true,
+          "no_cross_segment": true
+        },
+        "note": "本章可用类型不足四类，干扰项包含同章其他错误的类别与原解释；答案按“类别+依据”唯一匹配，建议抽查教学区分度。"
+      }
+    },
+    {
+      "id": "diagnostic-energy-02-1",
+      "point_id": "energy-02",
+      "point_title": "物质的比热容",
+      "chapter": "机械能和内能",
+      "stem": "【机械能和内能 · 物质的比热容】学生的错误做法：计算吸热量时漏掉物体质量（错误表达式：Q = c_h*dT）。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
+      "options": [
+        {
+          "label": "A",
+          "text": "概念混淆：热量描述热传递过程中转移的能量；物体具有内能，而不是“含有热量”。"
+        },
+        {
+          "label": "B",
+          "text": "概念混淆：摩擦可使机械能转化为内能；把系统边界和其他能量形式计入后，能量总量仍守恒。"
+        },
+        {
+          "label": "C",
+          "text": "数值代入：比热容描述单位质量的吸热量，整块物体还要乘质量；半千克水升温 10℃ 吸热 21 000 J。"
+        },
+        {
+          "label": "D",
+          "text": "量纲一致性：动能的单位应为 J，m*v 的单位是 kg·m/s；量纲与数值关系都不符。"
+        }
+      ],
+      "correct_answer": "C",
+      "explanation": "比热容描述单位质量的吸热量，整块物体还要乘质量；半千克水升温 10℃ 吸热 21 000 J。\n知识库校验证据：情境：半千克水升温10度；代入错误式：c_h*dT；校验参照值：21000。",
+      "error_type": "数值代入",
+      "judging": "auto",
+      "source_error_index": 0,
+      "source_caught_by": "数值代入",
+      "wrong_expr": "Q = c_h*dT",
+      "trap_test": {
+        "scenario": "半千克水升温10度",
+        "expr": "c_h*dT",
+        "ref": 21000
+      },
+      "review": {
+        "confidence": "medium",
+        "checks": {
+          "answer_unique": true,
+          "distractors_plausible": true,
+          "stem_clear": true,
+          "no_cross_segment": true
+        },
+        "note": "本章可用类型不足四类，干扰项包含同章其他错误的类别与原解释；答案按“类别+依据”唯一匹配，建议抽查教学区分度。"
+      }
+    },
+    {
+      "id": "diagnostic-energy-02-2",
+      "point_id": "energy-02",
+      "point_title": "物质的比热容",
+      "chapter": "机械能和内能",
+      "stem": "【机械能和内能 · 物质的比热容】学生的错误做法：用末温代替温升，并在温度不变或发生物态变化时直接套用本式。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
+      "options": [
+        {
+          "label": "A",
+          "text": "数值代入：本情境机械能从 100 J 降至 80 J，减少量为 20 J，转化为内能应为正的 20 J。"
+        },
+        {
+          "label": "B",
+          "text": "概念混淆：本式需要温度变化量，且适用于比热容近似不变、没有物态变化的过程；相变时需另行分析。"
+        },
+        {
+          "label": "C",
+          "text": "量纲一致性：动能的单位应为 J，m*v 的单位是 kg·m/s；量纲与数值关系都不符。"
+        },
+        {
+          "label": "D",
+          "text": "数值代入：封闭近似绝热系统的能量账目应相等；额外乘 2 会破坏热量平衡。"
+        }
+      ],
+      "correct_answer": "B",
+      "explanation": "本式需要温度变化量，且适用于比热容近似不变、没有物态变化的过程；相变时需另行分析。",
+      "error_type": "概念混淆",
+      "judging": "teacher",
+      "source_error_index": 1,
+      "source_caught_by": "人工审核",
+      "wrong_expr": null,
+      "trap_test": null,
+      "review": {
+        "confidence": "medium",
+        "checks": {
+          "answer_unique": true,
+          "distractors_plausible": true,
+          "stem_clear": true,
+          "no_cross_segment": true
+        },
+        "note": "本章可用类型不足四类，干扰项包含同章其他错误的类别与原解释；答案按“类别+依据”唯一匹配，建议抽查教学区分度。"
+      }
+    },
+    {
+      "id": "diagnostic-energy-04-1",
+      "point_id": "energy-04",
+      "point_title": "机械能与内能的相互转化",
+      "chapter": "机械能和内能",
+      "stem": "【机械能和内能 · 机械能与内能的相互转化】学生的错误做法：把机械能减少量的符号写反，导致内能减少（错误表达式：E_int_gain = E_mech_after-E_mech_before）。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
+      "options": [
+        {
+          "label": "A",
+          "text": "数值代入：本情境机械能从 100 J 降至 80 J，减少量为 20 J，转化为内能应为正的 20 J。"
+        },
+        {
+          "label": "B",
+          "text": "量纲一致性：动能的单位应为 J，m*v 的单位是 kg·m/s；量纲与数值关系都不符。"
+        },
+        {
+          "label": "C",
+          "text": "概念混淆：本式需要温度变化量，且适用于比热容近似不变、没有物态变化的过程；相变时需另行分析。"
+        },
+        {
+          "label": "D",
+          "text": "概念混淆：热量描述热传递过程中转移的能量；物体具有内能，而不是“含有热量”。"
+        }
+      ],
+      "correct_answer": "A",
+      "explanation": "本情境机械能从 100 J 降至 80 J，减少量为 20 J，转化为内能应为正的 20 J。\n知识库校验证据：情境：刹车减速；代入错误式：E_mech_after-E_mech_before；校验参照值：20。",
+      "error_type": "数值代入",
+      "judging": "auto",
+      "source_error_index": 0,
+      "source_caught_by": "数值代入",
+      "wrong_expr": "E_int_gain = E_mech_after-E_mech_before",
+      "trap_test": {
+        "scenario": "刹车减速",
+        "expr": "E_mech_after-E_mech_before",
+        "ref": 20
+      },
+      "review": {
+        "confidence": "medium",
+        "checks": {
+          "answer_unique": true,
+          "distractors_plausible": true,
+          "stem_clear": true,
+          "no_cross_segment": true
+        },
+        "note": "本章可用类型不足四类，干扰项包含同章其他错误的类别与原解释；答案按“类别+依据”唯一匹配，建议抽查教学区分度。"
+      }
+    },
+    {
+      "id": "diagnostic-energy-04-2",
+      "point_id": "energy-04",
+      "point_title": "机械能与内能的相互转化",
+      "chapter": "机械能和内能",
+      "stem": "【机械能和内能 · 机械能与内能的相互转化】学生的错误做法：认为机械能减少就意味着能量消失。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
+      "options": [
+        {
+          "label": "A",
+          "text": "量纲一致性：动能的单位应为 J，m*v 的单位是 kg·m/s；量纲与数值关系都不符。"
+        },
+        {
+          "label": "B",
+          "text": "数值代入：比热容描述单位质量的吸热量，整块物体还要乘质量；半千克水升温 10℃ 吸热 21 000 J。"
+        },
+        {
+          "label": "C",
+          "text": "数值代入：封闭近似绝热系统的能量账目应相等；额外乘 2 会破坏热量平衡。"
+        },
+        {
+          "label": "D",
+          "text": "概念混淆：摩擦可使机械能转化为内能；把系统边界和其他能量形式计入后，能量总量仍守恒。"
+        }
+      ],
+      "correct_answer": "D",
+      "explanation": "摩擦可使机械能转化为内能；把系统边界和其他能量形式计入后，能量总量仍守恒。",
+      "error_type": "概念混淆",
+      "judging": "teacher",
+      "source_error_index": 1,
+      "source_caught_by": "人工审核",
+      "wrong_expr": null,
+      "trap_test": null,
+      "review": {
+        "confidence": "medium",
+        "checks": {
+          "answer_unique": true,
+          "distractors_plausible": true,
+          "stem_clear": true,
+          "no_cross_segment": true
+        },
+        "note": "本章可用类型不足四类，干扰项包含同章其他错误的类别与原解释；答案按“类别+依据”唯一匹配，建议抽查教学区分度。"
+      }
+    }
+  ],
+  "skipped": []
+}

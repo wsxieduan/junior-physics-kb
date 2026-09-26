@@ -1,0 +1,415 @@
+{
+  "segment": "初中",
+  "chapter": "力",
+  "source_file": "07_force.json",
+  "questions": [
+    {
+      "id": "diagnostic-force-03-1",
+      "point_id": "force-03",
+      "point_title": "力 弹力",
+      "chapter": "力",
+      "stem": "【力 · 力 弹力】学生的错误做法：线性弹簧计算中漏掉劲度系数与形变量乘积的一半因子（错误表达式：F_e = k*x/2）。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
+      "options": [
+        {
+          "label": "A",
+          "text": "量纲一致性：g 的单位是 N/kg，重力应为 m*g 才得到 N；除法会得到不符合力单位的结果。"
+        },
+        {
+          "label": "B",
+          "text": "概念混淆：平衡力作用在同一物体上，而相互作用力分别作用在两个物体上；即使大小相等，也不能把这两类力混为一谈。"
+        },
+        {
+          "label": "C",
+          "text": "概念混淆：摩擦力阻碍的是接触面间的相对运动或相对运动趋势，方向应结合两个接触物体判断。"
+        },
+        {
+          "label": "D",
+          "text": "数值代入：在已确认线性范围内，弹力按 kx 计算；小形变情境中漏乘比例系数会得到一半结果。"
+        }
+      ],
+      "correct_answer": "D",
+      "explanation": "在已确认线性范围内，弹力按 kx 计算；小形变情境中漏乘比例系数会得到一半结果。\n知识库校验证据：情境：小形变弹簧；代入错误式：k*x/2；校验参照值：2。",
+      "error_type": "数值代入",
+      "judging": "auto",
+      "source_error_index": 0,
+      "source_caught_by": "数值代入",
+      "wrong_expr": "F_e = k*x/2",
+      "trap_test": {
+        "scenario": "小形变弹簧",
+        "expr": "k*x/2",
+        "ref": 2
+      },
+      "review": {
+        "confidence": "medium",
+        "checks": {
+          "answer_unique": true,
+          "distractors_plausible": true,
+          "stem_clear": true,
+          "no_cross_segment": true
+        },
+        "note": "本章可用类型不足四类，干扰项包含同章其他错误的类别与原解释；答案按“类别+依据”唯一匹配，建议抽查教学区分度。"
+      }
+    },
+    {
+      "id": "diagnostic-force-03-2",
+      "point_id": "force-03",
+      "point_title": "力 弹力",
+      "chapter": "力",
+      "stem": "【力 · 力 弹力】学生的错误做法：认为任何材料、任何形变都遵守线性弹簧关系。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
+      "options": [
+        {
+          "label": "A",
+          "text": "数值代入：相互作用力总是大小相等、方向相反，但分别作用在两个物体上；物体质量不同不会改变这对力的大小关系。"
+        },
+        {
+          "label": "B",
+          "text": "数值代入：水平方向只有拉力和摩擦力且物体匀速时，两力平衡，大小应相等。"
+        },
+        {
+          "label": "C",
+          "text": "概念混淆：线性关系只适用于弹性限度内近似线性的弹簧；塑性形变或超过弹性限度时不可套用。"
+        },
+        {
+          "label": "D",
+          "text": "量纲一致性：g 的单位是 N/kg，重力应为 m*g 才得到 N；除法会得到不符合力单位的结果。"
+        }
+      ],
+      "correct_answer": "C",
+      "explanation": "线性关系只适用于弹性限度内近似线性的弹簧；塑性形变或超过弹性限度时不可套用。",
+      "error_type": "概念混淆",
+      "judging": "teacher",
+      "source_error_index": 1,
+      "source_caught_by": "人工审核",
+      "wrong_expr": null,
+      "trap_test": null,
+      "review": {
+        "confidence": "medium",
+        "checks": {
+          "answer_unique": true,
+          "distractors_plausible": true,
+          "stem_clear": true,
+          "no_cross_segment": true
+        },
+        "note": "本章可用类型不足四类，干扰项包含同章其他错误的类别与原解释；答案按“类别+依据”唯一匹配，建议抽查教学区分度。"
+      }
+    },
+    {
+      "id": "diagnostic-force-01-1",
+      "point_id": "force-01",
+      "point_title": "重力 力的示意图",
+      "chapter": "力",
+      "stem": "【力 · 重力 力的示意图】学生的错误做法：把重力写成质量除以 g（错误表达式：G = m/g）。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
+      "options": [
+        {
+          "label": "A",
+          "text": "数值代入：水平方向只有拉力和摩擦力且物体匀速时，两力平衡，大小应相等。"
+        },
+        {
+          "label": "B",
+          "text": "量纲一致性：g 的单位是 N/kg，重力应为 m*g 才得到 N；除法会得到不符合力单位的结果。"
+        },
+        {
+          "label": "C",
+          "text": "数值代入：相互作用力总是大小相等、方向相反，但分别作用在两个物体上；物体质量不同不会改变这对力的大小关系。"
+        },
+        {
+          "label": "D",
+          "text": "数值代入：在已确认线性范围内，弹力按 kx 计算；小形变情境中漏乘比例系数会得到一半结果。"
+        }
+      ],
+      "correct_answer": "B",
+      "explanation": "g 的单位是 N/kg，重力应为 m*g 才得到 N；除法会得到不符合力单位的结果。\n知识库校验证据：情境：小球；代入错误式：m/g；校验参照值：2。",
+      "error_type": "量纲一致性",
+      "judging": "auto",
+      "source_error_index": 0,
+      "source_caught_by": "量纲一致性",
+      "wrong_expr": "G = m/g",
+      "trap_test": {
+        "scenario": "小球",
+        "expr": "m/g",
+        "ref": 2
+      },
+      "review": {
+        "confidence": "medium",
+        "checks": {
+          "answer_unique": true,
+          "distractors_plausible": true,
+          "stem_clear": true,
+          "no_cross_segment": true
+        },
+        "note": "本章可用类型不足四类，干扰项包含同章其他错误的类别与原解释；答案按“类别+依据”唯一匹配，建议抽查教学区分度。"
+      }
+    },
+    {
+      "id": "diagnostic-force-01-2",
+      "point_id": "force-01",
+      "point_title": "重力 力的示意图",
+      "chapter": "力",
+      "stem": "【力 · 重力 力的示意图】学生的错误做法：质量以克记录时，把克的数值直接当作 kg 代入重力公式（错误表达式：G = mg*g）。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
+      "options": [
+        {
+          "label": "A",
+          "text": "数值代入：200 g 应先换成 0.2 kg；把数值 200 直接代入会把重力算大 1000 倍。"
+        },
+        {
+          "label": "B",
+          "text": "概念混淆：平衡力作用在同一物体上，而相互作用力分别作用在两个物体上；即使大小相等，也不能把这两类力混为一谈。"
+        },
+        {
+          "label": "C",
+          "text": "概念混淆：线性关系只适用于弹性限度内近似线性的弹簧；塑性形变或超过弹性限度时不可套用。"
+        },
+        {
+          "label": "D",
+          "text": "概念混淆：摩擦力阻碍的是接触面间的相对运动或相对运动趋势，方向应结合两个接触物体判断。"
+        }
+      ],
+      "correct_answer": "A",
+      "explanation": "200 g 应先换成 0.2 kg；把数值 200 直接代入会把重力算大 1000 倍。\n知识库校验证据：情境：克单位误代；代入错误式：mg*g；校验参照值：2。",
+      "error_type": "数值代入",
+      "judging": "auto",
+      "source_error_index": 1,
+      "source_caught_by": "数值代入",
+      "wrong_expr": "G = mg*g",
+      "trap_test": {
+        "scenario": "克单位误代",
+        "expr": "mg*g",
+        "ref": 2
+      },
+      "review": {
+        "confidence": "medium",
+        "checks": {
+          "answer_unique": true,
+          "distractors_plausible": true,
+          "stem_clear": true,
+          "no_cross_segment": true
+        },
+        "note": "本章可用类型不足四类，干扰项包含同章其他错误的类别与原解释；答案按“类别+依据”唯一匹配，建议抽查教学区分度。"
+      }
+    },
+    {
+      "id": "diagnostic-force-01-3",
+      "point_id": "force-01",
+      "point_title": "重力 力的示意图",
+      "chapter": "力",
+      "stem": "【力 · 重力 力的示意图】学生的错误做法：把质量和重力看成同一个量，直接用 kg 表示重力。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
+      "options": [
+        {
+          "label": "A",
+          "text": "数值代入：相互作用力总是大小相等、方向相反，但分别作用在两个物体上；物体质量不同不会改变这对力的大小关系。"
+        },
+        {
+          "label": "B",
+          "text": "数值代入：在已确认线性范围内，弹力按 kx 计算；小形变情境中漏乘比例系数会得到一半结果。"
+        },
+        {
+          "label": "C",
+          "text": "数值代入：水平方向只有拉力和摩擦力且物体匀速时，两力平衡，大小应相等。"
+        },
+        {
+          "label": "D",
+          "text": "概念混淆：质量单位为 kg，重力单位为 N；二者通过当地 g 联系，但概念和单位不同。"
+        }
+      ],
+      "correct_answer": "D",
+      "explanation": "质量单位为 kg，重力单位为 N；二者通过当地 g 联系，但概念和单位不同。",
+      "error_type": "概念混淆",
+      "judging": "teacher",
+      "source_error_index": 2,
+      "source_caught_by": "人工审核",
+      "wrong_expr": null,
+      "trap_test": null,
+      "review": {
+        "confidence": "medium",
+        "checks": {
+          "answer_unique": true,
+          "distractors_plausible": true,
+          "stem_clear": true,
+          "no_cross_segment": true
+        },
+        "note": "本章可用类型不足四类，干扰项包含同章其他错误的类别与原解释；答案按“类别+依据”唯一匹配，建议抽查教学区分度。"
+      }
+    },
+    {
+      "id": "diagnostic-force-04-1",
+      "point_id": "force-04",
+      "point_title": "摩擦力",
+      "chapter": "力",
+      "stem": "【力 · 摩擦力】学生的错误做法：在水平匀速实验中把摩擦力误算为拉力的一半（错误表达式：F_f = F_pull/2）。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
+      "options": [
+        {
+          "label": "A",
+          "text": "概念混淆：平衡力作用在同一物体上，而相互作用力分别作用在两个物体上；即使大小相等，也不能把这两类力混为一谈。"
+        },
+        {
+          "label": "B",
+          "text": "概念混淆：线性关系只适用于弹性限度内近似线性的弹簧；塑性形变或超过弹性限度时不可套用。"
+        },
+        {
+          "label": "C",
+          "text": "数值代入：水平方向只有拉力和摩擦力且物体匀速时，两力平衡，大小应相等。"
+        },
+        {
+          "label": "D",
+          "text": "量纲一致性：g 的单位是 N/kg，重力应为 m*g 才得到 N；除法会得到不符合力单位的结果。"
+        }
+      ],
+      "correct_answer": "C",
+      "explanation": "水平方向只有拉力和摩擦力且物体匀速时，两力平衡，大小应相等。\n知识库校验证据：情境：木块匀速滑动；代入错误式：F_pull/2；校验参照值：2.5。",
+      "error_type": "数值代入",
+      "judging": "auto",
+      "source_error_index": 0,
+      "source_caught_by": "数值代入",
+      "wrong_expr": "F_f = F_pull/2",
+      "trap_test": {
+        "scenario": "木块匀速滑动",
+        "expr": "F_pull/2",
+        "ref": 2.5
+      },
+      "review": {
+        "confidence": "medium",
+        "checks": {
+          "answer_unique": true,
+          "distractors_plausible": true,
+          "stem_clear": true,
+          "no_cross_segment": true
+        },
+        "note": "本章可用类型不足四类，干扰项包含同章其他错误的类别与原解释；答案按“类别+依据”唯一匹配，建议抽查教学区分度。"
+      }
+    },
+    {
+      "id": "diagnostic-force-04-2",
+      "point_id": "force-04",
+      "point_title": "摩擦力",
+      "chapter": "力",
+      "stem": "【力 · 摩擦力】学生的错误做法：认为摩擦力总是阻碍物体相对地面的运动。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
+      "options": [
+        {
+          "label": "A",
+          "text": "数值代入：在已确认线性范围内，弹力按 kx 计算；小形变情境中漏乘比例系数会得到一半结果。"
+        },
+        {
+          "label": "B",
+          "text": "概念混淆：摩擦力阻碍的是接触面间的相对运动或相对运动趋势，方向应结合两个接触物体判断。"
+        },
+        {
+          "label": "C",
+          "text": "量纲一致性：g 的单位是 N/kg，重力应为 m*g 才得到 N；除法会得到不符合力单位的结果。"
+        },
+        {
+          "label": "D",
+          "text": "数值代入：相互作用力总是大小相等、方向相反，但分别作用在两个物体上；物体质量不同不会改变这对力的大小关系。"
+        }
+      ],
+      "correct_answer": "B",
+      "explanation": "摩擦力阻碍的是接触面间的相对运动或相对运动趋势，方向应结合两个接触物体判断。",
+      "error_type": "概念混淆",
+      "judging": "teacher",
+      "source_error_index": 1,
+      "source_caught_by": "人工审核",
+      "wrong_expr": null,
+      "trap_test": null,
+      "review": {
+        "confidence": "medium",
+        "checks": {
+          "answer_unique": true,
+          "distractors_plausible": true,
+          "stem_clear": true,
+          "no_cross_segment": true
+        },
+        "note": "本章可用类型不足四类，干扰项包含同章其他错误的类别与原解释；答案按“类别+依据”唯一匹配，建议抽查教学区分度。"
+      }
+    },
+    {
+      "id": "diagnostic-force-02-1",
+      "point_id": "force-02",
+      "point_title": "力的作用是相互的",
+      "chapter": "力",
+      "stem": "【力 · 力的作用是相互的】学生的错误做法：认为较重的物体受到的相互作用力必定更大（错误表达式：F_BA = F_AB/2）。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
+      "options": [
+        {
+          "label": "A",
+          "text": "数值代入：相互作用力总是大小相等、方向相反，但分别作用在两个物体上；物体质量不同不会改变这对力的大小关系。"
+        },
+        {
+          "label": "B",
+          "text": "量纲一致性：g 的单位是 N/kg，重力应为 m*g 才得到 N；除法会得到不符合力单位的结果。"
+        },
+        {
+          "label": "C",
+          "text": "概念混淆：线性关系只适用于弹性限度内近似线性的弹簧；塑性形变或超过弹性限度时不可套用。"
+        },
+        {
+          "label": "D",
+          "text": "概念混淆：摩擦力阻碍的是接触面间的相对运动或相对运动趋势，方向应结合两个接触物体判断。"
+        }
+      ],
+      "correct_answer": "A",
+      "explanation": "相互作用力总是大小相等、方向相反，但分别作用在两个物体上；物体质量不同不会改变这对力的大小关系。\n知识库校验证据：情境：手推墙；代入错误式：F_AB/2；校验参照值：5。",
+      "error_type": "数值代入",
+      "judging": "auto",
+      "source_error_index": 0,
+      "source_caught_by": "数值代入",
+      "wrong_expr": "F_BA = F_AB/2",
+      "trap_test": {
+        "scenario": "手推墙",
+        "expr": "F_AB/2",
+        "ref": 5
+      },
+      "review": {
+        "confidence": "medium",
+        "checks": {
+          "answer_unique": true,
+          "distractors_plausible": true,
+          "stem_clear": true,
+          "no_cross_segment": true
+        },
+        "note": "本章可用类型不足四类，干扰项包含同章其他错误的类别与原解释；答案按“类别+依据”唯一匹配，建议抽查教学区分度。"
+      }
+    },
+    {
+      "id": "diagnostic-force-02-2",
+      "point_id": "force-02",
+      "point_title": "力的作用是相互的",
+      "chapter": "力",
+      "stem": "【力 · 力的作用是相互的】学生的错误做法：把作用在两个物体上的相互作用力当成作用在一个物体上的平衡力。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
+      "options": [
+        {
+          "label": "A",
+          "text": "量纲一致性：g 的单位是 N/kg，重力应为 m*g 才得到 N；除法会得到不符合力单位的结果。"
+        },
+        {
+          "label": "B",
+          "text": "数值代入：在已确认线性范围内，弹力按 kx 计算；小形变情境中漏乘比例系数会得到一半结果。"
+        },
+        {
+          "label": "C",
+          "text": "数值代入：水平方向只有拉力和摩擦力且物体匀速时，两力平衡，大小应相等。"
+        },
+        {
+          "label": "D",
+          "text": "概念混淆：平衡力作用在同一物体上，而相互作用力分别作用在两个物体上；即使大小相等，也不能把这两类力混为一谈。"
+        }
+      ],
+      "correct_answer": "D",
+      "explanation": "平衡力作用在同一物体上，而相互作用力分别作用在两个物体上；即使大小相等，也不能把这两类力混为一谈。",
+      "error_type": "概念混淆",
+      "judging": "teacher",
+      "source_error_index": 1,
+      "source_caught_by": "人工审核",
+      "wrong_expr": null,
+      "trap_test": null,
+      "review": {
+        "confidence": "medium",
+        "checks": {
+          "answer_unique": true,
+          "distractors_plausible": true,
+          "stem_clear": true,
+          "no_cross_segment": true
+        },
+        "note": "本章可用类型不足四类，干扰项包含同章其他错误的类别与原解释；答案按“类别+依据”唯一匹配，建议抽查教学区分度。"
+      }
+    }
+  ],
+  "skipped": []
+}

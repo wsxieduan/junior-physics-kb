@@ -1,0 +1,422 @@
+{
+  "segment": "初中",
+  "chapter": "引言 · 第一章 声现象",
+  "source_file": "01_sound.json",
+  "questions": [
+    {
+      "id": "diagnostic-sound-01-1",
+      "point_id": "sound-01",
+      "point_title": "声音的产生、传播与声速",
+      "chapter": "引言 · 第一章 声现象",
+      "stem": "【引言 · 第一章 声现象 · 声音的产生、传播与声速】学生的错误做法：把 m/s 换成 km/h 时把 3.6 除上去，写成 v = c/3.6（错误表达式：v = c/3.6）。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
+      "options": [
+        {
+          "label": "A",
+          "text": "概念混淆：回声可以用于距离测量，但距离要从介质中的传播速度和往返时间计算。"
+        },
+        {
+          "label": "B",
+          "text": "概念混淆：音调对应声音高低，响度对应声音强弱，描述的听觉特征不同。"
+        },
+        {
+          "label": "C",
+          "text": "概念混淆：音色还与发声体的振动方式和波形等特征有关，不可简化成单一频率。"
+        },
+        {
+          "label": "D",
+          "text": "数值代入：从米每秒换到千米每小时要同时把米换成千米、秒换成小时，数值应乘 3.6。"
+        }
+      ],
+      "correct_answer": "D",
+      "explanation": "从米每秒换到千米每小时要同时把米换成千米、秒换成小时，数值应乘 3.6。把 340 m/s 除以 3.6 得到约 94.4 km/h，与正确的 1224 km/h 不符；这是量纲相同但方向错误的单位换算，必须靠数值检查发现。\n知识库校验证据：情境：近距离直达测量；代入错误式：c/3.6；校验参照值：1224。",
+      "error_type": "数值代入",
+      "judging": "auto",
+      "source_error_index": 0,
+      "source_caught_by": "数值代入",
+      "wrong_expr": "v = c/3.6",
+      "trap_test": {
+        "scenario": "近距离直达测量",
+        "expr": "c/3.6",
+        "ref": 1224
+      },
+      "review": {
+        "confidence": "medium",
+        "checks": {
+          "answer_unique": true,
+          "distractors_plausible": true,
+          "stem_clear": true,
+          "no_cross_segment": true
+        },
+        "note": "本章可用类型不足四类，干扰项包含同章其他错误的类别与原解释；答案按“类别+依据”唯一匹配，建议抽查教学区分度。"
+      }
+    },
+    {
+      "id": "diagnostic-sound-01-3",
+      "point_id": "sound-01",
+      "point_title": "声音的产生、传播与声速",
+      "chapter": "引言 · 第一章 声现象",
+      "stem": "【引言 · 第一章 声现象 · 声音的产生、传播与声速】学生的错误做法：认为声音能在真空中传播，只是传播得比较慢。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
+      "options": [
+        {
+          "label": "A",
+          "text": "数值代入：公式中的一半已经把往返总路程转成单程距离，不能再重复减半。"
+        },
+        {
+          "label": "B",
+          "text": "概念混淆：声波传播依靠介质中的振动传递；真空没有这种介质。"
+        },
+        {
+          "label": "C",
+          "text": "数值代入：往返时间对应的是去程和回程的总路程。"
+        },
+        {
+          "label": "D",
+          "text": "数值代入：周期倒数只适用于 t 是一次完整振动周期的情形。"
+        }
+      ],
+      "correct_answer": "B",
+      "explanation": "声波传播依靠介质中的振动传递；真空没有这种介质。需要用真空罩实验现象和机械波概念辨析，不能由声速计算式判定。",
+      "error_type": "概念混淆",
+      "judging": "teacher",
+      "source_error_index": 2,
+      "source_caught_by": "人工审核",
+      "wrong_expr": null,
+      "trap_test": null,
+      "review": {
+        "confidence": "medium",
+        "checks": {
+          "answer_unique": true,
+          "distractors_plausible": true,
+          "stem_clear": true,
+          "no_cross_segment": true
+        },
+        "note": "本章可用类型不足四类，干扰项包含同章其他错误的类别与原解释；答案按“类别+依据”唯一匹配，建议抽查教学区分度。"
+      }
+    },
+    {
+      "id": "diagnostic-sound-02-1",
+      "point_id": "sound-02",
+      "point_title": "回声与声呐测距",
+      "chapter": "引言 · 第一章 声现象",
+      "stem": "【引言 · 第一章 声现象 · 回声与声呐测距】学生的错误做法：把声源到反射面的距离直接写成 d = c·tₑ，忘记计时记录的是往返时间（错误表达式：d = c*t_e）。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
+      "options": [
+        {
+          "label": "A",
+          "text": "数值代入：往返时间对应的是去程和回程的总路程。"
+        },
+        {
+          "label": "B",
+          "text": "量纲一致性：声速定义为单位时间内传播的路程，应使用路程除以时间。"
+        },
+        {
+          "label": "C",
+          "text": "概念混淆：声波传播依靠介质中的振动传递；真空没有这种介质。"
+        },
+        {
+          "label": "D",
+          "text": "概念混淆：音调对应声音高低，响度对应声音强弱，描述的听觉特征不同。"
+        }
+      ],
+      "correct_answer": "A",
+      "explanation": "往返时间对应的是去程和回程的总路程。把总路程当单程距离会多算一倍；在 68 m 的墙距情境中，错误写法得到 136 m。\n知识库校验证据：情境：墙面相距68米；代入错误式：c*t_e；校验参照值：68。",
+      "error_type": "数值代入",
+      "judging": "auto",
+      "source_error_index": 0,
+      "source_caught_by": "数值代入",
+      "wrong_expr": "d = c*t_e",
+      "trap_test": {
+        "scenario": "墙面相距68米",
+        "expr": "c*t_e",
+        "ref": 68
+      },
+      "review": {
+        "confidence": "medium",
+        "checks": {
+          "answer_unique": true,
+          "distractors_plausible": true,
+          "stem_clear": true,
+          "no_cross_segment": true
+        },
+        "note": "本章可用类型不足四类，干扰项包含同章其他错误的类别与原解释；答案按“类别+依据”唯一匹配，建议抽查教学区分度。"
+      }
+    },
+    {
+      "id": "diagnostic-sound-02-2",
+      "point_id": "sound-02",
+      "point_title": "回声与声呐测距",
+      "chapter": "引言 · 第一章 声现象",
+      "stem": "【引言 · 第一章 声现象 · 回声与声呐测距】学生的错误做法：把往返时间除以 2 后，又把总路程多除一次，写成 d = c·tₑ/4（错误表达式：d = c*t_e/4）。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
+      "options": [
+        {
+          "label": "A",
+          "text": "量纲一致性：声速定义为单位时间内传播的路程，应使用路程除以时间。"
+        },
+        {
+          "label": "B",
+          "text": "概念混淆：声波传播依靠介质中的振动传递；真空没有这种介质。"
+        },
+        {
+          "label": "C",
+          "text": "概念混淆：音调对应声音高低，响度对应声音强弱，描述的听觉特征不同。"
+        },
+        {
+          "label": "D",
+          "text": "数值代入：公式中的一半已经把往返总路程转成单程距离，不能再重复减半。"
+        }
+      ],
+      "correct_answer": "D",
+      "explanation": "公式中的一半已经把往返总路程转成单程距离，不能再重复减半。代入 0.4 s 会得到 34 m，而正确墙距为 68 m。\n知识库校验证据：情境：墙面相距68米；代入错误式：c*t_e/4；校验参照值：68。",
+      "error_type": "数值代入",
+      "judging": "auto",
+      "source_error_index": 1,
+      "source_caught_by": "数值代入",
+      "wrong_expr": "d = c*t_e/4",
+      "trap_test": {
+        "scenario": "墙面相距68米",
+        "expr": "c*t_e/4",
+        "ref": 68
+      },
+      "review": {
+        "confidence": "medium",
+        "checks": {
+          "answer_unique": true,
+          "distractors_plausible": true,
+          "stem_clear": true,
+          "no_cross_segment": true
+        },
+        "note": "本章可用类型不足四类，干扰项包含同章其他错误的类别与原解释；答案按“类别+依据”唯一匹配，建议抽查教学区分度。"
+      }
+    },
+    {
+      "id": "diagnostic-sound-02-3",
+      "point_id": "sound-02",
+      "point_title": "回声与声呐测距",
+      "chapter": "引言 · 第一章 声现象",
+      "stem": "【引言 · 第一章 声现象 · 回声与声呐测距】学生的错误做法：认为听见回声只说明障碍物存在，不需要考虑声速和传播时间。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
+      "options": [
+        {
+          "label": "A",
+          "text": "数值代入：周期倒数只适用于 t 是一次完整振动周期的情形。"
+        },
+        {
+          "label": "B",
+          "text": "量纲一致性：声速定义为单位时间内传播的路程，应使用路程除以时间。"
+        },
+        {
+          "label": "C",
+          "text": "概念混淆：回声可以用于距离测量，但距离要从介质中的传播速度和往返时间计算。"
+        },
+        {
+          "label": "D",
+          "text": "数值代入：从米每秒换到千米每小时要同时把米换成千米、秒换成小时，数值应乘 3.6。"
+        }
+      ],
+      "correct_answer": "C",
+      "explanation": "回声可以用于距离测量，但距离要从介质中的传播速度和往返时间计算。实际声呐还受介质、反射面和回波识别影响，概念判断需人工结合情境审查。",
+      "error_type": "概念混淆",
+      "judging": "teacher",
+      "source_error_index": 2,
+      "source_caught_by": "人工审核",
+      "wrong_expr": null,
+      "trap_test": null,
+      "review": {
+        "confidence": "medium",
+        "checks": {
+          "answer_unique": true,
+          "distractors_plausible": true,
+          "stem_clear": true,
+          "no_cross_segment": true
+        },
+        "note": "本章可用类型不足四类，干扰项包含同章其他错误的类别与原解释；答案按“类别+依据”唯一匹配，建议抽查教学区分度。"
+      }
+    },
+    {
+      "id": "diagnostic-sound-03-1",
+      "point_id": "sound-03",
+      "point_title": "音调、响度、音色与听觉范围",
+      "chapter": "引言 · 第一章 声现象",
+      "stem": "【引言 · 第一章 声现象 · 音调、响度、音色与听觉范围】学生的错误做法：统计多次振动时，只用总时间的倒数当频率，写成 f = 1/t，忘记除以振动次数（错误表达式：f = 1/t）。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
+      "options": [
+        {
+          "label": "A",
+          "text": "概念混淆：回声可以用于距离测量，但距离要从介质中的传播速度和往返时间计算。"
+        },
+        {
+          "label": "B",
+          "text": "数值代入：周期倒数只适用于 t 是一次完整振动周期的情形。"
+        },
+        {
+          "label": "C",
+          "text": "量纲一致性：声速定义为单位时间内传播的路程，应使用路程除以时间。"
+        },
+        {
+          "label": "D",
+          "text": "概念混淆：声波传播依靠介质中的振动传递；真空没有这种介质。"
+        }
+      ],
+      "correct_answer": "B",
+      "explanation": "周期倒数只适用于 t 是一次完整振动周期的情形。若 2 s 内发生 400 次完整振动，频率应为 200 Hz；把 1/2 当答案会少算 400 倍。两种写法量纲相同，必须用计数情境做数值检查。\n知识库校验证据：情境：低音演示；代入错误式：1/t；校验参照值：200。",
+      "error_type": "数值代入",
+      "judging": "auto",
+      "source_error_index": 0,
+      "source_caught_by": "数值代入",
+      "wrong_expr": "f = 1/t",
+      "trap_test": {
+        "scenario": "低音演示",
+        "expr": "1/t",
+        "ref": 200
+      },
+      "review": {
+        "confidence": "medium",
+        "checks": {
+          "answer_unique": true,
+          "distractors_plausible": true,
+          "stem_clear": true,
+          "no_cross_segment": true
+        },
+        "note": "本章可用类型不足四类，干扰项包含同章其他错误的类别与原解释；答案按“类别+依据”唯一匹配，建议抽查教学区分度。"
+      }
+    },
+    {
+      "id": "diagnostic-sound-03-2",
+      "point_id": "sound-03",
+      "point_title": "音调、响度、音色与听觉范围",
+      "chapter": "引言 · 第一章 声现象",
+      "stem": "【引言 · 第一章 声现象 · 音调、响度、音色与听觉范围】学生的错误做法：把一次完整振动的两个半程都各算作一次完整振动，误写成 f = 2N/t（错误表达式：f = 2*N/t）。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
+      "options": [
+        {
+          "label": "A",
+          "text": "数值代入：一次完整振动包含往复过程，但计数时整体只算一次。"
+        },
+        {
+          "label": "B",
+          "text": "量纲一致性：声速定义为单位时间内传播的路程，应使用路程除以时间。"
+        },
+        {
+          "label": "C",
+          "text": "概念混淆：声波传播依靠介质中的振动传递；真空没有这种介质。"
+        },
+        {
+          "label": "D",
+          "text": "概念混淆：回声可以用于距离测量，但距离要从介质中的传播速度和往返时间计算。"
+        }
+      ],
+      "correct_answer": "A",
+      "explanation": "一次完整振动包含往复过程，但计数时整体只算一次。重复乘 2 会使频率翻倍；代入 400 次、2 s 会得到 400 Hz，而不是 200 Hz。\n知识库校验证据：情境：低音演示；代入错误式：2*N/t；校验参照值：200。",
+      "error_type": "数值代入",
+      "judging": "auto",
+      "source_error_index": 1,
+      "source_caught_by": "数值代入",
+      "wrong_expr": "f = 2*N/t",
+      "trap_test": {
+        "scenario": "低音演示",
+        "expr": "2*N/t",
+        "ref": 200
+      },
+      "review": {
+        "confidence": "medium",
+        "checks": {
+          "answer_unique": true,
+          "distractors_plausible": true,
+          "stem_clear": true,
+          "no_cross_segment": true
+        },
+        "note": "本章可用类型不足四类，干扰项包含同章其他错误的类别与原解释；答案按“类别+依据”唯一匹配，建议抽查教学区分度。"
+      }
+    },
+    {
+      "id": "diagnostic-sound-03-3",
+      "point_id": "sound-03",
+      "point_title": "音调、响度、音色与听觉范围",
+      "chapter": "引言 · 第一章 声现象",
+      "stem": "【引言 · 第一章 声现象 · 音调、响度、音色与听觉范围】学生的错误做法：把音调高低与响度大小当作同一件事。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
+      "options": [
+        {
+          "label": "A",
+          "text": "数值代入：从米每秒换到千米每小时要同时把米换成千米、秒换成小时，数值应乘 3.6。"
+        },
+        {
+          "label": "B",
+          "text": "数值代入：往返时间对应的是去程和回程的总路程。"
+        },
+        {
+          "label": "C",
+          "text": "量纲一致性：声速定义为单位时间内传播的路程，应使用路程除以时间。"
+        },
+        {
+          "label": "D",
+          "text": "概念混淆：音调对应声音高低，响度对应声音强弱，描述的听觉特征不同。"
+        }
+      ],
+      "correct_answer": "D",
+      "explanation": "音调对应声音高低，响度对应声音强弱，描述的听觉特征不同。频率可以帮助比较音调，但不能仅凭频率判断响度；需要人工结合振动幅度和听觉实验核对。",
+      "error_type": "概念混淆",
+      "judging": "teacher",
+      "source_error_index": 2,
+      "source_caught_by": "人工审核",
+      "wrong_expr": null,
+      "trap_test": null,
+      "review": {
+        "confidence": "medium",
+        "checks": {
+          "answer_unique": true,
+          "distractors_plausible": true,
+          "stem_clear": true,
+          "no_cross_segment": true
+        },
+        "note": "本章可用类型不足四类，干扰项包含同章其他错误的类别与原解释；答案按“类别+依据”唯一匹配，建议抽查教学区分度。"
+      }
+    },
+    {
+      "id": "diagnostic-sound-03-4",
+      "point_id": "sound-03",
+      "point_title": "音调、响度、音色与听觉范围",
+      "chapter": "引言 · 第一章 声现象",
+      "stem": "【引言 · 第一章 声现象 · 音调、响度、音色与听觉范围】学生的错误做法：认为音色只由一个频率决定，频率相同的声音听起来一定完全相同。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
+      "options": [
+        {
+          "label": "A",
+          "text": "数值代入：往返时间对应的是去程和回程的总路程。"
+        },
+        {
+          "label": "B",
+          "text": "量纲一致性：声速定义为单位时间内传播的路程，应使用路程除以时间。"
+        },
+        {
+          "label": "C",
+          "text": "概念混淆：音色还与发声体的振动方式和波形等特征有关，不可简化成单一频率。"
+        },
+        {
+          "label": "D",
+          "text": "数值代入：从米每秒换到千米每小时要同时把米换成千米、秒换成小时，数值应乘 3.6。"
+        }
+      ],
+      "correct_answer": "C",
+      "explanation": "音色还与发声体的振动方式和波形等特征有关，不可简化成单一频率。此类辨析需要结合不同乐器或声源的听辨实验，标记为人工审核。",
+      "error_type": "概念混淆",
+      "judging": "teacher",
+      "source_error_index": 3,
+      "source_caught_by": "人工审核",
+      "wrong_expr": null,
+      "trap_test": null,
+      "review": {
+        "confidence": "medium",
+        "checks": {
+          "answer_unique": true,
+          "distractors_plausible": true,
+          "stem_clear": true,
+          "no_cross_segment": true
+        },
+        "note": "本章可用类型不足四类，干扰项包含同章其他错误的类别与原解释；答案按“类别+依据”唯一匹配，建议抽查教学区分度。"
+      }
+    }
+  ],
+  "skipped": [
+    {
+      "point_id": "sound-01",
+      "point_title": "声音的产生、传播与声速",
+      "source_error_index": 1,
+      "reason": "自动判定条目没有 trap_test 可执行证据；不把校验标签代替实测证据。"
+    }
+  ]
+}

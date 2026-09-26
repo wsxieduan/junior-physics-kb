@@ -1,0 +1,325 @@
+{
+  "segment": "初中",
+  "chapter": "物质的物理属性",
+  "source_file": "06_properties.json",
+  "questions": [
+    {
+      "id": "diagnostic-prop-03-1",
+      "point_id": "prop-03",
+      "point_title": "质量及其测量",
+      "chapter": "物质的物理属性",
+      "stem": "【物质的物理属性 · 质量及其测量】学生的错误做法：克换千克时少除一个 10，产生十倍偏差（错误表达式：m_kg = m_g/100）。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
+      "options": [
+        {
+          "label": "A",
+          "text": "量纲一致性：密度定义是单位体积的质量；质量越多而体积不变时，密度应增大。"
+        },
+        {
+          "label": "B",
+          "text": "概念混淆：排水法成立需要完全浸没、体积读数可靠且物体不吸水、不溶解；实验条件不满足时需改用其他方法。"
+        },
+        {
+          "label": "C",
+          "text": "概念混淆：在温度和状态相同、物质均匀时，质量和体积同比变化，密度不随样品多少改变。"
+        },
+        {
+          "label": "D",
+          "text": "数值代入：450 g 应为 0.45 kg；若只除以 100，会得到 4.5 kg。"
+        }
+      ],
+      "correct_answer": "D",
+      "explanation": "450 g 应为 0.45 kg；若只除以 100，会得到 4.5 kg。\n知识库校验证据：情境：小物体称量；代入错误式：m_g/100；校验参照值：0.45。",
+      "error_type": "数值代入",
+      "judging": "auto",
+      "source_error_index": 0,
+      "source_caught_by": "数值代入",
+      "wrong_expr": "m_kg = m_g/100",
+      "trap_test": {
+        "scenario": "小物体称量",
+        "expr": "m_g/100",
+        "ref": 0.45
+      },
+      "review": {
+        "confidence": "medium",
+        "checks": {
+          "answer_unique": true,
+          "distractors_plausible": true,
+          "stem_clear": true,
+          "no_cross_segment": true
+        },
+        "note": "本章可用类型不足四类，干扰项包含同章其他错误的类别与原解释；答案按“类别+依据”唯一匹配，建议抽查教学区分度。"
+      }
+    },
+    {
+      "id": "diagnostic-prop-03-2",
+      "point_id": "prop-03",
+      "point_title": "质量及其测量",
+      "chapter": "物质的物理属性",
+      "stem": "【物质的物理属性 · 质量及其测量】学生的错误做法：认为物体移到月球后质量随重力变小。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
+      "options": [
+        {
+          "label": "A",
+          "text": "数值代入：物体排开的是液面增加的部分，应以后读数减前读数；50 mL 升至 70 mL，物体体积为 20 mL。"
+        },
+        {
+          "label": "B",
+          "text": "数值代入：情境中的质量已是 kg，无须再次换算成吨；一升水应为 1000 kg/m^3，不是 1 kg/m^3。"
+        },
+        {
+          "label": "C",
+          "text": "概念混淆：质量表示物体所含物质多少，不随位置变化；变化的是物体受到的重力。"
+        },
+        {
+          "label": "D",
+          "text": "量纲一致性：密度定义是单位体积的质量；质量越多而体积不变时，密度应增大。"
+        }
+      ],
+      "correct_answer": "C",
+      "explanation": "质量表示物体所含物质多少，不随位置变化；变化的是物体受到的重力。",
+      "error_type": "概念混淆",
+      "judging": "teacher",
+      "source_error_index": 1,
+      "source_caught_by": "人工审核",
+      "wrong_expr": null,
+      "trap_test": null,
+      "review": {
+        "confidence": "medium",
+        "checks": {
+          "answer_unique": true,
+          "distractors_plausible": true,
+          "stem_clear": true,
+          "no_cross_segment": true
+        },
+        "note": "本章可用类型不足四类，干扰项包含同章其他错误的类别与原解释；答案按“类别+依据”唯一匹配，建议抽查教学区分度。"
+      }
+    },
+    {
+      "id": "diagnostic-prop-01-1",
+      "point_id": "prop-01",
+      "point_title": "密度",
+      "chapter": "物质的物理属性",
+      "stem": "【物质的物理属性 · 密度】学生的错误做法：把密度写成体积除以质量（错误表达式：rho = V/m）。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
+      "options": [
+        {
+          "label": "A",
+          "text": "概念混淆：排水法成立需要完全浸没、体积读数可靠且物体不吸水、不溶解；实验条件不满足时需改用其他方法。"
+        },
+        {
+          "label": "B",
+          "text": "量纲一致性：密度定义是单位体积的质量；质量越多而体积不变时，密度应增大。"
+        },
+        {
+          "label": "C",
+          "text": "数值代入：物体排开的是液面增加的部分，应以后读数减前读数；50 mL 升至 70 mL，物体体积为 20 mL。"
+        },
+        {
+          "label": "D",
+          "text": "数值代入：450 g 应为 0.45 kg；若只除以 100，会得到 4.5 kg。"
+        }
+      ],
+      "correct_answer": "B",
+      "explanation": "密度定义是单位体积的质量；质量越多而体积不变时，密度应增大。\n知识库校验证据：情境：一升水；代入错误式：V/m；校验参照值：1000。",
+      "error_type": "量纲一致性",
+      "judging": "auto",
+      "source_error_index": 0,
+      "source_caught_by": "量纲一致性",
+      "wrong_expr": "rho = V/m",
+      "trap_test": {
+        "scenario": "一升水",
+        "expr": "V/m",
+        "ref": 1000
+      },
+      "review": {
+        "confidence": "medium",
+        "checks": {
+          "answer_unique": true,
+          "distractors_plausible": true,
+          "stem_clear": true,
+          "no_cross_segment": true
+        },
+        "note": "本章可用类型不足四类，干扰项包含同章其他错误的类别与原解释；答案按“类别+依据”唯一匹配，建议抽查教学区分度。"
+      }
+    },
+    {
+      "id": "diagnostic-prop-01-2",
+      "point_id": "prop-01",
+      "point_title": "密度",
+      "chapter": "物质的物理属性",
+      "stem": "【物质的物理属性 · 密度】学生的错误做法：质量已经用 kg 表示时，又多除以 1000，造成密度少算 1000 倍（错误表达式：rho = (m/1000)/V）。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
+      "options": [
+        {
+          "label": "A",
+          "text": "数值代入：情境中的质量已是 kg，无须再次换算成吨；一升水应为 1000 kg/m^3，不是 1 kg/m^3。"
+        },
+        {
+          "label": "B",
+          "text": "概念混淆：排水法成立需要完全浸没、体积读数可靠且物体不吸水、不溶解；实验条件不满足时需改用其他方法。"
+        },
+        {
+          "label": "C",
+          "text": "概念混淆：质量表示物体所含物质多少，不随位置变化；变化的是物体受到的重力。"
+        },
+        {
+          "label": "D",
+          "text": "量纲一致性：密度定义是单位体积的质量；质量越多而体积不变时，密度应增大。"
+        }
+      ],
+      "correct_answer": "A",
+      "explanation": "情境中的质量已是 kg，无须再次换算成吨；一升水应为 1000 kg/m^3，不是 1 kg/m^3。\n知识库校验证据：情境：一升水；代入错误式：(m/1000)/V；校验参照值：1000。",
+      "error_type": "数值代入",
+      "judging": "auto",
+      "source_error_index": 1,
+      "source_caught_by": "数值代入",
+      "wrong_expr": "rho = (m/1000)/V",
+      "trap_test": {
+        "scenario": "一升水",
+        "expr": "(m/1000)/V",
+        "ref": 1000
+      },
+      "review": {
+        "confidence": "medium",
+        "checks": {
+          "answer_unique": true,
+          "distractors_plausible": true,
+          "stem_clear": true,
+          "no_cross_segment": true
+        },
+        "note": "本章可用类型不足四类，干扰项包含同章其他错误的类别与原解释；答案按“类别+依据”唯一匹配，建议抽查教学区分度。"
+      }
+    },
+    {
+      "id": "diagnostic-prop-01-3",
+      "point_id": "prop-01",
+      "point_title": "密度",
+      "chapter": "物质的物理属性",
+      "stem": "【物质的物理属性 · 密度】学生的错误做法：认为同一种物质的物体质量越大，密度一定越大。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
+      "options": [
+        {
+          "label": "A",
+          "text": "数值代入：物体排开的是液面增加的部分，应以后读数减前读数；50 mL 升至 70 mL，物体体积为 20 mL。"
+        },
+        {
+          "label": "B",
+          "text": "数值代入：450 g 应为 0.45 kg；若只除以 100，会得到 4.5 kg。"
+        },
+        {
+          "label": "C",
+          "text": "量纲一致性：密度定义是单位体积的质量；质量越多而体积不变时，密度应增大。"
+        },
+        {
+          "label": "D",
+          "text": "概念混淆：在温度和状态相同、物质均匀时，质量和体积同比变化，密度不随样品多少改变。"
+        }
+      ],
+      "correct_answer": "D",
+      "explanation": "在温度和状态相同、物质均匀时，质量和体积同比变化，密度不随样品多少改变。",
+      "error_type": "概念混淆",
+      "judging": "teacher",
+      "source_error_index": 2,
+      "source_caught_by": "人工审核",
+      "wrong_expr": null,
+      "trap_test": null,
+      "review": {
+        "confidence": "medium",
+        "checks": {
+          "answer_unique": true,
+          "distractors_plausible": true,
+          "stem_clear": true,
+          "no_cross_segment": true
+        },
+        "note": "本章可用类型不足四类，干扰项包含同章其他错误的类别与原解释；答案按“类别+依据”唯一匹配，建议抽查教学区分度。"
+      }
+    },
+    {
+      "id": "diagnostic-prop-02-1",
+      "point_id": "prop-02",
+      "point_title": "密度知识的应用与物质的物理属性",
+      "chapter": "物质的物理属性",
+      "stem": "【物质的物理属性 · 密度知识的应用与物质的物理属性】学生的错误做法：把物体体积写成放入前后液体读数之和（错误表达式：V_o = V2+V1）。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
+      "options": [
+        {
+          "label": "A",
+          "text": "概念混淆：质量表示物体所含物质多少，不随位置变化；变化的是物体受到的重力。"
+        },
+        {
+          "label": "B",
+          "text": "概念混淆：在温度和状态相同、物质均匀时，质量和体积同比变化，密度不随样品多少改变。"
+        },
+        {
+          "label": "C",
+          "text": "数值代入：物体排开的是液面增加的部分，应以后读数减前读数；50 mL 升至 70 mL，物体体积为 20 mL。"
+        },
+        {
+          "label": "D",
+          "text": "量纲一致性：密度定义是单位体积的质量；质量越多而体积不变时，密度应增大。"
+        }
+      ],
+      "correct_answer": "C",
+      "explanation": "物体排开的是液面增加的部分，应以后读数减前读数；50 mL 升至 70 mL，物体体积为 20 mL。\n知识库校验证据：情境：铝块测量一；代入错误式：V2+V1；校验参照值：20。",
+      "error_type": "数值代入",
+      "judging": "auto",
+      "source_error_index": 0,
+      "source_caught_by": "数值代入",
+      "wrong_expr": "V_o = V2+V1",
+      "trap_test": {
+        "scenario": "铝块测量一",
+        "expr": "V2+V1",
+        "ref": 20
+      },
+      "review": {
+        "confidence": "medium",
+        "checks": {
+          "answer_unique": true,
+          "distractors_plausible": true,
+          "stem_clear": true,
+          "no_cross_segment": true
+        },
+        "note": "本章可用类型不足四类，干扰项包含同章其他错误的类别与原解释；答案按“类别+依据”唯一匹配，建议抽查教学区分度。"
+      }
+    },
+    {
+      "id": "diagnostic-prop-02-2",
+      "point_id": "prop-02",
+      "point_title": "密度知识的应用与物质的物理属性",
+      "chapter": "物质的物理属性",
+      "stem": "【物质的物理属性 · 密度知识的应用与物质的物理属性】学生的错误做法：物体未完全浸没或吸水时，仍直接把液面差当作物体体积。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
+      "options": [
+        {
+          "label": "A",
+          "text": "数值代入：情境中的质量已是 kg，无须再次换算成吨；一升水应为 1000 kg/m^3，不是 1 kg/m^3。"
+        },
+        {
+          "label": "B",
+          "text": "概念混淆：排水法成立需要完全浸没、体积读数可靠且物体不吸水、不溶解；实验条件不满足时需改用其他方法。"
+        },
+        {
+          "label": "C",
+          "text": "量纲一致性：密度定义是单位体积的质量；质量越多而体积不变时，密度应增大。"
+        },
+        {
+          "label": "D",
+          "text": "数值代入：450 g 应为 0.45 kg；若只除以 100，会得到 4.5 kg。"
+        }
+      ],
+      "correct_answer": "B",
+      "explanation": "排水法成立需要完全浸没、体积读数可靠且物体不吸水、不溶解；实验条件不满足时需改用其他方法。",
+      "error_type": "概念混淆",
+      "judging": "teacher",
+      "source_error_index": 1,
+      "source_caught_by": "人工审核",
+      "wrong_expr": null,
+      "trap_test": null,
+      "review": {
+        "confidence": "medium",
+        "checks": {
+          "answer_unique": true,
+          "distractors_plausible": true,
+          "stem_clear": true,
+          "no_cross_segment": true
+        },
+        "note": "本章可用类型不足四类，干扰项包含同章其他错误的类别与原解释；答案按“类别+依据”唯一匹配，建议抽查教学区分度。"
+      }
+    }
+  ],
+  "skipped": []
+}

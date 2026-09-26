@@ -1,0 +1,552 @@
+{
+  "segment": "初中",
+  "chapter": "压强和浮力",
+  "source_file": "09_pressure_buoyancy.json",
+  "questions": [
+    {
+      "id": "diagnostic-pressure-01-1",
+      "point_id": "pressure-01",
+      "point_title": "压强",
+      "chapter": "压强和浮力",
+      "stem": "【压强和浮力 · 压强】学生的错误做法：把压强写成压力乘以面积（错误表达式：p = F*S）。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
+      "options": [
+        {
+          "label": "A",
+          "text": "数值代入：0.76 m 水银柱给出约 1.01×10^5 Pa；高度单位未统一会造成显著偏差。"
+        },
+        {
+          "label": "B",
+          "text": "数值代入：浮力由排开液体体积决定；完全浸没时排开体积等于物体体积，部分浸入时则小于总体积。"
+        },
+        {
+          "label": "C",
+          "text": "数值代入：漂浮或悬浮静止时 Fb=G；下沉加速时通常重力大于浮力，不能用平衡关系代替。"
+        },
+        {
+          "label": "D",
+          "text": "量纲一致性：压强表示单位面积上的压力，应除以面积；F*S 的单位也不是 Pa。"
+        }
+      ],
+      "correct_answer": "D",
+      "explanation": "压强表示单位面积上的压力，应除以面积；F*S 的单位也不是 Pa。\n知识库校验证据：情境：窄底物体；代入错误式：F*S；校验参照值：5000。",
+      "error_type": "量纲一致性",
+      "judging": "auto",
+      "source_error_index": 0,
+      "source_caught_by": "量纲一致性",
+      "wrong_expr": "p = F*S",
+      "trap_test": {
+        "scenario": "窄底物体",
+        "expr": "F*S",
+        "ref": 5000
+      },
+      "review": {
+        "confidence": "medium",
+        "checks": {
+          "answer_unique": true,
+          "distractors_plausible": true,
+          "stem_clear": true,
+          "no_cross_segment": true
+        },
+        "note": "本章可用类型不足四类，干扰项包含同章其他错误的类别与原解释；答案按“类别+依据”唯一匹配，建议抽查教学区分度。"
+      }
+    },
+    {
+      "id": "diagnostic-pressure-01-2",
+      "point_id": "pressure-01",
+      "point_title": "压强",
+      "chapter": "压强和浮力",
+      "stem": "【压强和浮力 · 压强】学生的错误做法：把 cm2 换算成 m2 时只按 100 倍换算面积，少考虑了长度单位平方（错误表达式：p = F/(100*S)）。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
+      "options": [
+        {
+          "label": "A",
+          "text": "概念混淆：静止气体压强向各方向作用，覆杯实验、吸盘等现象都能体现大气压的作用。"
+        },
+        {
+          "label": "B",
+          "text": "概念混淆：浸没在液体中的石块也受到浮力；只要物体浸在流体中，就应分析浮力。"
+        },
+        {
+          "label": "C",
+          "text": "数值代入：1 m2=10 000 cm2；窄底面积 0.02 m2 对应 200 cm2，少换算 100 倍会把压强算小 100 倍。"
+        },
+        {
+          "label": "D",
+          "text": "量纲一致性：液体压强公式中的 h 是竖直深度；把面积代入会造成量纲不符。"
+        }
+      ],
+      "correct_answer": "C",
+      "explanation": "1 m2=10 000 cm2；窄底面积 0.02 m2 对应 200 cm2，少换算 100 倍会把压强算小 100 倍。\n知识库校验证据：情境：窄底物体；代入错误式：F/(100*S)；校验参照值：5000。",
+      "error_type": "数值代入",
+      "judging": "auto",
+      "source_error_index": 1,
+      "source_caught_by": "数值代入",
+      "wrong_expr": "p = F/(100*S)",
+      "trap_test": {
+        "scenario": "窄底物体",
+        "expr": "F/(100*S)",
+        "ref": 5000
+      },
+      "review": {
+        "confidence": "medium",
+        "checks": {
+          "answer_unique": true,
+          "distractors_plausible": true,
+          "stem_clear": true,
+          "no_cross_segment": true
+        },
+        "note": "本章可用类型不足四类，干扰项包含同章其他错误的类别与原解释；答案按“类别+依据”唯一匹配，建议抽查教学区分度。"
+      }
+    },
+    {
+      "id": "diagnostic-pressure-01-3",
+      "point_id": "pressure-01",
+      "point_title": "压强",
+      "chapter": "压强和浮力",
+      "stem": "【压强和浮力 · 压强】学生的错误做法：认为受力面积越大，压力固定时压强也越大。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
+      "options": [
+        {
+          "label": "A",
+          "text": "数值代入：浮力由排开液体体积决定；完全浸没时排开体积等于物体体积，部分浸入时则小于总体积。"
+        },
+        {
+          "label": "B",
+          "text": "概念混淆：同一压力分摊到更大的受力面积上，单位面积承担的压力会减小，因此压强减小；压力和压强不能混为一个量。"
+        },
+        {
+          "label": "C",
+          "text": "量纲一致性：液体压强公式中的 h 是竖直深度；把面积代入会造成量纲不符。"
+        },
+        {
+          "label": "D",
+          "text": "数值代入：0.76 m 水银柱给出约 1.01×10^5 Pa；高度单位未统一会造成显著偏差。"
+        }
+      ],
+      "correct_answer": "B",
+      "explanation": "同一压力分摊到更大的受力面积上，单位面积承担的压力会减小，因此压强减小；压力和压强不能混为一个量。",
+      "error_type": "概念混淆",
+      "judging": "teacher",
+      "source_error_index": 2,
+      "source_caught_by": "人工审核",
+      "wrong_expr": null,
+      "trap_test": null,
+      "review": {
+        "confidence": "medium",
+        "checks": {
+          "answer_unique": true,
+          "distractors_plausible": true,
+          "stem_clear": true,
+          "no_cross_segment": true
+        },
+        "note": "本章可用类型不足四类，干扰项包含同章其他错误的类别与原解释；答案按“类别+依据”唯一匹配，建议抽查教学区分度。"
+      }
+    },
+    {
+      "id": "diagnostic-pressure-02-1",
+      "point_id": "pressure-02",
+      "point_title": "液体的压强",
+      "chapter": "压强和浮力",
+      "stem": "【压强和浮力 · 液体的压强】学生的错误做法：把液体深度误写成容器底部的斜向长度（错误表达式：p = rho*g*S）。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
+      "options": [
+        {
+          "label": "A",
+          "text": "量纲一致性：液体压强公式中的 h 是竖直深度；把面积代入会造成量纲不符。"
+        },
+        {
+          "label": "B",
+          "text": "数值代入：0.76 m 水银柱给出约 1.01×10^5 Pa；高度单位未统一会造成显著偏差。"
+        },
+        {
+          "label": "C",
+          "text": "数值代入：浮力由排开液体体积决定；完全浸没时排开体积等于物体体积，部分浸入时则小于总体积。"
+        },
+        {
+          "label": "D",
+          "text": "数值代入：漂浮或悬浮静止时 Fb=G；下沉加速时通常重力大于浮力，不能用平衡关系代替。"
+        }
+      ],
+      "correct_answer": "A",
+      "explanation": "液体压强公式中的 h 是竖直深度；把面积代入会造成量纲不符。\n知识库校验证据：情境：水下10厘米；代入错误式：rho*g*S；校验参照值：1000。",
+      "error_type": "量纲一致性",
+      "judging": "auto",
+      "source_error_index": 0,
+      "source_caught_by": "量纲一致性",
+      "wrong_expr": "p = rho*g*S",
+      "trap_test": {
+        "scenario": "水下10厘米",
+        "expr": "rho*g*S",
+        "ref": 1000
+      },
+      "review": {
+        "confidence": "medium",
+        "checks": {
+          "answer_unique": true,
+          "distractors_plausible": true,
+          "stem_clear": true,
+          "no_cross_segment": true
+        },
+        "note": "本章可用类型不足四类，干扰项包含同章其他错误的类别与原解释；答案按“类别+依据”唯一匹配，建议抽查教学区分度。"
+      }
+    },
+    {
+      "id": "diagnostic-pressure-02-2",
+      "point_id": "pressure-02",
+      "point_title": "液体的压强",
+      "chapter": "压强和浮力",
+      "stem": "【压强和浮力 · 液体的压强】学生的错误做法：深度已经用 m 表示，却又把它当成 cm 数值额外放大 100 倍（错误表达式：p = rho*g*100*h）。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
+      "options": [
+        {
+          "label": "A",
+          "text": "量纲一致性：压强表示单位面积上的压力，应除以面积；F*S 的单位也不是 Pa。"
+        },
+        {
+          "label": "B",
+          "text": "概念混淆：静止气体压强向各方向作用，覆杯实验、吸盘等现象都能体现大气压的作用。"
+        },
+        {
+          "label": "C",
+          "text": "概念混淆：浸没在液体中的石块也受到浮力；只要物体浸在流体中，就应分析浮力。"
+        },
+        {
+          "label": "D",
+          "text": "数值代入：水下 0.1 m 的压强为 1000 Pa；重复做厘米换算会错误得到 100 000 Pa。"
+        }
+      ],
+      "correct_answer": "D",
+      "explanation": "水下 0.1 m 的压强为 1000 Pa；重复做厘米换算会错误得到 100 000 Pa。\n知识库校验证据：情境：水下10厘米；代入错误式：rho*g*100*h；校验参照值：1000。",
+      "error_type": "数值代入",
+      "judging": "auto",
+      "source_error_index": 1,
+      "source_caught_by": "数值代入",
+      "wrong_expr": "p = rho*g*100*h",
+      "trap_test": {
+        "scenario": "水下10厘米",
+        "expr": "rho*g*100*h",
+        "ref": 1000
+      },
+      "review": {
+        "confidence": "medium",
+        "checks": {
+          "answer_unique": true,
+          "distractors_plausible": true,
+          "stem_clear": true,
+          "no_cross_segment": true
+        },
+        "note": "本章可用类型不足四类，干扰项包含同章其他错误的类别与原解释；答案按“类别+依据”唯一匹配，建议抽查教学区分度。"
+      }
+    },
+    {
+      "id": "diagnostic-pressure-02-3",
+      "point_id": "pressure-02",
+      "point_title": "液体的压强",
+      "chapter": "压强和浮力",
+      "stem": "【压强和浮力 · 液体的压强】学生的错误做法：认为容器越宽或形状不同，同种液体同深度处的压强必然不同。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
+      "options": [
+        {
+          "label": "A",
+          "text": "数值代入：0.76 m 水银柱给出约 1.01×10^5 Pa；高度单位未统一会造成显著偏差。"
+        },
+        {
+          "label": "B",
+          "text": "数值代入：浮力由排开液体体积决定；完全浸没时排开体积等于物体体积，部分浸入时则小于总体积。"
+        },
+        {
+          "label": "C",
+          "text": "概念混淆：静止同种液体的压强由密度、重力加速度和竖直深度决定，不由容器外形直接决定。"
+        },
+        {
+          "label": "D",
+          "text": "量纲一致性：压强表示单位面积上的压力，应除以面积；F*S 的单位也不是 Pa。"
+        }
+      ],
+      "correct_answer": "C",
+      "explanation": "静止同种液体的压强由密度、重力加速度和竖直深度决定，不由容器外形直接决定。",
+      "error_type": "概念混淆",
+      "judging": "teacher",
+      "source_error_index": 2,
+      "source_caught_by": "人工审核",
+      "wrong_expr": null,
+      "trap_test": null,
+      "review": {
+        "confidence": "medium",
+        "checks": {
+          "answer_unique": true,
+          "distractors_plausible": true,
+          "stem_clear": true,
+          "no_cross_segment": true
+        },
+        "note": "本章可用类型不足四类，干扰项包含同章其他错误的类别与原解释；答案按“类别+依据”唯一匹配，建议抽查教学区分度。"
+      }
+    },
+    {
+      "id": "diagnostic-pressure-03-1",
+      "point_id": "pressure-03",
+      "point_title": "气体的压强",
+      "chapter": "压强和浮力",
+      "stem": "【压强和浮力 · 气体的压强】学生的错误做法：把水银柱高度用厘米数直接当米代入（错误表达式：p = rho*g*(h/2)）。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
+      "options": [
+        {
+          "label": "A",
+          "text": "概念混淆：浸没在液体中的石块也受到浮力；只要物体浸在流体中，就应分析浮力。"
+        },
+        {
+          "label": "B",
+          "text": "数值代入：0.76 m 水银柱给出约 1.01×10^5 Pa；高度单位未统一会造成显著偏差。"
+        },
+        {
+          "label": "C",
+          "text": "量纲一致性：压强表示单位面积上的压力，应除以面积；F*S 的单位也不是 Pa。"
+        },
+        {
+          "label": "D",
+          "text": "量纲一致性：液体压强公式中的 h 是竖直深度；把面积代入会造成量纲不符。"
+        }
+      ],
+      "correct_answer": "B",
+      "explanation": "0.76 m 水银柱给出约 1.01×10^5 Pa；高度单位未统一会造成显著偏差。\n知识库校验证据：情境：标准大气压水银柱；代入错误式：rho*g*(h/2)；校验参照值：101292.8。",
+      "error_type": "数值代入",
+      "judging": "auto",
+      "source_error_index": 0,
+      "source_caught_by": "数值代入",
+      "wrong_expr": "p = rho*g*(h/2)",
+      "trap_test": {
+        "scenario": "标准大气压水银柱",
+        "expr": "rho*g*(h/2)",
+        "ref": 101292.8
+      },
+      "review": {
+        "confidence": "medium",
+        "checks": {
+          "answer_unique": true,
+          "distractors_plausible": true,
+          "stem_clear": true,
+          "no_cross_segment": true
+        },
+        "note": "本章可用类型不足四类，干扰项包含同章其他错误的类别与原解释；答案按“类别+依据”唯一匹配，建议抽查教学区分度。"
+      }
+    },
+    {
+      "id": "diagnostic-pressure-03-2",
+      "point_id": "pressure-03",
+      "point_title": "气体的压强",
+      "chapter": "压强和浮力",
+      "stem": "【压强和浮力 · 气体的压强】学生的错误做法：认为大气压只从上方作用，不会向各个方向传递。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
+      "options": [
+        {
+          "label": "A",
+          "text": "概念混淆：静止气体压强向各方向作用，覆杯实验、吸盘等现象都能体现大气压的作用。"
+        },
+        {
+          "label": "B",
+          "text": "量纲一致性：压强表示单位面积上的压力，应除以面积；F*S 的单位也不是 Pa。"
+        },
+        {
+          "label": "C",
+          "text": "量纲一致性：液体压强公式中的 h 是竖直深度；把面积代入会造成量纲不符。"
+        },
+        {
+          "label": "D",
+          "text": "数值代入：浮力由排开液体体积决定；完全浸没时排开体积等于物体体积，部分浸入时则小于总体积。"
+        }
+      ],
+      "correct_answer": "A",
+      "explanation": "静止气体压强向各方向作用，覆杯实验、吸盘等现象都能体现大气压的作用。",
+      "error_type": "概念混淆",
+      "judging": "teacher",
+      "source_error_index": 1,
+      "source_caught_by": "人工审核",
+      "wrong_expr": null,
+      "trap_test": null,
+      "review": {
+        "confidence": "medium",
+        "checks": {
+          "answer_unique": true,
+          "distractors_plausible": true,
+          "stem_clear": true,
+          "no_cross_segment": true
+        },
+        "note": "本章可用类型不足四类，干扰项包含同章其他错误的类别与原解释；答案按“类别+依据”唯一匹配，建议抽查教学区分度。"
+      }
+    },
+    {
+      "id": "diagnostic-pressure-04-1",
+      "point_id": "pressure-04",
+      "point_title": "浮力",
+      "chapter": "压强和浮力",
+      "stem": "【压强和浮力 · 浮力】学生的错误做法：把阿基米德原理中的排开体积误换成物体的总体积（错误表达式：Fb = rho*g*2*V）。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
+      "options": [
+        {
+          "label": "A",
+          "text": "量纲一致性：压强表示单位面积上的压力，应除以面积；F*S 的单位也不是 Pa。"
+        },
+        {
+          "label": "B",
+          "text": "量纲一致性：液体压强公式中的 h 是竖直深度；把面积代入会造成量纲不符。"
+        },
+        {
+          "label": "C",
+          "text": "概念混淆：静止气体压强向各方向作用，覆杯实验、吸盘等现象都能体现大气压的作用。"
+        },
+        {
+          "label": "D",
+          "text": "数值代入：浮力由排开液体体积决定；完全浸没时排开体积等于物体体积，部分浸入时则小于总体积。"
+        }
+      ],
+      "correct_answer": "D",
+      "explanation": "浮力由排开液体体积决定；完全浸没时排开体积等于物体体积，部分浸入时则小于总体积。\n知识库校验证据：情境：水中石块；代入错误式：rho*g*2*V；校验参照值：10。",
+      "error_type": "数值代入",
+      "judging": "auto",
+      "source_error_index": 0,
+      "source_caught_by": "数值代入",
+      "wrong_expr": "Fb = rho*g*2*V",
+      "trap_test": {
+        "scenario": "水中石块",
+        "expr": "rho*g*2*V",
+        "ref": 10
+      },
+      "review": {
+        "confidence": "medium",
+        "checks": {
+          "answer_unique": true,
+          "distractors_plausible": true,
+          "stem_clear": true,
+          "no_cross_segment": true
+        },
+        "note": "本章可用类型不足四类，干扰项包含同章其他错误的类别与原解释；答案按“类别+依据”唯一匹配，建议抽查教学区分度。"
+      }
+    },
+    {
+      "id": "diagnostic-pressure-04-2",
+      "point_id": "pressure-04",
+      "point_title": "浮力",
+      "chapter": "压强和浮力",
+      "stem": "【压强和浮力 · 浮力】学生的错误做法：认为浮力只作用于漂浮物体。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
+      "options": [
+        {
+          "label": "A",
+          "text": "量纲一致性：液体压强公式中的 h 是竖直深度；把面积代入会造成量纲不符。"
+        },
+        {
+          "label": "B",
+          "text": "数值代入：0.76 m 水银柱给出约 1.01×10^5 Pa；高度单位未统一会造成显著偏差。"
+        },
+        {
+          "label": "C",
+          "text": "概念混淆：浸没在液体中的石块也受到浮力；只要物体浸在流体中，就应分析浮力。"
+        },
+        {
+          "label": "D",
+          "text": "量纲一致性：压强表示单位面积上的压力，应除以面积；F*S 的单位也不是 Pa。"
+        }
+      ],
+      "correct_answer": "C",
+      "explanation": "浸没在液体中的石块也受到浮力；只要物体浸在流体中，就应分析浮力。",
+      "error_type": "概念混淆",
+      "judging": "teacher",
+      "source_error_index": 1,
+      "source_caught_by": "人工审核",
+      "wrong_expr": null,
+      "trap_test": null,
+      "review": {
+        "confidence": "medium",
+        "checks": {
+          "answer_unique": true,
+          "distractors_plausible": true,
+          "stem_clear": true,
+          "no_cross_segment": true
+        },
+        "note": "本章可用类型不足四类，干扰项包含同章其他错误的类别与原解释；答案按“类别+依据”唯一匹配，建议抽查教学区分度。"
+      }
+    },
+    {
+      "id": "diagnostic-pressure-05-1",
+      "point_id": "pressure-05",
+      "point_title": "物体的浮与沉",
+      "chapter": "压强和浮力",
+      "stem": "【压强和浮力 · 物体的浮与沉】学生的错误做法：把下沉物体也一律按漂浮平衡处理（错误表达式：Fb = 2*G）。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
+      "options": [
+        {
+          "label": "A",
+          "text": "概念混淆：静止气体压强向各方向作用，覆杯实验、吸盘等现象都能体现大气压的作用。"
+        },
+        {
+          "label": "B",
+          "text": "数值代入：漂浮或悬浮静止时 Fb=G；下沉加速时通常重力大于浮力，不能用平衡关系代替。"
+        },
+        {
+          "label": "C",
+          "text": "量纲一致性：压强表示单位面积上的压力，应除以面积；F*S 的单位也不是 Pa。"
+        },
+        {
+          "label": "D",
+          "text": "量纲一致性：液体压强公式中的 h 是竖直深度；把面积代入会造成量纲不符。"
+        }
+      ],
+      "correct_answer": "B",
+      "explanation": "漂浮或悬浮静止时 Fb=G；下沉加速时通常重力大于浮力，不能用平衡关系代替。\n知识库校验证据：情境：漂浮木块；代入错误式：2*G；校验参照值：20。",
+      "error_type": "数值代入",
+      "judging": "auto",
+      "source_error_index": 0,
+      "source_caught_by": "数值代入",
+      "wrong_expr": "Fb = 2*G",
+      "trap_test": {
+        "scenario": "漂浮木块",
+        "expr": "2*G",
+        "ref": 20
+      },
+      "review": {
+        "confidence": "medium",
+        "checks": {
+          "answer_unique": true,
+          "distractors_plausible": true,
+          "stem_clear": true,
+          "no_cross_segment": true
+        },
+        "note": "本章可用类型不足四类，干扰项包含同章其他错误的类别与原解释；答案按“类别+依据”唯一匹配，建议抽查教学区分度。"
+      }
+    },
+    {
+      "id": "diagnostic-pressure-05-2",
+      "point_id": "pressure-05",
+      "point_title": "物体的浮与沉",
+      "chapter": "压强和浮力",
+      "stem": "【压强和浮力 · 物体的浮与沉】学生的错误做法：把“漂浮”和“悬浮”理解成浮力方向不同。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
+      "options": [
+        {
+          "label": "A",
+          "text": "概念混淆：两种状态下浮力都竖直向上；区别是物体处于液面还是浸没在液体内部。"
+        },
+        {
+          "label": "B",
+          "text": "量纲一致性：压强表示单位面积上的压力，应除以面积；F*S 的单位也不是 Pa。"
+        },
+        {
+          "label": "C",
+          "text": "量纲一致性：液体压强公式中的 h 是竖直深度；把面积代入会造成量纲不符。"
+        },
+        {
+          "label": "D",
+          "text": "数值代入：0.76 m 水银柱给出约 1.01×10^5 Pa；高度单位未统一会造成显著偏差。"
+        }
+      ],
+      "correct_answer": "A",
+      "explanation": "两种状态下浮力都竖直向上；区别是物体处于液面还是浸没在液体内部。",
+      "error_type": "概念混淆",
+      "judging": "teacher",
+      "source_error_index": 1,
+      "source_caught_by": "人工审核",
+      "wrong_expr": null,
+      "trap_test": null,
+      "review": {
+        "confidence": "medium",
+        "checks": {
+          "answer_unique": true,
+          "distractors_plausible": true,
+          "stem_clear": true,
+          "no_cross_segment": true
+        },
+        "note": "本章可用类型不足四类，干扰项包含同章其他错误的类别与原解释；答案按“类别+依据”唯一匹配，建议抽查教学区分度。"
+      }
+    }
+  ],
+  "skipped": []
+}

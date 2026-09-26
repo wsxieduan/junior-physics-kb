@@ -1,0 +1,520 @@
+{
+  "segment": "初中",
+  "chapter": "能源与可持续发展",
+  "source_file": "18_energy_sustain.json",
+  "questions": [
+    {
+      "id": "diagnostic-sustain-01-2",
+      "point_id": "sustain-01",
+      "point_title": "能源利用与社会发展中的耗电估算",
+      "chapter": "能源与可持续发展",
+      "stem": "【能源与可持续发展 · 能源利用与社会发展中的耗电估算】学生的错误做法：LED灯功率为 0.01 kW、使用 5 h，却把耗电量写成 0.002 kWh（错误表达式：E = P/t）。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
+      "options": [
+        {
+          "label": "A",
+          "text": "概念混淆：太阳辐射到水之间会经过集热器和管路，途中有反射与散热，水吸收的热量只是输入能量的一部分。"
+        },
+        {
+          "label": "B",
+          "text": "概念混淆：可再生能源的利用仍可能影响生态和土地；损耗能量通常转化为不易利用的热、声等形式，并未违反能量守恒。"
+        },
+        {
+          "label": "C",
+          "text": "数值代入：0.01 kW×5 h=0.05 kWh；除法结果不仅数值错误，单位也不能表示耗电量。"
+        },
+        {
+          "label": "D",
+          "text": "概念混淆：核电站先通过裂变加热介质，再驱动汽轮机和发电机，能量经历多个转化环节。"
+        }
+      ],
+      "correct_answer": "C",
+      "explanation": "0.01 kW×5 h=0.05 kWh；除法结果不仅数值错误，单位也不能表示耗电量。\n知识库校验证据：情境：LED灯五小时；代入错误式：P/t；校验参照值：0.05。",
+      "error_type": "数值代入",
+      "judging": "auto",
+      "source_error_index": 1,
+      "source_caught_by": "数值代入",
+      "wrong_expr": "E = P/t",
+      "trap_test": {
+        "scenario": "LED灯五小时",
+        "expr": "P/t",
+        "ref": 0.05
+      },
+      "review": {
+        "confidence": "medium",
+        "checks": {
+          "answer_unique": true,
+          "distractors_plausible": true,
+          "stem_clear": true,
+          "no_cross_segment": true
+        },
+        "note": "本章可用类型不足四类，干扰项包含同章其他错误的类别与原解释；答案按“类别+依据”唯一匹配，建议抽查教学区分度。"
+      }
+    },
+    {
+      "id": "diagnostic-sustain-01-3",
+      "point_id": "sustain-01",
+      "point_title": "能源利用与社会发展中的耗电估算",
+      "chapter": "能源与可持续发展",
+      "stem": "【能源与可持续发展 · 能源利用与社会发展中的耗电估算】学生的错误做法：只看额定功率较小，就断定设备一定更节能而不看使用时长。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
+      "options": [
+        {
+          "label": "A",
+          "text": "量纲一致性：输出电能是功率对时间的累积，应将功率乘运行时间；相除得到的单位也不再是焦耳。"
+        },
+        {
+          "label": "B",
+          "text": "概念混淆：耗电量还取决于使用时间；小功率设备长时间运行也可能耗电更多。"
+        },
+        {
+          "label": "C",
+          "text": "数值代入：效率是有用输出占输入的比例；高效电机情境中为 80/100=0.8，而不是 1.25。"
+        },
+        {
+          "label": "D",
+          "text": "数值代入：节能量是旧设备比新设备多消耗的部分，应做差而不是相加。"
+        }
+      ],
+      "correct_answer": "B",
+      "explanation": "耗电量还取决于使用时间；小功率设备长时间运行也可能耗电更多。",
+      "error_type": "概念混淆",
+      "judging": "teacher",
+      "source_error_index": 2,
+      "source_caught_by": "人工审核",
+      "wrong_expr": null,
+      "trap_test": null,
+      "review": {
+        "confidence": "medium",
+        "checks": {
+          "answer_unique": true,
+          "distractors_plausible": true,
+          "stem_clear": true,
+          "no_cross_segment": true
+        },
+        "note": "本章可用类型不足四类，干扰项包含同章其他错误的类别与原解释；答案按“类别+依据”唯一匹配，建议抽查教学区分度。"
+      }
+    },
+    {
+      "id": "diagnostic-sustain-03-1",
+      "point_id": "sustain-03",
+      "point_title": "核能",
+      "chapter": "能源与可持续发展",
+      "stem": "【能源与可持续发展 · 核能】学生的错误做法：把核能说成在电站内一步直接变成电能。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
+      "options": [
+        {
+          "label": "A",
+          "text": "概念混淆：核电站先通过裂变加热介质，再驱动汽轮机和发电机，能量经历多个转化环节。"
+        },
+        {
+          "label": "B",
+          "text": "量纲一致性：耗电量等于功率乘以时间；功率再除以时间会得到功率变化率，不是电能。"
+        },
+        {
+          "label": "C",
+          "text": "数值代入：效率是有用输出占输入的比例；高效电机情境中为 80/100=0.8，而不是 1.25。"
+        },
+        {
+          "label": "D",
+          "text": "数值代入：节能量是旧设备比新设备多消耗的部分，应做差而不是相加。"
+        }
+      ],
+      "correct_answer": "A",
+      "explanation": "核电站先通过裂变加热介质，再驱动汽轮机和发电机，能量经历多个转化环节。",
+      "error_type": "概念混淆",
+      "judging": "teacher",
+      "source_error_index": 0,
+      "source_caught_by": "人工审核",
+      "wrong_expr": null,
+      "trap_test": null,
+      "review": {
+        "confidence": "medium",
+        "checks": {
+          "answer_unique": true,
+          "distractors_plausible": true,
+          "stem_clear": true,
+          "no_cross_segment": true
+        },
+        "note": "本章可用类型不足四类，干扰项包含同章其他错误的类别与原解释；答案按“类别+依据”唯一匹配，建议抽查教学区分度。"
+      }
+    },
+    {
+      "id": "diagnostic-sustain-03-3",
+      "point_id": "sustain-03",
+      "point_title": "核能",
+      "chapter": "能源与可持续发展",
+      "stem": "【能源与可持续发展 · 核能】学生的错误做法：核电站 1.0×10^9 W 运行 3600 s，误将时间除以 3600 再代入（错误表达式：E_el = P_el*(t_n/3600)）。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
+      "options": [
+        {
+          "label": "A",
+          "text": "概念混淆：太阳辐射到水之间会经过集热器和管路，途中有反射与散热，水吸收的热量只是输入能量的一部分。"
+        },
+        {
+          "label": "B",
+          "text": "概念混淆：可再生能源的利用仍可能影响生态和土地；损耗能量通常转化为不易利用的热、声等形式，并未违反能量守恒。"
+        },
+        {
+          "label": "C",
+          "text": "数值代入：题目给出的运行时间已是秒，重复除以 3600 会把应有输出电能缩小 3600 倍。"
+        },
+        {
+          "label": "D",
+          "text": "量纲一致性：耗电量等于功率乘以时间；功率再除以时间会得到功率变化率，不是电能。"
+        }
+      ],
+      "correct_answer": "C",
+      "explanation": "题目给出的运行时间已是秒，重复除以 3600 会把应有输出电能缩小 3600 倍。\n知识库校验证据：情境：核电站一小时输出；代入错误式：P_el*(t_n/3600)；校验参照值：3600000000000。",
+      "error_type": "数值代入",
+      "judging": "auto",
+      "source_error_index": 2,
+      "source_caught_by": "数值代入",
+      "wrong_expr": "E_el = P_el*(t_n/3600)",
+      "trap_test": {
+        "scenario": "核电站一小时输出",
+        "expr": "P_el*(t_n/3600)",
+        "ref": 3600000000000
+      },
+      "review": {
+        "confidence": "medium",
+        "checks": {
+          "answer_unique": true,
+          "distractors_plausible": true,
+          "stem_clear": true,
+          "no_cross_segment": true
+        },
+        "note": "本章可用类型不足四类，干扰项包含同章其他错误的类别与原解释；答案按“类别+依据”唯一匹配，建议抽查教学区分度。"
+      }
+    },
+    {
+      "id": "diagnostic-sustain-04-1",
+      "point_id": "sustain-04",
+      "point_title": "太阳能",
+      "chapter": "能源与可持续发展",
+      "stem": "【能源与可持续发展 · 太阳能】学生的错误做法：把太阳能热水器的太阳输入能量直接等同于水吸收的热量。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
+      "options": [
+        {
+          "label": "A",
+          "text": "数值代入：节能量是旧设备比新设备多消耗的部分，应做差而不是相加。"
+        },
+        {
+          "label": "B",
+          "text": "概念混淆：太阳辐射到水之间会经过集热器和管路，途中有反射与散热，水吸收的热量只是输入能量的一部分。"
+        },
+        {
+          "label": "C",
+          "text": "量纲一致性：耗电量等于功率乘以时间；功率再除以时间会得到功率变化率，不是电能。"
+        },
+        {
+          "label": "D",
+          "text": "数值代入：效率是有用输出占输入的比例；高效电机情境中为 80/100=0.8，而不是 1.25。"
+        }
+      ],
+      "correct_answer": "B",
+      "explanation": "太阳辐射到水之间会经过集热器和管路，途中有反射与散热，水吸收的热量只是输入能量的一部分。",
+      "error_type": "概念混淆",
+      "judging": "teacher",
+      "source_error_index": 0,
+      "source_caught_by": "人工审核",
+      "wrong_expr": null,
+      "trap_test": null,
+      "review": {
+        "confidence": "medium",
+        "checks": {
+          "answer_unique": true,
+          "distractors_plausible": true,
+          "stem_clear": true,
+          "no_cross_segment": true
+        },
+        "note": "本章可用类型不足四类，干扰项包含同章其他错误的类别与原解释；答案按“类别+依据”唯一匹配，建议抽查教学区分度。"
+      }
+    },
+    {
+      "id": "diagnostic-sustain-04-3",
+      "point_id": "sustain-04",
+      "point_title": "太阳能",
+      "chapter": "能源与可持续发展",
+      "stem": "【能源与可持续发展 · 太阳能】学生的错误做法：0.2 kg 水升高 15 ℃，误将热量算成 56 J（错误表达式：Q_water = c_water*m_water/dT）。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
+      "options": [
+        {
+          "label": "A",
+          "text": "量纲一致性：耗电量等于功率乘以时间；功率再除以时间会得到功率变化率，不是电能。"
+        },
+        {
+          "label": "B",
+          "text": "概念混淆：核电站先通过裂变加热介质，再驱动汽轮机和发电机，能量经历多个转化环节。"
+        },
+        {
+          "label": "C",
+          "text": "概念混淆：可再生能源的利用仍可能影响生态和土地；损耗能量通常转化为不易利用的热、声等形式，并未违反能量守恒。"
+        },
+        {
+          "label": "D",
+          "text": "数值代入：按 4200 J/kg/℃、0.2 kg 和 15 ℃ 相乘，结果为 12600 J；不能把温升放到分母。"
+        }
+      ],
+      "correct_answer": "D",
+      "explanation": "按 4200 J/kg/℃、0.2 kg 和 15 ℃ 相乘，结果为 12600 J；不能把温升放到分母。\n知识库校验证据：情境：太阳能热水器一；代入错误式：c_water*m_water/dT；校验参照值：12600。",
+      "error_type": "数值代入",
+      "judging": "auto",
+      "source_error_index": 2,
+      "source_caught_by": "数值代入",
+      "wrong_expr": "Q_water = c_water*m_water/dT",
+      "trap_test": {
+        "scenario": "太阳能热水器一",
+        "expr": "c_water*m_water/dT",
+        "ref": 12600
+      },
+      "review": {
+        "confidence": "medium",
+        "checks": {
+          "answer_unique": true,
+          "distractors_plausible": true,
+          "stem_clear": true,
+          "no_cross_segment": true
+        },
+        "note": "本章可用类型不足四类，干扰项包含同章其他错误的类别与原解释；答案按“类别+依据”唯一匹配，建议抽查教学区分度。"
+      }
+    },
+    {
+      "id": "diagnostic-sustain-02-1",
+      "point_id": "sustain-02",
+      "point_title": "能量转化的基本规律",
+      "chapter": "能源与可持续发展",
+      "stem": "【能源与可持续发展 · 能量转化的基本规律】学生的错误做法：把能量利用效率写成输入能量除以有用能量（错误表达式：eta = E_in/E_use）。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
+      "options": [
+        {
+          "label": "A",
+          "text": "概念混淆：核电站先通过裂变加热介质，再驱动汽轮机和发电机，能量经历多个转化环节。"
+        },
+        {
+          "label": "B",
+          "text": "概念混淆：太阳辐射到水之间会经过集热器和管路，途中有反射与散热，水吸收的热量只是输入能量的一部分。"
+        },
+        {
+          "label": "C",
+          "text": "数值代入：效率是有用输出占输入的比例；高效电机情境中为 80/100=0.8，而不是 1.25。"
+        },
+        {
+          "label": "D",
+          "text": "量纲一致性：耗电量等于功率乘以时间；功率再除以时间会得到功率变化率，不是电能。"
+        }
+      ],
+      "correct_answer": "C",
+      "explanation": "效率是有用输出占输入的比例；高效电机情境中为 80/100=0.8，而不是 1.25。\n知识库校验证据：情境：高效电机；代入错误式：E_in/E_use；校验参照值：0.8。",
+      "error_type": "数值代入",
+      "judging": "auto",
+      "source_error_index": 0,
+      "source_caught_by": "数值代入",
+      "wrong_expr": "eta = E_in/E_use",
+      "trap_test": {
+        "scenario": "高效电机",
+        "expr": "E_in/E_use",
+        "ref": 0.8
+      },
+      "review": {
+        "confidence": "medium",
+        "checks": {
+          "answer_unique": true,
+          "distractors_plausible": true,
+          "stem_clear": true,
+          "no_cross_segment": true
+        },
+        "note": "本章可用类型不足四类，干扰项包含同章其他错误的类别与原解释；答案按“类别+依据”唯一匹配，建议抽查教学区分度。"
+      }
+    },
+    {
+      "id": "diagnostic-sustain-02-2",
+      "point_id": "sustain-02",
+      "point_title": "能量转化的基本规律",
+      "chapter": "能源与可持续发展",
+      "stem": "【能源与可持续发展 · 能量转化的基本规律】学生的错误做法：认为可再生能源没有任何环境影响，或认为能量损耗意味着能量消失。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
+      "options": [
+        {
+          "label": "A",
+          "text": "数值代入：0.01 kW×5 h=0.05 kWh；除法结果不仅数值错误，单位也不能表示耗电量。"
+        },
+        {
+          "label": "B",
+          "text": "概念混淆：可再生能源的利用仍可能影响生态和土地；损耗能量通常转化为不易利用的热、声等形式，并未违反能量守恒。"
+        },
+        {
+          "label": "C",
+          "text": "量纲一致性：耗电量等于功率乘以时间；功率再除以时间会得到功率变化率，不是电能。"
+        },
+        {
+          "label": "D",
+          "text": "数值代入：节能量是旧设备比新设备多消耗的部分，应做差而不是相加。"
+        }
+      ],
+      "correct_answer": "B",
+      "explanation": "可再生能源的利用仍可能影响生态和土地；损耗能量通常转化为不易利用的热、声等形式，并未违反能量守恒。",
+      "error_type": "概念混淆",
+      "judging": "teacher",
+      "source_error_index": 1,
+      "source_caught_by": "人工审核",
+      "wrong_expr": null,
+      "trap_test": null,
+      "review": {
+        "confidence": "medium",
+        "checks": {
+          "answer_unique": true,
+          "distractors_plausible": true,
+          "stem_clear": true,
+          "no_cross_segment": true
+        },
+        "note": "本章可用类型不足四类，干扰项包含同章其他错误的类别与原解释；答案按“类别+依据”唯一匹配，建议抽查教学区分度。"
+      }
+    },
+    {
+      "id": "diagnostic-sustain-05-1",
+      "point_id": "sustain-05",
+      "point_title": "能源与可持续发展",
+      "chapter": "能源与可持续发展",
+      "stem": "【能源与可持续发展 · 能源与可持续发展】学生的错误做法：把新设备耗电量加到旧设备耗电量上当成节能量（错误表达式：E_save = E_old+E_new）。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
+      "options": [
+        {
+          "label": "A",
+          "text": "数值代入：节能量是旧设备比新设备多消耗的部分，应做差而不是相加。"
+        },
+        {
+          "label": "B",
+          "text": "量纲一致性：耗电量等于功率乘以时间；功率再除以时间会得到功率变化率，不是电能。"
+        },
+        {
+          "label": "C",
+          "text": "概念混淆：核电站先通过裂变加热介质，再驱动汽轮机和发电机，能量经历多个转化环节。"
+        },
+        {
+          "label": "D",
+          "text": "概念混淆：太阳辐射到水之间会经过集热器和管路，途中有反射与散热，水吸收的热量只是输入能量的一部分。"
+        }
+      ],
+      "correct_answer": "A",
+      "explanation": "节能量是旧设备比新设备多消耗的部分，应做差而不是相加。比较之前先统一时间范围和所提供的服务。\n知识库校验证据：情境：节能灯具一；代入错误式：E_old+E_new；校验参照值：180000。",
+      "error_type": "数值代入",
+      "judging": "auto",
+      "source_error_index": 0,
+      "source_caught_by": "数值代入",
+      "wrong_expr": "E_save = E_old+E_new",
+      "trap_test": {
+        "scenario": "节能灯具一",
+        "expr": "E_old+E_new",
+        "ref": 180000
+      },
+      "review": {
+        "confidence": "medium",
+        "checks": {
+          "answer_unique": true,
+          "distractors_plausible": true,
+          "stem_clear": true,
+          "no_cross_segment": true
+        },
+        "note": "本章可用类型不足四类，干扰项包含同章其他错误的类别与原解释；答案按“类别+依据”唯一匹配，建议抽查教学区分度。"
+      }
+    },
+    {
+      "id": "diagnostic-sustain-05-2",
+      "point_id": "sustain-05",
+      "point_title": "能源与可持续发展",
+      "chapter": "能源与可持续发展",
+      "stem": "【能源与可持续发展 · 能源与可持续发展】学生的错误做法：比较灯具节能量时让旧灯和新灯使用不同时间。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
+      "options": [
+        {
+          "label": "A",
+          "text": "量纲一致性：耗电量等于功率乘以时间；功率再除以时间会得到功率变化率，不是电能。"
+        },
+        {
+          "label": "B",
+          "text": "数值代入：效率是有用输出占输入的比例；高效电机情境中为 80/100=0.8，而不是 1.25。"
+        },
+        {
+          "label": "C",
+          "text": "数值代入：0.01 kW×5 h=0.05 kWh；除法结果不仅数值错误，单位也不能表示耗电量。"
+        },
+        {
+          "label": "D",
+          "text": "概念混淆：要比较相同服务，必须统一照明时长等条件。"
+        }
+      ],
+      "correct_answer": "D",
+      "explanation": "要比较相同服务，必须统一照明时长等条件。比较之前先统一时间范围和所提供的服务。",
+      "error_type": "概念混淆",
+      "judging": "teacher",
+      "source_error_index": 1,
+      "source_caught_by": "人工审核",
+      "wrong_expr": null,
+      "trap_test": null,
+      "review": {
+        "confidence": "medium",
+        "checks": {
+          "answer_unique": true,
+          "distractors_plausible": true,
+          "stem_clear": true,
+          "no_cross_segment": true
+        },
+        "note": "本章可用类型不足四类，干扰项包含同章其他错误的类别与原解释；答案按“类别+依据”唯一匹配，建议抽查教学区分度。"
+      }
+    },
+    {
+      "id": "diagnostic-sustain-05-3",
+      "point_id": "sustain-05",
+      "point_title": "能源与可持续发展",
+      "chapter": "能源与可持续发展",
+      "stem": "【能源与可持续发展 · 能源与可持续发展】学生的错误做法：仅凭一次电费差值就断定一种能源在全生命周期都更可持续。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
+      "options": [
+        {
+          "label": "A",
+          "text": "数值代入：效率是有用输出占输入的比例；高效电机情境中为 80/100=0.8，而不是 1.25。"
+        },
+        {
+          "label": "B",
+          "text": "数值代入：0.01 kW×5 h=0.05 kWh；除法结果不仅数值错误，单位也不能表示耗电量。"
+        },
+        {
+          "label": "C",
+          "text": "概念混淆：生命周期评价还涉及制造、运输、发电来源、维护和回收等边界。"
+        },
+        {
+          "label": "D",
+          "text": "量纲一致性：耗电量等于功率乘以时间；功率再除以时间会得到功率变化率，不是电能。"
+        }
+      ],
+      "correct_answer": "C",
+      "explanation": "生命周期评价还涉及制造、运输、发电来源、维护和回收等边界。比较之前先统一时间范围和所提供的服务。",
+      "error_type": "概念混淆",
+      "judging": "teacher",
+      "source_error_index": 2,
+      "source_caught_by": "人工审核",
+      "wrong_expr": null,
+      "trap_test": null,
+      "review": {
+        "confidence": "medium",
+        "checks": {
+          "answer_unique": true,
+          "distractors_plausible": true,
+          "stem_clear": true,
+          "no_cross_segment": true
+        },
+        "note": "本章可用类型不足四类，干扰项包含同章其他错误的类别与原解释；答案按“类别+依据”唯一匹配，建议抽查教学区分度。"
+      }
+    }
+  ],
+  "skipped": [
+    {
+      "point_id": "sustain-01",
+      "point_title": "能源利用与社会发展中的耗电估算",
+      "source_error_index": 0,
+      "reason": "自动判定条目没有 trap_test 可执行证据；不把校验标签代替实测证据。"
+    },
+    {
+      "point_id": "sustain-03",
+      "point_title": "核能",
+      "source_error_index": 1,
+      "reason": "自动判定条目没有 trap_test 可执行证据；不把校验标签代替实测证据。"
+    },
+    {
+      "point_id": "sustain-04",
+      "point_title": "太阳能",
+      "source_error_index": 1,
+      "reason": "自动判定条目没有 trap_test 可执行证据；不把校验标签代替实测证据。"
+    }
+  ]
+}

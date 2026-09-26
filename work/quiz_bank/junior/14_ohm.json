@@ -1,0 +1,375 @@
+{
+  "segment": "初中",
+  "chapter": "欧姆定律",
+  "source_file": "14_ohm.json",
+  "questions": [
+    {
+      "id": "diagnostic-ohm-01-2",
+      "point_id": "ohm-01",
+      "point_title": "电阻",
+      "chapter": "欧姆定律",
+      "stem": "【欧姆定律 · 电阻】学生的错误做法：把 3 kΩ 的数值 3 直接当成 3 Ω 代入，漏掉千欧到欧姆的 1000 倍换算（错误表达式：I = U/Rk）。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
+      "options": [
+        {
+          "label": "A",
+          "text": "概念混淆：并联增加额外电流通路，等效电阻会减小；串联增加电阻才会使总电阻增大。"
+        },
+        {
+          "label": "B",
+          "text": "概念混淆：灯丝等元件温度变化会影响电阻；使用关系式时要看元件和实验条件。"
+        },
+        {
+          "label": "C",
+          "text": "数值代入：6 V 接在 3 kΩ 电阻上，电流应为 0.002 A；把数值 3 当作 Ω 会错误得到 2 A。"
+        },
+        {
+          "label": "D",
+          "text": "概念混淆：阻值变化由实际接入电路的下接线柱和滑片位置共同决定，必须结合电路连接判断。"
+        }
+      ],
+      "correct_answer": "C",
+      "explanation": "6 V 接在 3 kΩ 电阻上，电流应为 0.002 A；把数值 3 当作 Ω 会错误得到 2 A。\n知识库校验证据：情境：千欧换算误区；代入错误式：U/Rk；校验参照值：0.002。",
+      "error_type": "数值代入",
+      "judging": "auto",
+      "source_error_index": 1,
+      "source_caught_by": "数值代入",
+      "wrong_expr": "I = U/Rk",
+      "trap_test": {
+        "scenario": "千欧换算误区",
+        "expr": "U/Rk",
+        "ref": 0.002
+      },
+      "review": {
+        "confidence": "medium",
+        "checks": {
+          "answer_unique": true,
+          "distractors_plausible": true,
+          "stem_clear": true,
+          "no_cross_segment": true
+        },
+        "note": "本章可用类型不足四类，干扰项包含同章其他错误的类别与原解释；答案按“类别+依据”唯一匹配，建议抽查教学区分度。"
+      }
+    },
+    {
+      "id": "diagnostic-ohm-01-3",
+      "point_id": "ohm-01",
+      "point_title": "电阻",
+      "chapter": "欧姆定律",
+      "stem": "【欧姆定律 · 电阻】学生的错误做法：不说明条件变化就认为电压改变会使导体电阻按比例改变。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
+      "options": [
+        {
+          "label": "A",
+          "text": "数值代入：串联总电阻为各电阻之和；10 Ω 和 20 Ω 串联应为 30 Ω。"
+        },
+        {
+          "label": "B",
+          "text": "概念混淆：电阻由导体材料、长度、横截面积和温度等因素决定；欧姆定律的 U/I 比值在相同条件下描述电阻。"
+        },
+        {
+          "label": "C",
+          "text": "数值代入：6 Ω 与 3 Ω 并联的倒数和为 0.5 Ω^-1，等效电阻应为其倒数 2 Ω。"
+        },
+        {
+          "label": "D",
+          "text": "数值代入：同一电阻器两端电压 6 V、电阻 12 Ω 时，电流为 0.5 A，而不是 2 A。"
+        }
+      ],
+      "correct_answer": "B",
+      "explanation": "电阻由导体材料、长度、横截面积和温度等因素决定；欧姆定律的 U/I 比值在相同条件下描述电阻。",
+      "error_type": "概念混淆",
+      "judging": "teacher",
+      "source_error_index": 2,
+      "source_caught_by": "人工审核",
+      "wrong_expr": null,
+      "trap_test": null,
+      "review": {
+        "confidence": "medium",
+        "checks": {
+          "answer_unique": true,
+          "distractors_plausible": true,
+          "stem_clear": true,
+          "no_cross_segment": true
+        },
+        "note": "本章可用类型不足四类，干扰项包含同章其他错误的类别与原解释；答案按“类别+依据”唯一匹配，建议抽查教学区分度。"
+      }
+    },
+    {
+      "id": "diagnostic-ohm-03-1",
+      "point_id": "ohm-03",
+      "point_title": "变阻器",
+      "chapter": "欧姆定律",
+      "stem": "【欧姆定律 · 变阻器】学生的错误做法：把变阻器滑片移动方向与阻值变化关系不看接线柱就固定判断。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
+      "options": [
+        {
+          "label": "A",
+          "text": "概念混淆：阻值变化由实际接入电路的下接线柱和滑片位置共同决定，必须结合电路连接判断。"
+        },
+        {
+          "label": "B",
+          "text": "量纲一致性：欧姆定律应当用电压除以电阻来求电流；把电阻除以电压不仅关系倒置，所得量纲也不是安培。"
+        },
+        {
+          "label": "C",
+          "text": "数值代入：6 Ω 与 3 Ω 并联的倒数和为 0.5 Ω^-1，等效电阻应为其倒数 2 Ω。"
+        },
+        {
+          "label": "D",
+          "text": "数值代入：同一电阻器两端电压 6 V、电阻 12 Ω 时，电流为 0.5 A，而不是 2 A。"
+        }
+      ],
+      "correct_answer": "A",
+      "explanation": "阻值变化由实际接入电路的下接线柱和滑片位置共同决定，必须结合电路连接判断。",
+      "error_type": "概念混淆",
+      "judging": "teacher",
+      "source_error_index": 0,
+      "source_caught_by": "人工审核",
+      "wrong_expr": null,
+      "trap_test": null,
+      "review": {
+        "confidence": "medium",
+        "checks": {
+          "answer_unique": true,
+          "distractors_plausible": true,
+          "stem_clear": true,
+          "no_cross_segment": true
+        },
+        "note": "本章可用类型不足四类，干扰项包含同章其他错误的类别与原解释；答案按“类别+依据”唯一匹配，建议抽查教学区分度。"
+      }
+    },
+    {
+      "id": "diagnostic-ohm-03-2",
+      "point_id": "ohm-03",
+      "point_title": "变阻器",
+      "chapter": "欧姆定律",
+      "stem": "【欧姆定律 · 变阻器】学生的错误做法：计算定值电阻与变阻器串联总阻值时把二者相乘（错误表达式：Rs = R1*R2）。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
+      "options": [
+        {
+          "label": "A",
+          "text": "量纲一致性：欧姆定律应当用电压除以电阻来求电流；把电阻除以电压不仅关系倒置，所得量纲也不是安培。"
+        },
+        {
+          "label": "B",
+          "text": "概念混淆：并联增加额外电流通路，等效电阻会减小；串联增加电阻才会使总电阻增大。"
+        },
+        {
+          "label": "C",
+          "text": "概念混淆：灯丝等元件温度变化会影响电阻；使用关系式时要看元件和实验条件。"
+        },
+        {
+          "label": "D",
+          "text": "数值代入：串联总电阻为各电阻之和；10 Ω 和 20 Ω 串联应为 30 Ω。"
+        }
+      ],
+      "correct_answer": "D",
+      "explanation": "串联总电阻为各电阻之和；10 Ω 和 20 Ω 串联应为 30 Ω。\n知识库校验证据：情境：变阻器接入一；代入错误式：R1*R2；校验参照值：30。",
+      "error_type": "数值代入",
+      "judging": "auto",
+      "source_error_index": 1,
+      "source_caught_by": "数值代入",
+      "wrong_expr": "Rs = R1*R2",
+      "trap_test": {
+        "scenario": "变阻器接入一",
+        "expr": "R1*R2",
+        "ref": 30
+      },
+      "review": {
+        "confidence": "medium",
+        "checks": {
+          "answer_unique": true,
+          "distractors_plausible": true,
+          "stem_clear": true,
+          "no_cross_segment": true
+        },
+        "note": "本章可用类型不足四类，干扰项包含同章其他错误的类别与原解释；答案按“类别+依据”唯一匹配，建议抽查教学区分度。"
+      }
+    },
+    {
+      "id": "diagnostic-ohm-04-1",
+      "point_id": "ohm-04",
+      "point_title": "欧姆定律",
+      "chapter": "欧姆定律",
+      "stem": "【欧姆定律 · 欧姆定律】学生的错误做法：把欧姆定律的电流公式误写成电阻除以电压（错误表达式：I = R/U）。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
+      "options": [
+        {
+          "label": "A",
+          "text": "概念混淆：阻值变化由实际接入电路的下接线柱和滑片位置共同决定，必须结合电路连接判断。"
+        },
+        {
+          "label": "B",
+          "text": "概念混淆：并联增加额外电流通路，等效电阻会减小；串联增加电阻才会使总电阻增大。"
+        },
+        {
+          "label": "C",
+          "text": "数值代入：同一电阻器两端电压 6 V、电阻 12 Ω 时，电流为 0.5 A，而不是 2 A。"
+        },
+        {
+          "label": "D",
+          "text": "量纲一致性：欧姆定律应当用电压除以电阻来求电流；把电阻除以电压不仅关系倒置，所得量纲也不是安培。"
+        }
+      ],
+      "correct_answer": "C",
+      "explanation": "同一电阻器两端电压 6 V、电阻 12 Ω 时，电流为 0.5 A，而不是 2 A。\n知识库校验证据：情境：电阻器甲；代入错误式：R/U；校验参照值：0.5。",
+      "error_type": "数值代入",
+      "judging": "auto",
+      "source_error_index": 0,
+      "source_caught_by": "数值代入",
+      "wrong_expr": "I = R/U",
+      "trap_test": {
+        "scenario": "电阻器甲",
+        "expr": "R/U",
+        "ref": 0.5
+      },
+      "review": {
+        "confidence": "medium",
+        "checks": {
+          "answer_unique": true,
+          "distractors_plausible": true,
+          "stem_clear": true,
+          "no_cross_segment": true
+        },
+        "note": "本章可用类型不足四类，干扰项包含同章其他错误的类别与原解释；答案按“类别+依据”唯一匹配，建议抽查教学区分度。"
+      }
+    },
+    {
+      "id": "diagnostic-ohm-04-2",
+      "point_id": "ohm-04",
+      "point_title": "欧姆定律",
+      "chapter": "欧姆定律",
+      "stem": "【欧姆定律 · 欧姆定律】学生的错误做法：认为任何电学元件在任何温度下都保持恒定电阻并严格符合欧姆定律。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
+      "options": [
+        {
+          "label": "A",
+          "text": "数值代入：6 V 接在 3 kΩ 电阻上，电流应为 0.002 A；把数值 3 当作 Ω 会错误得到 2 A。"
+        },
+        {
+          "label": "B",
+          "text": "概念混淆：灯丝等元件温度变化会影响电阻；使用关系式时要看元件和实验条件。"
+        },
+        {
+          "label": "C",
+          "text": "量纲一致性：欧姆定律应当用电压除以电阻来求电流；把电阻除以电压不仅关系倒置，所得量纲也不是安培。"
+        },
+        {
+          "label": "D",
+          "text": "数值代入：6 Ω 与 3 Ω 并联的倒数和为 0.5 Ω^-1，等效电阻应为其倒数 2 Ω。"
+        }
+      ],
+      "correct_answer": "B",
+      "explanation": "灯丝等元件温度变化会影响电阻；使用关系式时要看元件和实验条件。",
+      "error_type": "概念混淆",
+      "judging": "teacher",
+      "source_error_index": 1,
+      "source_caught_by": "人工审核",
+      "wrong_expr": null,
+      "trap_test": null,
+      "review": {
+        "confidence": "medium",
+        "checks": {
+          "answer_unique": true,
+          "distractors_plausible": true,
+          "stem_clear": true,
+          "no_cross_segment": true
+        },
+        "note": "本章可用类型不足四类，干扰项包含同章其他错误的类别与原解释；答案按“类别+依据”唯一匹配，建议抽查教学区分度。"
+      }
+    },
+    {
+      "id": "diagnostic-ohm-02-1",
+      "point_id": "ohm-02",
+      "point_title": "欧姆定律的应用",
+      "chapter": "欧姆定律",
+      "stem": "【欧姆定律 · 欧姆定律的应用】学生的错误做法：并联电阻只把各支路电阻倒数相加，忘记再取倒数（错误表达式：Rp = 1/R1+1/R2）。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
+      "options": [
+        {
+          "label": "A",
+          "text": "数值代入：6 Ω 与 3 Ω 并联的倒数和为 0.5 Ω^-1，等效电阻应为其倒数 2 Ω。"
+        },
+        {
+          "label": "B",
+          "text": "量纲一致性：欧姆定律应当用电压除以电阻来求电流；把电阻除以电压不仅关系倒置，所得量纲也不是安培。"
+        },
+        {
+          "label": "C",
+          "text": "概念混淆：阻值变化由实际接入电路的下接线柱和滑片位置共同决定，必须结合电路连接判断。"
+        },
+        {
+          "label": "D",
+          "text": "概念混淆：灯丝等元件温度变化会影响电阻；使用关系式时要看元件和实验条件。"
+        }
+      ],
+      "correct_answer": "A",
+      "explanation": "6 Ω 与 3 Ω 并联的倒数和为 0.5 Ω^-1，等效电阻应为其倒数 2 Ω。\n知识库校验证据：情境：并联电阻组一；代入错误式：1/R1+1/R2；校验参照值：2。",
+      "error_type": "数值代入",
+      "judging": "auto",
+      "source_error_index": 0,
+      "source_caught_by": "数值代入",
+      "wrong_expr": "Rp = 1/R1+1/R2",
+      "trap_test": {
+        "scenario": "并联电阻组一",
+        "expr": "1/R1+1/R2",
+        "ref": 2
+      },
+      "review": {
+        "confidence": "medium",
+        "checks": {
+          "answer_unique": true,
+          "distractors_plausible": true,
+          "stem_clear": true,
+          "no_cross_segment": true
+        },
+        "note": "本章可用类型不足四类，干扰项包含同章其他错误的类别与原解释；答案按“类别+依据”唯一匹配，建议抽查教学区分度。"
+      }
+    },
+    {
+      "id": "diagnostic-ohm-02-2",
+      "point_id": "ohm-02",
+      "point_title": "欧姆定律的应用",
+      "chapter": "欧姆定律",
+      "stem": "【欧姆定律 · 欧姆定律的应用】学生的错误做法：认为增加并联支路会增大总电阻。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
+      "options": [
+        {
+          "label": "A",
+          "text": "量纲一致性：欧姆定律应当用电压除以电阻来求电流；把电阻除以电压不仅关系倒置，所得量纲也不是安培。"
+        },
+        {
+          "label": "B",
+          "text": "数值代入：同一电阻器两端电压 6 V、电阻 12 Ω 时，电流为 0.5 A，而不是 2 A。"
+        },
+        {
+          "label": "C",
+          "text": "数值代入：6 V 接在 3 kΩ 电阻上，电流应为 0.002 A；把数值 3 当作 Ω 会错误得到 2 A。"
+        },
+        {
+          "label": "D",
+          "text": "概念混淆：并联增加额外电流通路，等效电阻会减小；串联增加电阻才会使总电阻增大。"
+        }
+      ],
+      "correct_answer": "D",
+      "explanation": "并联增加额外电流通路，等效电阻会减小；串联增加电阻才会使总电阻增大。",
+      "error_type": "概念混淆",
+      "judging": "teacher",
+      "source_error_index": 1,
+      "source_caught_by": "人工审核",
+      "wrong_expr": null,
+      "trap_test": null,
+      "review": {
+        "confidence": "medium",
+        "checks": {
+          "answer_unique": true,
+          "distractors_plausible": true,
+          "stem_clear": true,
+          "no_cross_segment": true
+        },
+        "note": "本章可用类型不足四类，干扰项包含同章其他错误的类别与原解释；答案按“类别+依据”唯一匹配，建议抽查教学区分度。"
+      }
+    }
+  ],
+  "skipped": [
+    {
+      "point_id": "ohm-01",
+      "point_title": "电阻",
+      "source_error_index": 0,
+      "reason": "自动判定条目没有 trap_test 可执行证据；不把校验标签代替实测证据。"
+    }
+  ]
+}

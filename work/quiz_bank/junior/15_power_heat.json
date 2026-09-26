@@ -1,0 +1,338 @@
+{
+  "segment": "初中",
+  "chapter": "电功和电热",
+  "source_file": "15_power_heat.json",
+  "questions": [
+    {
+      "id": "diagnostic-power-01-2",
+      "point_id": "power-01",
+      "point_title": "电能表与电功",
+      "chapter": "电功和电热",
+      "stem": "【电功和电热 · 电能表与电功】学生的错误做法：把 1 kWh 当成 1000 J，而不是 3.6×10^6 J（错误表达式：EJ = 1000*E_kWh）。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
+      "options": [
+        {
+          "label": "A",
+          "text": "概念混淆：非纯电阻用电器还会输出机械能、光能或声能等；必须区分电功与电热。"
+        },
+        {
+          "label": "B",
+          "text": "概念混淆：保险丝规格过大会失去过载保护作用；家庭电路检修需先断电并由合格人员处理。"
+        },
+        {
+          "label": "C",
+          "text": "数值代入：1 kWh=1000 W×3600 s=3 600 000 J；只乘 1000 漏掉小时到秒的换算。"
+        },
+        {
+          "label": "D",
+          "text": "概念混淆：功率表示做功或用电的快慢，电能表示一段时间内做功的总量；前者单位是 W，后者常用 J 或 kWh，二者不能混淆。"
+        }
+      ],
+      "correct_answer": "C",
+      "explanation": "1 kWh=1000 W×3600 s=3 600 000 J；只乘 1000 漏掉小时到秒的换算。\n知识库校验证据：情境：220伏灯工作一小时；代入错误式：1000*E_kWh；校验参照值：792000。",
+      "error_type": "数值代入",
+      "judging": "auto",
+      "source_error_index": 1,
+      "source_caught_by": "数值代入",
+      "wrong_expr": "EJ = 1000*E_kWh",
+      "trap_test": {
+        "scenario": "220伏灯工作一小时",
+        "expr": "1000*E_kWh",
+        "ref": 792000
+      },
+      "review": {
+        "confidence": "medium",
+        "checks": {
+          "answer_unique": true,
+          "distractors_plausible": true,
+          "stem_clear": true,
+          "no_cross_segment": true
+        },
+        "note": "本章可用类型不足四类，干扰项包含同章其他错误的类别与原解释；答案按“类别+依据”唯一匹配，建议抽查教学区分度。"
+      }
+    },
+    {
+      "id": "diagnostic-power-02-1",
+      "point_id": "power-02",
+      "point_title": "电功率",
+      "chapter": "电功和电热",
+      "stem": "【电功和电热 · 电功率】学生的错误做法：把功率当作总电能，忽略做功时间。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
+      "options": [
+        {
+          "label": "A",
+          "text": "数值代入：功率关系为 P=UI，故 I=P/U；额外除以 2 会把负载电流低估一半。"
+        },
+        {
+          "label": "B",
+          "text": "概念混淆：功率表示做功或用电的快慢，电能表示一段时间内做功的总量；前者单位是 W，后者常用 J 或 kWh，二者不能混淆。"
+        },
+        {
+          "label": "C",
+          "text": "量纲一致性：U*I 的单位是 W，是功率；求一段时间内的电功还要乘 t。"
+        },
+        {
+          "label": "D",
+          "text": "数值代入：十欧电阻中 2 A 电流通过 5 s，焦耳热为 200 J；漏掉平方会得到 100 J。"
+        }
+      ],
+      "correct_answer": "B",
+      "explanation": "功率表示做功或用电的快慢，电能表示一段时间内做功的总量；前者单位是 W，后者常用 J 或 kWh，二者不能混淆。",
+      "error_type": "概念混淆",
+      "judging": "teacher",
+      "source_error_index": 0,
+      "source_caught_by": "人工审核",
+      "wrong_expr": null,
+      "trap_test": null,
+      "review": {
+        "confidence": "medium",
+        "checks": {
+          "answer_unique": true,
+          "distractors_plausible": true,
+          "stem_clear": true,
+          "no_cross_segment": true
+        },
+        "note": "本章可用类型不足四类，干扰项包含同章其他错误的类别与原解释；答案按“类别+依据”唯一匹配，建议抽查教学区分度。"
+      }
+    },
+    {
+      "id": "diagnostic-power-02-2",
+      "point_id": "power-02",
+      "point_title": "电功率",
+      "chapter": "电功和电热",
+      "stem": "【电功和电热 · 电功率】学生的错误做法：把以 kW 表示的功率数值直接标成 W，换算时多除以 1000（错误表达式：P = U*I/1000）。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
+      "options": [
+        {
+          "label": "A",
+          "text": "数值代入：220 V×1 A=220 W；若要改写成 kW 才是 0.22 kW，不能把 0.22 标成 W。"
+        },
+        {
+          "label": "B",
+          "text": "量纲一致性：U*I 的单位是 W，是功率；求一段时间内的电功还要乘 t。"
+        },
+        {
+          "label": "C",
+          "text": "概念混淆：非纯电阻用电器还会输出机械能、光能或声能等；必须区分电功与电热。"
+        },
+        {
+          "label": "D",
+          "text": "概念混淆：保险丝规格过大会失去过载保护作用；家庭电路检修需先断电并由合格人员处理。"
+        }
+      ],
+      "correct_answer": "A",
+      "explanation": "220 V×1 A=220 W；若要改写成 kW 才是 0.22 kW，不能把 0.22 标成 W。\n知识库校验证据：情境：小灯泡一；代入错误式：U*I/1000；校验参照值：220。",
+      "error_type": "数值代入",
+      "judging": "auto",
+      "source_error_index": 1,
+      "source_caught_by": "数值代入",
+      "wrong_expr": "P = U*I/1000",
+      "trap_test": {
+        "scenario": "小灯泡一",
+        "expr": "U*I/1000",
+        "ref": 220
+      },
+      "review": {
+        "confidence": "medium",
+        "checks": {
+          "answer_unique": true,
+          "distractors_plausible": true,
+          "stem_clear": true,
+          "no_cross_segment": true
+        },
+        "note": "本章可用类型不足四类，干扰项包含同章其他错误的类别与原解释；答案按“类别+依据”唯一匹配，建议抽查教学区分度。"
+      }
+    },
+    {
+      "id": "diagnostic-power-03-1",
+      "point_id": "power-03",
+      "point_title": "电热器 电流的热效应",
+      "chapter": "电功和电热",
+      "stem": "【电功和电热 · 电热器 电流的热效应】学生的错误做法：使用焦耳定律时漏掉电流平方，写成 Q=IRt（错误表达式：Q = I*R*t）。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
+      "options": [
+        {
+          "label": "A",
+          "text": "概念混淆：功率表示做功或用电的快慢，电能表示一段时间内做功的总量；前者单位是 W，后者常用 J 或 kWh，二者不能混淆。"
+        },
+        {
+          "label": "B",
+          "text": "概念混淆：保险丝规格过大会失去过载保护作用；家庭电路检修需先断电并由合格人员处理。"
+        },
+        {
+          "label": "C",
+          "text": "数值代入：十欧电阻中 2 A 电流通过 5 s，焦耳热为 200 J；漏掉平方会得到 100 J。"
+        },
+        {
+          "label": "D",
+          "text": "量纲一致性：U*I 的单位是 W，是功率；求一段时间内的电功还要乘 t。"
+        }
+      ],
+      "correct_answer": "C",
+      "explanation": "十欧电阻中 2 A 电流通过 5 s，焦耳热为 200 J；漏掉平方会得到 100 J。\n知识库校验证据：情境：十欧电阻；代入错误式：I*R*t；校验参照值：200。",
+      "error_type": "数值代入",
+      "judging": "auto",
+      "source_error_index": 0,
+      "source_caught_by": "数值代入",
+      "wrong_expr": "Q = I*R*t",
+      "trap_test": {
+        "scenario": "十欧电阻",
+        "expr": "I*R*t",
+        "ref": 200
+      },
+      "review": {
+        "confidence": "medium",
+        "checks": {
+          "answer_unique": true,
+          "distractors_plausible": true,
+          "stem_clear": true,
+          "no_cross_segment": true
+        },
+        "note": "本章可用类型不足四类，干扰项包含同章其他错误的类别与原解释；答案按“类别+依据”唯一匹配，建议抽查教学区分度。"
+      }
+    },
+    {
+      "id": "diagnostic-power-03-2",
+      "point_id": "power-03",
+      "point_title": "电热器 电流的热效应",
+      "chapter": "电功和电热",
+      "stem": "【电功和电热 · 电热器 电流的热效应】学生的错误做法：认为电动机等所有用电器的电功都全部变成电热。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
+      "options": [
+        {
+          "label": "A",
+          "text": "数值代入：1 kWh=1000 W×3600 s=3 600 000 J；只乘 1000 漏掉小时到秒的换算。"
+        },
+        {
+          "label": "B",
+          "text": "概念混淆：非纯电阻用电器还会输出机械能、光能或声能等；必须区分电功与电热。"
+        },
+        {
+          "label": "C",
+          "text": "量纲一致性：U*I 的单位是 W，是功率；求一段时间内的电功还要乘 t。"
+        },
+        {
+          "label": "D",
+          "text": "数值代入：功率关系为 P=UI，故 I=P/U；额外除以 2 会把负载电流低估一半。"
+        }
+      ],
+      "correct_answer": "B",
+      "explanation": "非纯电阻用电器还会输出机械能、光能或声能等；必须区分电功与电热。",
+      "error_type": "概念混淆",
+      "judging": "teacher",
+      "source_error_index": 1,
+      "source_caught_by": "人工审核",
+      "wrong_expr": null,
+      "trap_test": null,
+      "review": {
+        "confidence": "medium",
+        "checks": {
+          "answer_unique": true,
+          "distractors_plausible": true,
+          "stem_clear": true,
+          "no_cross_segment": true
+        },
+        "note": "本章可用类型不足四类，干扰项包含同章其他错误的类别与原解释；答案按“类别+依据”唯一匹配，建议抽查教学区分度。"
+      }
+    },
+    {
+      "id": "diagnostic-power-04-1",
+      "point_id": "power-04",
+      "point_title": "家庭电路与安全用电",
+      "chapter": "电功和电热",
+      "stem": "【电功和电热 · 家庭电路与安全用电】学生的错误做法：估算家庭电路电流时把总功率除以两倍电压（错误表达式：I_total = P_total/(2*U)）。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
+      "options": [
+        {
+          "label": "A",
+          "text": "数值代入：功率关系为 P=UI，故 I=P/U；额外除以 2 会把负载电流低估一半。"
+        },
+        {
+          "label": "B",
+          "text": "量纲一致性：U*I 的单位是 W，是功率；求一段时间内的电功还要乘 t。"
+        },
+        {
+          "label": "C",
+          "text": "概念混淆：功率表示做功或用电的快慢，电能表示一段时间内做功的总量；前者单位是 W，后者常用 J 或 kWh，二者不能混淆。"
+        },
+        {
+          "label": "D",
+          "text": "概念混淆：非纯电阻用电器还会输出机械能、光能或声能等；必须区分电功与电热。"
+        }
+      ],
+      "correct_answer": "A",
+      "explanation": "功率关系为 P=UI，故 I=P/U；额外除以 2 会把负载电流低估一半。\n知识库校验证据：情境：两千瓦家电；代入错误式：P_total/(2*U)；校验参照值：9.090909090909092。",
+      "error_type": "数值代入",
+      "judging": "auto",
+      "source_error_index": 0,
+      "source_caught_by": "数值代入",
+      "wrong_expr": "I_total = P_total/(2*U)",
+      "trap_test": {
+        "scenario": "两千瓦家电",
+        "expr": "P_total/(2*U)",
+        "ref": 9.090909090909092
+      },
+      "review": {
+        "confidence": "medium",
+        "checks": {
+          "answer_unique": true,
+          "distractors_plausible": true,
+          "stem_clear": true,
+          "no_cross_segment": true
+        },
+        "note": "本章可用类型不足四类，干扰项包含同章其他错误的类别与原解释；答案按“类别+依据”唯一匹配，建议抽查教学区分度。"
+      }
+    },
+    {
+      "id": "diagnostic-power-04-2",
+      "point_id": "power-04",
+      "point_title": "家庭电路与安全用电",
+      "chapter": "电功和电热",
+      "stem": "【电功和电热 · 家庭电路与安全用电】学生的错误做法：认为保险丝越粗越安全，或在带电状态下更换保险丝。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
+      "options": [
+        {
+          "label": "A",
+          "text": "量纲一致性：U*I 的单位是 W，是功率；求一段时间内的电功还要乘 t。"
+        },
+        {
+          "label": "B",
+          "text": "数值代入：十欧电阻中 2 A 电流通过 5 s，焦耳热为 200 J；漏掉平方会得到 100 J。"
+        },
+        {
+          "label": "C",
+          "text": "数值代入：1 kWh=1000 W×3600 s=3 600 000 J；只乘 1000 漏掉小时到秒的换算。"
+        },
+        {
+          "label": "D",
+          "text": "概念混淆：保险丝规格过大会失去过载保护作用；家庭电路检修需先断电并由合格人员处理。"
+        }
+      ],
+      "correct_answer": "D",
+      "explanation": "保险丝规格过大会失去过载保护作用；家庭电路检修需先断电并由合格人员处理。",
+      "error_type": "概念混淆",
+      "judging": "teacher",
+      "source_error_index": 1,
+      "source_caught_by": "人工审核",
+      "wrong_expr": null,
+      "trap_test": null,
+      "review": {
+        "confidence": "medium",
+        "checks": {
+          "answer_unique": true,
+          "distractors_plausible": true,
+          "stem_clear": true,
+          "no_cross_segment": true
+        },
+        "note": "本章可用类型不足四类，干扰项包含同章其他错误的类别与原解释；答案按“类别+依据”唯一匹配，建议抽查教学区分度。"
+      }
+    }
+  ],
+  "skipped": [
+    {
+      "point_id": "power-01",
+      "point_title": "电能表与电功",
+      "source_error_index": 0,
+      "reason": "自动判定条目没有 trap_test 可执行证据；不把校验标签代替实测证据。"
+    },
+    {
+      "point_id": "power-02",
+      "point_title": "电功率",
+      "source_error_index": 2,
+      "reason": "自动判定条目没有 trap_test 可执行证据；不把校验标签代替实测证据。"
+    }
+  ]
+}

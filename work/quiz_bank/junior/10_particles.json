@@ -1,0 +1,458 @@
+{
+  "segment": "初中",
+  "chapter": "从粒子到宇宙",
+  "source_file": "10_particles.json",
+  "questions": [
+    {
+      "id": "diagnostic-particle-01-1",
+      "point_id": "particle-01",
+      "point_title": "走进分子世界",
+      "chapter": "从粒子到宇宙",
+      "stem": "【从粒子到宇宙 · 走进分子世界】学生的错误做法：把米换算成纳米时只乘 1000，误把毫、微等前缀混淆（错误表达式：d_nm = 1000*d_m）。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
+      "options": [
+        {
+          "label": "A",
+          "text": "概念混淆：“一年”是定义中采用的传播时间，“光年”最终表示一段距离；量纲为长度。"
+        },
+        {
+          "label": "B",
+          "text": "概念混淆：同种电荷相互排斥，异种电荷相互吸引；应通过带电体实验辨认。"
+        },
+        {
+          "label": "C",
+          "text": "概念混淆：原子由原子核和核外电子构成，原子核还具有更细的内部结构；科学认识随证据发展。"
+        },
+        {
+          "label": "D",
+          "text": "数值代入：米到纳米相差 10^9 倍；例如 10^-10 m 应为 0.1 nm，而不是 10^-7 nm。"
+        }
+      ],
+      "correct_answer": "D",
+      "explanation": "米到纳米相差 10^9 倍；例如 10^-10 m 应为 0.1 nm，而不是 10^-7 nm。\n知识库校验证据：情境：十分之一纳米；代入错误式：1000*d_m；校验参照值：0.1。",
+      "error_type": "数值代入",
+      "judging": "auto",
+      "source_error_index": 0,
+      "source_caught_by": "数值代入",
+      "wrong_expr": "d_nm = 1000*d_m",
+      "trap_test": {
+        "scenario": "十分之一纳米",
+        "expr": "1000*d_m",
+        "ref": 0.1
+      },
+      "review": {
+        "confidence": "medium",
+        "checks": {
+          "answer_unique": true,
+          "distractors_plausible": true,
+          "stem_clear": true,
+          "no_cross_segment": true
+        },
+        "note": "本章可用类型不足四类，干扰项包含同章其他错误的类别与原解释；答案按“类别+依据”唯一匹配，建议抽查教学区分度。"
+      }
+    },
+    {
+      "id": "diagnostic-particle-01-2",
+      "point_id": "particle-01",
+      "point_title": "走进分子世界",
+      "chapter": "从粒子到宇宙",
+      "stem": "【从粒子到宇宙 · 走进分子世界】学生的错误做法：把分子或原子的示意图当作按真实尺寸比例绘制的结构图。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
+      "options": [
+        {
+          "label": "A",
+          "text": "数值代入：典型尺度约差五个数量级；原子核约 10^-15 m，原子约 10^-10 m。"
+        },
+        {
+          "label": "B",
+          "text": "数值代入：圆周长是 2*pi*r；漏掉因子 2 会把估算轨道速度减半。"
+        },
+        {
+          "label": "C",
+          "text": "概念混淆：微观结构图通常为便于辨认而放大或简化，不能直接据图比较真实粒子尺寸。"
+        },
+        {
+          "label": "D",
+          "text": "数值代入：电荷量应按符号作代数和；两物体带等量异号电荷时总电荷为零。"
+        }
+      ],
+      "correct_answer": "C",
+      "explanation": "微观结构图通常为便于辨认而放大或简化，不能直接据图比较真实粒子尺寸。",
+      "error_type": "概念混淆",
+      "judging": "teacher",
+      "source_error_index": 1,
+      "source_caught_by": "人工审核",
+      "wrong_expr": null,
+      "trap_test": null,
+      "review": {
+        "confidence": "medium",
+        "checks": {
+          "answer_unique": true,
+          "distractors_plausible": true,
+          "stem_clear": true,
+          "no_cross_segment": true
+        },
+        "note": "本章可用类型不足四类，干扰项包含同章其他错误的类别与原解释；答案按“类别+依据”唯一匹配，建议抽查教学区分度。"
+      }
+    },
+    {
+      "id": "diagnostic-particle-03-1",
+      "point_id": "particle-03",
+      "point_title": "静电现象",
+      "chapter": "从粒子到宇宙",
+      "stem": "【从粒子到宇宙 · 静电现象】学生的错误做法：摩擦起电时把转移电荷误认为在系统内被创造出来（错误表达式：Q_total = Q_A-Q_B）。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
+      "options": [
+        {
+          "label": "A",
+          "text": "概念混淆：原子由原子核和核外电子构成，原子核还具有更细的内部结构；科学认识随证据发展。"
+        },
+        {
+          "label": "B",
+          "text": "数值代入：电荷量应按符号作代数和；两物体带等量异号电荷时总电荷为零。"
+        },
+        {
+          "label": "C",
+          "text": "概念混淆：“一年”是定义中采用的传播时间，“光年”最终表示一段距离；量纲为长度。"
+        },
+        {
+          "label": "D",
+          "text": "概念混淆：微观结构图通常为便于辨认而放大或简化，不能直接据图比较真实粒子尺寸。"
+        }
+      ],
+      "correct_answer": "B",
+      "explanation": "电荷量应按符号作代数和；两物体带等量异号电荷时总电荷为零。应结合电荷守恒和本节讨论范围判断。\n知识库校验证据：情境：放大后便于检错；代入错误式：Q_A-Q_B；校验参照值：0。",
+      "error_type": "数值代入",
+      "judging": "auto",
+      "source_error_index": 0,
+      "source_caught_by": "数值代入",
+      "wrong_expr": "Q_total = Q_A-Q_B",
+      "trap_test": {
+        "scenario": "放大后便于检错",
+        "expr": "Q_A-Q_B",
+        "ref": 0
+      },
+      "review": {
+        "confidence": "medium",
+        "checks": {
+          "answer_unique": true,
+          "distractors_plausible": true,
+          "stem_clear": true,
+          "no_cross_segment": true
+        },
+        "note": "本章可用类型不足四类，干扰项包含同章其他错误的类别与原解释；答案按“类别+依据”唯一匹配，建议抽查教学区分度。"
+      }
+    },
+    {
+      "id": "diagnostic-particle-03-2",
+      "point_id": "particle-03",
+      "point_title": "静电现象",
+      "chapter": "从粒子到宇宙",
+      "stem": "【从粒子到宇宙 · 静电现象】学生的错误做法：认为同种电荷相吸、异种电荷相斥。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
+      "options": [
+        {
+          "label": "A",
+          "text": "概念混淆：同种电荷相互排斥，异种电荷相互吸引；应通过带电体实验辨认。"
+        },
+        {
+          "label": "B",
+          "text": "数值代入：米到纳米相差 10^9 倍；例如 10^-10 m 应为 0.1 nm，而不是 10^-7 nm。"
+        },
+        {
+          "label": "C",
+          "text": "数值代入：典型尺度约差五个数量级；原子核约 10^-15 m，原子约 10^-10 m。"
+        },
+        {
+          "label": "D",
+          "text": "数值代入：圆周长是 2*pi*r；漏掉因子 2 会把估算轨道速度减半。"
+        }
+      ],
+      "correct_answer": "A",
+      "explanation": "同种电荷相互排斥，异种电荷相互吸引；应通过带电体实验辨认。应结合电荷守恒和本节讨论范围判断。",
+      "error_type": "概念混淆",
+      "judging": "teacher",
+      "source_error_index": 1,
+      "source_caught_by": "人工审核",
+      "wrong_expr": null,
+      "trap_test": null,
+      "review": {
+        "confidence": "medium",
+        "checks": {
+          "answer_unique": true,
+          "distractors_plausible": true,
+          "stem_clear": true,
+          "no_cross_segment": true
+        },
+        "note": "本章可用类型不足四类，干扰项包含同章其他错误的类别与原解释；答案按“类别+依据”唯一匹配，建议抽查教学区分度。"
+      }
+    },
+    {
+      "id": "diagnostic-particle-04-1",
+      "point_id": "particle-04",
+      "point_title": "探索更小的微粒",
+      "chapter": "从粒子到宇宙",
+      "stem": "【从粒子到宇宙 · 探索更小的微粒】学生的错误做法：把原子与原子核的尺度差误写成 10 倍（错误表达式：d_atom = 10*d_nucleus）。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
+      "options": [
+        {
+          "label": "A",
+          "text": "概念混淆：“一年”是定义中采用的传播时间，“光年”最终表示一段距离；量纲为长度。"
+        },
+        {
+          "label": "B",
+          "text": "概念混淆：微观结构图通常为便于辨认而放大或简化，不能直接据图比较真实粒子尺寸。"
+        },
+        {
+          "label": "C",
+          "text": "概念混淆：同种电荷相互排斥，异种电荷相互吸引；应通过带电体实验辨认。"
+        },
+        {
+          "label": "D",
+          "text": "数值代入：典型尺度约差五个数量级；原子核约 10^-15 m，原子约 10^-10 m。"
+        }
+      ],
+      "correct_answer": "D",
+      "explanation": "典型尺度约差五个数量级；原子核约 10^-15 m，原子约 10^-10 m。\n知识库校验证据：情境：原子典型尺度；代入错误式：10*d_nucleus；校验参照值：0.1。",
+      "error_type": "数值代入",
+      "judging": "auto",
+      "source_error_index": 0,
+      "source_caught_by": "数值代入",
+      "wrong_expr": "d_atom = 10*d_nucleus",
+      "trap_test": {
+        "scenario": "原子典型尺度",
+        "expr": "10*d_nucleus",
+        "ref": 0.1
+      },
+      "review": {
+        "confidence": "medium",
+        "checks": {
+          "answer_unique": true,
+          "distractors_plausible": true,
+          "stem_clear": true,
+          "no_cross_segment": true
+        },
+        "note": "本章可用类型不足四类，干扰项包含同章其他错误的类别与原解释；答案按“类别+依据”唯一匹配，建议抽查教学区分度。"
+      }
+    },
+    {
+      "id": "diagnostic-particle-04-2",
+      "point_id": "particle-04",
+      "point_title": "探索更小的微粒",
+      "chapter": "从粒子到宇宙",
+      "stem": "【从粒子到宇宙 · 探索更小的微粒】学生的错误做法：认为原子是不可再分的最小粒子。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
+      "options": [
+        {
+          "label": "A",
+          "text": "数值代入：电荷量应按符号作代数和；两物体带等量异号电荷时总电荷为零。"
+        },
+        {
+          "label": "B",
+          "text": "数值代入：圆周长是 2*pi*r；漏掉因子 2 会把估算轨道速度减半。"
+        },
+        {
+          "label": "C",
+          "text": "概念混淆：原子由原子核和核外电子构成，原子核还具有更细的内部结构；科学认识随证据发展。"
+        },
+        {
+          "label": "D",
+          "text": "数值代入：米到纳米相差 10^9 倍；例如 10^-10 m 应为 0.1 nm，而不是 10^-7 nm。"
+        }
+      ],
+      "correct_answer": "C",
+      "explanation": "原子由原子核和核外电子构成，原子核还具有更细的内部结构；科学认识随证据发展。",
+      "error_type": "概念混淆",
+      "judging": "teacher",
+      "source_error_index": 1,
+      "source_caught_by": "人工审核",
+      "wrong_expr": null,
+      "trap_test": null,
+      "review": {
+        "confidence": "medium",
+        "checks": {
+          "answer_unique": true,
+          "distractors_plausible": true,
+          "stem_clear": true,
+          "no_cross_segment": true
+        },
+        "note": "本章可用类型不足四类，干扰项包含同章其他错误的类别与原解释；答案按“类别+依据”唯一匹配，建议抽查教学区分度。"
+      }
+    },
+    {
+      "id": "diagnostic-particle-05-1",
+      "point_id": "particle-05",
+      "point_title": "日心说与太阳系",
+      "chapter": "从粒子到宇宙",
+      "stem": "【从粒子到宇宙 · 日心说与太阳系】学生的错误做法：把轨道周长误写成半径乘周期，再用于求速度（错误表达式：v = pi*r/T）。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
+      "options": [
+        {
+          "label": "A",
+          "text": "概念混淆：同种电荷相互排斥，异种电荷相互吸引；应通过带电体实验辨认。"
+        },
+        {
+          "label": "B",
+          "text": "数值代入：圆周长是 2*pi*r；漏掉因子 2 会把估算轨道速度减半。"
+        },
+        {
+          "label": "C",
+          "text": "概念混淆：“一年”是定义中采用的传播时间，“光年”最终表示一段距离；量纲为长度。"
+        },
+        {
+          "label": "D",
+          "text": "概念混淆：微观结构图通常为便于辨认而放大或简化，不能直接据图比较真实粒子尺寸。"
+        }
+      ],
+      "correct_answer": "B",
+      "explanation": "圆周长是 2*pi*r；漏掉因子 2 会把估算轨道速度减半。\n知识库校验证据：情境：地球轨道近似；代入错误式：pi*r/T；校验参照值：29780。",
+      "error_type": "数值代入",
+      "judging": "auto",
+      "source_error_index": 0,
+      "source_caught_by": "数值代入",
+      "wrong_expr": "v = pi*r/T",
+      "trap_test": {
+        "scenario": "地球轨道近似",
+        "expr": "pi*r/T",
+        "ref": 29780
+      },
+      "review": {
+        "confidence": "medium",
+        "checks": {
+          "answer_unique": true,
+          "distractors_plausible": true,
+          "stem_clear": true,
+          "no_cross_segment": true
+        },
+        "note": "本章可用类型不足四类，干扰项包含同章其他错误的类别与原解释；答案按“类别+依据”唯一匹配，建议抽查教学区分度。"
+      }
+    },
+    {
+      "id": "diagnostic-particle-05-2",
+      "point_id": "particle-05",
+      "point_title": "日心说与太阳系",
+      "chapter": "从粒子到宇宙",
+      "stem": "【从粒子到宇宙 · 日心说与太阳系】学生的错误做法：认为日心说把太阳放在整个宇宙的中心。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
+      "options": [
+        {
+          "label": "A",
+          "text": "概念混淆：日心说讨论的是太阳系结构，并非宣称太阳是整个宇宙的中心。"
+        },
+        {
+          "label": "B",
+          "text": "数值代入：米到纳米相差 10^9 倍；例如 10^-10 m 应为 0.1 nm，而不是 10^-7 nm。"
+        },
+        {
+          "label": "C",
+          "text": "数值代入：电荷量应按符号作代数和；两物体带等量异号电荷时总电荷为零。"
+        },
+        {
+          "label": "D",
+          "text": "数值代入：典型尺度约差五个数量级；原子核约 10^-15 m，原子约 10^-10 m。"
+        }
+      ],
+      "correct_answer": "A",
+      "explanation": "日心说讨论的是太阳系结构，并非宣称太阳是整个宇宙的中心。应结合电荷守恒和本节讨论范围判断。",
+      "error_type": "概念混淆",
+      "judging": "teacher",
+      "source_error_index": 1,
+      "source_caught_by": "人工审核",
+      "wrong_expr": null,
+      "trap_test": null,
+      "review": {
+        "confidence": "medium",
+        "checks": {
+          "answer_unique": true,
+          "distractors_plausible": true,
+          "stem_clear": true,
+          "no_cross_segment": true
+        },
+        "note": "本章可用类型不足四类，干扰项包含同章其他错误的类别与原解释；答案按“类别+依据”唯一匹配，建议抽查教学区分度。"
+      }
+    },
+    {
+      "id": "diagnostic-particle-02-1",
+      "point_id": "particle-02",
+      "point_title": "宇宙探秘",
+      "chapter": "从粒子到宇宙",
+      "stem": "【从粒子到宇宙 · 宇宙探秘】学生的错误做法：将光年当成时间单位，而不是光在一年内走过的距离。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
+      "options": [
+        {
+          "label": "A",
+          "text": "数值代入：米到纳米相差 10^9 倍；例如 10^-10 m 应为 0.1 nm，而不是 10^-7 nm。"
+        },
+        {
+          "label": "B",
+          "text": "数值代入：电荷量应按符号作代数和；两物体带等量异号电荷时总电荷为零。"
+        },
+        {
+          "label": "C",
+          "text": "数值代入：典型尺度约差五个数量级；原子核约 10^-15 m，原子约 10^-10 m。"
+        },
+        {
+          "label": "D",
+          "text": "概念混淆：“一年”是定义中采用的传播时间，“光年”最终表示一段距离；量纲为长度。"
+        }
+      ],
+      "correct_answer": "D",
+      "explanation": "“一年”是定义中采用的传播时间，“光年”最终表示一段距离；量纲为长度。",
+      "error_type": "概念混淆",
+      "judging": "teacher",
+      "source_error_index": 0,
+      "source_caught_by": "人工审核",
+      "wrong_expr": null,
+      "trap_test": null,
+      "review": {
+        "confidence": "medium",
+        "checks": {
+          "answer_unique": true,
+          "distractors_plausible": true,
+          "stem_clear": true,
+          "no_cross_segment": true
+        },
+        "note": "本章可用类型不足四类，干扰项包含同章其他错误的类别与原解释；答案按“类别+依据”唯一匹配，建议抽查教学区分度。"
+      }
+    },
+    {
+      "id": "diagnostic-particle-02-2",
+      "point_id": "particle-02",
+      "point_title": "宇宙探秘",
+      "chapter": "从粒子到宇宙",
+      "stem": "【从粒子到宇宙 · 宇宙探秘】学生的错误做法：把光速 300 000 km/s 的数值直接当作 m/s 使用（错误表达式：s = 300000*t）。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
+      "options": [
+        {
+          "label": "A",
+          "text": "概念混淆：同种电荷相互排斥，异种电荷相互吸引；应通过带电体实验辨认。"
+        },
+        {
+          "label": "B",
+          "text": "概念混淆：原子由原子核和核外电子构成，原子核还具有更细的内部结构；科学认识随证据发展。"
+        },
+        {
+          "label": "C",
+          "text": "数值代入：300 000 是 km/s；换成 m/s 应为 300 000 000。"
+        },
+        {
+          "label": "D",
+          "text": "概念混淆：微观结构图通常为便于辨认而放大或简化，不能直接据图比较真实粒子尺寸。"
+        }
+      ],
+      "correct_answer": "C",
+      "explanation": "300 000 是 km/s；换成 m/s 应为 300 000 000。直接使用会少算 1000 倍。\n知识库校验证据：情境：一年光程；代入错误式：300000*t；校验参照值：9460800000000000。",
+      "error_type": "数值代入",
+      "judging": "auto",
+      "source_error_index": 1,
+      "source_caught_by": "数值代入",
+      "wrong_expr": "s = 300000*t",
+      "trap_test": {
+        "scenario": "一年光程",
+        "expr": "300000*t",
+        "ref": 9460800000000000
+      },
+      "review": {
+        "confidence": "medium",
+        "checks": {
+          "answer_unique": true,
+          "distractors_plausible": true,
+          "stem_clear": true,
+          "no_cross_segment": true
+        },
+        "note": "本章可用类型不足四类，干扰项包含同章其他错误的类别与原解释；答案按“类别+依据”唯一匹配，建议抽查教学区分度。"
+      }
+    }
+  ],
+  "skipped": []
+}

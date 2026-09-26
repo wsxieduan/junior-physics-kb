@@ -1,0 +1,458 @@
+{
+  "segment": "初中",
+  "chapter": "物态变化",
+  "source_file": "04_states.json",
+  "questions": [
+    {
+      "id": "diagnostic-state-01-1",
+      "point_id": "state-01",
+      "point_title": "物质的三态 温度的测量",
+      "chapter": "物态变化",
+      "stem": "【物态变化 · 物质的三态 温度的测量】学生的错误做法：求温度变化量时把初温和末温相加（错误表达式：dT = T2+T1）。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
+      "options": [
+        {
+          "label": "A",
+          "text": "概念混淆：蒸发可在任何温度下发生；液化可通过降低温度或压缩体积实现，具体方法取决于物质和条件。"
+        },
+        {
+          "label": "B",
+          "text": "概念混淆：晶体有固定熔点，非晶体没有固定熔点；应结合温度—时间实验曲线区分。"
+        },
+        {
+          "label": "C",
+          "text": "概念混淆：液态变固态是凝固；凝华是气态直接变成固态。"
+        },
+        {
+          "label": "D",
+          "text": "数值代入：温度变化量是末温减初温；室温 20℃ 升到 80℃，温差为 60℃，不是 100℃。"
+        }
+      ],
+      "correct_answer": "D",
+      "explanation": "温度变化量是末温减初温；室温 20℃ 升到 80℃，温差为 60℃，不是 100℃。\n知识库校验证据：情境：水从室温加热；代入错误式：T2+T1；校验参照值：60。",
+      "error_type": "数值代入",
+      "judging": "auto",
+      "source_error_index": 0,
+      "source_caught_by": "数值代入",
+      "wrong_expr": "dT = T2+T1",
+      "trap_test": {
+        "scenario": "水从室温加热",
+        "expr": "T2+T1",
+        "ref": 60
+      },
+      "review": {
+        "confidence": "medium",
+        "checks": {
+          "answer_unique": true,
+          "distractors_plausible": true,
+          "stem_clear": true,
+          "no_cross_segment": true
+        },
+        "note": "本章可用类型不足四类，干扰项包含同章其他错误的类别与原解释；答案按“类别+依据”唯一匹配，建议抽查教学区分度。"
+      }
+    },
+    {
+      "id": "diagnostic-state-01-2",
+      "point_id": "state-01",
+      "point_title": "物质的三态 温度的测量",
+      "chapter": "物态变化",
+      "stem": "【物态变化 · 物质的三态 温度的测量】学生的错误做法：把降温的温度变化量一律写成正数，丢掉变化方向。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
+      "options": [
+        {
+          "label": "A",
+          "text": "数值代入：同一纯物质相同压强下凝固点等于熔点；纯萘熔点约 80.2℃ 时，凝固点也约为 80.2℃。"
+        },
+        {
+          "label": "B",
+          "text": "数值代入：密闭条件下相变前后总质量相等；把质量加倍会与称量数据不符。"
+        },
+        {
+          "label": "C",
+          "text": "概念混淆：按末温减初温的约定，80℃降到20℃的变化量是 -60℃；若只报告温差大小，应另说“降低了60℃”。"
+        },
+        {
+          "label": "D",
+          "text": "数值代入：标准大气压下纯水熔点为 0℃、沸点为 100℃，两者相差 100℃；代入沸点情境可查出混淆。"
+        }
+      ],
+      "correct_answer": "C",
+      "explanation": "按末温减初温的约定，80℃降到20℃的变化量是 -60℃；若只报告温差大小，应另说“降低了60℃”。",
+      "error_type": "概念混淆",
+      "judging": "teacher",
+      "source_error_index": 1,
+      "source_caught_by": "人工审核",
+      "wrong_expr": null,
+      "trap_test": null,
+      "review": {
+        "confidence": "medium",
+        "checks": {
+          "answer_unique": true,
+          "distractors_plausible": true,
+          "stem_clear": true,
+          "no_cross_segment": true
+        },
+        "note": "本章可用类型不足四类，干扰项包含同章其他错误的类别与原解释；答案按“类别+依据”唯一匹配，建议抽查教学区分度。"
+      }
+    },
+    {
+      "id": "diagnostic-state-02-1",
+      "point_id": "state-02",
+      "point_title": "汽化和液化",
+      "chapter": "物态变化",
+      "stem": "【物态变化 · 汽化和液化】学生的错误做法：把纯水的沸点误记成熔点，或把两者互换（错误表达式：Tb = Tm）。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
+      "options": [
+        {
+          "label": "A",
+          "text": "概念混淆：液态变固态是凝固；凝华是气态直接变成固态。"
+        },
+        {
+          "label": "B",
+          "text": "数值代入：标准大气压下纯水熔点为 0℃、沸点为 100℃，两者相差 100℃；代入沸点情境可查出混淆。"
+        },
+        {
+          "label": "C",
+          "text": "概念混淆：按末温减初温的约定，80℃降到20℃的变化量是 -60℃；若只报告温差大小，应另说“降低了60℃”。"
+        },
+        {
+          "label": "D",
+          "text": "概念混淆：晶体有固定熔点，非晶体没有固定熔点；应结合温度—时间实验曲线区分。"
+        }
+      ],
+      "correct_answer": "B",
+      "explanation": "标准大气压下纯水熔点为 0℃、沸点为 100℃，两者相差 100℃；代入沸点情境可查出混淆。\n知识库校验证据：情境：标准大气压下水沸腾；代入错误式：Tm；校验参照值：100。",
+      "error_type": "数值代入",
+      "judging": "auto",
+      "source_error_index": 0,
+      "source_caught_by": "数值代入",
+      "wrong_expr": "Tb = Tm",
+      "trap_test": {
+        "scenario": "标准大气压下水沸腾",
+        "expr": "Tm",
+        "ref": 100
+      },
+      "review": {
+        "confidence": "medium",
+        "checks": {
+          "answer_unique": true,
+          "distractors_plausible": true,
+          "stem_clear": true,
+          "no_cross_segment": true
+        },
+        "note": "本章可用类型不足四类，干扰项包含同章其他错误的类别与原解释；答案按“类别+依据”唯一匹配，建议抽查教学区分度。"
+      }
+    },
+    {
+      "id": "diagnostic-state-02-2",
+      "point_id": "state-02",
+      "point_title": "汽化和液化",
+      "chapter": "物态变化",
+      "stem": "【物态变化 · 汽化和液化】学生的错误做法：认为蒸发只能在沸点发生，或液化只靠压缩一种方法。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
+      "options": [
+        {
+          "label": "A",
+          "text": "概念混淆：蒸发可在任何温度下发生；液化可通过降低温度或压缩体积实现，具体方法取决于物质和条件。"
+        },
+        {
+          "label": "B",
+          "text": "数值代入：温度变化量是末温减初温；室温 20℃ 升到 80℃，温差为 60℃，不是 100℃。"
+        },
+        {
+          "label": "C",
+          "text": "数值代入：同一纯物质相同压强下凝固点等于熔点；纯萘熔点约 80.2℃ 时，凝固点也约为 80.2℃。"
+        },
+        {
+          "label": "D",
+          "text": "数值代入：密闭条件下相变前后总质量相等；把质量加倍会与称量数据不符。"
+        }
+      ],
+      "correct_answer": "A",
+      "explanation": "蒸发可在任何温度下发生；液化可通过降低温度或压缩体积实现，具体方法取决于物质和条件。",
+      "error_type": "概念混淆",
+      "judging": "teacher",
+      "source_error_index": 1,
+      "source_caught_by": "人工审核",
+      "wrong_expr": null,
+      "trap_test": null,
+      "review": {
+        "confidence": "medium",
+        "checks": {
+          "answer_unique": true,
+          "distractors_plausible": true,
+          "stem_clear": true,
+          "no_cross_segment": true
+        },
+        "note": "本章可用类型不足四类，干扰项包含同章其他错误的类别与原解释；答案按“类别+依据”唯一匹配，建议抽查教学区分度。"
+      }
+    },
+    {
+      "id": "diagnostic-state-03-1",
+      "point_id": "state-03",
+      "point_title": "熔化和凝固",
+      "chapter": "物态变化",
+      "stem": "【物态变化 · 熔化和凝固】学生的错误做法：认为同一纯物质在相同条件下凝固点与熔点不同（错误表达式：Tf = 2*Tm）。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
+      "options": [
+        {
+          "label": "A",
+          "text": "概念混淆：按末温减初温的约定，80℃降到20℃的变化量是 -60℃；若只报告温差大小，应另说“降低了60℃”。"
+        },
+        {
+          "label": "B",
+          "text": "概念混淆：蒸发可在任何温度下发生；液化可通过降低温度或压缩体积实现，具体方法取决于物质和条件。"
+        },
+        {
+          "label": "C",
+          "text": "概念混淆：液态变固态是凝固；凝华是气态直接变成固态。"
+        },
+        {
+          "label": "D",
+          "text": "数值代入：同一纯物质相同压强下凝固点等于熔点；纯萘熔点约 80.2℃ 时，凝固点也约为 80.2℃。"
+        }
+      ],
+      "correct_answer": "D",
+      "explanation": "同一纯物质相同压强下凝固点等于熔点；纯萘熔点约 80.2℃ 时，凝固点也约为 80.2℃。\n知识库校验证据：情境：纯萘相变近似值；代入错误式：2*Tm；校验参照值：80.2。",
+      "error_type": "数值代入",
+      "judging": "auto",
+      "source_error_index": 0,
+      "source_caught_by": "数值代入",
+      "wrong_expr": "Tf = 2*Tm",
+      "trap_test": {
+        "scenario": "纯萘相变近似值",
+        "expr": "2*Tm",
+        "ref": 80.2
+      },
+      "review": {
+        "confidence": "medium",
+        "checks": {
+          "answer_unique": true,
+          "distractors_plausible": true,
+          "stem_clear": true,
+          "no_cross_segment": true
+        },
+        "note": "本章可用类型不足四类，干扰项包含同章其他错误的类别与原解释；答案按“类别+依据”唯一匹配，建议抽查教学区分度。"
+      }
+    },
+    {
+      "id": "diagnostic-state-03-2",
+      "point_id": "state-03",
+      "point_title": "熔化和凝固",
+      "chapter": "物态变化",
+      "stem": "【物态变化 · 熔化和凝固】学生的错误做法：把非晶体也描述成熔化时有固定温度平台。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
+      "options": [
+        {
+          "label": "A",
+          "text": "数值代入：标准大气压下纯水熔点为 0℃、沸点为 100℃，两者相差 100℃；代入沸点情境可查出混淆。"
+        },
+        {
+          "label": "B",
+          "text": "数值代入：密闭条件下相变前后总质量相等；把质量加倍会与称量数据不符。"
+        },
+        {
+          "label": "C",
+          "text": "概念混淆：晶体有固定熔点，非晶体没有固定熔点；应结合温度—时间实验曲线区分。"
+        },
+        {
+          "label": "D",
+          "text": "数值代入：温度变化量是末温减初温；室温 20℃ 升到 80℃，温差为 60℃，不是 100℃。"
+        }
+      ],
+      "correct_answer": "C",
+      "explanation": "晶体有固定熔点，非晶体没有固定熔点；应结合温度—时间实验曲线区分。",
+      "error_type": "概念混淆",
+      "judging": "teacher",
+      "source_error_index": 1,
+      "source_caught_by": "人工审核",
+      "wrong_expr": null,
+      "trap_test": null,
+      "review": {
+        "confidence": "medium",
+        "checks": {
+          "answer_unique": true,
+          "distractors_plausible": true,
+          "stem_clear": true,
+          "no_cross_segment": true
+        },
+        "note": "本章可用类型不足四类，干扰项包含同章其他错误的类别与原解释；答案按“类别+依据”唯一匹配，建议抽查教学区分度。"
+      }
+    },
+    {
+      "id": "diagnostic-state-04-1",
+      "point_id": "state-04",
+      "point_title": "升华和凝华",
+      "chapter": "物态变化",
+      "stem": "【物态变化 · 升华和凝华】学生的错误做法：把升华理解成物质质量消失（错误表达式：m_after = 2*m_before）。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
+      "options": [
+        {
+          "label": "A",
+          "text": "概念混淆：晶体有固定熔点，非晶体没有固定熔点；应结合温度—时间实验曲线区分。"
+        },
+        {
+          "label": "B",
+          "text": "数值代入：密闭条件下相变前后总质量相等；把质量加倍会与称量数据不符。"
+        },
+        {
+          "label": "C",
+          "text": "概念混淆：按末温减初温的约定，80℃降到20℃的变化量是 -60℃；若只报告温差大小，应另说“降低了60℃”。"
+        },
+        {
+          "label": "D",
+          "text": "概念混淆：蒸发可在任何温度下发生；液化可通过降低温度或压缩体积实现，具体方法取决于物质和条件。"
+        }
+      ],
+      "correct_answer": "B",
+      "explanation": "密闭条件下相变前后总质量相等；把质量加倍会与称量数据不符。这是物质状态和系统边界必须分清的地方。\n知识库校验证据：情境：干冰密闭相变；代入错误式：2*m_before；校验参照值：2。",
+      "error_type": "数值代入",
+      "judging": "auto",
+      "source_error_index": 0,
+      "source_caught_by": "数值代入",
+      "wrong_expr": "m_after = 2*m_before",
+      "trap_test": {
+        "scenario": "干冰密闭相变",
+        "expr": "2*m_before",
+        "ref": 2
+      },
+      "review": {
+        "confidence": "medium",
+        "checks": {
+          "answer_unique": true,
+          "distractors_plausible": true,
+          "stem_clear": true,
+          "no_cross_segment": true
+        },
+        "note": "本章可用类型不足四类，干扰项包含同章其他错误的类别与原解释；答案按“类别+依据”唯一匹配，建议抽查教学区分度。"
+      }
+    },
+    {
+      "id": "diagnostic-state-04-2",
+      "point_id": "state-04",
+      "point_title": "升华和凝华",
+      "chapter": "物态变化",
+      "stem": "【物态变化 · 升华和凝华】学生的错误做法：把凝华说成液态直接变成固态。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
+      "options": [
+        {
+          "label": "A",
+          "text": "概念混淆：液态变固态是凝固；凝华是气态直接变成固态。"
+        },
+        {
+          "label": "B",
+          "text": "数值代入：温度变化量是末温减初温；室温 20℃ 升到 80℃，温差为 60℃，不是 100℃。"
+        },
+        {
+          "label": "C",
+          "text": "数值代入：标准大气压下纯水熔点为 0℃、沸点为 100℃，两者相差 100℃；代入沸点情境可查出混淆。"
+        },
+        {
+          "label": "D",
+          "text": "数值代入：同一纯物质相同压强下凝固点等于熔点；纯萘熔点约 80.2℃ 时，凝固点也约为 80.2℃。"
+        }
+      ],
+      "correct_answer": "A",
+      "explanation": "液态变固态是凝固；凝华是气态直接变成固态。这是物质状态和系统边界必须分清的地方。",
+      "error_type": "概念混淆",
+      "judging": "teacher",
+      "source_error_index": 1,
+      "source_caught_by": "人工审核",
+      "wrong_expr": null,
+      "trap_test": null,
+      "review": {
+        "confidence": "medium",
+        "checks": {
+          "answer_unique": true,
+          "distractors_plausible": true,
+          "stem_clear": true,
+          "no_cross_segment": true
+        },
+        "note": "本章可用类型不足四类，干扰项包含同章其他错误的类别与原解释；答案按“类别+依据”唯一匹配，建议抽查教学区分度。"
+      }
+    },
+    {
+      "id": "diagnostic-state-05-1",
+      "point_id": "state-05",
+      "point_title": "水循环",
+      "chapter": "物态变化",
+      "stem": "【物态变化 · 水循环】学生的错误做法：把毫米雨量直接当作米代入，造成千倍偏差（错误表达式：V = A*h/2）。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
+      "options": [
+        {
+          "label": "A",
+          "text": "概念混淆：按末温减初温的约定，80℃降到20℃的变化量是 -60℃；若只报告温差大小，应另说“降低了60℃”。"
+        },
+        {
+          "label": "B",
+          "text": "概念混淆：蒸发可在任何温度下发生；液化可通过降低温度或压缩体积实现，具体方法取决于物质和条件。"
+        },
+        {
+          "label": "C",
+          "text": "概念混淆：晶体有固定熔点，非晶体没有固定熔点；应结合温度—时间实验曲线区分。"
+        },
+        {
+          "label": "D",
+          "text": "数值代入：水量应由面积乘完整的平均深度求得；在情境中再折半会低估体积。"
+        }
+      ],
+      "correct_answer": "D",
+      "explanation": "水量应由面积乘完整的平均深度求得；在情境中再折半会低估体积。\n知识库校验证据：情境：小区短时降水；代入错误式：A*h/2；校验参照值：1。",
+      "error_type": "数值代入",
+      "judging": "auto",
+      "source_error_index": 0,
+      "source_caught_by": "数值代入",
+      "wrong_expr": "V = A*h/2",
+      "trap_test": {
+        "scenario": "小区短时降水",
+        "expr": "A*h/2",
+        "ref": 1
+      },
+      "review": {
+        "confidence": "medium",
+        "checks": {
+          "answer_unique": true,
+          "distractors_plausible": true,
+          "stem_clear": true,
+          "no_cross_segment": true
+        },
+        "note": "本章可用类型不足四类，干扰项包含同章其他错误的类别与原解释；答案按“类别+依据”唯一匹配，建议抽查教学区分度。"
+      }
+    },
+    {
+      "id": "diagnostic-state-05-2",
+      "point_id": "state-05",
+      "point_title": "水循环",
+      "chapter": "物态变化",
+      "stem": "【物态变化 · 水循环】学生的错误做法：认为估算降水体积就是最后实际收集到的水量。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
+      "options": [
+        {
+          "label": "A",
+          "text": "数值代入：标准大气压下纯水熔点为 0℃、沸点为 100℃，两者相差 100℃；代入沸点情境可查出混淆。"
+        },
+        {
+          "label": "B",
+          "text": "数值代入：同一纯物质相同压强下凝固点等于熔点；纯萘熔点约 80.2℃ 时，凝固点也约为 80.2℃。"
+        },
+        {
+          "label": "C",
+          "text": "概念混淆：水会发生径流、下渗和蒸发；几何估算只描述均匀降水覆盖区域的理论体积。"
+        },
+        {
+          "label": "D",
+          "text": "数值代入：温度变化量是末温减初温；室温 20℃ 升到 80℃，温差为 60℃，不是 100℃。"
+        }
+      ],
+      "correct_answer": "C",
+      "explanation": "水会发生径流、下渗和蒸发；几何估算只描述均匀降水覆盖区域的理论体积。",
+      "error_type": "概念混淆",
+      "judging": "teacher",
+      "source_error_index": 1,
+      "source_caught_by": "人工审核",
+      "wrong_expr": null,
+      "trap_test": null,
+      "review": {
+        "confidence": "medium",
+        "checks": {
+          "answer_unique": true,
+          "distractors_plausible": true,
+          "stem_clear": true,
+          "no_cross_segment": true
+        },
+        "note": "本章可用类型不足四类，干扰项包含同章其他错误的类别与原解释；答案按“类别+依据”唯一匹配，建议抽查教学区分度。"
+      }
+    }
+  ],
+  "skipped": []
+}

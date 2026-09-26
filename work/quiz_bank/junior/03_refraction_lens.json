@@ -1,0 +1,458 @@
+{
+  "segment": "初中",
+  "chapter": "光的折射 透镜",
+  "source_file": "03_refraction_lens.json",
+  "questions": [
+    {
+      "id": "diagnostic-lens-03-1",
+      "point_id": "lens-03",
+      "point_title": "光的折射",
+      "chapter": "光的折射 透镜",
+      "stem": "【光的折射 透镜 · 光的折射】学生的错误做法：把折射率写成介质光速与真空光速之比（错误表达式：n = 2*v/c）。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
+      "options": [
+        {
+          "label": "A",
+          "text": "概念混淆：物体位于焦点以内时，凸透镜成正立、放大的虚像；像的性质必须结合物距和焦距判断。"
+        },
+        {
+          "label": "B",
+          "text": "概念混淆：凹透镜对平行光有发散作用，与凸透镜的会聚作用相反。"
+        },
+        {
+          "label": "C",
+          "text": "概念混淆：放大率只描述大小比例；凸透镜实像仍是倒立像，正倒要独立判断。"
+        },
+        {
+          "label": "D",
+          "text": "数值代入：折射率定义中的比值是 c/v；把速度比倒置并多乘系数会导致结果明显不符。"
+        }
+      ],
+      "correct_answer": "D",
+      "explanation": "折射率定义中的比值是 c/v；把速度比倒置并多乘系数会导致结果明显不符。\n知识库校验证据：情境：水中的光；代入错误式：2*v/c；校验参照值：1.333333333333。",
+      "error_type": "数值代入",
+      "judging": "auto",
+      "source_error_index": 0,
+      "source_caught_by": "数值代入",
+      "wrong_expr": "n = 2*v/c",
+      "trap_test": {
+        "scenario": "水中的光",
+        "expr": "2*v/c",
+        "ref": 1.333333333333
+      },
+      "review": {
+        "confidence": "medium",
+        "checks": {
+          "answer_unique": true,
+          "distractors_plausible": true,
+          "stem_clear": true,
+          "no_cross_segment": true
+        },
+        "note": "本章可用类型不足四类，干扰项包含同章其他错误的类别与原解释；答案按“类别+依据”唯一匹配，建议抽查教学区分度。"
+      }
+    },
+    {
+      "id": "diagnostic-lens-03-2",
+      "point_id": "lens-03",
+      "point_title": "光的折射",
+      "chapter": "光的折射 透镜",
+      "stem": "【光的折射 透镜 · 光的折射】学生的错误做法：把反射角等于入射角当作折射规律。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
+      "options": [
+        {
+          "label": "A",
+          "text": "数值代入：焦距是光心到焦点的距离；物距是物体到光心的距离，两者含义不同。"
+        },
+        {
+          "label": "B",
+          "text": "数值代入：实像放大率应为 v/u；物距 0.30 m、像距 0.15 m 时应为 0.5，而该误式得到 1。"
+        },
+        {
+          "label": "C",
+          "text": "概念混淆：反射和折射是不同现象；折射方向需结合两侧介质和法线判断，不能套用反射定律。"
+        },
+        {
+          "label": "D",
+          "text": "数值代入：当 u=2f 时，v 也为 2f，因此 v=u；物距为 0.20 m 时像距不是 0.10 m。"
+        }
+      ],
+      "correct_answer": "C",
+      "explanation": "反射和折射是不同现象；折射方向需结合两侧介质和法线判断，不能套用反射定律。",
+      "error_type": "概念混淆",
+      "judging": "teacher",
+      "source_error_index": 1,
+      "source_caught_by": "人工审核",
+      "wrong_expr": null,
+      "trap_test": null,
+      "review": {
+        "confidence": "medium",
+        "checks": {
+          "answer_unique": true,
+          "distractors_plausible": true,
+          "stem_clear": true,
+          "no_cross_segment": true
+        },
+        "note": "本章可用类型不足四类，干扰项包含同章其他错误的类别与原解释；答案按“类别+依据”唯一匹配，建议抽查教学区分度。"
+      }
+    },
+    {
+      "id": "diagnostic-lens-02-1",
+      "point_id": "lens-02",
+      "point_title": "透镜",
+      "chapter": "光的折射 透镜",
+      "stem": "【光的折射 透镜 · 透镜】学生的错误做法：把焦距误认为物体到透镜的距离（错误表达式：f = 2*d）。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
+      "options": [
+        {
+          "label": "A",
+          "text": "概念混淆：放大率只描述大小比例；凸透镜实像仍是倒立像，正倒要独立判断。"
+        },
+        {
+          "label": "B",
+          "text": "数值代入：焦距是光心到焦点的距离；物距是物体到光心的距离，两者含义不同。"
+        },
+        {
+          "label": "C",
+          "text": "概念混淆：物体位于焦点以内时，凸透镜成正立、放大的虚像；像的性质必须结合物距和焦距判断。"
+        },
+        {
+          "label": "D",
+          "text": "概念混淆：反射和折射是不同现象；折射方向需结合两侧介质和法线判断，不能套用反射定律。"
+        }
+      ],
+      "correct_answer": "B",
+      "explanation": "焦距是光心到焦点的距离；物距是物体到光心的距离，两者含义不同。\n知识库校验证据：情境：焦距10厘米物距20厘米；代入错误式：2*d；校验参照值：0.1。",
+      "error_type": "数值代入",
+      "judging": "auto",
+      "source_error_index": 0,
+      "source_caught_by": "数值代入",
+      "wrong_expr": "f = 2*d",
+      "trap_test": {
+        "scenario": "焦距10厘米物距20厘米",
+        "expr": "2*d",
+        "ref": 0.1
+      },
+      "review": {
+        "confidence": "medium",
+        "checks": {
+          "answer_unique": true,
+          "distractors_plausible": true,
+          "stem_clear": true,
+          "no_cross_segment": true
+        },
+        "note": "本章可用类型不足四类，干扰项包含同章其他错误的类别与原解释；答案按“类别+依据”唯一匹配，建议抽查教学区分度。"
+      }
+    },
+    {
+      "id": "diagnostic-lens-02-2",
+      "point_id": "lens-02",
+      "point_title": "透镜",
+      "chapter": "光的折射 透镜",
+      "stem": "【光的折射 透镜 · 透镜】学生的错误做法：认为凹透镜也会把平行光会聚到实焦点。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
+      "options": [
+        {
+          "label": "A",
+          "text": "概念混淆：凹透镜对平行光有发散作用，与凸透镜的会聚作用相反。"
+        },
+        {
+          "label": "B",
+          "text": "数值代入：当 u=2f 时，v 也为 2f，因此 v=u；物距为 0.20 m 时像距不是 0.10 m。"
+        },
+        {
+          "label": "C",
+          "text": "数值代入：折射率定义中的比值是 c/v；把速度比倒置并多乘系数会导致结果明显不符。"
+        },
+        {
+          "label": "D",
+          "text": "数值代入：实像放大率应为 v/u；物距 0.30 m、像距 0.15 m 时应为 0.5，而该误式得到 1。"
+        }
+      ],
+      "correct_answer": "A",
+      "explanation": "凹透镜对平行光有发散作用，与凸透镜的会聚作用相反。因此成像规律和透镜种类要对应，不能混淆。",
+      "error_type": "概念混淆",
+      "judging": "teacher",
+      "source_error_index": 1,
+      "source_caught_by": "人工审核",
+      "wrong_expr": null,
+      "trap_test": null,
+      "review": {
+        "confidence": "medium",
+        "checks": {
+          "answer_unique": true,
+          "distractors_plausible": true,
+          "stem_clear": true,
+          "no_cross_segment": true
+        },
+        "note": "本章可用类型不足四类，干扰项包含同章其他错误的类别与原解释；答案按“类别+依据”唯一匹配，建议抽查教学区分度。"
+      }
+    },
+    {
+      "id": "diagnostic-lens-01-1",
+      "point_id": "lens-01",
+      "point_title": "凸透镜成像的规律",
+      "chapter": "光的折射 透镜",
+      "stem": "【光的折射 透镜 · 凸透镜成像的规律】学生的错误做法：把物距为二倍焦距时的像距误写成物距的一半（错误表达式：v = u/2）。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
+      "options": [
+        {
+          "label": "A",
+          "text": "概念混淆：凹透镜对平行光有发散作用，与凸透镜的会聚作用相反。"
+        },
+        {
+          "label": "B",
+          "text": "概念混淆：反射和折射是不同现象；折射方向需结合两侧介质和法线判断，不能套用反射定律。"
+        },
+        {
+          "label": "C",
+          "text": "概念混淆：放大率只描述大小比例；凸透镜实像仍是倒立像，正倒要独立判断。"
+        },
+        {
+          "label": "D",
+          "text": "数值代入：当 u=2f 时，v 也为 2f，因此 v=u；物距为 0.20 m 时像距不是 0.10 m。"
+        }
+      ],
+      "correct_answer": "D",
+      "explanation": "当 u=2f 时，v 也为 2f，因此 v=u；物距为 0.20 m 时像距不是 0.10 m。\n知识库校验证据：情境：焦距10厘米物距20厘米；代入错误式：u/2；校验参照值：0.2。",
+      "error_type": "数值代入",
+      "judging": "auto",
+      "source_error_index": 0,
+      "source_caught_by": "数值代入",
+      "wrong_expr": "v = u/2",
+      "trap_test": {
+        "scenario": "焦距10厘米物距20厘米",
+        "expr": "u/2",
+        "ref": 0.2
+      },
+      "review": {
+        "confidence": "medium",
+        "checks": {
+          "answer_unique": true,
+          "distractors_plausible": true,
+          "stem_clear": true,
+          "no_cross_segment": true
+        },
+        "note": "本章可用类型不足四类，干扰项包含同章其他错误的类别与原解释；答案按“类别+依据”唯一匹配，建议抽查教学区分度。"
+      }
+    },
+    {
+      "id": "diagnostic-lens-01-2",
+      "point_id": "lens-01",
+      "point_title": "凸透镜成像的规律",
+      "chapter": "光的折射 透镜",
+      "stem": "【光的折射 透镜 · 凸透镜成像的规律】学生的错误做法：认为凸透镜无论物距如何都成倒立实像。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
+      "options": [
+        {
+          "label": "A",
+          "text": "数值代入：折射率定义中的比值是 c/v；把速度比倒置并多乘系数会导致结果明显不符。"
+        },
+        {
+          "label": "B",
+          "text": "数值代入：实像放大率应为 v/u；物距 0.30 m、像距 0.15 m 时应为 0.5，而该误式得到 1。"
+        },
+        {
+          "label": "C",
+          "text": "概念混淆：物体位于焦点以内时，凸透镜成正立、放大的虚像；像的性质必须结合物距和焦距判断。"
+        },
+        {
+          "label": "D",
+          "text": "数值代入：焦距是光心到焦点的距离；物距是物体到光心的距离，两者含义不同。"
+        }
+      ],
+      "correct_answer": "C",
+      "explanation": "物体位于焦点以内时，凸透镜成正立、放大的虚像；像的性质必须结合物距和焦距判断。",
+      "error_type": "概念混淆",
+      "judging": "teacher",
+      "source_error_index": 1,
+      "source_caught_by": "人工审核",
+      "wrong_expr": null,
+      "trap_test": null,
+      "review": {
+        "confidence": "medium",
+        "checks": {
+          "answer_unique": true,
+          "distractors_plausible": true,
+          "stem_clear": true,
+          "no_cross_segment": true
+        },
+        "note": "本章可用类型不足四类，干扰项包含同章其他错误的类别与原解释；答案按“类别+依据”唯一匹配，建议抽查教学区分度。"
+      }
+    },
+    {
+      "id": "diagnostic-lens-04-1",
+      "point_id": "lens-04",
+      "point_title": "透镜的应用",
+      "chapter": "光的折射 透镜",
+      "stem": "【光的折射 透镜 · 透镜的应用】学生的错误做法：把放大率写成物距除以像距（错误表达式：M = u/(2*v)）。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
+      "options": [
+        {
+          "label": "A",
+          "text": "概念混淆：反射和折射是不同现象；折射方向需结合两侧介质和法线判断，不能套用反射定律。"
+        },
+        {
+          "label": "B",
+          "text": "数值代入：实像放大率应为 v/u；物距 0.30 m、像距 0.15 m 时应为 0.5，而该误式得到 1。"
+        },
+        {
+          "label": "C",
+          "text": "概念混淆：物体位于焦点以内时，凸透镜成正立、放大的虚像；像的性质必须结合物距和焦距判断。"
+        },
+        {
+          "label": "D",
+          "text": "概念混淆：凹透镜对平行光有发散作用，与凸透镜的会聚作用相反。"
+        }
+      ],
+      "correct_answer": "B",
+      "explanation": "实像放大率应为 v/u；物距 0.30 m、像距 0.15 m 时应为 0.5，而该误式得到 1。\n知识库校验证据：情境：相机缩小像；代入错误式：u/(2*v)；校验参照值：0.5。",
+      "error_type": "数值代入",
+      "judging": "auto",
+      "source_error_index": 0,
+      "source_caught_by": "数值代入",
+      "wrong_expr": "M = u/(2*v)",
+      "trap_test": {
+        "scenario": "相机缩小像",
+        "expr": "u/(2*v)",
+        "ref": 0.5
+      },
+      "review": {
+        "confidence": "medium",
+        "checks": {
+          "answer_unique": true,
+          "distractors_plausible": true,
+          "stem_clear": true,
+          "no_cross_segment": true
+        },
+        "note": "本章可用类型不足四类，干扰项包含同章其他错误的类别与原解释；答案按“类别+依据”唯一匹配，建议抽查教学区分度。"
+      }
+    },
+    {
+      "id": "diagnostic-lens-04-2",
+      "point_id": "lens-04",
+      "point_title": "透镜的应用",
+      "chapter": "光的折射 透镜",
+      "stem": "【光的折射 透镜 · 透镜的应用】学生的错误做法：认为放大率大于 1 的实像一定正立。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
+      "options": [
+        {
+          "label": "A",
+          "text": "概念混淆：放大率只描述大小比例；凸透镜实像仍是倒立像，正倒要独立判断。"
+        },
+        {
+          "label": "B",
+          "text": "数值代入：当 u=2f 时，v 也为 2f，因此 v=u；物距为 0.20 m 时像距不是 0.10 m。"
+        },
+        {
+          "label": "C",
+          "text": "数值代入：焦距是光心到焦点的距离；物距是物体到光心的距离，两者含义不同。"
+        },
+        {
+          "label": "D",
+          "text": "数值代入：折射率定义中的比值是 c/v；把速度比倒置并多乘系数会导致结果明显不符。"
+        }
+      ],
+      "correct_answer": "A",
+      "explanation": "放大率只描述大小比例；凸透镜实像仍是倒立像，正倒要独立判断。",
+      "error_type": "概念混淆",
+      "judging": "teacher",
+      "source_error_index": 1,
+      "source_caught_by": "人工审核",
+      "wrong_expr": null,
+      "trap_test": null,
+      "review": {
+        "confidence": "medium",
+        "checks": {
+          "answer_unique": true,
+          "distractors_plausible": true,
+          "stem_clear": true,
+          "no_cross_segment": true
+        },
+        "note": "本章可用类型不足四类，干扰项包含同章其他错误的类别与原解释；答案按“类别+依据”唯一匹配，建议抽查教学区分度。"
+      }
+    },
+    {
+      "id": "diagnostic-lens-05-1",
+      "point_id": "lens-05",
+      "point_title": "人眼看不见的光",
+      "chapter": "光的折射 透镜",
+      "stem": "【光的折射 透镜 · 人眼看不见的光】学生的错误做法：漏掉波速关系中的频率因子，只把波长当作波速（错误表达式：c = lambda）。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
+      "options": [
+        {
+          "label": "A",
+          "text": "概念混淆：物体位于焦点以内时，凸透镜成正立、放大的虚像；像的性质必须结合物距和焦距判断。"
+        },
+        {
+          "label": "B",
+          "text": "概念混淆：凹透镜对平行光有发散作用，与凸透镜的会聚作用相反。"
+        },
+        {
+          "label": "C",
+          "text": "概念混淆：反射和折射是不同现象；折射方向需结合两侧介质和法线判断，不能套用反射定律。"
+        },
+        {
+          "label": "D",
+          "text": "数值代入：波速的单位应为 m/s，而波长单位是 m；还需乘以频率。"
+        }
+      ],
+      "correct_answer": "D",
+      "explanation": "波速的单位应为 m/s，而波长单位是 m；还需乘以频率。频率决定单位时间内完整波的个数。\n知识库校验证据：情境：红外线示例；代入错误式：lambda；校验参照值：300000000。",
+      "error_type": "数值代入",
+      "judging": "auto",
+      "source_error_index": 0,
+      "source_caught_by": "数值代入",
+      "wrong_expr": "c = lambda",
+      "trap_test": {
+        "scenario": "红外线示例",
+        "expr": "lambda",
+        "ref": 300000000
+      },
+      "review": {
+        "confidence": "medium",
+        "checks": {
+          "answer_unique": true,
+          "distractors_plausible": true,
+          "stem_clear": true,
+          "no_cross_segment": true
+        },
+        "note": "本章可用类型不足四类，干扰项包含同章其他错误的类别与原解释；答案按“类别+依据”唯一匹配，建议抽查教学区分度。"
+      }
+    },
+    {
+      "id": "diagnostic-lens-05-2",
+      "point_id": "lens-05",
+      "point_title": "人眼看不见的光",
+      "chapter": "光的折射 透镜",
+      "stem": "【光的折射 透镜 · 人眼看不见的光】学生的错误做法：认为红外线和紫外线是可见光中两种能被肉眼辨认的颜色。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
+      "options": [
+        {
+          "label": "A",
+          "text": "数值代入：焦距是光心到焦点的距离；物距是物体到光心的距离，两者含义不同。"
+        },
+        {
+          "label": "B",
+          "text": "数值代入：折射率定义中的比值是 c/v；把速度比倒置并多乘系数会导致结果明显不符。"
+        },
+        {
+          "label": "C",
+          "text": "概念混淆：两者在可见光谱范围之外，需借助热效应、荧光等实验现象或仪器探测。"
+        },
+        {
+          "label": "D",
+          "text": "数值代入：当 u=2f 时，v 也为 2f，因此 v=u；物距为 0.20 m 时像距不是 0.10 m。"
+        }
+      ],
+      "correct_answer": "C",
+      "explanation": "两者在可见光谱范围之外，需借助热效应、荧光等实验现象或仪器探测。",
+      "error_type": "概念混淆",
+      "judging": "teacher",
+      "source_error_index": 1,
+      "source_caught_by": "人工审核",
+      "wrong_expr": null,
+      "trap_test": null,
+      "review": {
+        "confidence": "medium",
+        "checks": {
+          "answer_unique": true,
+          "distractors_plausible": true,
+          "stem_clear": true,
+          "no_cross_segment": true
+        },
+        "note": "本章可用类型不足四类，干扰项包含同章其他错误的类别与原解释；答案按“类别+依据”唯一匹配，建议抽查教学区分度。"
+      }
+    }
+  ],
+  "skipped": []
+}

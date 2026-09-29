@@ -54,6 +54,9 @@ math{font-size:1.12em}
 #q{flex:1;min-width:200px;padding:8px 13px;border:1px solid var(--line);border-radius:8px;
   font-size:14px;background:#fff;color:var(--ink);outline:none;font-family:inherit}
 #q:focus{border-color:var(--brand);box-shadow:0 0 0 3px var(--brand-soft)}
+/* 章节筛选片不放进 sticky 工具条：手机上十几个章节片会换成七八行，
+   把首屏整个占满（2026-09-29 修复）。它放在工具条下方、随页面滚动。 */
+.chipsbar{max-width:1080px;margin:0 auto;padding:10px 24px 0}
 .chips{display:flex;gap:7px;flex-wrap:wrap}
 .chip{border:1px solid var(--line);background:#fff;border-radius:999px;padding:5px 13px;
   font-size:12.5px;cursor:pointer;color:var(--ink2);white-space:nowrap;font-family:inherit}
@@ -275,6 +278,15 @@ footer b{color:var(--ink2)}
   main{padding:18px 14px 60px}
   .kp-body{padding:6px 15px 18px}
   .kp-head{padding:13px 15px}
+  /* 手机上进一步压缩吸顶区：搜索框独占一行，视图按钮与目录按钮同行 */
+  .toolbar{padding:8px 14px}
+  .toolbar-in{gap:8px}
+  .segment-switchbar{padding:8px 14px}
+  #q{min-width:0;width:100%;flex:1 0 100%}
+  .chipsbar{padding:9px 14px 0}
+  /* 手机上章节片改横向滚动单行，避免换成七八行把首屏顶下去 */
+  .chips{flex-wrap:nowrap;overflow-x:auto;-webkit-overflow-scrolling:touch;padding-bottom:5px}
+  .chip{padding:4px 11px;font-size:12px}
 }
 @media print{
   .toolbar,.hero{background:#fff;color:#000}
@@ -305,11 +317,12 @@ footer b{color:var(--ink2)}
     </div>
     <button class="tbtn" id="tocbtn" type="button">目录</button>
     <input id="q" type="search" placeholder="搜索知识点、公式、符号、错误写法…" autocomplete="off">
-    <div class="chips"><button class="chip on" data-chapter="all">全部</button><button class="chip" data-chapter="引言 · 第一章 声现象">第一章 声现象</button><button class="chip" data-chapter="光现象">光现象</button><button class="chip" data-chapter="光的折射 透镜">光的折射 透镜</button><button class="chip" data-chapter="物态变化">物态变化</button><button class="chip" data-chapter="物体的运动">物体的运动</button><button class="chip" data-chapter="物质的物理属性">物质的物理属性</button><button class="chip" data-chapter="力">力</button><button class="chip" data-chapter="力与运动">力与运动</button><button class="chip" data-chapter="压强和浮力">压强和浮力</button><button class="chip" data-chapter="从粒子到宇宙">从粒子到宇宙</button><button class="chip" data-chapter="简单机械和功">简单机械和功</button><button class="chip" data-chapter="机械能和内能">机械能和内能</button><button class="chip" data-chapter="简单电路">简单电路</button><button class="chip" data-chapter="欧姆定律">欧姆定律</button><button class="chip" data-chapter="电功和电热">电功和电热</button><button class="chip" data-chapter="电和磁">电和磁</button><button class="chip" data-chapter="电磁波与现代通信">电磁波与现代通信</button><button class="chip" data-chapter="能源与可持续发展">能源与可持续发展</button></div>
     <label class="tgl"><input type="checkbox" id="expand"> 展开校验记录</label>
     <span id="count"></span>
   </div>
 </div>
+
+<div class="chipsbar"><div class="chips"><button class="chip on" data-chapter="all">全部</button><button class="chip" data-chapter="引言 · 第一章 声现象">第一章 声现象</button><button class="chip" data-chapter="光现象">光现象</button><button class="chip" data-chapter="光的折射 透镜">光的折射 透镜</button><button class="chip" data-chapter="物态变化">物态变化</button><button class="chip" data-chapter="物体的运动">物体的运动</button><button class="chip" data-chapter="物质的物理属性">物质的物理属性</button><button class="chip" data-chapter="力">力</button><button class="chip" data-chapter="力与运动">力与运动</button><button class="chip" data-chapter="压强和浮力">压强和浮力</button><button class="chip" data-chapter="从粒子到宇宙">从粒子到宇宙</button><button class="chip" data-chapter="简单机械和功">简单机械和功</button><button class="chip" data-chapter="机械能和内能">机械能和内能</button><button class="chip" data-chapter="简单电路">简单电路</button><button class="chip" data-chapter="欧姆定律">欧姆定律</button><button class="chip" data-chapter="电功和电热">电功和电热</button><button class="chip" data-chapter="电和磁">电和磁</button><button class="chip" data-chapter="电磁波与现代通信">电磁波与现代通信</button><button class="chip" data-chapter="能源与可持续发展">能源与可持续发展</button></div></div>
 
 <main>
   <nav class="toc" id="toc" aria-label="知识点目录">

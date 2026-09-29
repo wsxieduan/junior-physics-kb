@@ -4,6 +4,56 @@
   "source_file": "15_power_heat.json",
   "questions": [
     {
+      "id": "diagnostic-power-01-1",
+      "point_id": "power-01",
+      "point_title": "电能表与电功",
+      "chapter": "电功和电热",
+      "stem": "【电功和电热 · 电能表与电功】学生的错误做法：把电功写成电压乘电流，不计通电时间（错误表达式：We = U*I）。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
+      "options": [
+        {
+          "label": "A",
+          "text": "概念混淆：功率表示做功或用电的快慢，电能表示一段时间内做功的总量；前者单位是 W，后者常用 J 或 kWh，二者不能混淆。"
+        },
+        {
+          "label": "B",
+          "text": "数值代入：十欧电阻中 2 A 电流通过 5 s，焦耳热为 200 J；漏掉平方会得到 100 J。"
+        },
+        {
+          "label": "C",
+          "text": "数值代入：功率关系为 P=UI，故 I=P/U；额外除以 2 会把负载电流低估一半。"
+        },
+        {
+          "label": "D",
+          "text": "量纲一致性：U*I 的单位是 W，是功率；求一段时间内的电功还要乘 t。"
+        }
+      ],
+      "correct_answer": "D",
+      "explanation": "U*I 的单位是 W，是功率；求一段时间内的电功还要乘 t。\n知识库校验证据：被测错误式：We = U*I；左式量纲：M·L^2·T^-2；右式量纲：M·L^2·T^-3；左右量纲不匹配；量纲校验说明：实际量纲检查得到等号左边为M·L^2·T^-2、右边为M·L^2·T^-3；两边不是同一物理量，因此该等式不成立。；变化方向要求：mismatch；检验说明：实际量纲检查得到等号左边为M·L^2·T^-2、右边为M·L^2·T^-3；两边不是同一物理量，因此该等式不成立。。",
+      "error_type": "量纲一致性",
+      "judging": "auto",
+      "source_error_index": 0,
+      "source_caught_by": "量纲一致性",
+      "wrong_expr": "We = U*I",
+      "trap_test": {
+        "kind": "dimension",
+        "target": "We = U*I",
+        "lhs_dim": "M·L^2·T^-2",
+        "rhs_dim": "M·L^2·T^-3",
+        "expect": "mismatch",
+        "note": "实际量纲检查得到等号左边为M·L^2·T^-2、右边为M·L^2·T^-3；两边不是同一物理量，因此该等式不成立。"
+      },
+      "review": {
+        "confidence": "medium",
+        "checks": {
+          "answer_unique": true,
+          "distractors_plausible": true,
+          "stem_clear": true,
+          "no_cross_segment": true
+        },
+        "note": "本章可用类型不足四类，干扰项包含同章其他错误的类别与原解释；答案按“类别+依据”唯一匹配，建议抽查教学区分度。"
+      }
+    },
+    {
       "id": "diagnostic-power-01-2",
       "point_id": "power-01",
       "point_title": "电能表与电功",
@@ -128,6 +178,56 @@
         "scenario": "小灯泡一",
         "expr": "U*I/1000",
         "ref": 220
+      },
+      "review": {
+        "confidence": "medium",
+        "checks": {
+          "answer_unique": true,
+          "distractors_plausible": true,
+          "stem_clear": true,
+          "no_cross_segment": true
+        },
+        "note": "本章可用类型不足四类，干扰项包含同章其他错误的类别与原解释；答案按“类别+依据”唯一匹配，建议抽查教学区分度。"
+      }
+    },
+    {
+      "id": "diagnostic-power-02-3",
+      "point_id": "power-02",
+      "point_title": "电功率",
+      "chapter": "电功和电热",
+      "stem": "【电功和电热 · 电功率】学生的错误做法：把电功率写成 U/I（错误表达式：P = U/I）。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
+      "options": [
+        {
+          "label": "A",
+          "text": "数值代入：十欧电阻中 2 A 电流通过 5 s，焦耳热为 200 J；漏掉平方会得到 100 J。"
+        },
+        {
+          "label": "B",
+          "text": "数值代入：功率关系为 P=UI，故 I=P/U；额外除以 2 会把负载电流低估一半。"
+        },
+        {
+          "label": "C",
+          "text": "数值代入：1 kWh=1000 W×3600 s=3 600 000 J；只乘 1000 漏掉小时到秒的换算。"
+        },
+        {
+          "label": "D",
+          "text": "量纲一致性：电功率可由电压与电流相乘得到；电压除以电流不是瓦特，单位组合也不同，因此不能用它表示功率。"
+        }
+      ],
+      "correct_answer": "D",
+      "explanation": "电功率可由电压与电流相乘得到；电压除以电流不是瓦特，单位组合也不同，因此不能用它表示功率。\n知识库校验证据：被测错误式：P = U/I；左式量纲：M·L^2·T^-3；右式量纲：M·L^2·T^-3·I^-2；左右量纲不匹配；量纲校验说明：实际量纲检查得到等号左边为M·L^2·T^-3、右边为M·L^2·T^-3·I^-2；两边不是同一物理量，因此该等式不成立。；变化方向要求：mismatch；检验说明：实际量纲检查得到等号左边为M·L^2·T^-3、右边为M·L^2·T^-3·I^-2；两边不是同一物理量，因此该等式不成立。。",
+      "error_type": "量纲一致性",
+      "judging": "auto",
+      "source_error_index": 2,
+      "source_caught_by": "量纲一致性",
+      "wrong_expr": "P = U/I",
+      "trap_test": {
+        "kind": "dimension",
+        "target": "P = U/I",
+        "lhs_dim": "M·L^2·T^-3",
+        "rhs_dim": "M·L^2·T^-3·I^-2",
+        "expect": "mismatch",
+        "note": "实际量纲检查得到等号左边为M·L^2·T^-3、右边为M·L^2·T^-3·I^-2；两边不是同一物理量，因此该等式不成立。"
       },
       "review": {
         "confidence": "medium",
@@ -321,18 +421,5 @@
       }
     }
   ],
-  "skipped": [
-    {
-      "point_id": "power-01",
-      "point_title": "电能表与电功",
-      "source_error_index": 0,
-      "reason": "自动判定条目没有 trap_test 可执行证据；不把校验标签代替实测证据。"
-    },
-    {
-      "point_id": "power-02",
-      "point_title": "电功率",
-      "source_error_index": 2,
-      "reason": "自动判定条目没有 trap_test 可执行证据；不把校验标签代替实测证据。"
-    }
-  ]
+  "skipped": []
 }

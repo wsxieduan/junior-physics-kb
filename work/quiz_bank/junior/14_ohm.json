@@ -4,6 +4,56 @@
   "source_file": "14_ohm.json",
   "questions": [
     {
+      "id": "diagnostic-ohm-01-1",
+      "point_id": "ohm-01",
+      "point_title": "电阻",
+      "chapter": "欧姆定律",
+      "stem": "【欧姆定律 · 电阻】学生的错误做法：把欧姆定律误写成电流等于电阻除以电压（错误表达式：I = R/U）。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
+      "options": [
+        {
+          "label": "A",
+          "text": "数值代入：6 Ω 与 3 Ω 并联的倒数和为 0.5 Ω^-1，等效电阻应为其倒数 2 Ω。"
+        },
+        {
+          "label": "B",
+          "text": "概念混淆：阻值变化由实际接入电路的下接线柱和滑片位置共同决定，必须结合电路连接判断。"
+        },
+        {
+          "label": "C",
+          "text": "数值代入：同一电阻器两端电压 6 V、电阻 12 Ω 时，电流为 0.5 A，而不是 2 A。"
+        },
+        {
+          "label": "D",
+          "text": "量纲一致性：欧姆定律应当用电压除以电阻来求电流；把电阻除以电压不仅关系倒置，所得量纲也不是安培。"
+        }
+      ],
+      "correct_answer": "D",
+      "explanation": "欧姆定律应当用电压除以电阻来求电流；把电阻除以电压不仅关系倒置，所得量纲也不是安培。\n知识库校验证据：被测错误式：I = R/U；左式量纲：I；右式量纲：I^-1；左右量纲不匹配；量纲校验说明：实际量纲检查得到等号左边为I、右边为I^-1；两边不是同一物理量，因此该等式不成立。；变化方向要求：mismatch；检验说明：实际量纲检查得到等号左边为I、右边为I^-1；两边不是同一物理量，因此该等式不成立。。",
+      "error_type": "量纲一致性",
+      "judging": "auto",
+      "source_error_index": 0,
+      "source_caught_by": "量纲一致性",
+      "wrong_expr": "I = R/U",
+      "trap_test": {
+        "kind": "dimension",
+        "target": "I = R/U",
+        "lhs_dim": "I",
+        "rhs_dim": "I^-1",
+        "expect": "mismatch",
+        "note": "实际量纲检查得到等号左边为I、右边为I^-1；两边不是同一物理量，因此该等式不成立。"
+      },
+      "review": {
+        "confidence": "medium",
+        "checks": {
+          "answer_unique": true,
+          "distractors_plausible": true,
+          "stem_clear": true,
+          "no_cross_segment": true
+        },
+        "note": "本章可用类型不足四类，干扰项包含同章其他错误的类别与原解释；答案按“类别+依据”唯一匹配，建议抽查教学区分度。"
+      }
+    },
+    {
       "id": "diagnostic-ohm-01-2",
       "point_id": "ohm-01",
       "point_title": "电阻",
@@ -364,12 +414,5 @@
       }
     }
   ],
-  "skipped": [
-    {
-      "point_id": "ohm-01",
-      "point_title": "电阻",
-      "source_error_index": 0,
-      "reason": "自动判定条目没有 trap_test 可执行证据；不把校验标签代替实测证据。"
-    }
-  ]
+  "skipped": []
 }

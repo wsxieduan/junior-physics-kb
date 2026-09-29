@@ -4,6 +4,56 @@
   "source_file": "16_electromagnet.json",
   "questions": [
     {
+      "id": "diagnostic-magnet-01-1",
+      "point_id": "magnet-01",
+      "point_title": "磁体、磁场与电流的磁场",
+      "chapter": "电和磁",
+      "stem": "【电和磁 · 磁体、磁场与电流的磁场】学生的错误做法：把线圈电流写成电阻除以电压（错误表达式：Ic = Rc/Uc）。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
+      "options": [
+        {
+          "label": "A",
+          "text": "概念混淆：受力方向同时取决于电流方向和磁场方向；只改变其中一个条件时，受力方向会相应反转。"
+        },
+        {
+          "label": "B",
+          "text": "概念混淆：线圈不转可能是断路、接触不良或机械卡滞；应先逐项检查，再调整磁场或电流方向。"
+        },
+        {
+          "label": "C",
+          "text": "数值代入：0.6 V÷3 Ω=0.2 A=200 mA；若把换算后的 200 写成 A，会大 1000 倍。"
+        },
+        {
+          "label": "D",
+          "text": "量纲一致性：已测得线圈两端电压和电阻后，应按欧姆定律用电压除以电阻求电流；反过来相除所得量纲不是安培。"
+        }
+      ],
+      "correct_answer": "D",
+      "explanation": "已测得线圈两端电压和电阻后，应按欧姆定律用电压除以电阻求电流；反过来相除所得量纲不是安培。\n知识库校验证据：被测错误式：Ic = Rc/Uc；左式量纲：I；右式量纲：I^-1；左右量纲不匹配；量纲校验说明：实际量纲检查得到等号左边为I、右边为I^-1；两边不是同一物理量，因此该等式不成立。；变化方向要求：mismatch；检验说明：实际量纲检查得到等号左边为I、右边为I^-1；两边不是同一物理量，因此该等式不成立。。",
+      "error_type": "量纲一致性",
+      "judging": "auto",
+      "source_error_index": 0,
+      "source_caught_by": "量纲一致性",
+      "wrong_expr": "Ic = Rc/Uc",
+      "trap_test": {
+        "kind": "dimension",
+        "target": "Ic = Rc/Uc",
+        "lhs_dim": "I",
+        "rhs_dim": "I^-1",
+        "expect": "mismatch",
+        "note": "实际量纲检查得到等号左边为I、右边为I^-1；两边不是同一物理量，因此该等式不成立。"
+      },
+      "review": {
+        "confidence": "medium",
+        "checks": {
+          "answer_unique": true,
+          "distractors_plausible": true,
+          "stem_clear": true,
+          "no_cross_segment": true
+        },
+        "note": "本章可用类型不足四类，干扰项包含同章其他错误的类别与原解释；答案按“类别+依据”唯一匹配，建议抽查教学区分度。"
+      }
+    },
+    {
       "id": "diagnostic-magnet-01-2",
       "point_id": "magnet-01",
       "point_title": "磁体、磁场与电流的磁场",
@@ -270,6 +320,56 @@
       }
     },
     {
+      "id": "diagnostic-magnet-04-2",
+      "point_id": "magnet-04",
+      "point_title": "安装直流电动机模型",
+      "chapter": "电和磁",
+      "stem": "【电和磁 · 安装直流电动机模型】学生的错误做法：把电输入功率写成电压除以电流（错误表达式：P_in = U_m/I_m）。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
+      "options": [
+        {
+          "label": "A",
+          "text": "量纲一致性：电功率等于电压乘电流；电压除以电流得到的是电阻，不能表示输入功率。"
+        },
+        {
+          "label": "B",
+          "text": "概念混淆：受力方向同时取决于电流方向和磁场方向；只改变其中一个条件时，受力方向会相应反转。"
+        },
+        {
+          "label": "C",
+          "text": "数值代入：4 V÷20 Ω=0.2 A；换成毫安是 200 mA，不能仍写作 200 A。"
+        },
+        {
+          "label": "D",
+          "text": "数值代入：0.6 V÷3 Ω=0.2 A=200 mA；若把换算后的 200 写成 A，会大 1000 倍。"
+        }
+      ],
+      "correct_answer": "A",
+      "explanation": "电功率等于电压乘电流；电压除以电流得到的是电阻，不能表示输入功率。\n知识库校验证据：被测错误式：P_in = U_m/I_m；左式量纲：M·L^2·T^-3；右式量纲：M·L^2·T^-3·I^-2；左右量纲不匹配；量纲校验说明：实际量纲检查得到等号左边为M·L^2·T^-3、右边为M·L^2·T^-3·I^-2；两边不是同一物理量，因此该等式不成立。；变化方向要求：mismatch；检验说明：实际量纲检查得到等号左边为M·L^2·T^-3、右边为M·L^2·T^-3·I^-2；两边不是同一物理量，因此该等式不成立。。",
+      "error_type": "量纲一致性",
+      "judging": "auto",
+      "source_error_index": 1,
+      "source_caught_by": "量纲一致性",
+      "wrong_expr": "P_in = U_m/I_m",
+      "trap_test": {
+        "kind": "dimension",
+        "target": "P_in = U_m/I_m",
+        "lhs_dim": "M·L^2·T^-3",
+        "rhs_dim": "M·L^2·T^-3·I^-2",
+        "expect": "mismatch",
+        "note": "实际量纲检查得到等号左边为M·L^2·T^-3、右边为M·L^2·T^-3·I^-2；两边不是同一物理量，因此该等式不成立。"
+      },
+      "review": {
+        "confidence": "medium",
+        "checks": {
+          "answer_unique": true,
+          "distractors_plausible": true,
+          "stem_clear": true,
+          "no_cross_segment": true
+        },
+        "note": "本章可用类型不足四类，干扰项包含同章其他错误的类别与原解释；答案按“类别+依据”唯一匹配，建议抽查教学区分度。"
+      }
+    },
+    {
       "id": "diagnostic-magnet-04-3",
       "point_id": "magnet-04",
       "point_title": "安装直流电动机模型",
@@ -304,6 +404,56 @@
         "scenario": "直流电动机模型一",
         "expr": "U_m/I_m",
         "ref": 1.8
+      },
+      "review": {
+        "confidence": "medium",
+        "checks": {
+          "answer_unique": true,
+          "distractors_plausible": true,
+          "stem_clear": true,
+          "no_cross_segment": true
+        },
+        "note": "本章可用类型不足四类，干扰项包含同章其他错误的类别与原解释；答案按“类别+依据”唯一匹配，建议抽查教学区分度。"
+      }
+    },
+    {
+      "id": "diagnostic-magnet-02-1",
+      "point_id": "magnet-02",
+      "point_title": "电磁感应与发电机",
+      "chapter": "电和磁",
+      "stem": "【电和磁 · 电磁感应与发电机】学生的错误做法：把感应电流写成感应电压乘以回路电阻（错误表达式：I_ind = U_ind*R_loop）。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
+      "options": [
+        {
+          "label": "A",
+          "text": "概念混淆：线圈不转可能是断路、接触不良或机械卡滞；应先逐项检查，再调整磁场或电流方向。"
+        },
+        {
+          "label": "B",
+          "text": "数值代入：4 V÷20 Ω=0.2 A；换成毫安是 200 mA，不能仍写作 200 A。"
+        },
+        {
+          "label": "C",
+          "text": "量纲一致性：感应电路测得电压后仍按欧姆定律求电流，应当除以电阻；相乘的单位不是 A。"
+        },
+        {
+          "label": "D",
+          "text": "概念混淆：受力方向同时取决于电流方向和磁场方向；只改变其中一个条件时，受力方向会相应反转。"
+        }
+      ],
+      "correct_answer": "C",
+      "explanation": "感应电路测得电压后仍按欧姆定律求电流，应当除以电阻；相乘的单位不是 A。\n知识库校验证据：被测错误式：I_ind = U_ind*R_loop；左式量纲：I；右式量纲：M^2·L^4·T^-6·I^-3；左右量纲不匹配；量纲校验说明：实际量纲检查得到等号左边为I、右边为M^2·L^4·T^-6·I^-3；两边不是同一物理量，因此该等式不成立。；变化方向要求：mismatch；检验说明：实际量纲检查得到等号左边为I、右边为M^2·L^4·T^-6·I^-3；两边不是同一物理量，因此该等式不成立。。",
+      "error_type": "量纲一致性",
+      "judging": "auto",
+      "source_error_index": 0,
+      "source_caught_by": "量纲一致性",
+      "wrong_expr": "I_ind = U_ind*R_loop",
+      "trap_test": {
+        "kind": "dimension",
+        "target": "I_ind = U_ind*R_loop",
+        "lhs_dim": "I",
+        "rhs_dim": "M^2·L^4·T^-6·I^-3",
+        "expect": "mismatch",
+        "note": "实际量纲检查得到等号左边为I、右边为M^2·L^4·T^-6·I^-3；两边不是同一物理量，因此该等式不成立。"
       },
       "review": {
         "confidence": "medium",
@@ -407,24 +557,5 @@
       }
     }
   ],
-  "skipped": [
-    {
-      "point_id": "magnet-01",
-      "point_title": "磁体、磁场与电流的磁场",
-      "source_error_index": 0,
-      "reason": "自动判定条目没有 trap_test 可执行证据；不把校验标签代替实测证据。"
-    },
-    {
-      "point_id": "magnet-04",
-      "point_title": "安装直流电动机模型",
-      "source_error_index": 1,
-      "reason": "自动判定条目没有 trap_test 可执行证据；不把校验标签代替实测证据。"
-    },
-    {
-      "point_id": "magnet-02",
-      "point_title": "电磁感应与发电机",
-      "source_error_index": 0,
-      "reason": "自动判定条目没有 trap_test 可执行证据；不把校验标签代替实测证据。"
-    }
-  ]
+  "skipped": []
 }

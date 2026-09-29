@@ -51,6 +51,56 @@
       }
     },
     {
+      "id": "diagnostic-sound-01-2",
+      "point_id": "sound-01",
+      "point_title": "声音的产生、传播与声速",
+      "chapter": "引言 · 第一章 声现象",
+      "stem": "【引言 · 第一章 声现象 · 声音的产生、传播与声速】学生的错误做法：把声速写成路程乘时间，c = s·t（错误表达式：c = s*t）。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
+      "options": [
+        {
+          "label": "A",
+          "text": "数值代入：周期倒数只适用于 t 是一次完整振动周期的情形。"
+        },
+        {
+          "label": "B",
+          "text": "数值代入：公式中的一半已经把往返总路程转成单程距离，不能再重复减半。"
+        },
+        {
+          "label": "C",
+          "text": "量纲一致性：声速定义为单位时间内传播的路程，应使用路程除以时间。"
+        },
+        {
+          "label": "D",
+          "text": "数值代入：往返时间对应的是去程和回程的总路程。"
+        }
+      ],
+      "correct_answer": "C",
+      "explanation": "声速定义为单位时间内传播的路程，应使用路程除以时间。相乘后单位变成 m·s，不是 m/s，量纲检查能抓住。\n知识库校验证据：被测错误式：c = s*t；左式量纲：L·T^-1；右式量纲：L·T；左右量纲不匹配；量纲校验说明：实际量纲检查得到等号左边为L·T^-1、右边为L·T；两边不是同一物理量，因此该等式不成立。；变化方向要求：mismatch；检验说明：实际量纲检查得到等号左边为L·T^-1、右边为L·T；两边不是同一物理量，因此该等式不成立。。",
+      "error_type": "量纲一致性",
+      "judging": "auto",
+      "source_error_index": 1,
+      "source_caught_by": "量纲一致性",
+      "wrong_expr": "c = s*t",
+      "trap_test": {
+        "kind": "dimension",
+        "target": "c = s*t",
+        "lhs_dim": "L·T^-1",
+        "rhs_dim": "L·T",
+        "expect": "mismatch",
+        "note": "实际量纲检查得到等号左边为L·T^-1、右边为L·T；两边不是同一物理量，因此该等式不成立。"
+      },
+      "review": {
+        "confidence": "medium",
+        "checks": {
+          "answer_unique": true,
+          "distractors_plausible": true,
+          "stem_clear": true,
+          "no_cross_segment": true
+        },
+        "note": "本章可用类型不足四类，干扰项包含同章其他错误的类别与原解释；答案按“类别+依据”唯一匹配，建议抽查教学区分度。"
+      }
+    },
+    {
       "id": "diagnostic-sound-01-3",
       "point_id": "sound-01",
       "point_title": "声音的产生、传播与声速",
@@ -411,12 +461,5 @@
       }
     }
   ],
-  "skipped": [
-    {
-      "point_id": "sound-01",
-      "point_title": "声音的产生、传播与声速",
-      "source_error_index": 1,
-      "reason": "自动判定条目没有 trap_test 可执行证据；不把校验标签代替实测证据。"
-    }
-  ]
+  "skipped": []
 }

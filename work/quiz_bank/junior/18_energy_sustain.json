@@ -28,7 +28,7 @@
         }
       ],
       "correct_answer": "D",
-      "explanation": "耗电量等于功率乘以时间；功率再除以时间会得到功率变化率，不是电能。\n知识库校验证据：被测错误式：E = P/t；左式量纲：M·L^2·T^-2；右式量纲：M·L^2·T^-4；左右量纲不匹配；量纲校验说明：实际量纲检查得到等号左边为M·L^2·T^-2、右边为M·L^2·T^-4；两边不是同一物理量，因此该等式不成立。；变化方向要求：mismatch；检验说明：实际量纲检查得到等号左边为M·L^2·T^-2、右边为M·L^2·T^-4；两边不是同一物理量，因此该等式不成立。。",
+      "explanation": "耗电量等于功率乘以时间；功率再除以时间会得到功率变化率，不是电能。\n知识库校验证据：被测错误式：E = P/t；左式量纲：M·L²·T⁻²；右式量纲：M·L²·T⁻⁴；左右量纲不匹配；量纲校验说明：实际量纲检查得到等号左边为M·L²·T⁻²、右边为M·L²·T⁻⁴；两边不是同一物理量，因此该等式不成立。；变化方向要求：mismatch；检验说明：实际量纲检查得到等号左边为M·L²·T⁻²、右边为M·L²·T⁻⁴；两边不是同一物理量，因此该等式不成立。。",
       "error_type": "量纲一致性",
       "judging": "auto",
       "source_error_index": 0,
@@ -191,7 +191,7 @@
       "point_id": "sustain-03",
       "point_title": "核能",
       "chapter": "能源与可持续发展",
-      "stem": "【能源与可持续发展 · 核能】学生的错误做法：把输出电能写成输出功率除以运行时间（错误表达式：E_el = P_el/t_n）。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
+      "stem": "【能源与可持续发展 · 核能】学生的错误做法：把输出电能写成输出功率除以运行时间（错误表达式：E<sub>电</sub> = P<sub>电</sub>/t<sub>n</sub>）。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
       "options": [
         {
           "label": "A",
@@ -211,12 +211,12 @@
         }
       ],
       "correct_answer": "D",
-      "explanation": "输出电能是功率对时间的累积，应将功率乘运行时间；相除得到的单位也不再是焦耳。\n知识库校验证据：被测错误式：E_el = P_el/t_n；左式量纲：M·L^2·T^-2；右式量纲：M·L^2·T^-4；左右量纲不匹配；量纲校验说明：实际量纲检查得到等号左边为M·L^2·T^-2、右边为M·L^2·T^-4；两边不是同一物理量，因此该等式不成立。；变化方向要求：mismatch；检验说明：实际量纲检查得到等号左边为M·L^2·T^-2、右边为M·L^2·T^-4；两边不是同一物理量，因此该等式不成立。。",
+      "explanation": "输出电能是功率对时间的累积，应将功率乘运行时间；相除得到的单位也不再是焦耳。\n知识库校验证据：被测错误式：E<sub>电</sub> = P<sub>电</sub>/t<sub>n</sub>；左式量纲：M·L²·T⁻²；右式量纲：M·L²·T⁻⁴；左右量纲不匹配；量纲校验说明：实际量纲检查得到等号左边为M·L²·T⁻²、右边为M·L²·T⁻⁴；两边不是同一物理量，因此该等式不成立。；变化方向要求：mismatch；检验说明：实际量纲检查得到等号左边为M·L²·T⁻²、右边为M·L²·T⁻⁴；两边不是同一物理量，因此该等式不成立。。",
       "error_type": "量纲一致性",
       "judging": "auto",
       "source_error_index": 1,
       "source_caught_by": "量纲一致性",
-      "wrong_expr": "E_el = P_el/t_n",
+      "wrong_expr": "E<sub>电</sub> = P<sub>电</sub>/t<sub>n</sub>",
       "trap_test": {
         "kind": "dimension",
         "target": "E_el = P_el/t_n",
@@ -241,7 +241,7 @@
       "point_id": "sustain-03",
       "point_title": "核能",
       "chapter": "能源与可持续发展",
-      "stem": "【能源与可持续发展 · 核能】学生的错误做法：核电站 1.0×10^9 W 运行 3600 s，误将时间除以 3600 再代入（错误表达式：E_el = P_el*(t_n/3600)）。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
+      "stem": "【能源与可持续发展 · 核能】学生的错误做法：核电站 1.0×10⁹ W 运行 3600 s，误将时间除以 3600 再代入（错误表达式：E<sub>电</sub> = P<sub>电</sub>·(t<sub>n</sub>/3600)）。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
       "options": [
         {
           "label": "A",
@@ -261,12 +261,12 @@
         }
       ],
       "correct_answer": "C",
-      "explanation": "题目给出的运行时间已是秒，重复除以 3600 会把应有输出电能缩小 3600 倍。\n知识库校验证据：情境：核电站一小时输出；代入错误式：P_el*(t_n/3600)；校验参照值：3600000000000。",
+      "explanation": "题目给出的运行时间已是秒，重复除以 3600 会把应有输出电能缩小 3600 倍。\n知识库校验证据：情境：核电站一小时输出；代入错误式：P<sub>电</sub>·(t<sub>n</sub>/3600)；校验参照值：3600000000000。",
       "error_type": "数值代入",
       "judging": "auto",
       "source_error_index": 2,
       "source_caught_by": "数值代入",
-      "wrong_expr": "E_el = P_el*(t_n/3600)",
+      "wrong_expr": "E<sub>电</sub> = P<sub>电</sub>·(t<sub>n</sub>/3600)",
       "trap_test": {
         "scenario": "核电站一小时输出",
         "expr": "P_el*(t_n/3600)",
@@ -331,7 +331,7 @@
       "point_id": "sustain-04",
       "point_title": "太阳能",
       "chapter": "能源与可持续发展",
-      "stem": "【能源与可持续发展 · 太阳能】学生的错误做法：把水吸收的热量算成比热容乘质量再除以升温（错误表达式：Q_water = c_water*m_water/dT）。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
+      "stem": "【能源与可持续发展 · 太阳能】学生的错误做法：把水吸收的热量算成比热容乘质量再除以升温（错误表达式：Q<sub>水</sub> = c<sub>水</sub>·m<sub>水</sub>/dT）。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
       "options": [
         {
           "label": "A",
@@ -351,12 +351,12 @@
         }
       ],
       "correct_answer": "A",
-      "explanation": "水的吸热量随温升增大而增大；公式中应乘温升，除以温升还会破坏焦耳的量纲。\n知识库校验证据：被测错误式：Q_water = c_water*m_water/dT；左式量纲：M·L^2·T^-2；右式量纲：M·L^2·T^-2·K^-2；左右量纲不匹配；量纲校验说明：实际量纲检查得到等号左边为M·L^2·T^-2、右边为M·L^2·T^-2·K^-2；两边不是同一物理量，因此该等式不成立。；变化方向要求：mismatch；检验说明：实际量纲检查得到等号左边为M·L^2·T^-2、右边为M·L^2·T^-2·K^-2；两边不是同一物理量，因此该等式不成立。。",
+      "explanation": "水的吸热量随温升增大而增大；公式中应乘温升，除以温升还会破坏焦耳的量纲。\n知识库校验证据：被测错误式：Q<sub>水</sub> = c<sub>水</sub>·m<sub>水</sub>/dT；左式量纲：M·L²·T⁻²；右式量纲：M·L²·T⁻²·K⁻²；左右量纲不匹配；量纲校验说明：实际量纲检查得到等号左边为M·L²·T⁻²、右边为M·L²·T⁻²·K⁻²；两边不是同一物理量，因此该等式不成立。；变化方向要求：mismatch；检验说明：实际量纲检查得到等号左边为M·L²·T⁻²、右边为M·L²·T⁻²·K⁻²；两边不是同一物理量，因此该等式不成立。。",
       "error_type": "量纲一致性",
       "judging": "auto",
       "source_error_index": 1,
       "source_caught_by": "量纲一致性",
-      "wrong_expr": "Q_water = c_water*m_water/dT",
+      "wrong_expr": "Q<sub>水</sub> = c<sub>水</sub>·m<sub>水</sub>/dT",
       "trap_test": {
         "kind": "dimension",
         "target": "Q_water = c_water*m_water/dT",
@@ -381,7 +381,7 @@
       "point_id": "sustain-04",
       "point_title": "太阳能",
       "chapter": "能源与可持续发展",
-      "stem": "【能源与可持续发展 · 太阳能】学生的错误做法：0.2 kg 水升高 15 ℃，误将热量算成 56 J（错误表达式：Q_water = c_water*m_water/dT）。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
+      "stem": "【能源与可持续发展 · 太阳能】学生的错误做法：0.2 kg 水升高 15 ℃，误将热量算成 56 J（错误表达式：Q<sub>水</sub> = c<sub>水</sub>·m<sub>水</sub>/dT）。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
       "options": [
         {
           "label": "A",
@@ -401,12 +401,12 @@
         }
       ],
       "correct_answer": "D",
-      "explanation": "按 4200 J/kg/℃、0.2 kg 和 15 ℃ 相乘，结果为 12600 J；不能把温升放到分母。\n知识库校验证据：情境：太阳能热水器一；代入错误式：c_water*m_water/dT；校验参照值：12600。",
+      "explanation": "按 4200 J/kg/℃、0.2 kg 和 15 ℃ 相乘，结果为 12600 J；不能把温升放到分母。\n知识库校验证据：情境：太阳能热水器一；代入错误式：c<sub>水</sub>·m<sub>水</sub>/dT；校验参照值：12600。",
       "error_type": "数值代入",
       "judging": "auto",
       "source_error_index": 2,
       "source_caught_by": "数值代入",
-      "wrong_expr": "Q_water = c_water*m_water/dT",
+      "wrong_expr": "Q<sub>水</sub> = c<sub>水</sub>·m<sub>水</sub>/dT",
       "trap_test": {
         "scenario": "太阳能热水器一",
         "expr": "c_water*m_water/dT",
@@ -428,7 +428,7 @@
       "point_id": "sustain-02",
       "point_title": "能量转化的基本规律",
       "chapter": "能源与可持续发展",
-      "stem": "【能源与可持续发展 · 能量转化的基本规律】学生的错误做法：把能量利用效率写成输入能量除以有用能量（错误表达式：eta = E_in/E_use）。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
+      "stem": "【能源与可持续发展 · 能量转化的基本规律】学生的错误做法：把能量利用效率写成输入能量除以有用能量（错误表达式：η = E<sub>入</sub>/E<sub>有用</sub>）。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
       "options": [
         {
           "label": "A",
@@ -448,12 +448,12 @@
         }
       ],
       "correct_answer": "C",
-      "explanation": "效率是有用输出占输入的比例；高效电机情境中为 80/100=0.8，而不是 1.25。\n知识库校验证据：情境：高效电机；代入错误式：E_in/E_use；校验参照值：0.8。",
+      "explanation": "效率是有用输出占输入的比例；高效电机情境中为 80/100=0.8，而不是 1.25。\n知识库校验证据：情境：高效电机；代入错误式：E<sub>入</sub>/E<sub>有用</sub>；校验参照值：0.8。",
       "error_type": "数值代入",
       "judging": "auto",
       "source_error_index": 0,
       "source_caught_by": "数值代入",
-      "wrong_expr": "eta = E_in/E_use",
+      "wrong_expr": "η = E<sub>入</sub>/E<sub>有用</sub>",
       "trap_test": {
         "scenario": "高效电机",
         "expr": "E_in/E_use",
@@ -518,7 +518,7 @@
       "point_id": "sustain-05",
       "point_title": "能源与可持续发展",
       "chapter": "能源与可持续发展",
-      "stem": "【能源与可持续发展 · 能源与可持续发展】学生的错误做法：把新设备耗电量加到旧设备耗电量上当成节能量（错误表达式：E_save = E_old+E_new）。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
+      "stem": "【能源与可持续发展 · 能源与可持续发展】学生的错误做法：把新设备耗电量加到旧设备耗电量上当成节能量（错误表达式：E<sub>节</sub> = E<sub>旧</sub>+E<sub>新</sub>）。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
       "options": [
         {
           "label": "A",
@@ -538,12 +538,12 @@
         }
       ],
       "correct_answer": "A",
-      "explanation": "节能量是旧设备比新设备多消耗的部分，应做差而不是相加。比较之前先统一时间范围和所提供的服务。\n知识库校验证据：情境：节能灯具一；代入错误式：E_old+E_new；校验参照值：180000。",
+      "explanation": "节能量是旧设备比新设备多消耗的部分，应做差而不是相加。比较之前先统一时间范围和所提供的服务。\n知识库校验证据：情境：节能灯具一；代入错误式：E<sub>旧</sub>+E<sub>新</sub>；校验参照值：180000。",
       "error_type": "数值代入",
       "judging": "auto",
       "source_error_index": 0,
       "source_caught_by": "数值代入",
-      "wrong_expr": "E_save = E_old+E_new",
+      "wrong_expr": "E<sub>节</sub> = E<sub>旧</sub>+E<sub>新</sub>",
       "trap_test": {
         "scenario": "节能灯具一",
         "expr": "E_old+E_new",
@@ -647,5 +647,190 @@
       }
     }
   ],
-  "skipped": []
+  "skipped": [],
+  "source_records": {
+    "diagnostic-sustain-01-1": {
+      "error": {
+        "wrong": "把耗电量写成功率除以使用时间。",
+        "wrong_expr": "E = P/t",
+        "why": "耗电量等于功率乘以时间；功率再除以时间会得到功率变化率，不是电能。",
+        "caught_by": "量纲一致性",
+        "trap_test": {
+          "kind": "dimension",
+          "target": "E = P/t",
+          "lhs_dim": "M·L^2·T^-2",
+          "rhs_dim": "M·L^2·T^-4",
+          "expect": "mismatch",
+          "note": "实际量纲检查得到等号左边为M·L^2·T^-2、右边为M·L^2·T^-4；两边不是同一物理量，因此该等式不成立。"
+        }
+      },
+      "title": "能源利用与社会发展中的耗电估算",
+      "chapter": "能源与可持续发展"
+    },
+    "diagnostic-sustain-01-2": {
+      "error": {
+        "wrong": "LED灯功率为 0.01 kW、使用 5 h，却把耗电量写成 0.002 kWh。",
+        "wrong_expr": "E = P/t",
+        "why": "0.01 kW×5 h=0.05 kWh；除法结果不仅数值错误，单位也不能表示耗电量。",
+        "caught_by": "数值代入",
+        "trap_test": {
+          "scenario": "LED灯五小时",
+          "expr": "P/t",
+          "ref": 0.05
+        }
+      },
+      "title": "能源利用与社会发展中的耗电估算",
+      "chapter": "能源与可持续发展"
+    },
+    "diagnostic-sustain-01-3": {
+      "error": {
+        "wrong": "只看额定功率较小，就断定设备一定更节能而不看使用时长。",
+        "why": "耗电量还取决于使用时间；小功率设备长时间运行也可能耗电更多。",
+        "caught_by": "人工审核"
+      },
+      "title": "能源利用与社会发展中的耗电估算",
+      "chapter": "能源与可持续发展"
+    },
+    "diagnostic-sustain-03-1": {
+      "error": {
+        "wrong": "把核能说成在电站内一步直接变成电能。",
+        "why": "核电站先通过裂变加热介质，再驱动汽轮机和发电机，能量经历多个转化环节。",
+        "caught_by": "人工审核"
+      },
+      "title": "核能",
+      "chapter": "能源与可持续发展"
+    },
+    "diagnostic-sustain-03-2": {
+      "error": {
+        "wrong": "把输出电能写成输出功率除以运行时间。",
+        "wrong_expr": "E_el = P_el/t_n",
+        "why": "输出电能是功率对时间的累积，应将功率乘运行时间；相除得到的单位也不再是焦耳。",
+        "caught_by": "量纲一致性",
+        "trap_test": {
+          "kind": "dimension",
+          "target": "E_el = P_el/t_n",
+          "lhs_dim": "M·L^2·T^-2",
+          "rhs_dim": "M·L^2·T^-4",
+          "expect": "mismatch",
+          "note": "实际量纲检查得到等号左边为M·L^2·T^-2、右边为M·L^2·T^-4；两边不是同一物理量，因此该等式不成立。"
+        }
+      },
+      "title": "核能",
+      "chapter": "能源与可持续发展"
+    },
+    "diagnostic-sustain-03-3": {
+      "error": {
+        "wrong": "核电站 1.0×10^9 W 运行 3600 s，误将时间除以 3600 再代入。",
+        "wrong_expr": "E_el = P_el*(t_n/3600)",
+        "why": "题目给出的运行时间已是秒，重复除以 3600 会把应有输出电能缩小 3600 倍。",
+        "caught_by": "数值代入",
+        "trap_test": {
+          "scenario": "核电站一小时输出",
+          "expr": "P_el*(t_n/3600)",
+          "ref": 3600000000000
+        }
+      },
+      "title": "核能",
+      "chapter": "能源与可持续发展"
+    },
+    "diagnostic-sustain-04-1": {
+      "error": {
+        "wrong": "把太阳能热水器的太阳输入能量直接等同于水吸收的热量。",
+        "why": "太阳辐射到水之间会经过集热器和管路，途中有反射与散热，水吸收的热量只是输入能量的一部分。",
+        "caught_by": "人工审核"
+      },
+      "title": "太阳能",
+      "chapter": "能源与可持续发展"
+    },
+    "diagnostic-sustain-04-2": {
+      "error": {
+        "wrong": "把水吸收的热量算成比热容乘质量再除以升温。",
+        "wrong_expr": "Q_water = c_water*m_water/dT",
+        "why": "水的吸热量随温升增大而增大；公式中应乘温升，除以温升还会破坏焦耳的量纲。",
+        "caught_by": "量纲一致性",
+        "trap_test": {
+          "kind": "dimension",
+          "target": "Q_water = c_water*m_water/dT",
+          "lhs_dim": "M·L^2·T^-2",
+          "rhs_dim": "M·L^2·T^-2·K^-2",
+          "expect": "mismatch",
+          "note": "实际量纲检查得到等号左边为M·L^2·T^-2、右边为M·L^2·T^-2·K^-2；两边不是同一物理量，因此该等式不成立。"
+        }
+      },
+      "title": "太阳能",
+      "chapter": "能源与可持续发展"
+    },
+    "diagnostic-sustain-04-3": {
+      "error": {
+        "wrong": "0.2 kg 水升高 15 ℃，误将热量算成 56 J。",
+        "wrong_expr": "Q_water = c_water*m_water/dT",
+        "why": "按 4200 J/kg/℃、0.2 kg 和 15 ℃ 相乘，结果为 12600 J；不能把温升放到分母。",
+        "caught_by": "数值代入",
+        "trap_test": {
+          "scenario": "太阳能热水器一",
+          "expr": "c_water*m_water/dT",
+          "ref": 12600
+        }
+      },
+      "title": "太阳能",
+      "chapter": "能源与可持续发展"
+    },
+    "diagnostic-sustain-02-1": {
+      "error": {
+        "wrong": "把能量利用效率写成输入能量除以有用能量。",
+        "wrong_expr": "eta = E_in/E_use",
+        "why": "效率是有用输出占输入的比例；高效电机情境中为 80/100=0.8，而不是 1.25。",
+        "caught_by": "数值代入",
+        "trap_test": {
+          "scenario": "高效电机",
+          "expr": "E_in/E_use",
+          "ref": 0.8
+        }
+      },
+      "title": "能量转化的基本规律",
+      "chapter": "能源与可持续发展"
+    },
+    "diagnostic-sustain-02-2": {
+      "error": {
+        "wrong": "认为可再生能源没有任何环境影响，或认为能量损耗意味着能量消失。",
+        "why": "可再生能源的利用仍可能影响生态和土地；损耗能量通常转化为不易利用的热、声等形式，并未违反能量守恒。",
+        "caught_by": "人工审核"
+      },
+      "title": "能量转化的基本规律",
+      "chapter": "能源与可持续发展"
+    },
+    "diagnostic-sustain-05-1": {
+      "error": {
+        "wrong": "把新设备耗电量加到旧设备耗电量上当成节能量。",
+        "wrong_expr": "E_save = E_old+E_new",
+        "why": "节能量是旧设备比新设备多消耗的部分，应做差而不是相加。比较之前先统一时间范围和所提供的服务。",
+        "caught_by": "数值代入",
+        "trap_test": {
+          "scenario": "节能灯具一",
+          "expr": "E_old+E_new",
+          "ref": 180000
+        }
+      },
+      "title": "能源与可持续发展",
+      "chapter": "能源与可持续发展"
+    },
+    "diagnostic-sustain-05-2": {
+      "error": {
+        "wrong": "比较灯具节能量时让旧灯和新灯使用不同时间。",
+        "why": "要比较相同服务，必须统一照明时长等条件。比较之前先统一时间范围和所提供的服务。",
+        "caught_by": "人工审核"
+      },
+      "title": "能源与可持续发展",
+      "chapter": "能源与可持续发展"
+    },
+    "diagnostic-sustain-05-3": {
+      "error": {
+        "wrong": "仅凭一次电费差值就断定一种能源在全生命周期都更可持续。",
+        "why": "生命周期评价还涉及制造、运输、发电来源、维护和回收等边界。比较之前先统一时间范围和所提供的服务。",
+        "caught_by": "人工审核"
+      },
+      "title": "能源与可持续发展",
+      "chapter": "能源与可持续发展"
+    }
+  }
 }

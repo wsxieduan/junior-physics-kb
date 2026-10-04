@@ -28,7 +28,7 @@
         }
       ],
       "correct_answer": "D",
-      "explanation": "已测得线圈两端电压和电阻后，应按欧姆定律用电压除以电阻求电流；反过来相除所得量纲不是安培。\n知识库校验证据：被测错误式：Ic = Rc/Uc；左式量纲：I；右式量纲：I^-1；左右量纲不匹配；量纲校验说明：实际量纲检查得到等号左边为I、右边为I^-1；两边不是同一物理量，因此该等式不成立。；变化方向要求：mismatch；检验说明：实际量纲检查得到等号左边为I、右边为I^-1；两边不是同一物理量，因此该等式不成立。。",
+      "explanation": "已测得线圈两端电压和电阻后，应按欧姆定律用电压除以电阻求电流；反过来相除所得量纲不是安培。\n知识库校验证据：被测错误式：Ic = Rc/Uc；左式量纲：I；右式量纲：I⁻¹；左右量纲不匹配；量纲校验说明：实际量纲检查得到等号左边为I、右边为I⁻¹；两边不是同一物理量，因此该等式不成立。；变化方向要求：mismatch；检验说明：实际量纲检查得到等号左边为I、右边为I⁻¹；两边不是同一物理量，因此该等式不成立。。",
       "error_type": "量纲一致性",
       "judging": "auto",
       "source_error_index": 0,
@@ -58,7 +58,7 @@
       "point_id": "magnet-01",
       "point_title": "磁体、磁场与电流的磁场",
       "chapter": "电和磁",
-      "stem": "【电和磁 · 磁体、磁场与电流的磁场】学生的错误做法：把线圈电流换算成 mA 后仍把数值标成 A，导致电流大 1000 倍（错误表达式：Ic = 1000*Uc/Rc）。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
+      "stem": "【电和磁 · 磁体、磁场与电流的磁场】学生的错误做法：把线圈电流换算成 mA 后仍把数值标成 A，导致电流大 1000 倍（错误表达式：Ic = 1000·Uc/Rc）。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
       "options": [
         {
           "label": "A",
@@ -78,12 +78,12 @@
         }
       ],
       "correct_answer": "C",
-      "explanation": "4 V÷20 Ω=0.2 A；换成毫安是 200 mA，不能仍写作 200 A。\n知识库校验证据：情境：线圈实验一；代入错误式：1000*Uc/Rc；校验参照值：0.2。",
+      "explanation": "4 V÷20 Ω=0.2 A；换成毫安是 200 mA，不能仍写作 200 A。\n知识库校验证据：情境：线圈实验一；代入错误式：1000·Uc/Rc；校验参照值：0.2。",
       "error_type": "数值代入",
       "judging": "auto",
       "source_error_index": 1,
       "source_caught_by": "数值代入",
-      "wrong_expr": "Ic = 1000*Uc/Rc",
+      "wrong_expr": "Ic = 1000·Uc/Rc",
       "trap_test": {
         "scenario": "线圈实验一",
         "expr": "1000*Uc/Rc",
@@ -234,7 +234,7 @@
       "point_id": "magnet-03",
       "point_title": "磁场对电流的作用与电动机",
       "chapter": "电和磁",
-      "stem": "【电和磁 · 磁场对电流的作用与电动机】学生的错误做法：匀速提升 200 N 的重物 3 m 时，把机械功算成 200/3 J（错误表达式：W_out = F_out/s_out）。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
+      "stem": "【电和磁 · 磁场对电流的作用与电动机】学生的错误做法：匀速提升 200 N 的重物 3 m 时，把机械功算成 200/3 J（错误表达式：W<sub>出</sub> = F<sub>出</sub>/s<sub>出</sub>）。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
       "options": [
         {
           "label": "A",
@@ -254,12 +254,12 @@
         }
       ],
       "correct_answer": "C",
-      "explanation": "恒力沿运动方向做功要把力与位移相乘；除以距离既算不出焦耳，数值也与题意不符。\n知识库校验证据：情境：电动机提升重物一；代入错误式：F_out/s_out；校验参照值：600。",
+      "explanation": "恒力沿运动方向做功要把力与位移相乘；除以距离既算不出焦耳，数值也与题意不符。\n知识库校验证据：情境：电动机提升重物一；代入错误式：F<sub>出</sub>/s<sub>出</sub>；校验参照值：600。",
       "error_type": "数值代入",
       "judging": "auto",
       "source_error_index": 2,
       "source_caught_by": "数值代入",
-      "wrong_expr": "W_out = F_out/s_out",
+      "wrong_expr": "W<sub>出</sub> = F<sub>出</sub>/s<sub>出</sub>",
       "trap_test": {
         "scenario": "电动机提升重物一",
         "expr": "F_out/s_out",
@@ -324,7 +324,7 @@
       "point_id": "magnet-04",
       "point_title": "安装直流电动机模型",
       "chapter": "电和磁",
-      "stem": "【电和磁 · 安装直流电动机模型】学生的错误做法：把电输入功率写成电压除以电流（错误表达式：P_in = U_m/I_m）。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
+      "stem": "【电和磁 · 安装直流电动机模型】学生的错误做法：把电输入功率写成电压除以电流（错误表达式：P<sub>入</sub> = U<sub>m</sub>/I<sub>m</sub>）。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
       "options": [
         {
           "label": "A",
@@ -344,12 +344,12 @@
         }
       ],
       "correct_answer": "A",
-      "explanation": "电功率等于电压乘电流；电压除以电流得到的是电阻，不能表示输入功率。\n知识库校验证据：被测错误式：P_in = U_m/I_m；左式量纲：M·L^2·T^-3；右式量纲：M·L^2·T^-3·I^-2；左右量纲不匹配；量纲校验说明：实际量纲检查得到等号左边为M·L^2·T^-3、右边为M·L^2·T^-3·I^-2；两边不是同一物理量，因此该等式不成立。；变化方向要求：mismatch；检验说明：实际量纲检查得到等号左边为M·L^2·T^-3、右边为M·L^2·T^-3·I^-2；两边不是同一物理量，因此该等式不成立。。",
+      "explanation": "电功率等于电压乘电流；电压除以电流得到的是电阻，不能表示输入功率。\n知识库校验证据：被测错误式：P<sub>入</sub> = U<sub>m</sub>/I<sub>m</sub>；左式量纲：M·L²·T⁻³；右式量纲：M·L²·T⁻³·I⁻²；左右量纲不匹配；量纲校验说明：实际量纲检查得到等号左边为M·L²·T⁻³、右边为M·L²·T⁻³·I⁻²；两边不是同一物理量，因此该等式不成立。；变化方向要求：mismatch；检验说明：实际量纲检查得到等号左边为M·L²·T⁻³、右边为M·L²·T⁻³·I⁻²；两边不是同一物理量，因此该等式不成立。。",
       "error_type": "量纲一致性",
       "judging": "auto",
       "source_error_index": 1,
       "source_caught_by": "量纲一致性",
-      "wrong_expr": "P_in = U_m/I_m",
+      "wrong_expr": "P<sub>入</sub> = U<sub>m</sub>/I<sub>m</sub>",
       "trap_test": {
         "kind": "dimension",
         "target": "P_in = U_m/I_m",
@@ -374,7 +374,7 @@
       "point_id": "magnet-04",
       "point_title": "安装直流电动机模型",
       "chapter": "电和磁",
-      "stem": "【电和磁 · 安装直流电动机模型】学生的错误做法：6 V、0.3 A 的模型把输入功率算成 10 W（错误表达式：P_in = U_m/I_m）。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
+      "stem": "【电和磁 · 安装直流电动机模型】学生的错误做法：6 V、0.3 A的模型错误用电压除以电流，标作20 W（错误表达式：P<sub>入</sub> = U<sub>m</sub>/I<sub>m</sub>）。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
       "options": [
         {
           "label": "A",
@@ -390,16 +390,16 @@
         },
         {
           "label": "D",
-          "text": "数值代入：6 V 与 0.3 A 应相乘得到 1.8 W；用除法会得到电阻量级而不是电功率。"
+          "text": "数值代入：正确输入功率6×0.3=1.8 W；6÷0.3=20的量纲是Ω，不能标为W。"
         }
       ],
       "correct_answer": "D",
-      "explanation": "6 V 与 0.3 A 应相乘得到 1.8 W；用除法会得到电阻量级而不是电功率。\n知识库校验证据：情境：直流电动机模型一；代入错误式：U_m/I_m；校验参照值：1.8。",
+      "explanation": "正确输入功率6×0.3=1.8 W；6÷0.3=20的量纲是Ω，不能标为W。\n知识库校验证据：情境：直流电动机模型一；代入错误式：U<sub>m</sub>/I<sub>m</sub>；校验参照值：1.8。",
       "error_type": "数值代入",
       "judging": "auto",
       "source_error_index": 2,
       "source_caught_by": "数值代入",
-      "wrong_expr": "P_in = U_m/I_m",
+      "wrong_expr": "P<sub>入</sub> = U<sub>m</sub>/I<sub>m</sub>",
       "trap_test": {
         "scenario": "直流电动机模型一",
         "expr": "U_m/I_m",
@@ -421,7 +421,7 @@
       "point_id": "magnet-02",
       "point_title": "电磁感应与发电机",
       "chapter": "电和磁",
-      "stem": "【电和磁 · 电磁感应与发电机】学生的错误做法：把感应电流写成感应电压乘以回路电阻（错误表达式：I_ind = U_ind*R_loop）。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
+      "stem": "【电和磁 · 电磁感应与发电机】学生的错误做法：把感应电流写成感应电压乘以回路电阻（错误表达式：I<sub>感</sub> = U<sub>感</sub>·R<sub>回路</sub>）。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
       "options": [
         {
           "label": "A",
@@ -441,12 +441,12 @@
         }
       ],
       "correct_answer": "C",
-      "explanation": "感应电路测得电压后仍按欧姆定律求电流，应当除以电阻；相乘的单位不是 A。\n知识库校验证据：被测错误式：I_ind = U_ind*R_loop；左式量纲：I；右式量纲：M^2·L^4·T^-6·I^-3；左右量纲不匹配；量纲校验说明：实际量纲检查得到等号左边为I、右边为M^2·L^4·T^-6·I^-3；两边不是同一物理量，因此该等式不成立。；变化方向要求：mismatch；检验说明：实际量纲检查得到等号左边为I、右边为M^2·L^4·T^-6·I^-3；两边不是同一物理量，因此该等式不成立。。",
+      "explanation": "感应电路测得电压后仍按欧姆定律求电流，应当除以电阻；相乘的单位不是 A。\n知识库校验证据：被测错误式：I<sub>感</sub> = U<sub>感</sub>·R<sub>回路</sub>；左式量纲：I；右式量纲：M²·L⁴·T⁻⁶·I⁻³；左右量纲不匹配；量纲校验说明：实际量纲检查得到等号左边为I、右边为M²·L⁴·T⁻⁶·I⁻³；两边不是同一物理量，因此该等式不成立。；变化方向要求：mismatch；检验说明：实际量纲检查得到等号左边为I、右边为M²·L⁴·T⁻⁶·I⁻³；两边不是同一物理量，因此该等式不成立。。",
       "error_type": "量纲一致性",
       "judging": "auto",
       "source_error_index": 0,
       "source_caught_by": "量纲一致性",
-      "wrong_expr": "I_ind = U_ind*R_loop",
+      "wrong_expr": "I<sub>感</sub> = U<sub>感</sub>·R<sub>回路</sub>",
       "trap_test": {
         "kind": "dimension",
         "target": "I_ind = U_ind*R_loop",
@@ -471,7 +471,7 @@
       "point_id": "magnet-02",
       "point_title": "电磁感应与发电机",
       "chapter": "电和磁",
-      "stem": "【电和磁 · 电磁感应与发电机】学生的错误做法：把感应电流换算成 mA 后仍将毫安数值标作 A（错误表达式：I_ind = 1000*U_ind/R_loop）。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
+      "stem": "【电和磁 · 电磁感应与发电机】学生的错误做法：把感应电流换算成 mA 后仍将毫安数值标作 A（错误表达式：I<sub>感</sub> = 1000·U<sub>感</sub>/R<sub>回路</sub>）。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
       "options": [
         {
           "label": "A",
@@ -491,12 +491,12 @@
         }
       ],
       "correct_answer": "B",
-      "explanation": "0.6 V÷3 Ω=0.2 A=200 mA；若把换算后的 200 写成 A，会大 1000 倍。\n知识库校验证据：情境：线圈感应一；代入错误式：1000*U_ind/R_loop；校验参照值：0.2。",
+      "explanation": "0.6 V÷3 Ω=0.2 A=200 mA；若把换算后的 200 写成 A，会大 1000 倍。\n知识库校验证据：情境：线圈感应一；代入错误式：1000·U<sub>感</sub>/R<sub>回路</sub>；校验参照值：0.2。",
       "error_type": "数值代入",
       "judging": "auto",
       "source_error_index": 1,
       "source_caught_by": "数值代入",
-      "wrong_expr": "I_ind = 1000*U_ind/R_loop",
+      "wrong_expr": "I<sub>感</sub> = 1000·U<sub>感</sub>/R<sub>回路</sub>",
       "trap_test": {
         "scenario": "线圈感应一",
         "expr": "1000*U_ind/R_loop",
@@ -557,5 +557,166 @@
       }
     }
   ],
-  "skipped": []
+  "skipped": [],
+  "source_records": {
+    "diagnostic-magnet-01-1": {
+      "error": {
+        "wrong": "把线圈电流写成电阻除以电压。",
+        "wrong_expr": "Ic = Rc/Uc",
+        "why": "已测得线圈两端电压和电阻后，应按欧姆定律用电压除以电阻求电流；反过来相除所得量纲不是安培。",
+        "caught_by": "量纲一致性",
+        "trap_test": {
+          "kind": "dimension",
+          "target": "Ic = Rc/Uc",
+          "lhs_dim": "I",
+          "rhs_dim": "I^-1",
+          "expect": "mismatch",
+          "note": "实际量纲检查得到等号左边为I、右边为I^-1；两边不是同一物理量，因此该等式不成立。"
+        }
+      },
+      "title": "磁体、磁场与电流的磁场",
+      "chapter": "电和磁"
+    },
+    "diagnostic-magnet-01-2": {
+      "error": {
+        "wrong": "把线圈电流换算成 mA 后仍把数值标成 A，导致电流大 1000 倍。",
+        "wrong_expr": "Ic = 1000*Uc/Rc",
+        "why": "4 V÷20 Ω=0.2 A；换成毫安是 200 mA，不能仍写作 200 A。",
+        "caught_by": "数值代入",
+        "trap_test": {
+          "scenario": "线圈实验一",
+          "expr": "1000*Uc/Rc",
+          "ref": 0.2
+        }
+      },
+      "title": "磁体、磁场与电流的磁场",
+      "chapter": "电和磁"
+    },
+    "diagnostic-magnet-01-3": {
+      "error": {
+        "wrong": "只增加电压、同时改变线圈匝数和铁芯，还把磁性变化全归因于电流。",
+        "why": "探究一个因素影响时要控制其他变量，避免把多个因素的作用混在一起。",
+        "caught_by": "人工审核"
+      },
+      "title": "磁体、磁场与电流的磁场",
+      "chapter": "电和磁"
+    },
+    "diagnostic-magnet-03-1": {
+      "error": {
+        "wrong": "只改变电流方向就断定导体受力方向一定不变。",
+        "why": "受力方向同时取决于电流方向和磁场方向；只改变其中一个条件时，受力方向会相应反转。",
+        "caught_by": "人工审核"
+      },
+      "title": "磁场对电流的作用与电动机",
+      "chapter": "电和磁"
+    },
+    "diagnostic-magnet-03-2": {
+      "error": {
+        "wrong": "把电动机的电输入功率直接当成机械输出功率。",
+        "why": "线圈发热、轴承摩擦和空气阻力都会消耗能量，所以电输入功率通常大于机械输出功率。",
+        "caught_by": "人工审核"
+      },
+      "title": "磁场对电流的作用与电动机",
+      "chapter": "电和磁"
+    },
+    "diagnostic-magnet-03-3": {
+      "error": {
+        "wrong": "匀速提升 200 N 的重物 3 m 时，把机械功算成 200/3 J。",
+        "wrong_expr": "W_out = F_out/s_out",
+        "why": "恒力沿运动方向做功要把力与位移相乘；除以距离既算不出焦耳，数值也与题意不符。",
+        "caught_by": "数值代入",
+        "trap_test": {
+          "scenario": "电动机提升重物一",
+          "expr": "F_out/s_out",
+          "ref": 600
+        }
+      },
+      "title": "磁场对电流的作用与电动机",
+      "chapter": "电和磁"
+    },
+    "diagnostic-magnet-04-1": {
+      "error": {
+        "wrong": "电刷未接触或线圈卡住时，仍把不转归因于磁场方向错误。",
+        "why": "线圈不转可能是断路、接触不良或机械卡滞；应先逐项检查，再调整磁场或电流方向。",
+        "caught_by": "人工审核"
+      },
+      "title": "安装直流电动机模型",
+      "chapter": "电和磁"
+    },
+    "diagnostic-magnet-04-2": {
+      "error": {
+        "wrong": "把电输入功率写成电压除以电流。",
+        "wrong_expr": "P_in = U_m/I_m",
+        "why": "电功率等于电压乘电流；电压除以电流得到的是电阻，不能表示输入功率。",
+        "caught_by": "量纲一致性",
+        "trap_test": {
+          "kind": "dimension",
+          "target": "P_in = U_m/I_m",
+          "lhs_dim": "M·L^2·T^-3",
+          "rhs_dim": "M·L^2·T^-3·I^-2",
+          "expect": "mismatch",
+          "note": "实际量纲检查得到等号左边为M·L^2·T^-3、右边为M·L^2·T^-3·I^-2；两边不是同一物理量，因此该等式不成立。"
+        }
+      },
+      "title": "安装直流电动机模型",
+      "chapter": "电和磁"
+    },
+    "diagnostic-magnet-04-3": {
+      "error": {
+        "wrong": "6 V、0.3 A的模型错误用电压除以电流，标作20 W。",
+        "wrong_expr": "P_in = U_m/I_m",
+        "why": "正确输入功率6×0.3=1.8 W；6÷0.3=20的量纲是Ω，不能标为W。",
+        "caught_by": "数值代入",
+        "trap_test": {
+          "scenario": "直流电动机模型一",
+          "expr": "U_m/I_m",
+          "ref": 1.8
+        }
+      },
+      "title": "安装直流电动机模型",
+      "chapter": "电和磁"
+    },
+    "diagnostic-magnet-02-1": {
+      "error": {
+        "wrong": "把感应电流写成感应电压乘以回路电阻。",
+        "wrong_expr": "I_ind = U_ind*R_loop",
+        "why": "感应电路测得电压后仍按欧姆定律求电流，应当除以电阻；相乘的单位不是 A。",
+        "caught_by": "量纲一致性",
+        "trap_test": {
+          "kind": "dimension",
+          "target": "I_ind = U_ind*R_loop",
+          "lhs_dim": "I",
+          "rhs_dim": "M^2·L^4·T^-6·I^-3",
+          "expect": "mismatch",
+          "note": "实际量纲检查得到等号左边为I、右边为M^2·L^4·T^-6·I^-3；两边不是同一物理量，因此该等式不成立。"
+        }
+      },
+      "title": "电磁感应与发电机",
+      "chapter": "电和磁"
+    },
+    "diagnostic-magnet-02-2": {
+      "error": {
+        "wrong": "把感应电流换算成 mA 后仍将毫安数值标作 A。",
+        "wrong_expr": "I_ind = 1000*U_ind/R_loop",
+        "why": "0.6 V÷3 Ω=0.2 A=200 mA；若把换算后的 200 写成 A，会大 1000 倍。",
+        "caught_by": "数值代入",
+        "trap_test": {
+          "scenario": "线圈感应一",
+          "expr": "1000*U_ind/R_loop",
+          "ref": 0.2
+        }
+      },
+      "title": "电磁感应与发电机",
+      "chapter": "电和磁"
+    },
+    "diagnostic-magnet-02-3": {
+      "error": {
+        "wrong": "认为只要线圈和磁体静止放在一起就一定有持续感应电流。",
+        "why": "需要磁场变化或导体与磁场发生相对运动；静止且磁场不变时没有持续感应电流。",
+        "caught_by": "人工审核"
+      },
+      "title": "电磁感应与发电机",
+      "chapter": "电和磁"
+    }
+  }
 }

@@ -8,7 +8,7 @@
       "point_id": "motion-03",
       "point_title": "长度与时间的测量",
       "chapter": "物体的运动",
-      "stem": "【物体的运动 · 长度与时间的测量】学生的错误做法：把 1 m 误当作 10 cm，导致长度单位换算少一个数量级（错误表达式：L_cm = 10*L_m）。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
+      "stem": "【物体的运动 · 长度与时间的测量】学生的错误做法：把 1 m 误当作 10 cm，导致长度单位换算少一个数量级（错误表达式：L<sub>cm</sub> = 10·L<sub>m</sub>）。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
       "options": [
         {
           "label": "A",
@@ -28,12 +28,12 @@
         }
       ],
       "correct_answer": "D",
-      "explanation": "1 m=100 cm；课桌长度 1.2 m 应为 120 cm，而不是 12 cm。\n知识库校验证据：情境：课桌长度；代入错误式：10*L_m；校验参照值：120。",
+      "explanation": "1 m=100 cm；课桌长度 1.2 m 应为 120 cm，而不是 12 cm。\n知识库校验证据：情境：课桌长度；代入错误式：10·L<sub>m</sub>；校验参照值：120。",
       "error_type": "数值代入",
       "judging": "auto",
       "source_error_index": 0,
       "source_caught_by": "数值代入",
-      "wrong_expr": "L_cm = 10*L_m",
+      "wrong_expr": "L<sub>cm</sub> = 10·L<sub>m</sub>",
       "trap_test": {
         "scenario": "课桌长度",
         "expr": "10*L_m",
@@ -98,7 +98,7 @@
       "point_id": "motion-01",
       "point_title": "速度",
       "chapter": "物体的运动",
-      "stem": "【物体的运动 · 速度】学生的错误做法：把速度写成路程乘时间（错误表达式：v = s*t）。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
+      "stem": "【物体的运动 · 速度】学生的错误做法：把速度写成路程乘时间（错误表达式：v = s·t）。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
       "options": [
         {
           "label": "A",
@@ -118,12 +118,12 @@
         }
       ],
       "correct_answer": "B",
-      "explanation": "速度是单位时间内通过的路程，需用路程除以时间；相乘的单位也不再是 m/s。\n知识库校验证据：情境：步行测量；代入错误式：s*t；校验参照值：5。",
+      "explanation": "速度是单位时间内通过的路程，需用路程除以时间；相乘的单位也不再是 m/s。\n知识库校验证据：情境：步行测量；代入错误式：s·t；校验参照值：5。",
       "error_type": "量纲一致性",
       "judging": "auto",
       "source_error_index": 0,
       "source_caught_by": "量纲一致性",
-      "wrong_expr": "v = s*t",
+      "wrong_expr": "v = s·t",
       "trap_test": {
         "scenario": "步行测量",
         "expr": "s*t",
@@ -145,7 +145,7 @@
       "point_id": "motion-01",
       "point_title": "速度",
       "chapter": "物体的运动",
-      "stem": "【物体的运动 · 速度】学生的错误做法：换算 m/s 与 km/h 时忘记乘 3.6，或把乘除方向写反（错误表达式：v_k = v/3.6）。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
+      "stem": "【物体的运动 · 速度】学生的错误做法：换算 m/s 与 km/h 时忘记乘 3.6，或把乘除方向写反（错误表达式：v<sub>k</sub> = v/3.6）。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
       "options": [
         {
           "label": "A",
@@ -170,7 +170,7 @@
       "judging": "auto",
       "source_error_index": 1,
       "source_caught_by": "数值代入",
-      "wrong_expr": "v_k = v/3.6",
+      "wrong_expr": "v<sub>k</sub> = v/3.6",
       "trap_test": {
         "scenario": "步行测量",
         "expr": "v/3.6",
@@ -192,7 +192,7 @@
       "point_id": "motion-02",
       "point_title": "直线运动",
       "chapter": "物体的运动",
-      "stem": "【物体的运动 · 直线运动】学生的错误做法：不看分段时间和路程条件，直接把两段速度做算术平均（错误表达式：v_avg = (v1+v2)/2）。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
+      "stem": "【物体的运动 · 直线运动】学生的错误做法：不看分段时间和路程条件，直接把两段速度做算术平均（错误表达式：<span style=\"text-decoration:overline\">v</span> = (v<sub>1</sub>+v<sub>2</sub>)/2）。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
       "options": [
         {
           "label": "A",
@@ -212,12 +212,12 @@
         }
       ],
       "correct_answer": "D",
-      "explanation": "两段各 100 m 时，10 m/s 与 2 m/s 的算术平均为 6 m/s，但全程平均速度是 200/60≈3.33 m/s。\n知识库校验证据：情境：两段各100米；代入错误式：(v1+v2)/2；校验参照值：3.3333333333333335。",
+      "explanation": "两段各 100 m 时，10 m/s 与 2 m/s 的算术平均为 6 m/s，但全程平均速度是 200/60≈3.33 m/s。\n知识库校验证据：情境：两段各100米；代入错误式：(v<sub>1</sub>+v<sub>2</sub>)/2；校验参照值：3.3333333333333335。",
       "error_type": "数值代入",
       "judging": "auto",
       "source_error_index": 0,
       "source_caught_by": "数值代入",
-      "wrong_expr": "v_avg = (v1+v2)/2",
+      "wrong_expr": "<span style=\"text-decoration:overline\">v</span> = (v<sub>1</sub>+v<sub>2</sub>)/2",
       "trap_test": {
         "scenario": "两段各100米",
         "expr": "(v1+v2)/2",
@@ -282,7 +282,7 @@
       "point_id": "motion-04",
       "point_title": "运动的相对性",
       "chapter": "物体的运动",
-      "stem": "【物体的运动 · 运动的相对性】学生的错误做法：不分方向，把同向追及误按速度和计算（错误表达式：v_rel = v_A+v_B）。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
+      "stem": "【物体的运动 · 运动的相对性】学生的错误做法：不分方向，把同向追及误按速度和计算（错误表达式：v<sub>相对</sub> = v<sub>A</sub>+v<sub>B</sub>）。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
       "options": [
         {
           "label": "A",
@@ -302,12 +302,12 @@
         }
       ],
       "correct_answer": "B",
-      "explanation": "同向追及的间隔变化率应为速度差；12 m/s 和 4 m/s 同向时是 8 m/s，不是 16 m/s。\n知识库校验证据：情境：同向追及1秒；代入错误式：v_A+v_B；校验参照值：8。",
+      "explanation": "同向追及的间隔变化率应为速度差；12 m/s 和 4 m/s 同向时是 8 m/s，不是 16 m/s。\n知识库校验证据：情境：同向追及1秒；代入错误式：v<sub>A</sub>+v<sub>B</sub>；校验参照值：8。",
       "error_type": "数值代入",
       "judging": "auto",
       "source_error_index": 0,
       "source_caught_by": "数值代入",
-      "wrong_expr": "v_rel = v_A+v_B",
+      "wrong_expr": "v<sub>相对</sub> = v<sub>A</sub>+v<sub>B</sub>",
       "trap_test": {
         "scenario": "同向追及1秒",
         "expr": "v_A+v_B",
@@ -368,5 +368,109 @@
       }
     }
   ],
-  "skipped": []
+  "skipped": [],
+  "source_records": {
+    "diagnostic-motion-03-1": {
+      "error": {
+        "wrong": "把 1 m 误当作 10 cm，导致长度单位换算少一个数量级。",
+        "wrong_expr": "L_cm = 10*L_m",
+        "why": "1 m=100 cm；课桌长度 1.2 m 应为 120 cm，而不是 12 cm。",
+        "caught_by": "数值代入",
+        "trap_test": {
+          "scenario": "课桌长度",
+          "expr": "10*L_m",
+          "ref": 120
+        }
+      },
+      "title": "长度与时间的测量",
+      "chapter": "物体的运动"
+    },
+    "diagnostic-motion-03-2": {
+      "error": {
+        "wrong": "读刻度尺时视线倾斜，造成视差并把估读值当作准确值。",
+        "why": "视线应垂直刻度面；测量误差需结合分度值和重复测量分析。应记录仪器分度值并按规范重复测量。",
+        "caught_by": "人工审核"
+      },
+      "title": "长度与时间的测量",
+      "chapter": "物体的运动"
+    },
+    "diagnostic-motion-01-1": {
+      "error": {
+        "wrong": "把速度写成路程乘时间。",
+        "wrong_expr": "v = s*t",
+        "why": "速度是单位时间内通过的路程，需用路程除以时间；相乘的单位也不再是 m/s。",
+        "caught_by": "量纲一致性",
+        "trap_test": {
+          "scenario": "步行测量",
+          "expr": "s*t",
+          "ref": 5
+        }
+      },
+      "title": "速度",
+      "chapter": "物体的运动"
+    },
+    "diagnostic-motion-01-2": {
+      "error": {
+        "wrong": "换算 m/s 与 km/h 时忘记乘 3.6，或把乘除方向写反。",
+        "why": "1 m/s=3.6 km/h；5 m/s 应为 18 km/h，而不是约 1.4 km/h。",
+        "caught_by": "数值代入",
+        "trap_test": {
+          "scenario": "步行测量",
+          "expr": "v/3.6",
+          "ref": 18
+        },
+        "wrong_expr": "v_k = v/3.6"
+      },
+      "title": "速度",
+      "chapter": "物体的运动"
+    },
+    "diagnostic-motion-02-1": {
+      "error": {
+        "wrong": "不看分段时间和路程条件，直接把两段速度做算术平均。",
+        "wrong_expr": "v_avg = (v1+v2)/2",
+        "why": "两段各 100 m 时，10 m/s 与 2 m/s 的算术平均为 6 m/s，但全程平均速度是 200/60≈3.33 m/s。",
+        "caught_by": "数值代入",
+        "trap_test": {
+          "scenario": "两段各100米",
+          "expr": "(v1+v2)/2",
+          "ref": 3.3333333333333335
+        }
+      },
+      "title": "直线运动",
+      "chapter": "物体的运动"
+    },
+    "diagnostic-motion-02-2": {
+      "error": {
+        "wrong": "计算全程平均速度时漏掉中途一段或漏计题目要求包含的时间。",
+        "why": "平均速度必须与题目界定的整段总路程和总时间对应，计时范围要先确认。",
+        "caught_by": "人工审核"
+      },
+      "title": "直线运动",
+      "chapter": "物体的运动"
+    },
+    "diagnostic-motion-04-1": {
+      "error": {
+        "wrong": "不分方向，把同向追及误按速度和计算。",
+        "wrong_expr": "v_rel = v_A+v_B",
+        "why": "同向追及的间隔变化率应为速度差；12 m/s 和 4 m/s 同向时是 8 m/s，不是 16 m/s。",
+        "caught_by": "数值代入",
+        "trap_test": {
+          "scenario": "同向追及1秒",
+          "expr": "v_A+v_B",
+          "ref": 8
+        }
+      },
+      "title": "运动的相对性",
+      "chapter": "物体的运动"
+    },
+    "diagnostic-motion-04-2": {
+      "error": {
+        "wrong": "认为运动状态不需要说明参照物。",
+        "why": "同一物体对车厢可能静止、对地面可能运动；判断前必须指定参照物。",
+        "caught_by": "人工审核"
+      },
+      "title": "运动的相对性",
+      "chapter": "物体的运动"
+    }
+  }
 }

@@ -8,7 +8,7 @@
       "point_id": "energy-01",
       "point_title": "机械能",
       "chapter": "机械能和内能",
-      "stem": "【机械能和内能 · 机械能】学生的错误做法：把动能写成质量与速度的一次方相乘，漏掉速度平方和二分之一（错误表达式：Ek = m*v）。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
+      "stem": "【机械能和内能 · 机械能】学生的错误做法：把动能写成质量与速度的一次方相乘，漏掉速度平方和二分之一（错误表达式：E<sub>k</sub> = m·v）。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
       "options": [
         {
           "label": "A",
@@ -24,16 +24,16 @@
         },
         {
           "label": "D",
-          "text": "量纲一致性：动能的单位应为 J，m*v 的单位是 kg·m/s；量纲与数值关系都不符。"
+          "text": "量纲一致性：动能的单位应为 J，m·v 的单位是 kg·m/s；量纲与数值关系都不符。"
         }
       ],
       "correct_answer": "D",
-      "explanation": "动能的单位应为 J，m*v 的单位是 kg·m/s；量纲与数值关系都不符。\n知识库校验证据：情境：高处小球；代入错误式：m*v；校验参照值：9。",
+      "explanation": "动能的单位应为 J，m·v 的单位是 kg·m/s；量纲与数值关系都不符。\n知识库校验证据：情境：高处小球；代入错误式：m·v；校验参照值：9。",
       "error_type": "量纲一致性",
       "judging": "auto",
       "source_error_index": 0,
       "source_caught_by": "量纲一致性",
-      "wrong_expr": "Ek = m*v",
+      "wrong_expr": "E<sub>k</sub> = m·v",
       "trap_test": {
         "scenario": "高处小球",
         "expr": "m*v",
@@ -55,7 +55,7 @@
       "point_id": "energy-01",
       "point_title": "机械能",
       "chapter": "机械能和内能",
-      "stem": "【机械能和内能 · 机械能】学生的错误做法：写动能公式时漏掉系数二分之一，只保留质量乘速度平方（错误表达式：Ek = m*v^2）。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
+      "stem": "【机械能和内能 · 机械能】学生的错误做法：写动能公式时漏掉系数二分之一，只保留质量乘速度平方（错误表达式：E<sub>k</sub> = m·v²）。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
       "options": [
         {
           "label": "A",
@@ -67,7 +67,7 @@
         },
         {
           "label": "C",
-          "text": "数值代入：高处小球的动能为 0.5×2×3^2=9 J；漏掉二分之一会得到 18 J，量纲仍正确但数值翻倍。"
+          "text": "数值代入：高处小球的动能为 0.5×2×3²=9 J；漏掉二分之一会得到 18 J，量纲仍正确但数值翻倍。"
         },
         {
           "label": "D",
@@ -75,12 +75,12 @@
         }
       ],
       "correct_answer": "C",
-      "explanation": "高处小球的动能为 0.5×2×3^2=9 J；漏掉二分之一会得到 18 J，量纲仍正确但数值翻倍。\n知识库校验证据：情境：高处小球；代入错误式：m*v^2；校验参照值：9。",
+      "explanation": "高处小球的动能为 0.5×2×3²=9 J；漏掉二分之一会得到 18 J，量纲仍正确但数值翻倍。\n知识库校验证据：情境：高处小球；代入错误式：m·v²；校验参照值：9。",
       "error_type": "数值代入",
       "judging": "auto",
       "source_error_index": 1,
       "source_caught_by": "数值代入",
-      "wrong_expr": "Ek = m*v^2",
+      "wrong_expr": "E<sub>k</sub> = m·v²",
       "trap_test": {
         "scenario": "高处小球",
         "expr": "m*v^2",
@@ -145,7 +145,7 @@
       "point_id": "energy-03",
       "point_title": "内能 热传递",
       "chapter": "机械能和内能",
-      "stem": "【机械能和内能 · 内能 热传递】学生的错误做法：在忽略散热的热平衡问题中把吸热量误写成放热量的两倍（错误表达式：Q_lost = 2*Q_gained）。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
+      "stem": "【机械能和内能 · 内能 热传递】学生的错误做法：在忽略散热的热平衡问题中把吸热量误写成放热量的两倍（错误表达式：Q<sub>放</sub> = 2·Q<sub>吸</sub>）。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
       "options": [
         {
           "label": "A",
@@ -153,7 +153,7 @@
         },
         {
           "label": "B",
-          "text": "量纲一致性：动能的单位应为 J，m*v 的单位是 kg·m/s；量纲与数值关系都不符。"
+          "text": "量纲一致性：动能的单位应为 J，m·v 的单位是 kg·m/s；量纲与数值关系都不符。"
         },
         {
           "label": "C",
@@ -165,12 +165,12 @@
         }
       ],
       "correct_answer": "A",
-      "explanation": "封闭近似绝热系统的能量账目应相等；额外乘 2 会破坏热量平衡。\n知识库校验证据：情境：水吸热与热水放热；代入错误式：2*Q_gained；校验参照值：42000。",
+      "explanation": "封闭近似绝热系统的能量账目应相等；额外乘 2 会破坏热量平衡。\n知识库校验证据：情境：水吸热与热水放热；代入错误式：2·Q<sub>吸</sub>；校验参照值：42000。",
       "error_type": "数值代入",
       "judging": "auto",
       "source_error_index": 0,
       "source_caught_by": "数值代入",
-      "wrong_expr": "Q_lost = 2*Q_gained",
+      "wrong_expr": "Q<sub>放</sub> = 2·Q<sub>吸</sub>",
       "trap_test": {
         "scenario": "水吸热与热水放热",
         "expr": "2*Q_gained",
@@ -196,7 +196,7 @@
       "options": [
         {
           "label": "A",
-          "text": "量纲一致性：动能的单位应为 J，m*v 的单位是 kg·m/s；量纲与数值关系都不符。"
+          "text": "量纲一致性：动能的单位应为 J，m·v 的单位是 kg·m/s；量纲与数值关系都不符。"
         },
         {
           "label": "B",
@@ -235,7 +235,7 @@
       "point_id": "energy-02",
       "point_title": "物质的比热容",
       "chapter": "机械能和内能",
-      "stem": "【机械能和内能 · 物质的比热容】学生的错误做法：计算吸热量时漏掉物体质量（错误表达式：Q = c_h*dT）。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
+      "stem": "【机械能和内能 · 物质的比热容】学生的错误做法：计算吸热量时漏掉物体质量（错误表达式：Q = c<sub>h</sub>·dT）。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
       "options": [
         {
           "label": "A",
@@ -251,16 +251,16 @@
         },
         {
           "label": "D",
-          "text": "量纲一致性：动能的单位应为 J，m*v 的单位是 kg·m/s；量纲与数值关系都不符。"
+          "text": "量纲一致性：动能的单位应为 J，m·v 的单位是 kg·m/s；量纲与数值关系都不符。"
         }
       ],
       "correct_answer": "C",
-      "explanation": "比热容描述单位质量的吸热量，整块物体还要乘质量；半千克水升温 10℃ 吸热 21 000 J。\n知识库校验证据：情境：半千克水升温10度；代入错误式：c_h*dT；校验参照值：21000。",
+      "explanation": "比热容描述单位质量的吸热量，整块物体还要乘质量；半千克水升温 10℃ 吸热 21 000 J。\n知识库校验证据：情境：半千克水升温10度；代入错误式：c<sub>h</sub>·dT；校验参照值：21000。",
       "error_type": "数值代入",
       "judging": "auto",
       "source_error_index": 0,
       "source_caught_by": "数值代入",
-      "wrong_expr": "Q = c_h*dT",
+      "wrong_expr": "Q = c<sub>h</sub>·dT",
       "trap_test": {
         "scenario": "半千克水升温10度",
         "expr": "c_h*dT",
@@ -294,7 +294,7 @@
         },
         {
           "label": "C",
-          "text": "量纲一致性：动能的单位应为 J，m*v 的单位是 kg·m/s；量纲与数值关系都不符。"
+          "text": "量纲一致性：动能的单位应为 J，m·v 的单位是 kg·m/s；量纲与数值关系都不符。"
         },
         {
           "label": "D",
@@ -325,7 +325,7 @@
       "point_id": "energy-04",
       "point_title": "机械能与内能的相互转化",
       "chapter": "机械能和内能",
-      "stem": "【机械能和内能 · 机械能与内能的相互转化】学生的错误做法：把机械能减少量的符号写反，导致内能减少（错误表达式：E_int_gain = E_mech_after-E_mech_before）。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
+      "stem": "【机械能和内能 · 机械能与内能的相互转化】学生的错误做法：把机械能减少量的符号写反，导致内能减少（错误表达式：E<sub>内增</sub> = E<sub>机后</sub>-E<sub>机前</sub>）。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
       "options": [
         {
           "label": "A",
@@ -333,7 +333,7 @@
         },
         {
           "label": "B",
-          "text": "量纲一致性：动能的单位应为 J，m*v 的单位是 kg·m/s；量纲与数值关系都不符。"
+          "text": "量纲一致性：动能的单位应为 J，m·v 的单位是 kg·m/s；量纲与数值关系都不符。"
         },
         {
           "label": "C",
@@ -345,12 +345,12 @@
         }
       ],
       "correct_answer": "A",
-      "explanation": "本情境机械能从 100 J 降至 80 J，减少量为 20 J，转化为内能应为正的 20 J。\n知识库校验证据：情境：刹车减速；代入错误式：E_mech_after-E_mech_before；校验参照值：20。",
+      "explanation": "本情境机械能从 100 J 降至 80 J，减少量为 20 J，转化为内能应为正的 20 J。\n知识库校验证据：情境：刹车减速；代入错误式：E<sub>机后</sub>-E<sub>机前</sub>；校验参照值：20。",
       "error_type": "数值代入",
       "judging": "auto",
       "source_error_index": 0,
       "source_caught_by": "数值代入",
-      "wrong_expr": "E_int_gain = E_mech_after-E_mech_before",
+      "wrong_expr": "E<sub>内增</sub> = E<sub>机后</sub>-E<sub>机前</sub>",
       "trap_test": {
         "scenario": "刹车减速",
         "expr": "E_mech_after-E_mech_before",
@@ -376,7 +376,7 @@
       "options": [
         {
           "label": "A",
-          "text": "量纲一致性：动能的单位应为 J，m*v 的单位是 kg·m/s；量纲与数值关系都不符。"
+          "text": "量纲一致性：动能的单位应为 J，m·v 的单位是 kg·m/s；量纲与数值关系都不符。"
         },
         {
           "label": "B",
@@ -409,7 +409,182 @@
         },
         "note": "本章可用类型不足四类，干扰项包含同章其他错误的类别与原解释；答案按“类别+依据”唯一匹配，建议抽查教学区分度。"
       }
+    },
+    {
+      "id": "diagnostic-energy-04-3",
+      "point_id": "energy-04",
+      "point_title": "机械能与内能的相互转化",
+      "chapter": "机械能和内能",
+      "stem": "【机械能和内能 · 机械能与内能的相互转化】学生的错误做法：把热机效率写成燃料理论放热量除以有用机械功（错误表达式：η = Q/W<sub>有用</sub>）。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
+      "options": [
+        {
+          "label": "A",
+          "text": "概念混淆：本式需要温度变化量，且适用于比热容近似不变、没有物态变化的过程；相变时需另行分析。"
+        },
+        {
+          "label": "B",
+          "text": "概念混淆：热量描述热传递过程中转移的能量；物体具有内能，而不是“含有热量”。"
+        },
+        {
+          "label": "C",
+          "text": "数值代入：100 kJ有用功、400 kJ输入，效率应为0.25；反比得到4即400%，违反能量账目。"
+        },
+        {
+          "label": "D",
+          "text": "量纲一致性：动能的单位应为 J，m·v 的单位是 kg·m/s；量纲与数值关系都不符。"
+        }
+      ],
+      "correct_answer": "C",
+      "explanation": "100 kJ有用功、400 kJ输入，效率应为0.25；反比得到4即400%，违反能量账目。\n知识库校验证据：情境：燃料与热机一；代入错误式：Q/W<sub>有用</sub>；校验参照值：0.25。",
+      "error_type": "数值代入",
+      "judging": "auto",
+      "source_error_index": 2,
+      "source_caught_by": "数值代入",
+      "wrong_expr": "η = Q/W<sub>有用</sub>",
+      "trap_test": {
+        "scenario": "燃料与热机一",
+        "expr": "Q/W_use",
+        "ref": 0.25
+      },
+      "review": {
+        "confidence": "medium",
+        "checks": {
+          "answer_unique": true,
+          "distractors_plausible": true,
+          "stem_clear": true,
+          "no_cross_segment": true
+        },
+        "note": "本章可用类型不足四类，干扰项包含同章其他错误的类别与原解释；答案按“类别+依据”唯一匹配，建议抽查教学区分度。"
+      }
     }
   ],
-  "skipped": []
+  "skipped": [],
+  "source_records": {
+    "diagnostic-energy-01-1": {
+      "error": {
+        "wrong": "把动能写成质量与速度的一次方相乘，漏掉速度平方和二分之一。",
+        "wrong_expr": "Ek = m*v",
+        "why": "动能的单位应为 J，m*v 的单位是 kg·m/s；量纲与数值关系都不符。",
+        "caught_by": "量纲一致性",
+        "trap_test": {
+          "scenario": "高处小球",
+          "expr": "m*v",
+          "ref": 9
+        }
+      },
+      "title": "机械能",
+      "chapter": "机械能和内能"
+    },
+    "diagnostic-energy-01-2": {
+      "error": {
+        "wrong": "写动能公式时漏掉系数二分之一，只保留质量乘速度平方。",
+        "wrong_expr": "Ek = m*v^2",
+        "why": "高处小球的动能为 0.5×2×3^2=9 J；漏掉二分之一会得到 18 J，量纲仍正确但数值翻倍。",
+        "caught_by": "数值代入",
+        "trap_test": {
+          "scenario": "高处小球",
+          "expr": "m*v^2",
+          "ref": 9
+        }
+      },
+      "title": "机械能",
+      "chapter": "机械能和内能"
+    },
+    "diagnostic-energy-01-3": {
+      "error": {
+        "wrong": "认为物体高度变化时重力势能与参考面无关。",
+        "why": "重力势能数值依赖所选零势能参考面；比较同一过程能量变化时要保持参考面一致。",
+        "caught_by": "人工审核"
+      },
+      "title": "机械能",
+      "chapter": "机械能和内能"
+    },
+    "diagnostic-energy-03-1": {
+      "error": {
+        "wrong": "在忽略散热的热平衡问题中把吸热量误写成放热量的两倍。",
+        "wrong_expr": "Q_lost = 2*Q_gained",
+        "why": "封闭近似绝热系统的能量账目应相等；额外乘 2 会破坏热量平衡。",
+        "caught_by": "数值代入",
+        "trap_test": {
+          "scenario": "水吸热与热水放热",
+          "expr": "2*Q_gained",
+          "ref": 42000
+        }
+      },
+      "title": "内能 热传递",
+      "chapter": "机械能和内能"
+    },
+    "diagnostic-energy-03-2": {
+      "error": {
+        "wrong": "认为热量是物体本身储存的一种物质。",
+        "why": "热量描述热传递过程中转移的能量；物体具有内能，而不是“含有热量”。",
+        "caught_by": "人工审核"
+      },
+      "title": "内能 热传递",
+      "chapter": "机械能和内能"
+    },
+    "diagnostic-energy-02-1": {
+      "error": {
+        "wrong": "计算吸热量时漏掉物体质量。",
+        "wrong_expr": "Q = c_h*dT",
+        "why": "比热容描述单位质量的吸热量，整块物体还要乘质量；半千克水升温 10℃ 吸热 21 000 J。",
+        "caught_by": "数值代入",
+        "trap_test": {
+          "scenario": "半千克水升温10度",
+          "expr": "c_h*dT",
+          "ref": 21000
+        }
+      },
+      "title": "物质的比热容",
+      "chapter": "机械能和内能"
+    },
+    "diagnostic-energy-02-2": {
+      "error": {
+        "wrong": "用末温代替温升，并在温度不变或发生物态变化时直接套用本式。",
+        "why": "本式需要温度变化量，且适用于比热容近似不变、没有物态变化的过程；相变时需另行分析。",
+        "caught_by": "人工审核"
+      },
+      "title": "物质的比热容",
+      "chapter": "机械能和内能"
+    },
+    "diagnostic-energy-04-1": {
+      "error": {
+        "wrong": "把机械能减少量的符号写反，导致内能减少。",
+        "wrong_expr": "E_int_gain = E_mech_after-E_mech_before",
+        "why": "本情境机械能从 100 J 降至 80 J，减少量为 20 J，转化为内能应为正的 20 J。",
+        "caught_by": "数值代入",
+        "trap_test": {
+          "scenario": "刹车减速",
+          "expr": "E_mech_after-E_mech_before",
+          "ref": 20
+        }
+      },
+      "title": "机械能与内能的相互转化",
+      "chapter": "机械能和内能"
+    },
+    "diagnostic-energy-04-2": {
+      "error": {
+        "wrong": "认为机械能减少就意味着能量消失。",
+        "why": "摩擦可使机械能转化为内能；把系统边界和其他能量形式计入后，能量总量仍守恒。",
+        "caught_by": "人工审核"
+      },
+      "title": "机械能与内能的相互转化",
+      "chapter": "机械能和内能"
+    },
+    "diagnostic-energy-04-3": {
+      "error": {
+        "wrong": "把热机效率写成燃料理论放热量除以有用机械功。",
+        "wrong_expr": "eta = Q/W_use",
+        "why": "100 kJ有用功、400 kJ输入，效率应为0.25；反比得到4即400%，违反能量账目。",
+        "caught_by": "数值代入",
+        "trap_test": {
+          "scenario": "燃料与热机一",
+          "expr": "Q/W_use",
+          "ref": 0.25
+        }
+      },
+      "title": "机械能与内能的相互转化",
+      "chapter": "机械能和内能"
+    }
+  }
 }

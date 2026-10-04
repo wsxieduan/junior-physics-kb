@@ -8,7 +8,7 @@
       "point_id": "prop-03",
       "point_title": "质量及其测量",
       "chapter": "物质的物理属性",
-      "stem": "【物质的物理属性 · 质量及其测量】学生的错误做法：克换千克时少除一个 10，产生十倍偏差（错误表达式：m_kg = m_g/100）。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
+      "stem": "【物质的物理属性 · 质量及其测量】学生的错误做法：克换千克时少除一个 10，产生十倍偏差（错误表达式：m<sub>kg</sub> = m<sub>g</sub>/100）。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
       "options": [
         {
           "label": "A",
@@ -28,12 +28,12 @@
         }
       ],
       "correct_answer": "D",
-      "explanation": "450 g 应为 0.45 kg；若只除以 100，会得到 4.5 kg。\n知识库校验证据：情境：小物体称量；代入错误式：m_g/100；校验参照值：0.45。",
+      "explanation": "450 g 应为 0.45 kg；若只除以 100，会得到 4.5 kg。\n知识库校验证据：情境：小物体称量；代入错误式：m<sub>g</sub>/100；校验参照值：0.45。",
       "error_type": "数值代入",
       "judging": "auto",
       "source_error_index": 0,
       "source_caught_by": "数值代入",
-      "wrong_expr": "m_kg = m_g/100",
+      "wrong_expr": "m<sub>kg</sub> = m<sub>g</sub>/100",
       "trap_test": {
         "scenario": "小物体称量",
         "expr": "m_g/100",
@@ -63,7 +63,7 @@
         },
         {
           "label": "B",
-          "text": "数值代入：情境中的质量已是 kg，无须再次换算成吨；一升水应为 1000 kg/m^3，不是 1 kg/m^3。"
+          "text": "数值代入：情境中的质量已是 kg，无须再次换算成吨；一升水应为 1000 kg/m³，不是 1 kg/m³。"
         },
         {
           "label": "C",
@@ -98,7 +98,7 @@
       "point_id": "prop-01",
       "point_title": "密度",
       "chapter": "物质的物理属性",
-      "stem": "【物质的物理属性 · 密度】学生的错误做法：把密度写成体积除以质量（错误表达式：rho = V/m）。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
+      "stem": "【物质的物理属性 · 密度】学生的错误做法：把密度写成体积除以质量（错误表达式：ρ = V/m）。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
       "options": [
         {
           "label": "A",
@@ -123,7 +123,7 @@
       "judging": "auto",
       "source_error_index": 0,
       "source_caught_by": "量纲一致性",
-      "wrong_expr": "rho = V/m",
+      "wrong_expr": "ρ = V/m",
       "trap_test": {
         "scenario": "一升水",
         "expr": "V/m",
@@ -145,11 +145,11 @@
       "point_id": "prop-01",
       "point_title": "密度",
       "chapter": "物质的物理属性",
-      "stem": "【物质的物理属性 · 密度】学生的错误做法：质量已经用 kg 表示时，又多除以 1000，造成密度少算 1000 倍（错误表达式：rho = (m/1000)/V）。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
+      "stem": "【物质的物理属性 · 密度】学生的错误做法：质量已经用 kg 表示时，又多除以 1000，造成密度少算 1000 倍（错误表达式：ρ = (m/1000)/V）。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
       "options": [
         {
           "label": "A",
-          "text": "数值代入：情境中的质量已是 kg，无须再次换算成吨；一升水应为 1000 kg/m^3，不是 1 kg/m^3。"
+          "text": "数值代入：情境中的质量已是 kg，无须再次换算成吨；一升水应为 1000 kg/m³，不是 1 kg/m³。"
         },
         {
           "label": "B",
@@ -165,12 +165,12 @@
         }
       ],
       "correct_answer": "A",
-      "explanation": "情境中的质量已是 kg，无须再次换算成吨；一升水应为 1000 kg/m^3，不是 1 kg/m^3。\n知识库校验证据：情境：一升水；代入错误式：(m/1000)/V；校验参照值：1000。",
+      "explanation": "情境中的质量已是 kg，无须再次换算成吨；一升水应为 1000 kg/m³，不是 1 kg/m³。\n知识库校验证据：情境：一升水；代入错误式：(m/1000)/V；校验参照值：1000。",
       "error_type": "数值代入",
       "judging": "auto",
       "source_error_index": 1,
       "source_caught_by": "数值代入",
-      "wrong_expr": "rho = (m/1000)/V",
+      "wrong_expr": "ρ = (m/1000)/V",
       "trap_test": {
         "scenario": "一升水",
         "expr": "(m/1000)/V",
@@ -235,7 +235,7 @@
       "point_id": "prop-02",
       "point_title": "密度知识的应用与物质的物理属性",
       "chapter": "物质的物理属性",
-      "stem": "【物质的物理属性 · 密度知识的应用与物质的物理属性】学生的错误做法：把物体体积写成放入前后液体读数之和（错误表达式：V_o = V2+V1）。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
+      "stem": "【物质的物理属性 · 密度知识的应用与物质的物理属性】学生的错误做法：把物体体积写成放入前后液体读数之和（错误表达式：V<sub>o</sub> = V<sub>2</sub>+V<sub>1</sub>）。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
       "options": [
         {
           "label": "A",
@@ -255,12 +255,12 @@
         }
       ],
       "correct_answer": "C",
-      "explanation": "物体排开的是液面增加的部分，应以后读数减前读数；50 mL 升至 70 mL，物体体积为 20 mL。\n知识库校验证据：情境：铝块测量一；代入错误式：V2+V1；校验参照值：20。",
+      "explanation": "物体排开的是液面增加的部分，应以后读数减前读数；50 mL 升至 70 mL，物体体积为 20 mL。\n知识库校验证据：情境：铝块测量一；代入错误式：V<sub>2</sub>+V<sub>1</sub>；校验参照值：20。",
       "error_type": "数值代入",
       "judging": "auto",
       "source_error_index": 0,
       "source_caught_by": "数值代入",
-      "wrong_expr": "V_o = V2+V1",
+      "wrong_expr": "V<sub>o</sub> = V<sub>2</sub>+V<sub>1</sub>",
       "trap_test": {
         "scenario": "铝块测量一",
         "expr": "V2+V1",
@@ -286,7 +286,7 @@
       "options": [
         {
           "label": "A",
-          "text": "数值代入：情境中的质量已是 kg，无须再次换算成吨；一升水应为 1000 kg/m^3，不是 1 kg/m^3。"
+          "text": "数值代入：情境中的质量已是 kg，无须再次换算成吨；一升水应为 1000 kg/m³，不是 1 kg/m³。"
         },
         {
           "label": "B",
@@ -321,5 +321,94 @@
       }
     }
   ],
-  "skipped": []
+  "skipped": [],
+  "source_records": {
+    "diagnostic-prop-03-1": {
+      "error": {
+        "wrong": "克换千克时少除一个 10，产生十倍偏差。",
+        "wrong_expr": "m_kg = m_g/100",
+        "why": "450 g 应为 0.45 kg；若只除以 100，会得到 4.5 kg。",
+        "caught_by": "数值代入",
+        "trap_test": {
+          "scenario": "小物体称量",
+          "expr": "m_g/100",
+          "ref": 0.45
+        }
+      },
+      "title": "质量及其测量",
+      "chapter": "物质的物理属性"
+    },
+    "diagnostic-prop-03-2": {
+      "error": {
+        "wrong": "认为物体移到月球后质量随重力变小。",
+        "why": "质量表示物体所含物质多少，不随位置变化；变化的是物体受到的重力。",
+        "caught_by": "人工审核"
+      },
+      "title": "质量及其测量",
+      "chapter": "物质的物理属性"
+    },
+    "diagnostic-prop-01-1": {
+      "error": {
+        "wrong": "把密度写成体积除以质量。",
+        "wrong_expr": "rho = V/m",
+        "why": "密度定义是单位体积的质量；质量越多而体积不变时，密度应增大。",
+        "caught_by": "量纲一致性",
+        "trap_test": {
+          "scenario": "一升水",
+          "expr": "V/m",
+          "ref": 1000
+        }
+      },
+      "title": "密度",
+      "chapter": "物质的物理属性"
+    },
+    "diagnostic-prop-01-2": {
+      "error": {
+        "wrong": "质量已经用 kg 表示时，又多除以 1000，造成密度少算 1000 倍。",
+        "wrong_expr": "rho = (m/1000)/V",
+        "why": "情境中的质量已是 kg，无须再次换算成吨；一升水应为 1000 kg/m^3，不是 1 kg/m^3。",
+        "caught_by": "数值代入",
+        "trap_test": {
+          "scenario": "一升水",
+          "expr": "(m/1000)/V",
+          "ref": 1000
+        }
+      },
+      "title": "密度",
+      "chapter": "物质的物理属性"
+    },
+    "diagnostic-prop-01-3": {
+      "error": {
+        "wrong": "认为同一种物质的物体质量越大，密度一定越大。",
+        "why": "在温度和状态相同、物质均匀时，质量和体积同比变化，密度不随样品多少改变。",
+        "caught_by": "人工审核"
+      },
+      "title": "密度",
+      "chapter": "物质的物理属性"
+    },
+    "diagnostic-prop-02-1": {
+      "error": {
+        "wrong": "把物体体积写成放入前后液体读数之和。",
+        "wrong_expr": "V_o = V2+V1",
+        "why": "物体排开的是液面增加的部分，应以后读数减前读数；50 mL 升至 70 mL，物体体积为 20 mL。",
+        "caught_by": "数值代入",
+        "trap_test": {
+          "scenario": "铝块测量一",
+          "expr": "V2+V1",
+          "ref": 20
+        }
+      },
+      "title": "密度知识的应用与物质的物理属性",
+      "chapter": "物质的物理属性"
+    },
+    "diagnostic-prop-02-2": {
+      "error": {
+        "wrong": "物体未完全浸没或吸水时，仍直接把液面差当作物体体积。",
+        "why": "排水法成立需要完全浸没、体积读数可靠且物体不吸水、不溶解；实验条件不满足时需改用其他方法。",
+        "caught_by": "人工审核"
+      },
+      "title": "密度知识的应用与物质的物理属性",
+      "chapter": "物质的物理属性"
+    }
+  }
 }

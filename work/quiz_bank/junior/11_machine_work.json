@@ -51,7 +51,7 @@
       "point_id": "machine-01",
       "point_title": "杠杆",
       "chapter": "简单机械和功",
-      "stem": "【简单机械和功 · 杠杆】学生的错误做法：把杠杆平衡条件写成动力与阻力直接相等（错误表达式：F1 = F2*l2/(2*l1)）。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
+      "stem": "【简单机械和功 · 杠杆】学生的错误做法：把杠杆平衡条件写成动力与阻力直接相等（错误表达式：F<sub>1</sub> = F<sub>2</sub>）。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
       "options": [
         {
           "label": "A",
@@ -63,7 +63,7 @@
         },
         {
           "label": "C",
-          "text": "数值代入：平衡条件需要比较力与力臂的乘积；剪刀情境中动力应为 20 N，不能再多除以 2。"
+          "text": "数值代入：剪刀情境阻力30 N、阻力臂0.2 m、动力臂0.3 m，平衡动力20 N；直接等同会误得30 N。"
         },
         {
           "label": "D",
@@ -71,15 +71,15 @@
         }
       ],
       "correct_answer": "C",
-      "explanation": "平衡条件需要比较力与力臂的乘积；剪刀情境中动力应为 20 N，不能再多除以 2。\n知识库校验证据：情境：剪刀杠杆；代入错误式：F2*l2/(2*l1)；校验参照值：20。",
+      "explanation": "剪刀情境阻力30 N、阻力臂0.2 m、动力臂0.3 m，平衡动力20 N；直接等同会误得30 N。\n知识库校验证据：情境：剪刀杠杆；代入错误式：F<sub>2</sub>；校验参照值：20。",
       "error_type": "数值代入",
       "judging": "auto",
       "source_error_index": 1,
       "source_caught_by": "数值代入",
-      "wrong_expr": "F1 = F2*l2/(2*l1)",
+      "wrong_expr": "F<sub>1</sub> = F<sub>2</sub>",
       "trap_test": {
         "scenario": "剪刀杠杆",
-        "expr": "F2*l2/(2*l1)",
+        "expr": "F2",
         "ref": 20
       },
       "review": {
@@ -98,7 +98,7 @@
       "point_id": "machine-04",
       "point_title": "滑轮",
       "chapter": "简单机械和功",
-      "stem": "【简单机械和功 · 滑轮】学生的错误做法：使用理想动滑轮时只考虑省力，忘记拉绳距离也增加（错误表达式：s_pull = h_load）。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
+      "stem": "【简单机械和功 · 滑轮】学生的错误做法：使用理想动滑轮时只考虑省力，忘记拉绳距离也增加（错误表达式：s<sub>拉</sub> = h<sub>物</sub>）。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
       "options": [
         {
           "label": "A",
@@ -118,12 +118,12 @@
         }
       ],
       "correct_answer": "B",
-      "explanation": "单动滑轮由两段绳承担重物，重物上升 1 m 时拉绳端约需移动 2 m。\n知识库校验证据：情境：理想动滑轮提升100牛；代入错误式：h_load；校验参照值：2。",
+      "explanation": "单动滑轮由两段绳承担重物，重物上升 1 m 时拉绳端约需移动 2 m。\n知识库校验证据：情境：理想动滑轮提升100牛；代入错误式：h<sub>物</sub>；校验参照值：2。",
       "error_type": "数值代入",
       "judging": "auto",
       "source_error_index": 0,
       "source_caught_by": "数值代入",
-      "wrong_expr": "s_pull = h_load",
+      "wrong_expr": "s<sub>拉</sub> = h<sub>物</sub>",
       "trap_test": {
         "scenario": "理想动滑轮提升100牛",
         "expr": "h_load",
@@ -235,7 +235,7 @@
       "point_id": "machine-02",
       "point_title": "功",
       "chapter": "简单机械和功",
-      "stem": "【简单机械和功 · 功】学生的错误做法：位移已换算为 m 后，又按 cm 单位额外缩小 100 倍（错误表达式：W = F*s/100）。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
+      "stem": "【简单机械和功 · 功】学生的错误做法：位移已换算为 m 后，又按 cm 单位额外缩小 100 倍（错误表达式：W = F·s/100）。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
       "options": [
         {
           "label": "A",
@@ -255,12 +255,12 @@
         }
       ],
       "correct_answer": "C",
-      "explanation": "抬起物体的位移已按 4 m 代入，不能再除以 100；否则 200 J 会被算成 2 J。\n知识库校验证据：情境：抬起物体；代入错误式：F*s/100；校验参照值：200。",
+      "explanation": "抬起物体的位移已按 4 m 代入，不能再除以 100；否则 200 J 会被算成 2 J。\n知识库校验证据：情境：抬起物体；代入错误式：F·s/100；校验参照值：200。",
       "error_type": "数值代入",
       "judging": "auto",
       "source_error_index": 1,
       "source_caught_by": "数值代入",
-      "wrong_expr": "W = F*s/100",
+      "wrong_expr": "W = F·s/100",
       "trap_test": {
         "scenario": "抬起物体",
         "expr": "F*s/100",
@@ -325,7 +325,7 @@
       "point_id": "machine-05",
       "point_title": "功率",
       "chapter": "简单机械和功",
-      "stem": "【简单机械和功 · 功率】学生的错误做法：把功率误算成做功除以两倍时间（错误表达式：P = W/(2*t)）。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
+      "stem": "【简单机械和功 · 功率】学生的错误做法：把功率误算成做功除以两倍时间（错误表达式：P = W/(2·t)）。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
       "options": [
         {
           "label": "A",
@@ -345,12 +345,12 @@
         }
       ],
       "correct_answer": "A",
-      "explanation": "功率是单位时间内完成的功；把时间额外加倍会使结果减半。计算前应写出功、时间和功率各自的物理意义。\n知识库校验证据：情境：抬起物体；代入错误式：W/(2*t)；校验参照值：20。",
+      "explanation": "功率是单位时间内完成的功；把时间额外加倍会使结果减半。计算前应写出功、时间和功率各自的物理意义。\n知识库校验证据：情境：抬起物体；代入错误式：W/(2·t)；校验参照值：20。",
       "error_type": "数值代入",
       "judging": "auto",
       "source_error_index": 0,
       "source_caught_by": "数值代入",
-      "wrong_expr": "P = W/(2*t)",
+      "wrong_expr": "P = W/(2·t)",
       "trap_test": {
         "scenario": "抬起物体",
         "expr": "W/(2*t)",
@@ -458,7 +458,7 @@
       "point_id": "machine-03",
       "point_title": "机械效率",
       "chapter": "简单机械和功",
-      "stem": "【简单机械和功 · 机械效率】学生的错误做法：把总功除以有用功当作机械效率（错误表达式：eta = W_in/W_use）。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
+      "stem": "【简单机械和功 · 机械效率】学生的错误做法：把总功除以有用功当作机械效率（错误表达式：η = W<sub>入</sub>/W<sub>有用</sub>）。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
       "options": [
         {
           "label": "A",
@@ -478,12 +478,12 @@
         }
       ],
       "correct_answer": "B",
-      "explanation": "效率应为有用功占输入总功的比例；提升重物情境中正确值 0.8，反过来会得到 1.25。\n知识库校验证据：情境：提升重物；代入错误式：W_in/W_use；校验参照值：0.8。",
+      "explanation": "效率应为有用功占输入总功的比例；提升重物情境中正确值 0.8，反过来会得到 1.25。\n知识库校验证据：情境：提升重物；代入错误式：W<sub>入</sub>/W<sub>有用</sub>；校验参照值：0.8。",
       "error_type": "数值代入",
       "judging": "auto",
       "source_error_index": 0,
       "source_caught_by": "数值代入",
-      "wrong_expr": "eta = W_in/W_use",
+      "wrong_expr": "η = W<sub>入</sub>/W<sub>有用</sub>",
       "trap_test": {
         "scenario": "提升重物",
         "expr": "W_in/W_use",
@@ -544,5 +544,151 @@
       }
     }
   ],
-  "skipped": []
+  "skipped": [],
+  "source_records": {
+    "diagnostic-machine-01-1": {
+      "error": {
+        "wrong": "把杠杆两端到支点的任意距离当成力臂。",
+        "why": "力臂是支点到力的作用线的垂直距离；不一定等于杠杆上沿的长度。",
+        "caught_by": "人工审核"
+      },
+      "title": "杠杆",
+      "chapter": "简单机械和功"
+    },
+    "diagnostic-machine-01-2": {
+      "error": {
+        "wrong": "把杠杆平衡条件写成动力与阻力直接相等。",
+        "wrong_expr": "F1 = F2",
+        "why": "剪刀情境阻力30 N、阻力臂0.2 m、动力臂0.3 m，平衡动力20 N；直接等同会误得30 N。",
+        "caught_by": "数值代入",
+        "trap_test": {
+          "scenario": "剪刀杠杆",
+          "expr": "F2",
+          "ref": 20
+        }
+      },
+      "title": "杠杆",
+      "chapter": "简单机械和功"
+    },
+    "diagnostic-machine-04-1": {
+      "error": {
+        "wrong": "使用理想动滑轮时只考虑省力，忘记拉绳距离也增加。",
+        "wrong_expr": "s_pull = h_load",
+        "why": "单动滑轮由两段绳承担重物，重物上升 1 m 时拉绳端约需移动 2 m。",
+        "caught_by": "数值代入",
+        "trap_test": {
+          "scenario": "理想动滑轮提升100牛",
+          "expr": "h_load",
+          "ref": 2
+        }
+      },
+      "title": "滑轮",
+      "chapter": "简单机械和功"
+    },
+    "diagnostic-machine-04-2": {
+      "error": {
+        "wrong": "认为实际滑轮组一定能省功。",
+        "why": "实际装置有摩擦和自身质量，输入功通常大于有用功；机械可以省力但不能省功。",
+        "caught_by": "人工审核"
+      },
+      "title": "滑轮",
+      "chapter": "简单机械和功"
+    },
+    "diagnostic-machine-02-1": {
+      "error": {
+        "wrong": "把功写成力除以移动距离。",
+        "wrong_expr": "W = F/s",
+        "why": "功等于力与沿力方向位移的乘积，不是除法；单位由 N×m 得到 J，位移方向与力垂直时该力不做功。",
+        "caught_by": "量纲一致性",
+        "trap_test": {
+          "scenario": "抬起物体",
+          "expr": "F/s",
+          "ref": 200
+        }
+      },
+      "title": "功",
+      "chapter": "简单机械和功"
+    },
+    "diagnostic-machine-02-2": {
+      "error": {
+        "wrong": "位移已换算为 m 后，又按 cm 单位额外缩小 100 倍。",
+        "wrong_expr": "W = F*s/100",
+        "why": "抬起物体的位移已按 4 m 代入，不能再除以 100；否则 200 J 会被算成 2 J。",
+        "caught_by": "数值代入",
+        "trap_test": {
+          "scenario": "抬起物体",
+          "expr": "F*s/100",
+          "ref": 200
+        }
+      },
+      "title": "功",
+      "chapter": "简单机械和功"
+    },
+    "diagnostic-machine-02-3": {
+      "error": {
+        "wrong": "物体受力但没有沿力方向移动，仍认为该力做了功。",
+        "why": "做功要求力对物体产生沿力方向的位移；只有力却没有相应位移，或物体运动方向与力垂直，都不能据此认为该力做了功。",
+        "caught_by": "人工审核"
+      },
+      "title": "功",
+      "chapter": "简单机械和功"
+    },
+    "diagnostic-machine-05-1": {
+      "error": {
+        "wrong": "把功率误算成做功除以两倍时间。",
+        "wrong_expr": "P = W/(2*t)",
+        "why": "功率是单位时间内完成的功；把时间额外加倍会使结果减半。计算前应写出功、时间和功率各自的物理意义。",
+        "caught_by": "数值代入",
+        "trap_test": {
+          "scenario": "抬起物体",
+          "expr": "W/(2*t)",
+          "ref": 20
+        }
+      },
+      "title": "功率",
+      "chapter": "简单机械和功"
+    },
+    "diagnostic-machine-05-2": {
+      "error": {
+        "wrong": "把功率和总功混为一谈，只比较做功总量。",
+        "why": "功率描述做功快慢；相同的功用时不同，功率就不同。计算前应写出功、时间和功率各自的物理意义。",
+        "caught_by": "人工审核"
+      },
+      "title": "功率",
+      "chapter": "简单机械和功"
+    },
+    "diagnostic-machine-05-3": {
+      "error": {
+        "wrong": "物体受力但没有沿力方向移动，仍认为该力做了功。",
+        "why": "做功要求力对物体产生沿力方向的位移；只有力却没有相应位移，或物体运动方向与力垂直，都不能据此认为该力做了功。",
+        "caught_by": "人工审核"
+      },
+      "title": "功率",
+      "chapter": "简单机械和功"
+    },
+    "diagnostic-machine-03-1": {
+      "error": {
+        "wrong": "把总功除以有用功当作机械效率。",
+        "wrong_expr": "eta = W_in/W_use",
+        "why": "效率应为有用功占输入总功的比例；提升重物情境中正确值 0.8，反过来会得到 1.25。",
+        "caught_by": "数值代入",
+        "trap_test": {
+          "scenario": "提升重物",
+          "expr": "W_in/W_use",
+          "ref": 0.8
+        }
+      },
+      "title": "机械效率",
+      "chapter": "简单机械和功"
+    },
+    "diagnostic-machine-03-2": {
+      "error": {
+        "wrong": "认为机械效率可以大于 100%，或把效率与功率混为一谈。",
+        "why": "实际机械有能量损失，有用功不能超过输入总功；功率是功与时间之比，与效率概念不同。",
+        "caught_by": "人工审核"
+      },
+      "title": "机械效率",
+      "chapter": "简单机械和功"
+    }
+  }
 }

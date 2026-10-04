@@ -1,0 +1,1150 @@
+{
+  "segment": "初中",
+  "chapter": "初中常见模型与题型",
+  "source_file": "21_models.json",
+  "questions": [
+    {
+      "id": "diagnostic-jmdl-01-1",
+      "point_id": "jmdl-01",
+      "point_title": "柱体压强的切割与叠加",
+      "chapter": "初中常见模型与题型",
+      "stem": "【初中常见模型与题型 · 柱体压强的切割与叠加】学生的错误做法：竖切后只减质量，仍使用切割前底面积算压强（错误表达式：p = m·g/S0）。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
+      "options": [
+        {
+          "label": "A",
+          "text": "概念混淆：通常沉底对象还受向上支持力，浮力可以小于重力；若底面密封使水不能作用于下表面，常规排液公式的压力条件发生变化，必须单独分析。"
+        },
+        {
+          "label": "B",
+          "text": "概念混淆：快捷式来自均匀直柱体质量与底面积、高度的关系，形体不规则、底面支持不完整或有额外压力时必须回到压力除受力面积，不能仅看高度。"
+        },
+        {
+          "label": "C",
+          "text": "数值代入：漂浮样例物体总体积400 cm³，但实际只排200 cm³水；全体积会算4 N，而正确浮力2 N已经平衡重力。"
+        },
+        {
+          "label": "D",
+          "text": "数值代入：竖切改变质量也改变实际接触面积；半柱10 N除现面积0.005 m²还是2000 Pa，若仍除旧面积0.01 m²会误得1000 Pa。"
+        }
+      ],
+      "correct_answer": "D",
+      "explanation": "竖切改变质量也改变实际接触面积；半柱10 N除现面积0.005 m²还是2000 Pa，若仍除旧面积0.01 m²会误得1000 Pa。\n知识库校验证据：情境：竖切一半；代入错误式：m·g/S0；校验参照值：2000。",
+      "error_type": "数值代入",
+      "judging": "auto",
+      "source_error_index": 0,
+      "source_caught_by": "数值代入",
+      "wrong_expr": "p = m·g/S0",
+      "trap_test": {
+        "scenario": "竖切一半",
+        "expr": "m*g/S0",
+        "ref": 2000
+      },
+      "review": {
+        "confidence": "medium",
+        "checks": {
+          "answer_unique": true,
+          "distractors_plausible": true,
+          "stem_clear": true,
+          "no_cross_segment": true
+        },
+        "note": "本章可用类型不足四类，干扰项包含同章其他错误的类别与原解释；答案按“类别+依据”唯一匹配，建议抽查教学区分度。"
+      }
+    },
+    {
+      "id": "diagnostic-jmdl-01-2",
+      "point_id": "jmdl-01",
+      "point_title": "柱体压强的切割与叠加",
+      "chapter": "初中常见模型与题型",
+      "stem": "【初中常见模型与题型 · 柱体压强的切割与叠加】学生的错误做法：任意形体都把底面压强写成密度乘重力加速度乘高度。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
+      "options": [
+        {
+          "label": "A",
+          "text": "数值代入：竖切改变质量也改变实际接触面积；半柱10 N除现面积0.005 m²还是2000 Pa，若仍除旧面积0.01 m²会误得1000 Pa。"
+        },
+        {
+          "label": "B",
+          "text": "概念混淆：通常沉底对象还受向上支持力，浮力可以小于重力；若底面密封使水不能作用于下表面，常规排液公式的压力条件发生变化，必须单独分析。"
+        },
+        {
+          "label": "C",
+          "text": "概念混淆：快捷式来自均匀直柱体质量与底面积、高度的关系，形体不规则、底面支持不完整或有额外压力时必须回到压力除受力面积，不能仅看高度。"
+        },
+        {
+          "label": "D",
+          "text": "数值代入：漂浮样例物体总体积400 cm³，但实际只排200 cm³水；全体积会算4 N，而正确浮力2 N已经平衡重力。"
+        }
+      ],
+      "correct_answer": "C",
+      "explanation": "快捷式来自均匀直柱体质量与底面积、高度的关系，形体不规则、底面支持不完整或有额外压力时必须回到压力除受力面积，不能仅看高度。",
+      "error_type": "概念混淆",
+      "judging": "teacher",
+      "source_error_index": 1,
+      "source_caught_by": "人工审核",
+      "wrong_expr": null,
+      "trap_test": null,
+      "review": {
+        "confidence": "medium",
+        "checks": {
+          "answer_unique": true,
+          "distractors_plausible": true,
+          "stem_clear": true,
+          "no_cross_segment": true
+        },
+        "note": "本章可用类型不足四类，干扰项包含同章其他错误的类别与原解释；答案按“类别+依据”唯一匹配，建议抽查教学区分度。"
+      }
+    },
+    {
+      "id": "diagnostic-jmdl-02-1",
+      "point_id": "jmdl-02",
+      "point_title": "浮力三态（漂浮、悬浮、沉底）",
+      "chapter": "初中常见模型与题型",
+      "stem": "【初中常见模型与题型 · 浮力三态（漂浮、悬浮、沉底）】学生的错误做法：漂浮时把物体总体积代入浮力式，忽略只有一部分排水（错误表达式：Fb = ρ·g·V）。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
+      "options": [
+        {
+          "label": "A",
+          "text": "数值代入：竖切改变质量也改变实际接触面积；半柱10 N除现面积0.005 m²还是2000 Pa，若仍除旧面积0.01 m²会误得1000 Pa。"
+        },
+        {
+          "label": "B",
+          "text": "数值代入：漂浮样例物体总体积400 cm³，但实际只排200 cm³水；全体积会算4 N，而正确浮力2 N已经平衡重力。"
+        },
+        {
+          "label": "C",
+          "text": "概念混淆：快捷式来自均匀直柱体质量与底面积、高度的关系，形体不规则、底面支持不完整或有额外压力时必须回到压力除受力面积，不能仅看高度。"
+        },
+        {
+          "label": "D",
+          "text": "概念混淆：通常沉底对象还受向上支持力，浮力可以小于重力；若底面密封使水不能作用于下表面，常规排液公式的压力条件发生变化，必须单独分析。"
+        }
+      ],
+      "correct_answer": "B",
+      "explanation": "漂浮样例物体总体积400 cm³，但实际只排200 cm³水；全体积会算4 N，而正确浮力2 N已经平衡重力。漂浮时排水部分由平衡决定。\n知识库校验证据：情境：漂浮；代入错误式：ρ·g·V；校验参照值：2。",
+      "error_type": "数值代入",
+      "judging": "auto",
+      "source_error_index": 0,
+      "source_caught_by": "数值代入",
+      "wrong_expr": "Fb = ρ·g·V",
+      "trap_test": {
+        "scenario": "漂浮",
+        "expr": "rho*g*V",
+        "ref": 2
+      },
+      "review": {
+        "confidence": "medium",
+        "checks": {
+          "answer_unique": true,
+          "distractors_plausible": true,
+          "stem_clear": true,
+          "no_cross_segment": true
+        },
+        "note": "本章可用类型不足四类，干扰项包含同章其他错误的类别与原解释；答案按“类别+依据”唯一匹配，建议抽查教学区分度。"
+      }
+    },
+    {
+      "id": "diagnostic-jmdl-02-2",
+      "point_id": "jmdl-02",
+      "point_title": "浮力三态（漂浮、悬浮、沉底）",
+      "chapter": "初中常见模型与题型",
+      "stem": "【初中常见模型与题型 · 浮力三态（漂浮、悬浮、沉底）】学生的错误做法：一旦接触容器底就认为浮力等于重力，或不问下表面是否通水。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
+      "options": [
+        {
+          "label": "A",
+          "text": "概念混淆：通常沉底对象还受向上支持力，浮力可以小于重力；若底面密封使水不能作用于下表面，常规排液公式的压力条件发生变化，必须单独分析。"
+        },
+        {
+          "label": "B",
+          "text": "数值代入：竖切改变质量也改变实际接触面积；半柱10 N除现面积0.005 m²还是2000 Pa，若仍除旧面积0.01 m²会误得1000 Pa。"
+        },
+        {
+          "label": "C",
+          "text": "数值代入：漂浮样例物体总体积400 cm³，但实际只排200 cm³水；全体积会算4 N，而正确浮力2 N已经平衡重力。"
+        },
+        {
+          "label": "D",
+          "text": "概念混淆：快捷式来自均匀直柱体质量与底面积、高度的关系，形体不规则、底面支持不完整或有额外压力时必须回到压力除受力面积，不能仅看高度。"
+        }
+      ],
+      "correct_answer": "A",
+      "explanation": "通常沉底对象还受向上支持力，浮力可以小于重力；若底面密封使水不能作用于下表面，常规排液公式的压力条件发生变化，必须单独分析。",
+      "error_type": "概念混淆",
+      "judging": "teacher",
+      "source_error_index": 1,
+      "source_caught_by": "人工审核",
+      "wrong_expr": null,
+      "trap_test": null,
+      "review": {
+        "confidence": "medium",
+        "checks": {
+          "answer_unique": true,
+          "distractors_plausible": true,
+          "stem_clear": true,
+          "no_cross_segment": true
+        },
+        "note": "本章可用类型不足四类，干扰项包含同章其他错误的类别与原解释；答案按“类别+依据”唯一匹配，建议抽查教学区分度。"
+      }
+    },
+    {
+      "id": "diagnostic-jmdl-03-1",
+      "point_id": "jmdl-03",
+      "point_title": "液面升降与排液体积",
+      "chapter": "初中常见模型与题型",
+      "stem": "【初中常见模型与题型 · 液面升降与排液体积】学生的错误做法：船载石块时仍按石块自身体积算新增排水（错误表达式：V<sub>1</sub> = m/ρ2）。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
+      "options": [
+        {
+          "label": "A",
+          "text": "概念混淆：快捷式来自均匀直柱体质量与底面积、高度的关系，形体不规则、底面支持不完整或有额外压力时必须回到压力除受力面积，不能仅看高度。"
+        },
+        {
+          "label": "B",
+          "text": "概念混淆：通常沉底对象还受向上支持力，浮力可以小于重力；若底面密封使水不能作用于下表面，常规排液公式的压力条件发生变化，必须单独分析。"
+        },
+        {
+          "label": "C",
+          "text": "概念混淆：还要检查电压表跨接对象、负载功率和变阻器额定电流；本例电压表3 V对应0.3 A，是更严的电流限制。"
+        },
+        {
+          "label": "D",
+          "text": "数值代入：漂浮的船须额外排开与石块等重的水，200 g石块使船增加200 cm³排水，不是石块自身的100 cm³。"
+        }
+      ],
+      "correct_answer": "D",
+      "explanation": "漂浮的船须额外排开与石块等重的水，200 g石块使船增加200 cm³排水，不是石块自身的100 cm³。\n知识库校验证据：情境：石块甲；代入错误式：m/ρ2；校验参照值：0.0002。",
+      "error_type": "数值代入",
+      "judging": "auto",
+      "source_error_index": 0,
+      "source_caught_by": "数值代入",
+      "wrong_expr": "V<sub>1</sub> = m/ρ2",
+      "trap_test": {
+        "scenario": "石块甲",
+        "expr": "m/rho2",
+        "ref": 0.0002
+      },
+      "review": {
+        "confidence": "medium",
+        "checks": {
+          "answer_unique": true,
+          "distractors_plausible": true,
+          "stem_clear": true,
+          "no_cross_segment": true
+        },
+        "note": "本章可用类型不足四类，干扰项包含同章其他错误的类别与原解释；答案按“类别+依据”唯一匹配，建议抽查教学区分度。"
+      }
+    },
+    {
+      "id": "diagnostic-jmdl-03-2",
+      "point_id": "jmdl-03",
+      "point_title": "液面升降与排液体积",
+      "chapter": "初中常见模型与题型",
+      "stem": "【初中常见模型与题型 · 液面升降与排液体积】学生的错误做法：漂浮的冰融化在任何液体中都不改变液面。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
+      "options": [
+        {
+          "label": "A",
+          "text": "数值代入：漂浮样例物体总体积400 cm³，但实际只排200 cm³水；全体积会算4 N，而正确浮力2 N已经平衡重力。"
+        },
+        {
+          "label": "B",
+          "text": "数值代入：总电阻为10 Ω加接入的20 Ω，电流0.2 A；仅除20 Ω会误得0.3 A，也会误判安全范围。"
+        },
+        {
+          "label": "C",
+          "text": "概念混淆：水中纯冰的结论依赖排水和融水密度相同；在盐水中融水体积一般较大。"
+        },
+        {
+          "label": "D",
+          "text": "数值代入：竖切改变质量也改变实际接触面积；半柱10 N除现面积0.005 m²还是2000 Pa，若仍除旧面积0.01 m²会误得1000 Pa。"
+        }
+      ],
+      "correct_answer": "C",
+      "explanation": "水中纯冰的结论依赖排水和融水密度相同；在盐水中融水体积一般较大。还要说明不溢流、没有外力和忽略热胀冷缩。",
+      "error_type": "概念混淆",
+      "judging": "teacher",
+      "source_error_index": 1,
+      "source_caught_by": "人工审核",
+      "wrong_expr": null,
+      "trap_test": null,
+      "review": {
+        "confidence": "medium",
+        "checks": {
+          "answer_unique": true,
+          "distractors_plausible": true,
+          "stem_clear": true,
+          "no_cross_segment": true
+        },
+        "note": "本章可用类型不足四类，干扰项包含同章其他错误的类别与原解释；答案按“类别+依据”唯一匹配，建议抽查教学区分度。"
+      }
+    },
+    {
+      "id": "diagnostic-jmdl-04-1",
+      "point_id": "jmdl-04",
+      "point_title": "动态电路与安全调节范围",
+      "chapter": "初中常见模型与题型",
+      "stem": "【初中常见模型与题型 · 动态电路与安全调节范围】学生的错误做法：算电流时只用变阻器电阻，遗漏串联定值电阻（错误表达式：I = U/Rv）。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
+      "options": [
+        {
+          "label": "A",
+          "text": "概念混淆：水中纯冰的结论依赖排水和融水密度相同；在盐水中融水体积一般较大。"
+        },
+        {
+          "label": "B",
+          "text": "数值代入：总电阻为10 Ω加接入的20 Ω，电流0.2 A；仅除20 Ω会误得0.3 A，也会误判安全范围。"
+        },
+        {
+          "label": "C",
+          "text": "概念混淆：快捷式来自均匀直柱体质量与底面积、高度的关系，形体不规则、底面支持不完整或有额外压力时必须回到压力除受力面积，不能仅看高度。"
+        },
+        {
+          "label": "D",
+          "text": "概念混淆：通常沉底对象还受向上支持力，浮力可以小于重力；若底面密封使水不能作用于下表面，常规排液公式的压力条件发生变化，必须单独分析。"
+        }
+      ],
+      "correct_answer": "B",
+      "explanation": "总电阻为10 Ω加接入的20 Ω，电流0.2 A；仅除20 Ω会误得0.3 A，也会误判安全范围。\n知识库校验证据：情境：中间；代入错误式：U/Rv；校验参照值：0.2。",
+      "error_type": "数值代入",
+      "judging": "auto",
+      "source_error_index": 0,
+      "source_caught_by": "数值代入",
+      "wrong_expr": "I = U/Rv",
+      "trap_test": {
+        "scenario": "中间",
+        "expr": "U/Rv",
+        "ref": 0.2
+      },
+      "review": {
+        "confidence": "medium",
+        "checks": {
+          "answer_unique": true,
+          "distractors_plausible": true,
+          "stem_clear": true,
+          "no_cross_segment": true
+        },
+        "note": "本章可用类型不足四类，干扰项包含同章其他错误的类别与原解释；答案按“类别+依据”唯一匹配，建议抽查教学区分度。"
+      }
+    },
+    {
+      "id": "diagnostic-jmdl-04-2",
+      "point_id": "jmdl-04",
+      "point_title": "动态电路与安全调节范围",
+      "chapter": "初中常见模型与题型",
+      "stem": "【初中常见模型与题型 · 动态电路与安全调节范围】学生的错误做法：只满足电流表量程就认为安全。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
+      "options": [
+        {
+          "label": "A",
+          "text": "概念混淆：还要检查电压表跨接对象、负载功率和变阻器额定电流；本例电压表3 V对应0.3 A，是更严的电流限制。"
+        },
+        {
+          "label": "B",
+          "text": "数值代入：竖切改变质量也改变实际接触面积；半柱10 N除现面积0.005 m²还是2000 Pa，若仍除旧面积0.01 m²会误得1000 Pa。"
+        },
+        {
+          "label": "C",
+          "text": "数值代入：漂浮样例物体总体积400 cm³，但实际只排200 cm³水；全体积会算4 N，而正确浮力2 N已经平衡重力。"
+        },
+        {
+          "label": "D",
+          "text": "数值代入：漂浮的船须额外排开与石块等重的水，200 g石块使船增加200 cm³排水，不是石块自身的100 cm³。"
+        }
+      ],
+      "correct_answer": "A",
+      "explanation": "还要检查电压表跨接对象、负载功率和变阻器额定电流；本例电压表3 V对应0.3 A，是更严的电流限制。",
+      "error_type": "概念混淆",
+      "judging": "teacher",
+      "source_error_index": 1,
+      "source_caught_by": "人工审核",
+      "wrong_expr": null,
+      "trap_test": null,
+      "review": {
+        "confidence": "medium",
+        "checks": {
+          "answer_unique": true,
+          "distractors_plausible": true,
+          "stem_clear": true,
+          "no_cross_segment": true
+        },
+        "note": "本章可用类型不足四类，干扰项包含同章其他错误的类别与原解释；答案按“类别+依据”唯一匹配，建议抽查教学区分度。"
+      }
+    },
+    {
+      "id": "diagnostic-jmdl-05-1",
+      "point_id": "jmdl-05",
+      "point_title": "电路故障（断路与短路）",
+      "chapter": "初中常见模型与题型",
+      "stem": "【初中常见模型与题型 · 电路故障（断路与短路）】学生的错误做法：正常时把第二个电阻漏掉，仍用第一个电阻算总电流（错误表达式：I = U/R<sub>1</sub>）。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
+      "options": [
+        {
+          "label": "A",
+          "text": "概念混淆：快捷式来自均匀直柱体质量与底面积、高度的关系，形体不规则、底面支持不完整或有额外压力时必须回到压力除受力面积，不能仅看高度。"
+        },
+        {
+          "label": "B",
+          "text": "概念混淆：通常沉底对象还受向上支持力，浮力可以小于重力；若底面密封使水不能作用于下表面，常规排液公式的压力条件发生变化，必须单独分析。"
+        },
+        {
+          "label": "C",
+          "text": "概念混淆：水中纯冰的结论依赖排水和融水密度相同；在盐水中融水体积一般较大。"
+        },
+        {
+          "label": "D",
+          "text": "数值代入：正常甲总电阻10 Ω，对应0.6 A；只除5 Ω会得到局部短接后的1.2 A，把正常和故障状态混为一谈。"
+        }
+      ],
+      "correct_answer": "D",
+      "explanation": "正常甲总电阻10 Ω，对应0.6 A；只除5 Ω会得到局部短接后的1.2 A，把正常和故障状态混为一谈。\n知识库校验证据：情境：正常甲；代入错误式：U/R<sub>1</sub>；校验参照值：0.6。",
+      "error_type": "数值代入",
+      "judging": "auto",
+      "source_error_index": 0,
+      "source_caught_by": "数值代入",
+      "wrong_expr": "I = U/R<sub>1</sub>",
+      "trap_test": {
+        "scenario": "正常甲",
+        "expr": "U/R1",
+        "ref": 0.6
+      },
+      "review": {
+        "confidence": "medium",
+        "checks": {
+          "answer_unique": true,
+          "distractors_plausible": true,
+          "stem_clear": true,
+          "no_cross_segment": true
+        },
+        "note": "本章可用类型不足四类，干扰项包含同章其他错误的类别与原解释；答案按“类别+依据”唯一匹配，建议抽查教学区分度。"
+      }
+    },
+    {
+      "id": "diagnostic-jmdl-05-2",
+      "point_id": "jmdl-05",
+      "point_title": "电路故障（断路与短路）",
+      "chapter": "初中常见模型与题型",
+      "stem": "【初中常见模型与题型 · 电路故障（断路与短路）】学生的错误做法：看见电流表零就唯一断言某个指定电阻断路。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
+      "options": [
+        {
+          "label": "A",
+          "text": "数值代入：漂浮样例物体总体积400 cm³，但实际只排200 cm³水；全体积会算4 N，而正确浮力2 N已经平衡重力。"
+        },
+        {
+          "label": "B",
+          "text": "数值代入：漂浮的船须额外排开与石块等重的水，200 g石块使船增加200 cm³排水，不是石块自身的100 cm³。"
+        },
+        {
+          "label": "C",
+          "text": "概念混淆：还可能是其他导线断开、电源失效或表故障；限定候选故障并结合跨接电压、逐段检查才能判断，单个示数不足以排除所有情况。"
+        },
+        {
+          "label": "D",
+          "text": "数值代入：竖切改变质量也改变实际接触面积；半柱10 N除现面积0.005 m²还是2000 Pa，若仍除旧面积0.01 m²会误得1000 Pa。"
+        }
+      ],
+      "correct_answer": "C",
+      "explanation": "还可能是其他导线断开、电源失效或表故障；限定候选故障并结合跨接电压、逐段检查才能判断，单个示数不足以排除所有情况。",
+      "error_type": "概念混淆",
+      "judging": "teacher",
+      "source_error_index": 1,
+      "source_caught_by": "人工审核",
+      "wrong_expr": null,
+      "trap_test": null,
+      "review": {
+        "confidence": "medium",
+        "checks": {
+          "answer_unique": true,
+          "distractors_plausible": true,
+          "stem_clear": true,
+          "no_cross_segment": true
+        },
+        "note": "本章可用类型不足四类，干扰项包含同章其他错误的类别与原解释；答案按“类别+依据”唯一匹配，建议抽查教学区分度。"
+      }
+    },
+    {
+      "id": "diagnostic-jmdl-06-1",
+      "point_id": "jmdl-06",
+      "point_title": "多挡电热器的功率比较",
+      "chapter": "初中常见模型与题型",
+      "stem": "【初中常见模型与题型 · 多挡电热器的功率比较】学生的错误做法：低挡串联时仍用一个电阻作为总电阻算功率（错误表达式：P1 = U²/R<sub>1</sub>）。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
+      "options": [
+        {
+          "label": "A",
+          "text": "概念混淆：水中纯冰的结论依赖排水和融水密度相同；在盐水中融水体积一般较大。"
+        },
+        {
+          "label": "B",
+          "text": "数值代入：串联20 Ω与30 Ω的总电阻50 Ω，12 V功率2.88 W；只取20 Ω会误得7.2 W，错误对应另一种接线。"
+        },
+        {
+          "label": "C",
+          "text": "概念混淆：快捷式来自均匀直柱体质量与底面积、高度的关系，形体不规则、底面支持不完整或有额外压力时必须回到压力除受力面积，不能仅看高度。"
+        },
+        {
+          "label": "D",
+          "text": "概念混淆：通常沉底对象还受向上支持力，浮力可以小于重力；若底面密封使水不能作用于下表面，常规排液公式的压力条件发生变化，必须单独分析。"
+        }
+      ],
+      "correct_answer": "B",
+      "explanation": "串联20 Ω与30 Ω的总电阻50 Ω，12 V功率2.88 W；只取20 Ω会误得7.2 W，错误对应另一种接线。\n知识库校验证据：情境：十二伏；代入错误式：U²/R<sub>1</sub>；校验参照值：2.88。",
+      "error_type": "数值代入",
+      "judging": "auto",
+      "source_error_index": 0,
+      "source_caught_by": "数值代入",
+      "wrong_expr": "P1 = U²/R<sub>1</sub>",
+      "trap_test": {
+        "scenario": "十二伏",
+        "expr": "U^2/R1",
+        "ref": 2.88
+      },
+      "review": {
+        "confidence": "medium",
+        "checks": {
+          "answer_unique": true,
+          "distractors_plausible": true,
+          "stem_clear": true,
+          "no_cross_segment": true
+        },
+        "note": "本章可用类型不足四类，干扰项包含同章其他错误的类别与原解释；答案按“类别+依据”唯一匹配，建议抽查教学区分度。"
+      }
+    },
+    {
+      "id": "diagnostic-jmdl-06-2",
+      "point_id": "jmdl-06",
+      "point_title": "多挡电热器的功率比较",
+      "chapter": "初中常见模型与题型",
+      "stem": "【初中常见模型与题型 · 多挡电热器的功率比较】学生的错误做法：任何供电条件下电阻越小功率都越小或都越大。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
+      "options": [
+        {
+          "label": "A",
+          "text": "概念混淆：恒压时功率与电阻反比，恒流时功率与电阻正比；先确认电源条件和等效电路，实际元件还受额定电流与温度影响。"
+        },
+        {
+          "label": "B",
+          "text": "数值代入：竖切改变质量也改变实际接触面积；半柱10 N除现面积0.005 m²还是2000 Pa，若仍除旧面积0.01 m²会误得1000 Pa。"
+        },
+        {
+          "label": "C",
+          "text": "数值代入：漂浮样例物体总体积400 cm³，但实际只排200 cm³水；全体积会算4 N，而正确浮力2 N已经平衡重力。"
+        },
+        {
+          "label": "D",
+          "text": "数值代入：漂浮的船须额外排开与石块等重的水，200 g石块使船增加200 cm³排水，不是石块自身的100 cm³。"
+        }
+      ],
+      "correct_answer": "A",
+      "explanation": "恒压时功率与电阻反比，恒流时功率与电阻正比；先确认电源条件和等效电路，实际元件还受额定电流与温度影响。",
+      "error_type": "概念混淆",
+      "judging": "teacher",
+      "source_error_index": 1,
+      "source_caught_by": "人工审核",
+      "wrong_expr": null,
+      "trap_test": null,
+      "review": {
+        "confidence": "medium",
+        "checks": {
+          "answer_unique": true,
+          "distractors_plausible": true,
+          "stem_clear": true,
+          "no_cross_segment": true
+        },
+        "note": "本章可用类型不足四类，干扰项包含同章其他错误的类别与原解释；答案按“类别+依据”唯一匹配，建议抽查教学区分度。"
+      }
+    },
+    {
+      "id": "diagnostic-jmdl-07-1",
+      "point_id": "jmdl-07",
+      "point_title": "机械效率（竖直与水平拉动）",
+      "chapter": "初中常见模型与题型",
+      "stem": "【初中常见模型与题型 · 机械效率（竖直与水平拉动）】学生的错误做法：把绳端位移当物体位移，漏掉支持绳段倍数（错误表达式：η = m·g·h/(F·h)）。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
+      "options": [
+        {
+          "label": "A",
+          "text": "概念混淆：快捷式来自均匀直柱体质量与底面积、高度的关系，形体不规则、底面支持不完整或有额外压力时必须回到压力除受力面积，不能仅看高度。"
+        },
+        {
+          "label": "B",
+          "text": "概念混淆：通常沉底对象还受向上支持力，浮力可以小于重力；若底面密封使水不能作用于下表面，常规排液公式的压力条件发生变化，必须单独分析。"
+        },
+        {
+          "label": "C",
+          "text": "概念混淆：水中纯冰的结论依赖排水和融水密度相同；在盐水中融水体积一般较大。"
+        },
+        {
+          "label": "D",
+          "text": "数值代入：两绳支持时绳端移2h，输入为F乘2h，不能用Fh；样例甲漏倍数会算出大于一的效率，违背功的账目。"
+        }
+      ],
+      "correct_answer": "D",
+      "explanation": "两绳支持时绳端移2h，输入为F乘2h，不能用Fh；样例甲漏倍数会算出大于一的效率，违背功的账目。\n知识库校验证据：情境：样例甲；代入错误式：m·g·h/(F·h)；校验参照值：0.7142857142857143。",
+      "error_type": "数值代入",
+      "judging": "auto",
+      "source_error_index": 0,
+      "source_caught_by": "数值代入",
+      "wrong_expr": "η = m·g·h/(F·h)",
+      "trap_test": {
+        "scenario": "样例甲",
+        "expr": "m*g*h/(F*h)",
+        "ref": 0.7142857142857143
+      },
+      "review": {
+        "confidence": "medium",
+        "checks": {
+          "answer_unique": true,
+          "distractors_plausible": true,
+          "stem_clear": true,
+          "no_cross_segment": true
+        },
+        "note": "本章可用类型不足四类，干扰项包含同章其他错误的类别与原解释；答案按“类别+依据”唯一匹配，建议抽查教学区分度。"
+      }
+    },
+    {
+      "id": "diagnostic-jmdl-07-2",
+      "point_id": "jmdl-07",
+      "point_title": "机械效率（竖直与水平拉动）",
+      "chapter": "初中常见模型与题型",
+      "stem": "【初中常见模型与题型 · 机械效率（竖直与水平拉动）】学生的错误做法：水平拉动物体也把有用功写成物重乘水平距离。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
+      "options": [
+        {
+          "label": "A",
+          "text": "数值代入：漂浮样例物体总体积400 cm³，但实际只排200 cm³水；全体积会算4 N，而正确浮力2 N已经平衡重力。"
+        },
+        {
+          "label": "B",
+          "text": "数值代入：漂浮的船须额外排开与石块等重的水，200 g石块使船增加200 cm³排水，不是石块自身的100 cm³。"
+        },
+        {
+          "label": "C",
+          "text": "概念混淆：重力与水平位移垂直不做该功；本模型有用功为克服目标摩擦力做功，机械装置高度不变时动滑轮重力也不形成提升功。"
+        },
+        {
+          "label": "D",
+          "text": "数值代入：竖切改变质量也改变实际接触面积；半柱10 N除现面积0.005 m²还是2000 Pa，若仍除旧面积0.01 m²会误得1000 Pa。"
+        }
+      ],
+      "correct_answer": "C",
+      "explanation": "重力与水平位移垂直不做该功；本模型有用功为克服目标摩擦力做功，机械装置高度不变时动滑轮重力也不形成提升功。",
+      "error_type": "概念混淆",
+      "judging": "teacher",
+      "source_error_index": 1,
+      "source_caught_by": "人工审核",
+      "wrong_expr": null,
+      "trap_test": null,
+      "review": {
+        "confidence": "medium",
+        "checks": {
+          "answer_unique": true,
+          "distractors_plausible": true,
+          "stem_clear": true,
+          "no_cross_segment": true
+        },
+        "note": "本章可用类型不足四类，干扰项包含同章其他错误的类别与原解释；答案按“类别+依据”唯一匹配，建议抽查教学区分度。"
+      }
+    },
+    {
+      "id": "diagnostic-jmdl-08-1",
+      "point_id": "jmdl-08",
+      "point_title": "不规则容器与地面压强",
+      "chapter": "初中常见模型与题型",
+      "stem": "【初中常见模型与题型 · 不规则容器与地面压强】学生的错误做法：把容器内部底面积当成支脚实际接触面积（错误表达式：p = F/A）。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
+      "options": [
+        {
+          "label": "A",
+          "text": "概念混淆：水中纯冰的结论依赖排水和融水密度相同；在盐水中融水体积一般较大。"
+        },
+        {
+          "label": "B",
+          "text": "数值代入：压力作用于支脚接触地面的8 cm²，不是内部100 cm²；误用后者会得到1200 Pa而不是15000 Pa。"
+        },
+        {
+          "label": "C",
+          "text": "概念混淆：快捷式来自均匀直柱体质量与底面积、高度的关系，形体不规则、底面支持不完整或有额外压力时必须回到压力除受力面积，不能仅看高度。"
+        },
+        {
+          "label": "D",
+          "text": "概念混淆：通常沉底对象还受向上支持力，浮力可以小于重力；若底面密封使水不能作用于下表面，常规排液公式的压力条件发生变化，必须单独分析。"
+        }
+      ],
+      "correct_answer": "B",
+      "explanation": "压力作用于支脚接触地面的8 cm²，不是内部100 cm²；误用后者会得到1200 Pa而不是15000 Pa。\n知识库校验证据：情境：容器甲；代入错误式：F/A；校验参照值：15000。",
+      "error_type": "数值代入",
+      "judging": "auto",
+      "source_error_index": 0,
+      "source_caught_by": "数值代入",
+      "wrong_expr": "p = F/A",
+      "trap_test": {
+        "scenario": "容器甲",
+        "expr": "F/A",
+        "ref": 15000
+      },
+      "review": {
+        "confidence": "medium",
+        "checks": {
+          "answer_unique": true,
+          "distractors_plausible": true,
+          "stem_clear": true,
+          "no_cross_segment": true
+        },
+        "note": "本章可用类型不足四类，干扰项包含同章其他错误的类别与原解释；答案按“类别+依据”唯一匹配，建议抽查教学区分度。"
+      }
+    },
+    {
+      "id": "diagnostic-jmdl-08-2",
+      "point_id": "jmdl-08",
+      "point_title": "不规则容器与地面压强",
+      "chapter": "初中常见模型与题型",
+      "stem": "【初中常见模型与题型 · 不规则容器与地面压强】学生的错误做法：液体底部压力在任何形状容器里都等于液体重量。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
+      "options": [
+        {
+          "label": "A",
+          "text": "概念混淆：不规则侧壁可对液体施加竖直分力，底部压力还须结合侧壁作用；地面承载总重与液体内部底部压力不可互换。"
+        },
+        {
+          "label": "B",
+          "text": "数值代入：竖切改变质量也改变实际接触面积；半柱10 N除现面积0.005 m²还是2000 Pa，若仍除旧面积0.01 m²会误得1000 Pa。"
+        },
+        {
+          "label": "C",
+          "text": "数值代入：漂浮样例物体总体积400 cm³，但实际只排200 cm³水；全体积会算4 N，而正确浮力2 N已经平衡重力。"
+        },
+        {
+          "label": "D",
+          "text": "数值代入：漂浮的船须额外排开与石块等重的水，200 g石块使船增加200 cm³排水，不是石块自身的100 cm³。"
+        }
+      ],
+      "correct_answer": "A",
+      "explanation": "不规则侧壁可对液体施加竖直分力，底部压力还须结合侧壁作用；地面承载总重与液体内部底部压力不可互换。",
+      "error_type": "概念混淆",
+      "judging": "teacher",
+      "source_error_index": 1,
+      "source_caught_by": "人工审核",
+      "wrong_expr": null,
+      "trap_test": null,
+      "review": {
+        "confidence": "medium",
+        "checks": {
+          "answer_unique": true,
+          "distractors_plausible": true,
+          "stem_clear": true,
+          "no_cross_segment": true
+        },
+        "note": "本章可用类型不足四类，干扰项包含同章其他错误的类别与原解释；答案按“类别+依据”唯一匹配，建议抽查教学区分度。"
+      }
+    },
+    {
+      "id": "diagnostic-jmdl-09-1",
+      "point_id": "jmdl-09",
+      "point_title": "温度图像与物态变化",
+      "chapter": "初中常见模型与题型",
+      "stem": "【初中常见模型与题型 · 温度图像与物态变化】学生的错误做法：求温差时把起始和末温度相加（错误表达式：dT = T<sub>2</sub>+T<sub>1</sub>）。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
+      "options": [
+        {
+          "label": "A",
+          "text": "概念混淆：快捷式来自均匀直柱体质量与底面积、高度的关系，形体不规则、底面支持不完整或有额外压力时必须回到压力除受力面积，不能仅看高度。"
+        },
+        {
+          "label": "B",
+          "text": "概念混淆：通常沉底对象还受向上支持力，浮力可以小于重力；若底面密封使水不能作用于下表面，常规排液公式的压力条件发生变化，必须单独分析。"
+        },
+        {
+          "label": "C",
+          "text": "概念混淆：水中纯冰的结论依赖排水和融水密度相同；在盐水中融水体积一般较大。"
+        },
+        {
+          "label": "D",
+          "text": "数值代入：温差取末减初，不是绝对温度之和；293.15 K到333.15 K为40 K，平台期间两个相同温度相减为零。"
+        }
+      ],
+      "correct_answer": "D",
+      "explanation": "温差取末减初，不是绝对温度之和；293.15 K到333.15 K为40 K，平台期间两个相同温度相减为零。\n知识库校验证据：情境：升温段；代入错误式：T<sub>2</sub>+T<sub>1</sub>；校验参照值：40。",
+      "error_type": "数值代入",
+      "judging": "auto",
+      "source_error_index": 0,
+      "source_caught_by": "数值代入",
+      "wrong_expr": "dT = T<sub>2</sub>+T<sub>1</sub>",
+      "trap_test": {
+        "scenario": "升温段",
+        "expr": "T2+T1",
+        "ref": 40
+      },
+      "review": {
+        "confidence": "medium",
+        "checks": {
+          "answer_unique": true,
+          "distractors_plausible": true,
+          "stem_clear": true,
+          "no_cross_segment": true
+        },
+        "note": "本章可用类型不足四类，干扰项包含同章其他错误的类别与原解释；答案按“类别+依据”唯一匹配，建议抽查教学区分度。"
+      }
+    },
+    {
+      "id": "diagnostic-jmdl-09-2",
+      "point_id": "jmdl-09",
+      "point_title": "温度图像与物态变化",
+      "chapter": "初中常见模型与题型",
+      "stem": "【初中常见模型与题型 · 温度图像与物态变化】学生的错误做法：平台期间温度不变，所以没有吸热或放热。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
+      "options": [
+        {
+          "label": "A",
+          "text": "数值代入：漂浮样例物体总体积400 cm³，但实际只排200 cm³水；全体积会算4 N，而正确浮力2 N已经平衡重力。"
+        },
+        {
+          "label": "B",
+          "text": "数值代入：漂浮的船须额外排开与石块等重的水，200 g石块使船增加200 cm³排水，不是石块自身的100 cm³。"
+        },
+        {
+          "label": "C",
+          "text": "概念混淆：物态变化可在温度不变时改变内能；熔化吸热、凝固放热，图像只给温度，不能单靠斜率判定热量为零。"
+        },
+        {
+          "label": "D",
+          "text": "数值代入：竖切改变质量也改变实际接触面积；半柱10 N除现面积0.005 m²还是2000 Pa，若仍除旧面积0.01 m²会误得1000 Pa。"
+        }
+      ],
+      "correct_answer": "C",
+      "explanation": "物态变化可在温度不变时改变内能；熔化吸热、凝固放热，图像只给温度，不能单靠斜率判定热量为零。",
+      "error_type": "概念混淆",
+      "judging": "teacher",
+      "source_error_index": 1,
+      "source_caught_by": "人工审核",
+      "wrong_expr": null,
+      "trap_test": null,
+      "review": {
+        "confidence": "medium",
+        "checks": {
+          "answer_unique": true,
+          "distractors_plausible": true,
+          "stem_clear": true,
+          "no_cross_segment": true
+        },
+        "note": "本章可用类型不足四类，干扰项包含同章其他错误的类别与原解释；答案按“类别+依据”唯一匹配，建议抽查教学区分度。"
+      }
+    },
+    {
+      "id": "diagnostic-jmdl-10-1",
+      "point_id": "jmdl-10",
+      "point_title": "杠杆最小动力与最大力臂",
+      "chapter": "初中常见模型与题型",
+      "stem": "【初中常见模型与题型 · 杠杆最小动力与最大力臂】学生的错误做法：斜拉时直接用支点到作用点距离作为动力臂（错误表达式：F = G·l<sub>2</sub>/L）。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
+      "options": [
+        {
+          "label": "A",
+          "text": "概念混淆：水中纯冰的结论依赖排水和融水密度相同；在盐水中融水体积一般较大。"
+        },
+        {
+          "label": "B",
+          "text": "数值代入：三十度斜拉的力臂是0.4 m的一半，误用全长会低估动力为5 N；正确动力10 N，垂直拉才只需5 N。"
+        },
+        {
+          "label": "C",
+          "text": "概念混淆：快捷式来自均匀直柱体质量与底面积、高度的关系，形体不规则、底面支持不完整或有额外压力时必须回到压力除受力面积，不能仅看高度。"
+        },
+        {
+          "label": "D",
+          "text": "概念混淆：通常沉底对象还受向上支持力，浮力可以小于重力；若底面密封使水不能作用于下表面，常规排液公式的压力条件发生变化，必须单独分析。"
+        }
+      ],
+      "correct_answer": "B",
+      "explanation": "三十度斜拉的力臂是0.4 m的一半，误用全长会低估动力为5 N；正确动力10 N，垂直拉才只需5 N。\n知识库校验证据：情境：斜拉三十度；代入错误式：G·l<sub>2</sub>/L；校验参照值：10。",
+      "error_type": "数值代入",
+      "judging": "auto",
+      "source_error_index": 0,
+      "source_caught_by": "数值代入",
+      "wrong_expr": "F = G·l<sub>2</sub>/L",
+      "trap_test": {
+        "scenario": "斜拉三十度",
+        "expr": "G*l2/L",
+        "ref": 10
+      },
+      "review": {
+        "confidence": "medium",
+        "checks": {
+          "answer_unique": true,
+          "distractors_plausible": true,
+          "stem_clear": true,
+          "no_cross_segment": true
+        },
+        "note": "本章可用类型不足四类，干扰项包含同章其他错误的类别与原解释；答案按“类别+依据”唯一匹配，建议抽查教学区分度。"
+      }
+    },
+    {
+      "id": "diagnostic-jmdl-10-2",
+      "point_id": "jmdl-10",
+      "point_title": "杠杆最小动力与最大力臂",
+      "chapter": "初中常见模型与题型",
+      "stem": "【初中常见模型与题型 · 杠杆最小动力与最大力臂】学生的错误做法：力臂就是杠杆长度，或者沿杆拉也能提供同样力矩。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
+      "options": [
+        {
+          "label": "A",
+          "text": "概念混淆：力臂由支点与力作用线决定；沿支点到作用点连线施力时力臂为零，无法平衡非零阻力矩。"
+        },
+        {
+          "label": "B",
+          "text": "数值代入：竖切改变质量也改变实际接触面积；半柱10 N除现面积0.005 m²还是2000 Pa，若仍除旧面积0.01 m²会误得1000 Pa。"
+        },
+        {
+          "label": "C",
+          "text": "数值代入：漂浮样例物体总体积400 cm³，但实际只排200 cm³水；全体积会算4 N，而正确浮力2 N已经平衡重力。"
+        },
+        {
+          "label": "D",
+          "text": "数值代入：漂浮的船须额外排开与石块等重的水，200 g石块使船增加200 cm³排水，不是石块自身的100 cm³。"
+        }
+      ],
+      "correct_answer": "A",
+      "explanation": "力臂由支点与力作用线决定；沿支点到作用点连线施力时力臂为零，无法平衡非零阻力矩。最小动力必须在固定几何和阻力条件下比较。",
+      "error_type": "概念混淆",
+      "judging": "teacher",
+      "source_error_index": 1,
+      "source_caught_by": "人工审核",
+      "wrong_expr": null,
+      "trap_test": null,
+      "review": {
+        "confidence": "medium",
+        "checks": {
+          "answer_unique": true,
+          "distractors_plausible": true,
+          "stem_clear": true,
+          "no_cross_segment": true
+        },
+        "note": "本章可用类型不足四类，干扰项包含同章其他错误的类别与原解释；答案按“类别+依据”唯一匹配，建议抽查教学区分度。"
+      }
+    }
+  ],
+  "skipped": [],
+  "source_records": {
+    "diagnostic-jmdl-01-1": {
+      "error": {
+        "wrong": "竖切后只减质量，仍使用切割前底面积算压强。",
+        "wrong_expr": "p = m*g/S0",
+        "why": "竖切改变质量也改变实际接触面积；半柱10 N除现面积0.005 m²还是2000 Pa，若仍除旧面积0.01 m²会误得1000 Pa。",
+        "caught_by": "数值代入",
+        "trap_test": {
+          "scenario": "竖切一半",
+          "expr": "m*g/S0",
+          "ref": 2000
+        }
+      },
+      "title": "柱体压强的切割与叠加",
+      "chapter": "初中常见模型与题型"
+    },
+    "diagnostic-jmdl-01-2": {
+      "error": {
+        "wrong": "任意形体都把底面压强写成密度乘重力加速度乘高度。",
+        "why": "快捷式来自均匀直柱体质量与底面积、高度的关系，形体不规则、底面支持不完整或有额外压力时必须回到压力除受力面积，不能仅看高度。",
+        "caught_by": "人工审核"
+      },
+      "title": "柱体压强的切割与叠加",
+      "chapter": "初中常见模型与题型"
+    },
+    "diagnostic-jmdl-02-1": {
+      "error": {
+        "wrong": "漂浮时把物体总体积代入浮力式，忽略只有一部分排水。",
+        "wrong_expr": "Fb = rho*g*V",
+        "why": "漂浮样例物体总体积400 cm³，但实际只排200 cm³水；全体积会算4 N，而正确浮力2 N已经平衡重力。漂浮时排水部分由平衡决定。",
+        "caught_by": "数值代入",
+        "trap_test": {
+          "scenario": "漂浮",
+          "expr": "rho*g*V",
+          "ref": 2
+        }
+      },
+      "title": "浮力三态（漂浮、悬浮、沉底）",
+      "chapter": "初中常见模型与题型"
+    },
+    "diagnostic-jmdl-02-2": {
+      "error": {
+        "wrong": "一旦接触容器底就认为浮力等于重力，或不问下表面是否通水。",
+        "why": "通常沉底对象还受向上支持力，浮力可以小于重力；若底面密封使水不能作用于下表面，常规排液公式的压力条件发生变化，必须单独分析。",
+        "caught_by": "人工审核"
+      },
+      "title": "浮力三态（漂浮、悬浮、沉底）",
+      "chapter": "初中常见模型与题型"
+    },
+    "diagnostic-jmdl-03-1": {
+      "error": {
+        "wrong": "船载石块时仍按石块自身体积算新增排水。",
+        "wrong_expr": "V1 = m/rho2",
+        "why": "漂浮的船须额外排开与石块等重的水，200 g石块使船增加200 cm³排水，不是石块自身的100 cm³。",
+        "caught_by": "数值代入",
+        "trap_test": {
+          "scenario": "石块甲",
+          "expr": "m/rho2",
+          "ref": 0.0002
+        }
+      },
+      "title": "液面升降与排液体积",
+      "chapter": "初中常见模型与题型"
+    },
+    "diagnostic-jmdl-03-2": {
+      "error": {
+        "wrong": "漂浮的冰融化在任何液体中都不改变液面。",
+        "why": "水中纯冰的结论依赖排水和融水密度相同；在盐水中融水体积一般较大。还要说明不溢流、没有外力和忽略热胀冷缩。",
+        "caught_by": "人工审核"
+      },
+      "title": "液面升降与排液体积",
+      "chapter": "初中常见模型与题型"
+    },
+    "diagnostic-jmdl-04-1": {
+      "error": {
+        "wrong": "算电流时只用变阻器电阻，遗漏串联定值电阻。",
+        "wrong_expr": "I = U/Rv",
+        "why": "总电阻为10 Ω加接入的20 Ω，电流0.2 A；仅除20 Ω会误得0.3 A，也会误判安全范围。",
+        "caught_by": "数值代入",
+        "trap_test": {
+          "scenario": "中间",
+          "expr": "U/Rv",
+          "ref": 0.2
+        }
+      },
+      "title": "动态电路与安全调节范围",
+      "chapter": "初中常见模型与题型"
+    },
+    "diagnostic-jmdl-04-2": {
+      "error": {
+        "wrong": "只满足电流表量程就认为安全。",
+        "why": "还要检查电压表跨接对象、负载功率和变阻器额定电流；本例电压表3 V对应0.3 A，是更严的电流限制。",
+        "caught_by": "人工审核"
+      },
+      "title": "动态电路与安全调节范围",
+      "chapter": "初中常见模型与题型"
+    },
+    "diagnostic-jmdl-05-1": {
+      "error": {
+        "wrong": "正常时把第二个电阻漏掉，仍用第一个电阻算总电流。",
+        "wrong_expr": "I = U/R1",
+        "why": "正常甲总电阻10 Ω，对应0.6 A；只除5 Ω会得到局部短接后的1.2 A，把正常和故障状态混为一谈。",
+        "caught_by": "数值代入",
+        "trap_test": {
+          "scenario": "正常甲",
+          "expr": "U/R1",
+          "ref": 0.6
+        }
+      },
+      "title": "电路故障（断路与短路）",
+      "chapter": "初中常见模型与题型"
+    },
+    "diagnostic-jmdl-05-2": {
+      "error": {
+        "wrong": "看见电流表零就唯一断言某个指定电阻断路。",
+        "why": "还可能是其他导线断开、电源失效或表故障；限定候选故障并结合跨接电压、逐段检查才能判断，单个示数不足以排除所有情况。",
+        "caught_by": "人工审核"
+      },
+      "title": "电路故障（断路与短路）",
+      "chapter": "初中常见模型与题型"
+    },
+    "diagnostic-jmdl-06-1": {
+      "error": {
+        "wrong": "低挡串联时仍用一个电阻作为总电阻算功率。",
+        "wrong_expr": "P1 = U^2/R1",
+        "why": "串联20 Ω与30 Ω的总电阻50 Ω，12 V功率2.88 W；只取20 Ω会误得7.2 W，错误对应另一种接线。",
+        "caught_by": "数值代入",
+        "trap_test": {
+          "scenario": "十二伏",
+          "expr": "U^2/R1",
+          "ref": 2.88
+        }
+      },
+      "title": "多挡电热器的功率比较",
+      "chapter": "初中常见模型与题型"
+    },
+    "diagnostic-jmdl-06-2": {
+      "error": {
+        "wrong": "任何供电条件下电阻越小功率都越小或都越大。",
+        "why": "恒压时功率与电阻反比，恒流时功率与电阻正比；先确认电源条件和等效电路，实际元件还受额定电流与温度影响。",
+        "caught_by": "人工审核"
+      },
+      "title": "多挡电热器的功率比较",
+      "chapter": "初中常见模型与题型"
+    },
+    "diagnostic-jmdl-07-1": {
+      "error": {
+        "wrong": "把绳端位移当物体位移，漏掉支持绳段倍数。",
+        "wrong_expr": "eta = m*g*h/(F*h)",
+        "why": "两绳支持时绳端移2h，输入为F乘2h，不能用Fh；样例甲漏倍数会算出大于一的效率，违背功的账目。",
+        "caught_by": "数值代入",
+        "trap_test": {
+          "scenario": "样例甲",
+          "expr": "m*g*h/(F*h)",
+          "ref": 0.7142857142857143
+        }
+      },
+      "title": "机械效率（竖直与水平拉动）",
+      "chapter": "初中常见模型与题型"
+    },
+    "diagnostic-jmdl-07-2": {
+      "error": {
+        "wrong": "水平拉动物体也把有用功写成物重乘水平距离。",
+        "why": "重力与水平位移垂直不做该功；本模型有用功为克服目标摩擦力做功，机械装置高度不变时动滑轮重力也不形成提升功。",
+        "caught_by": "人工审核"
+      },
+      "title": "机械效率（竖直与水平拉动）",
+      "chapter": "初中常见模型与题型"
+    },
+    "diagnostic-jmdl-08-1": {
+      "error": {
+        "wrong": "把容器内部底面积当成支脚实际接触面积。",
+        "wrong_expr": "p = F/A",
+        "why": "压力作用于支脚接触地面的8 cm²，不是内部100 cm²；误用后者会得到1200 Pa而不是15000 Pa。",
+        "caught_by": "数值代入",
+        "trap_test": {
+          "scenario": "容器甲",
+          "expr": "F/A",
+          "ref": 15000
+        }
+      },
+      "title": "不规则容器与地面压强",
+      "chapter": "初中常见模型与题型"
+    },
+    "diagnostic-jmdl-08-2": {
+      "error": {
+        "wrong": "液体底部压力在任何形状容器里都等于液体重量。",
+        "why": "不规则侧壁可对液体施加竖直分力，底部压力还须结合侧壁作用；地面承载总重与液体内部底部压力不可互换。",
+        "caught_by": "人工审核"
+      },
+      "title": "不规则容器与地面压强",
+      "chapter": "初中常见模型与题型"
+    },
+    "diagnostic-jmdl-09-1": {
+      "error": {
+        "wrong": "求温差时把起始和末温度相加。",
+        "wrong_expr": "dT = T2+T1",
+        "why": "温差取末减初，不是绝对温度之和；293.15 K到333.15 K为40 K，平台期间两个相同温度相减为零。",
+        "caught_by": "数值代入",
+        "trap_test": {
+          "scenario": "升温段",
+          "expr": "T2+T1",
+          "ref": 40
+        }
+      },
+      "title": "温度图像与物态变化",
+      "chapter": "初中常见模型与题型"
+    },
+    "diagnostic-jmdl-09-2": {
+      "error": {
+        "wrong": "平台期间温度不变，所以没有吸热或放热。",
+        "why": "物态变化可在温度不变时改变内能；熔化吸热、凝固放热，图像只给温度，不能单靠斜率判定热量为零。",
+        "caught_by": "人工审核"
+      },
+      "title": "温度图像与物态变化",
+      "chapter": "初中常见模型与题型"
+    },
+    "diagnostic-jmdl-10-1": {
+      "error": {
+        "wrong": "斜拉时直接用支点到作用点距离作为动力臂。",
+        "wrong_expr": "F = G*l2/L",
+        "why": "三十度斜拉的力臂是0.4 m的一半，误用全长会低估动力为5 N；正确动力10 N，垂直拉才只需5 N。",
+        "caught_by": "数值代入",
+        "trap_test": {
+          "scenario": "斜拉三十度",
+          "expr": "G*l2/L",
+          "ref": 10
+        }
+      },
+      "title": "杠杆最小动力与最大力臂",
+      "chapter": "初中常见模型与题型"
+    },
+    "diagnostic-jmdl-10-2": {
+      "error": {
+        "wrong": "力臂就是杠杆长度，或者沿杆拉也能提供同样力矩。",
+        "why": "力臂由支点与力作用线决定；沿支点到作用点连线施力时力臂为零，无法平衡非零阻力矩。最小动力必须在固定几何和阻力条件下比较。",
+        "caught_by": "人工审核"
+      },
+      "title": "杠杆最小动力与最大力臂",
+      "chapter": "初中常见模型与题型"
+    }
+  }
+}

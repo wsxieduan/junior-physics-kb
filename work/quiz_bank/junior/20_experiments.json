@@ -1,0 +1,2868 @@
+{
+  "segment": "初中",
+  "chapter": "实验专题：必做项目与教材补充",
+  "source_file": "20_experiments.json",
+  "questions": [
+    {
+      "id": "diagnostic-jexp-01-1",
+      "point_id": "jexp-01",
+      "point_title": "用刻度尺测量长度",
+      "chapter": "实验专题：必做项目与教材补充",
+      "stem": "【实验专题：必做项目与教材补充 · 用刻度尺测量长度】学生的错误做法：零端磨损时仍把终点读数当长度，忘记减去起点（错误表达式：L = x<sub>2</sub>）。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
+      "options": [
+        {
+          "label": "A",
+          "text": "量纲一致性：速度是单位时间内通过的路程，需用路程除以时间；相乘的单位也不再是 m/s。"
+        },
+        {
+          "label": "B",
+          "text": "概念混淆：电子显示仍有分辨率与触发延迟，计时判据必须一致；周期必须对应状态一次完整重复。"
+        },
+        {
+          "label": "C",
+          "text": "概念混淆：调平衡只用于称量前的空载校零，称量中移动会改变仪器条件；固体附着水增加被称质量，所得密度可能偏大。"
+        },
+        {
+          "label": "D",
+          "text": "数值代入：用非零刻线起测后，终点读数包含被移动的起点位置。"
+        }
+      ],
+      "correct_answer": "D",
+      "explanation": "用非零刻线起测后，终点读数包含被移动的起点位置。4.26 cm的终点和1.00 cm的起点应相减，不是4.26 cm长。\n知识库校验证据：情境：薄板甲；代入错误式：x<sub>2</sub>；校验参照值：0.0326。",
+      "error_type": "数值代入",
+      "judging": "auto",
+      "source_error_index": 0,
+      "source_caught_by": "数值代入",
+      "wrong_expr": "L = x<sub>2</sub>",
+      "trap_test": {
+        "scenario": "薄板甲",
+        "expr": "x2",
+        "ref": 0.0326
+      },
+      "review": {
+        "confidence": "medium",
+        "checks": {
+          "answer_unique": true,
+          "distractors_plausible": true,
+          "stem_clear": true,
+          "no_cross_segment": true
+        },
+        "note": "本章可用类型不足四类，干扰项包含同章其他错误的类别与原解释；答案按“类别+依据”唯一匹配，建议抽查教学区分度。"
+      }
+    },
+    {
+      "id": "diagnostic-jexp-01-2",
+      "point_id": "jexp-01",
+      "point_title": "用刻度尺测量长度",
+      "chapter": "实验专题：必做项目与教材补充",
+      "stem": "【实验专题：必做项目与教材补充 · 用刻度尺测量长度】学生的错误做法：毫米分度尺只记3.2 cm，漏写估读位。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
+      "options": [
+        {
+          "label": "A",
+          "text": "量纲一致性：速度是单位时间内通过的路程，需用路程除以时间；相乘的单位也不再是 m/s。"
+        },
+        {
+          "label": "B",
+          "text": "数值代入：游码在标尺上移动也提供平衡作用，示值必须与砝码相加；80 g砝码与4 g游码合为84 g，不是80 g。"
+        },
+        {
+          "label": "C",
+          "text": "概念混淆：普通毫米尺按中学约定应估读到0.1 mm，记录如3.26 cm；只记3.2 cm丢失了测量精度信息。"
+        },
+        {
+          "label": "D",
+          "text": "数值代入：计时测的是两事件之间的间隔，不是表盘上的绝对读数；起点3 s、终点8 s对应5 s，不能写8 s。"
+        }
+      ],
+      "correct_answer": "C",
+      "explanation": "普通毫米尺按中学约定应估读到0.1 mm，记录如3.26 cm；只记3.2 cm丢失了测量精度信息。补位必须来自实际观察，不能任意添数字。",
+      "error_type": "概念混淆",
+      "judging": "teacher",
+      "source_error_index": 1,
+      "source_caught_by": "人工审核",
+      "wrong_expr": null,
+      "trap_test": null,
+      "review": {
+        "confidence": "medium",
+        "checks": {
+          "answer_unique": true,
+          "distractors_plausible": true,
+          "stem_clear": true,
+          "no_cross_segment": true
+        },
+        "note": "本章可用类型不足四类，干扰项包含同章其他错误的类别与原解释；答案按“类别+依据”唯一匹配，建议抽查教学区分度。"
+      }
+    },
+    {
+      "id": "diagnostic-jexp-02-1",
+      "point_id": "jexp-02",
+      "point_title": "用表测量时间",
+      "chapter": "实验专题：必做项目与教材补充",
+      "stem": "【实验专题：必做项目与教材补充 · 用表测量时间】学生的错误做法：停表没有归零时直接把终止读数当历时（错误表达式：t = t<sub>2</sub>）。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
+      "options": [
+        {
+          "label": "A",
+          "text": "概念混淆：调平衡只用于称量前的空载校零，称量中移动会改变仪器条件；固体附着水增加被称质量，所得密度可能偏大。"
+        },
+        {
+          "label": "B",
+          "text": "数值代入：计时测的是两事件之间的间隔，不是表盘上的绝对读数；起点3 s、终点8 s对应5 s，不能写8 s。"
+        },
+        {
+          "label": "C",
+          "text": "量纲一致性：速度是单位时间内通过的路程，需用路程除以时间；相乘的单位也不再是 m/s。"
+        },
+        {
+          "label": "D",
+          "text": "概念混淆：普通毫米尺按中学约定应估读到0.1 mm，记录如3.26 cm；只记3.2 cm丢失了测量精度信息。"
+        }
+      ],
+      "correct_answer": "B",
+      "explanation": "计时测的是两事件之间的间隔，不是表盘上的绝对读数；起点3 s、终点8 s对应5 s，不能写8 s。零点偏移可由相减消去，按表延迟不能。\n知识库校验证据：情境：计时甲；代入错误式：t<sub>2</sub>；校验参照值：5。",
+      "error_type": "数值代入",
+      "judging": "auto",
+      "source_error_index": 0,
+      "source_caught_by": "数值代入",
+      "wrong_expr": "t = t<sub>2</sub>",
+      "trap_test": {
+        "scenario": "计时甲",
+        "expr": "t2",
+        "ref": 5
+      },
+      "review": {
+        "confidence": "medium",
+        "checks": {
+          "answer_unique": true,
+          "distractors_plausible": true,
+          "stem_clear": true,
+          "no_cross_segment": true
+        },
+        "note": "本章可用类型不足四类，干扰项包含同章其他错误的类别与原解释；答案按“类别+依据”唯一匹配，建议抽查教学区分度。"
+      }
+    },
+    {
+      "id": "diagnostic-jexp-02-2",
+      "point_id": "jexp-02",
+      "point_title": "用表测量时间",
+      "chapter": "实验专题：必做项目与教材补充",
+      "stem": "【实验专题：必做项目与教材补充 · 用表测量时间】学生的错误做法：认为电子表没有测量误差，或把一次往返的两个半程各算一周期。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
+      "options": [
+        {
+          "label": "A",
+          "text": "概念混淆：电子显示仍有分辨率与触发延迟，计时判据必须一致；周期必须对应状态一次完整重复。"
+        },
+        {
+          "label": "B",
+          "text": "数值代入：用非零刻线起测后，终点读数包含被移动的起点位置。"
+        },
+        {
+          "label": "C",
+          "text": "量纲一致性：速度是单位时间内通过的路程，需用路程除以时间；相乘的单位也不再是 m/s。"
+        },
+        {
+          "label": "D",
+          "text": "数值代入：游码在标尺上移动也提供平衡作用，示值必须与砝码相加；80 g砝码与4 g游码合为84 g，不是80 g。"
+        }
+      ],
+      "correct_answer": "A",
+      "explanation": "电子显示仍有分辨率与触发延迟，计时判据必须一致；周期必须对应状态一次完整重复。两类问题要观察记录与实验设计，不能仅靠时间差验算证明。",
+      "error_type": "概念混淆",
+      "judging": "teacher",
+      "source_error_index": 1,
+      "source_caught_by": "人工审核",
+      "wrong_expr": null,
+      "trap_test": null,
+      "review": {
+        "confidence": "medium",
+        "checks": {
+          "answer_unique": true,
+          "distractors_plausible": true,
+          "stem_clear": true,
+          "no_cross_segment": true
+        },
+        "note": "本章可用类型不足四类，干扰项包含同章其他错误的类别与原解释；答案按“类别+依据”唯一匹配，建议抽查教学区分度。"
+      }
+    },
+    {
+      "id": "diagnostic-jexp-03-1",
+      "point_id": "jexp-03",
+      "point_title": "测量物体运动的速度",
+      "chapter": "实验专题：必做项目与教材补充",
+      "stem": "【实验专题：必做项目与教材补充 · 测量物体运动的速度】学生的错误做法：把速度写成路程乘时间（错误表达式：v = s·t）。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
+      "options": [
+        {
+          "label": "A",
+          "text": "数值代入：用非零刻线起测后，终点读数包含被移动的起点位置。"
+        },
+        {
+          "label": "B",
+          "text": "数值代入：计时测的是两事件之间的间隔，不是表盘上的绝对读数；起点3 s、终点8 s对应5 s，不能写8 s。"
+        },
+        {
+          "label": "C",
+          "text": "数值代入：游码在标尺上移动也提供平衡作用，示值必须与砝码相加；80 g砝码与4 g游码合为84 g，不是80 g。"
+        },
+        {
+          "label": "D",
+          "text": "量纲一致性：速度是单位时间内通过的路程，需用路程除以时间；相乘的单位也不再是 m/s。"
+        }
+      ],
+      "correct_answer": "D",
+      "explanation": "速度是单位时间内通过的路程，需用路程除以时间；相乘的单位也不再是 m/s。\n知识库校验证据：情境：步行测量；代入错误式：s·t；校验参照值：5。",
+      "error_type": "量纲一致性",
+      "judging": "auto",
+      "source_error_index": 0,
+      "source_caught_by": "量纲一致性",
+      "wrong_expr": "v = s·t",
+      "trap_test": {
+        "scenario": "步行测量",
+        "expr": "s*t",
+        "ref": 5
+      },
+      "review": {
+        "confidence": "medium",
+        "checks": {
+          "answer_unique": true,
+          "distractors_plausible": true,
+          "stem_clear": true,
+          "no_cross_segment": true
+        },
+        "note": "本章可用类型不足四类，干扰项包含同章其他错误的类别与原解释；答案按“类别+依据”唯一匹配，建议抽查教学区分度。"
+      }
+    },
+    {
+      "id": "diagnostic-jexp-03-2",
+      "point_id": "jexp-03",
+      "point_title": "测量物体运动的速度",
+      "chapter": "实验专题：必做项目与教材补充",
+      "stem": "【实验专题：必做项目与教材补充 · 测量物体运动的速度】学生的错误做法：换算 m/s 与 km/h 时忘记乘 3.6，或把乘除方向写反（错误表达式：v<sub>k</sub> = v/3.6）。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
+      "options": [
+        {
+          "label": "A",
+          "text": "概念混淆：电子显示仍有分辨率与触发延迟，计时判据必须一致；周期必须对应状态一次完整重复。"
+        },
+        {
+          "label": "B",
+          "text": "概念混淆：调平衡只用于称量前的空载校零，称量中移动会改变仪器条件；固体附着水增加被称质量，所得密度可能偏大。"
+        },
+        {
+          "label": "C",
+          "text": "数值代入：1 m/s=3.6 km/h；5 m/s 应为 18 km/h，而不是约 1.4 km/h。"
+        },
+        {
+          "label": "D",
+          "text": "概念混淆：普通毫米尺按中学约定应估读到0.1 mm，记录如3.26 cm；只记3.2 cm丢失了测量精度信息。"
+        }
+      ],
+      "correct_answer": "C",
+      "explanation": "1 m/s=3.6 km/h；5 m/s 应为 18 km/h，而不是约 1.4 km/h。\n知识库校验证据：情境：步行测量；代入错误式：v/3.6；校验参照值：18。",
+      "error_type": "数值代入",
+      "judging": "auto",
+      "source_error_index": 1,
+      "source_caught_by": "数值代入",
+      "wrong_expr": "v<sub>k</sub> = v/3.6",
+      "trap_test": {
+        "scenario": "步行测量",
+        "expr": "v/3.6",
+        "ref": 18
+      },
+      "review": {
+        "confidence": "medium",
+        "checks": {
+          "answer_unique": true,
+          "distractors_plausible": true,
+          "stem_clear": true,
+          "no_cross_segment": true
+        },
+        "note": "本章可用类型不足四类，干扰项包含同章其他错误的类别与原解释；答案按“类别+依据”唯一匹配，建议抽查教学区分度。"
+      }
+    },
+    {
+      "id": "diagnostic-jexp-04-1",
+      "point_id": "jexp-04",
+      "point_title": "用天平测量固体和液体的质量",
+      "chapter": "实验专题：必做项目与教材补充",
+      "stem": "【实验专题：必做项目与教材补充 · 用天平测量固体和液体的质量】学生的错误做法：天平读数只计砝码，漏掉游码质量（错误表达式：m = mc）。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
+      "options": [
+        {
+          "label": "A",
+          "text": "概念混淆：电子显示仍有分辨率与触发延迟，计时判据必须一致；周期必须对应状态一次完整重复。"
+        },
+        {
+          "label": "B",
+          "text": "数值代入：游码在标尺上移动也提供平衡作用，示值必须与砝码相加；80 g砝码与4 g游码合为84 g，不是80 g。"
+        },
+        {
+          "label": "C",
+          "text": "量纲一致性：速度是单位时间内通过的路程，需用路程除以时间；相乘的单位也不再是 m/s。"
+        },
+        {
+          "label": "D",
+          "text": "概念混淆：普通毫米尺按中学约定应估读到0.1 mm，记录如3.26 cm；只记3.2 cm丢失了测量精度信息。"
+        }
+      ],
+      "correct_answer": "B",
+      "explanation": "游码在标尺上移动也提供平衡作用，示值必须与砝码相加；80 g砝码与4 g游码合为84 g，不是80 g。称量时重新调螺母不能弥补漏读。\n知识库校验证据：情境：液体甲；代入错误式：mc；校验参照值：0.084。",
+      "error_type": "数值代入",
+      "judging": "auto",
+      "source_error_index": 0,
+      "source_caught_by": "数值代入",
+      "wrong_expr": "m = mc",
+      "trap_test": {
+        "scenario": "液体甲",
+        "expr": "mc",
+        "ref": 0.084
+      },
+      "review": {
+        "confidence": "medium",
+        "checks": {
+          "answer_unique": true,
+          "distractors_plausible": true,
+          "stem_clear": true,
+          "no_cross_segment": true
+        },
+        "note": "本章可用类型不足四类，干扰项包含同章其他错误的类别与原解释；答案按“类别+依据”唯一匹配，建议抽查教学区分度。"
+      }
+    },
+    {
+      "id": "diagnostic-jexp-04-2",
+      "point_id": "jexp-04",
+      "point_title": "用天平测量固体和液体的质量",
+      "chapter": "实验专题：必做项目与教材补充",
+      "stem": "【实验专题：必做项目与教材补充 · 用天平测量固体和液体的质量】学生的错误做法：称量时移动平衡螺母，或先排水后称带水固体。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
+      "options": [
+        {
+          "label": "A",
+          "text": "概念混淆：调平衡只用于称量前的空载校零，称量中移动会改变仪器条件；固体附着水增加被称质量，所得密度可能偏大。"
+        },
+        {
+          "label": "B",
+          "text": "数值代入：用非零刻线起测后，终点读数包含被移动的起点位置。"
+        },
+        {
+          "label": "C",
+          "text": "数值代入：计时测的是两事件之间的间隔，不是表盘上的绝对读数；起点3 s、终点8 s对应5 s，不能写8 s。"
+        },
+        {
+          "label": "D",
+          "text": "量纲一致性：速度是单位时间内通过的路程，需用路程除以时间；相乘的单位也不再是 m/s。"
+        }
+      ],
+      "correct_answer": "A",
+      "explanation": "调平衡只用于称量前的空载校零，称量中移动会改变仪器条件；固体附着水增加被称质量，所得密度可能偏大。必须区分误差来源与配对样本。",
+      "error_type": "概念混淆",
+      "judging": "teacher",
+      "source_error_index": 1,
+      "source_caught_by": "人工审核",
+      "wrong_expr": null,
+      "trap_test": null,
+      "review": {
+        "confidence": "medium",
+        "checks": {
+          "answer_unique": true,
+          "distractors_plausible": true,
+          "stem_clear": true,
+          "no_cross_segment": true
+        },
+        "note": "本章可用类型不足四类，干扰项包含同章其他错误的类别与原解释；答案按“类别+依据”唯一匹配，建议抽查教学区分度。"
+      }
+    },
+    {
+      "id": "diagnostic-jexp-05-1",
+      "point_id": "jexp-05",
+      "point_title": "测量固体和液体的密度",
+      "chapter": "实验专题：必做项目与教材补充",
+      "stem": "【实验专题：必做项目与教材补充 · 测量固体和液体的密度】学生的错误做法：天平读数只计砝码，漏掉游码质量（错误表达式：m = mc）。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
+      "options": [
+        {
+          "label": "A",
+          "text": "量纲一致性：速度是单位时间内通过的路程，需用路程除以时间；相乘的单位也不再是 m/s。"
+        },
+        {
+          "label": "B",
+          "text": "概念混淆：普通毫米尺按中学约定应估读到0.1 mm，记录如3.26 cm；只记3.2 cm丢失了测量精度信息。"
+        },
+        {
+          "label": "C",
+          "text": "概念混淆：电子显示仍有分辨率与触发延迟，计时判据必须一致；周期必须对应状态一次完整重复。"
+        },
+        {
+          "label": "D",
+          "text": "数值代入：游码在标尺上移动也提供平衡作用，示值必须与砝码相加；80 g砝码与4 g游码合为84 g，不是80 g。"
+        }
+      ],
+      "correct_answer": "D",
+      "explanation": "游码在标尺上移动也提供平衡作用，示值必须与砝码相加；80 g砝码与4 g游码合为84 g，不是80 g。称量时重新调螺母不能弥补漏读。\n知识库校验证据：情境：液体甲；代入错误式：mc；校验参照值：0.084。",
+      "error_type": "数值代入",
+      "judging": "auto",
+      "source_error_index": 0,
+      "source_caught_by": "数值代入",
+      "wrong_expr": "m = mc",
+      "trap_test": {
+        "scenario": "液体甲",
+        "expr": "mc",
+        "ref": 0.084
+      },
+      "review": {
+        "confidence": "medium",
+        "checks": {
+          "answer_unique": true,
+          "distractors_plausible": true,
+          "stem_clear": true,
+          "no_cross_segment": true
+        },
+        "note": "本章可用类型不足四类，干扰项包含同章其他错误的类别与原解释；答案按“类别+依据”唯一匹配，建议抽查教学区分度。"
+      }
+    },
+    {
+      "id": "diagnostic-jexp-05-2",
+      "point_id": "jexp-05",
+      "point_title": "测量固体和液体的密度",
+      "chapter": "实验专题：必做项目与教材补充",
+      "stem": "【实验专题：必做项目与教材补充 · 测量固体和液体的密度】学生的错误做法：称量时移动平衡螺母，或先排水后称带水固体。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
+      "options": [
+        {
+          "label": "A",
+          "text": "数值代入：计时测的是两事件之间的间隔，不是表盘上的绝对读数；起点3 s、终点8 s对应5 s，不能写8 s。"
+        },
+        {
+          "label": "B",
+          "text": "量纲一致性：速度是单位时间内通过的路程，需用路程除以时间；相乘的单位也不再是 m/s。"
+        },
+        {
+          "label": "C",
+          "text": "概念混淆：调平衡只用于称量前的空载校零，称量中移动会改变仪器条件；固体附着水增加被称质量，所得密度可能偏大。"
+        },
+        {
+          "label": "D",
+          "text": "数值代入：用非零刻线起测后，终点读数包含被移动的起点位置。"
+        }
+      ],
+      "correct_answer": "C",
+      "explanation": "调平衡只用于称量前的空载校零，称量中移动会改变仪器条件；固体附着水增加被称质量，所得密度可能偏大。必须区分误差来源与配对样本。",
+      "error_type": "概念混淆",
+      "judging": "teacher",
+      "source_error_index": 1,
+      "source_caught_by": "人工审核",
+      "wrong_expr": null,
+      "trap_test": null,
+      "review": {
+        "confidence": "medium",
+        "checks": {
+          "answer_unique": true,
+          "distractors_plausible": true,
+          "stem_clear": true,
+          "no_cross_segment": true
+        },
+        "note": "本章可用类型不足四类，干扰项包含同章其他错误的类别与原解释；答案按“类别+依据”唯一匹配，建议抽查教学区分度。"
+      }
+    },
+    {
+      "id": "diagnostic-jexp-06-1",
+      "point_id": "jexp-06",
+      "point_title": "探究水沸腾前后温度变化的特点",
+      "chapter": "实验专题：必做项目与教材补充",
+      "stem": "【实验专题：必做项目与教材补充 · 探究水沸腾前后温度变化的特点】学生的错误做法：把两个温度读数相加当温度变化（错误表达式：dT = T<sub>2</sub>+T<sub>1</sub>）。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
+      "options": [
+        {
+          "label": "A",
+          "text": "概念混淆：电子显示仍有分辨率与触发延迟，计时判据必须一致；周期必须对应状态一次完整重复。"
+        },
+        {
+          "label": "B",
+          "text": "数值代入：温差是终值减初值，与温度所用单位的零点无关；把两次热力学温度相加会得数百开尔文，并不能代表该过程的温度变化。"
+        },
+        {
+          "label": "C",
+          "text": "量纲一致性：速度是单位时间内通过的路程，需用路程除以时间；相乘的单位也不再是 m/s。"
+        },
+        {
+          "label": "D",
+          "text": "概念混淆：普通毫米尺按中学约定应估读到0.1 mm，记录如3.26 cm；只记3.2 cm丢失了测量精度信息。"
+        }
+      ],
+      "correct_answer": "B",
+      "explanation": "温差是终值减初值，与温度所用单位的零点无关；把两次热力学温度相加会得数百开尔文，并不能代表该过程的温度变化。\n知识库校验证据：情境：沸腾前；代入错误式：T<sub>2</sub>+T<sub>1</sub>；校验参照值：8.0。",
+      "error_type": "数值代入",
+      "judging": "auto",
+      "source_error_index": 0,
+      "source_caught_by": "数值代入",
+      "wrong_expr": "dT = T<sub>2</sub>+T<sub>1</sub>",
+      "trap_test": {
+        "scenario": "沸腾前",
+        "expr": "T2+T1",
+        "ref": 8.0
+      },
+      "review": {
+        "confidence": "medium",
+        "checks": {
+          "answer_unique": true,
+          "distractors_plausible": true,
+          "stem_clear": true,
+          "no_cross_segment": true
+        },
+        "note": "本章可用类型不足四类，干扰项包含同章其他错误的类别与原解释；答案按“类别+依据”唯一匹配，建议抽查教学区分度。"
+      }
+    },
+    {
+      "id": "diagnostic-jexp-06-2",
+      "point_id": "jexp-06",
+      "point_title": "探究水沸腾前后温度变化的特点",
+      "chapter": "实验专题：必做项目与教材补充",
+      "stem": "【实验专题：必做项目与教材补充 · 探究水沸腾前后温度变化的特点】学生的错误做法：温度出现平台就认为没有吸热或放热，或把平台温度当任何条件下的定值。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
+      "options": [
+        {
+          "label": "A",
+          "text": "概念混淆：保持气压近似稳定，温度计测液体内部而不碰杯底；观察气泡和温度，平台仍持续加热，不能由温度不变推出不吸热。"
+        },
+        {
+          "label": "B",
+          "text": "数值代入：用非零刻线起测后，终点读数包含被移动的起点位置。"
+        },
+        {
+          "label": "C",
+          "text": "数值代入：计时测的是两事件之间的间隔，不是表盘上的绝对读数；起点3 s、终点8 s对应5 s，不能写8 s。"
+        },
+        {
+          "label": "D",
+          "text": "量纲一致性：速度是单位时间内通过的路程，需用路程除以时间；相乘的单位也不再是 m/s。"
+        }
+      ],
+      "correct_answer": "A",
+      "explanation": "保持气压近似稳定，温度计测液体内部而不碰杯底；观察气泡和温度，平台仍持续加热，不能由温度不变推出不吸热。示例平台98 ℃，不能声称所有气压下沸点100 ℃。温度与热量是不同量，气压、纯度、测量位置和过程平衡程度都影响读数，定性结论必须看现象和条件。",
+      "error_type": "概念混淆",
+      "judging": "teacher",
+      "source_error_index": 1,
+      "source_caught_by": "人工审核",
+      "wrong_expr": null,
+      "trap_test": null,
+      "review": {
+        "confidence": "medium",
+        "checks": {
+          "answer_unique": true,
+          "distractors_plausible": true,
+          "stem_clear": true,
+          "no_cross_segment": true
+        },
+        "note": "本章可用类型不足四类，干扰项包含同章其他错误的类别与原解释；答案按“类别+依据”唯一匹配，建议抽查教学区分度。"
+      }
+    },
+    {
+      "id": "diagnostic-jexp-07-1",
+      "point_id": "jexp-07",
+      "point_title": "探究晶体熔化前后温度变化的特点",
+      "chapter": "实验专题：必做项目与教材补充",
+      "stem": "【实验专题：必做项目与教材补充 · 探究晶体熔化前后温度变化的特点】学生的错误做法：把两个温度读数相加当温度变化（错误表达式：dT = T<sub>2</sub>+T<sub>1</sub>）。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
+      "options": [
+        {
+          "label": "A",
+          "text": "量纲一致性：速度是单位时间内通过的路程，需用路程除以时间；相乘的单位也不再是 m/s。"
+        },
+        {
+          "label": "B",
+          "text": "概念混淆：普通毫米尺按中学约定应估读到0.1 mm，记录如3.26 cm；只记3.2 cm丢失了测量精度信息。"
+        },
+        {
+          "label": "C",
+          "text": "概念混淆：电子显示仍有分辨率与触发延迟，计时判据必须一致；周期必须对应状态一次完整重复。"
+        },
+        {
+          "label": "D",
+          "text": "数值代入：温差是终值减初值，与温度所用单位的零点无关；把两次热力学温度相加会得数百开尔文，并不能代表该过程的温度变化。"
+        }
+      ],
+      "correct_answer": "D",
+      "explanation": "温差是终值减初值，与温度所用单位的零点无关；把两次热力学温度相加会得数百开尔文，并不能代表该过程的温度变化。\n知识库校验证据：情境：升温段；代入错误式：T<sub>2</sub>+T<sub>1</sub>；校验参照值：5.0。",
+      "error_type": "数值代入",
+      "judging": "auto",
+      "source_error_index": 0,
+      "source_caught_by": "数值代入",
+      "wrong_expr": "dT = T<sub>2</sub>+T<sub>1</sub>",
+      "trap_test": {
+        "scenario": "升温段",
+        "expr": "T2+T1",
+        "ref": 5.0
+      },
+      "review": {
+        "confidence": "medium",
+        "checks": {
+          "answer_unique": true,
+          "distractors_plausible": true,
+          "stem_clear": true,
+          "no_cross_segment": true
+        },
+        "note": "本章可用类型不足四类，干扰项包含同章其他错误的类别与原解释；答案按“类别+依据”唯一匹配，建议抽查教学区分度。"
+      }
+    },
+    {
+      "id": "diagnostic-jexp-07-2",
+      "point_id": "jexp-07",
+      "point_title": "探究晶体熔化前后温度变化的特点",
+      "chapter": "实验专题：必做项目与教材补充",
+      "stem": "【实验专题：必做项目与教材补充 · 探究晶体熔化前后温度变化的特点】学生的错误做法：温度出现平台就认为没有吸热或放热，或把平台温度当任何条件下的定值。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
+      "options": [
+        {
+          "label": "A",
+          "text": "数值代入：计时测的是两事件之间的间隔，不是表盘上的绝对读数；起点3 s、终点8 s对应5 s，不能写8 s。"
+        },
+        {
+          "label": "B",
+          "text": "量纲一致性：速度是单位时间内通过的路程，需用路程除以时间；相乘的单位也不再是 m/s。"
+        },
+        {
+          "label": "C",
+          "text": "概念混淆：选冰等安全晶体并缓慢加热，保证测温接触合适；观察固液共存段。"
+        },
+        {
+          "label": "D",
+          "text": "数值代入：用非零刻线起测后，终点读数包含被移动的起点位置。"
+        }
+      ],
+      "correct_answer": "C",
+      "explanation": "选冰等安全晶体并缓慢加热，保证测温接触合适；观察固液共存段。相同压强和近似纯物质下熔化平台伴随吸热，非晶体通常没有固定熔点，不能用一次平台概括所有材料。温度与热量是不同量，气压、纯度、测量位置和过程平衡程度都影响读数，定性结论必须看现象和条件。",
+      "error_type": "概念混淆",
+      "judging": "teacher",
+      "source_error_index": 1,
+      "source_caught_by": "人工审核",
+      "wrong_expr": null,
+      "trap_test": null,
+      "review": {
+        "confidence": "medium",
+        "checks": {
+          "answer_unique": true,
+          "distractors_plausible": true,
+          "stem_clear": true,
+          "no_cross_segment": true
+        },
+        "note": "本章可用类型不足四类，干扰项包含同章其他错误的类别与原解释；答案按“类别+依据”唯一匹配，建议抽查教学区分度。"
+      }
+    },
+    {
+      "id": "diagnostic-jexp-08-1",
+      "point_id": "jexp-08",
+      "point_title": "探究水凝固的特点",
+      "chapter": "实验专题：必做项目与教材补充",
+      "stem": "【实验专题：必做项目与教材补充 · 探究水凝固的特点】学生的错误做法：把两个温度读数相加当温度变化（错误表达式：dT = T<sub>2</sub>+T<sub>1</sub>）。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
+      "options": [
+        {
+          "label": "A",
+          "text": "概念混淆：电子显示仍有分辨率与触发延迟，计时判据必须一致；周期必须对应状态一次完整重复。"
+        },
+        {
+          "label": "B",
+          "text": "数值代入：温差是终值减初值，与温度所用单位的零点无关；把两次热力学温度相加会得数百开尔文，并不能代表该过程的温度变化。"
+        },
+        {
+          "label": "C",
+          "text": "量纲一致性：速度是单位时间内通过的路程，需用路程除以时间；相乘的单位也不再是 m/s。"
+        },
+        {
+          "label": "D",
+          "text": "概念混淆：普通毫米尺按中学约定应估读到0.1 mm，记录如3.26 cm；只记3.2 cm丢失了测量精度信息。"
+        }
+      ],
+      "correct_answer": "B",
+      "explanation": "温差是终值减初值，与温度所用单位的零点无关；把两次热力学温度相加会得数百开尔文，并不能代表该过程的温度变化。\n知识库校验证据：情境：降温段；代入错误式：T<sub>2</sub>+T<sub>1</sub>；校验参照值：-5.0。",
+      "error_type": "数值代入",
+      "judging": "auto",
+      "source_error_index": 0,
+      "source_caught_by": "数值代入",
+      "wrong_expr": "dT = T<sub>2</sub>+T<sub>1</sub>",
+      "trap_test": {
+        "scenario": "降温段",
+        "expr": "T2+T1",
+        "ref": -5.0
+      },
+      "review": {
+        "confidence": "medium",
+        "checks": {
+          "answer_unique": true,
+          "distractors_plausible": true,
+          "stem_clear": true,
+          "no_cross_segment": true
+        },
+        "note": "本章可用类型不足四类，干扰项包含同章其他错误的类别与原解释；答案按“类别+依据”唯一匹配，建议抽查教学区分度。"
+      }
+    },
+    {
+      "id": "diagnostic-jexp-08-2",
+      "point_id": "jexp-08",
+      "point_title": "探究水凝固的特点",
+      "chapter": "实验专题：必做项目与教材补充",
+      "stem": "【实验专题：必做项目与教材补充 · 探究水凝固的特点】学生的错误做法：温度出现平台就认为没有吸热或放热，或把平台温度当任何条件下的定值。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
+      "options": [
+        {
+          "label": "A",
+          "text": "概念混淆：将少量水置于冷却浴并记录状态，测温不碰容器壁；在近似平衡、固定气压下水的凝固段约0 ℃并放热。"
+        },
+        {
+          "label": "B",
+          "text": "数值代入：用非零刻线起测后，终点读数包含被移动的起点位置。"
+        },
+        {
+          "label": "C",
+          "text": "数值代入：计时测的是两事件之间的间隔，不是表盘上的绝对读数；起点3 s、终点8 s对应5 s，不能写8 s。"
+        },
+        {
+          "label": "D",
+          "text": "量纲一致性：速度是单位时间内通过的路程，需用路程除以时间；相乘的单位也不再是 m/s。"
+        }
+      ],
+      "correct_answer": "A",
+      "explanation": "将少量水置于冷却浴并记录状态，测温不碰容器壁；在近似平衡、固定气压下水的凝固段约0 ℃并放热。过冷可能使初始读数低于0 ℃，需要结合状态和重复观察解释，不能伪造平直数据。温度与热量是不同量，气压、纯度、测量位置和过程平衡程度都影响读数，定性结论必须看现象和条件。",
+      "error_type": "概念混淆",
+      "judging": "teacher",
+      "source_error_index": 1,
+      "source_caught_by": "人工审核",
+      "wrong_expr": null,
+      "trap_test": null,
+      "review": {
+        "confidence": "medium",
+        "checks": {
+          "answer_unique": true,
+          "distractors_plausible": true,
+          "stem_clear": true,
+          "no_cross_segment": true
+        },
+        "note": "本章可用类型不足四类，干扰项包含同章其他错误的类别与原解释；答案按“类别+依据”唯一匹配，建议抽查教学区分度。"
+      }
+    },
+    {
+      "id": "diagnostic-jexp-09-1",
+      "point_id": "jexp-09",
+      "point_title": "用电流表测电流",
+      "chapter": "实验专题：必做项目与教材补充",
+      "stem": "【实验专题：必做项目与教材补充 · 用电流表测电流】学生的错误做法：将电流表误并联到电源两端。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
+      "options": [
+        {
+          "label": "A",
+          "text": "数值代入：用非零刻线起测后，终点读数包含被移动的起点位置。"
+        },
+        {
+          "label": "B",
+          "text": "数值代入：计时测的是两事件之间的间隔，不是表盘上的绝对读数；起点3 s、终点8 s对应5 s，不能写8 s。"
+        },
+        {
+          "label": "C",
+          "text": "量纲一致性：速度是单位时间内通过的路程，需用路程除以时间；相乘的单位也不再是 m/s。"
+        },
+        {
+          "label": "D",
+          "text": "概念混淆：电流表内阻很小，直接并联会形成近似短路并损坏仪表或电源。"
+        }
+      ],
+      "correct_answer": "D",
+      "explanation": "电流表内阻很小，直接并联会形成近似短路并损坏仪表或电源。接线前要看清仪表符号和它的接入位置。",
+      "error_type": "概念混淆",
+      "judging": "teacher",
+      "source_error_index": 0,
+      "source_caught_by": "人工审核",
+      "wrong_expr": null,
+      "trap_test": null,
+      "review": {
+        "confidence": "medium",
+        "checks": {
+          "answer_unique": true,
+          "distractors_plausible": true,
+          "stem_clear": true,
+          "no_cross_segment": true
+        },
+        "note": "本章可用类型不足四类，干扰项包含同章其他错误的类别与原解释；答案按“类别+依据”唯一匹配，建议抽查教学区分度。"
+      }
+    },
+    {
+      "id": "diagnostic-jexp-09-2",
+      "point_id": "jexp-09",
+      "point_title": "用电流表测电流",
+      "chapter": "实验专题：必做项目与教材补充",
+      "stem": "【实验专题：必做项目与教材补充 · 用电流表测电流】学生的错误做法：读电流表时把指针格数当成电流数值，未按量程换算（错误表达式：I<sub>读数</sub> = n）。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
+      "options": [
+        {
+          "label": "A",
+          "text": "概念混淆：电压表应并联在被测元件两端；串联接入会显著改变电路状态。"
+        },
+        {
+          "label": "B",
+          "text": "量纲一致性：欧姆定律应当用电压除以电阻来求电流；把电阻除以电压不仅关系倒置，所得量纲也不是安培。"
+        },
+        {
+          "label": "C",
+          "text": "数值代入：量程0.6 A、满量程30格、指针偏10格时应读0.20 A；直接把10格标成10 A不表示实际电流。"
+        },
+        {
+          "label": "D",
+          "text": "量纲一致性：速度是单位时间内通过的路程，需用路程除以时间；相乘的单位也不再是 m/s。"
+        }
+      ],
+      "correct_answer": "C",
+      "explanation": "量程0.6 A、满量程30格、指针偏10格时应读0.20 A；直接把10格标成10 A不表示实际电流。必须先认量程，再算每格电流和偏转格数。\n知识库校验证据：情境：两灯串联一；代入错误式：n；校验参照值：0.2。",
+      "error_type": "数值代入",
+      "judging": "auto",
+      "source_error_index": 1,
+      "source_caught_by": "数值代入",
+      "wrong_expr": "I<sub>读数</sub> = n",
+      "trap_test": {
+        "scenario": "两灯串联一",
+        "expr": "n",
+        "ref": 0.2
+      },
+      "review": {
+        "confidence": "medium",
+        "checks": {
+          "answer_unique": true,
+          "distractors_plausible": true,
+          "stem_clear": true,
+          "no_cross_segment": true
+        },
+        "note": "本章可用类型不足四类，干扰项包含同章其他错误的类别与原解释；答案按“类别+依据”唯一匹配，建议抽查教学区分度。"
+      }
+    },
+    {
+      "id": "diagnostic-jexp-10-1",
+      "point_id": "jexp-10",
+      "point_title": "用电压表测电压",
+      "chapter": "实验专题：必做项目与教材补充",
+      "stem": "【实验专题：必做项目与教材补充 · 用电压表测电压】学生的错误做法：把电压表误串联接入被测电路。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
+      "options": [
+        {
+          "label": "A",
+          "text": "量纲一致性：速度是单位时间内通过的路程，需用路程除以时间；相乘的单位也不再是 m/s。"
+        },
+        {
+          "label": "B",
+          "text": "概念混淆：电压表应并联在被测元件两端；串联接入会显著改变电路状态。"
+        },
+        {
+          "label": "C",
+          "text": "数值代入：用非零刻线起测后，终点读数包含被移动的起点位置。"
+        },
+        {
+          "label": "D",
+          "text": "数值代入：计时测的是两事件之间的间隔，不是表盘上的绝对读数；起点3 s、终点8 s对应5 s，不能写8 s。"
+        }
+      ],
+      "correct_answer": "B",
+      "explanation": "电压表应并联在被测元件两端；串联接入会显著改变电路状态。接线前要看清仪表符号和它的接入位置。",
+      "error_type": "概念混淆",
+      "judging": "teacher",
+      "source_error_index": 0,
+      "source_caught_by": "人工审核",
+      "wrong_expr": null,
+      "trap_test": null,
+      "review": {
+        "confidence": "medium",
+        "checks": {
+          "answer_unique": true,
+          "distractors_plausible": true,
+          "stem_clear": true,
+          "no_cross_segment": true
+        },
+        "note": "本章可用类型不足四类，干扰项包含同章其他错误的类别与原解释；答案按“类别+依据”唯一匹配，建议抽查教学区分度。"
+      }
+    },
+    {
+      "id": "diagnostic-jexp-10-2",
+      "point_id": "jexp-10",
+      "point_title": "用电压表测电压",
+      "chapter": "实验专题：必做项目与教材补充",
+      "stem": "【实验专题：必做项目与教材补充 · 用电压表测电压】学生的错误做法：把电压表格数与满量程格数的比例倒过来（错误表达式：U<sub>读数</sub> = U<sub>量程</sub>·N/n）。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
+      "options": [
+        {
+          "label": "A",
+          "text": "数值代入：量程 12 V、满量程 30 格偏转 15 格时，正确读数为 6 V；倒置比例会得到 24 V。"
+        },
+        {
+          "label": "B",
+          "text": "量纲一致性：速度是单位时间内通过的路程，需用路程除以时间；相乘的单位也不再是 m/s。"
+        },
+        {
+          "label": "C",
+          "text": "概念混淆：电流表内阻很小，直接并联会形成近似短路并损坏仪表或电源。"
+        },
+        {
+          "label": "D",
+          "text": "量纲一致性：欧姆定律应当用电压除以电阻来求电流；把电阻除以电压不仅关系倒置，所得量纲也不是安培。"
+        }
+      ],
+      "correct_answer": "A",
+      "explanation": "量程 12 V、满量程 30 格偏转 15 格时，正确读数为 6 V；倒置比例会得到 24 V。\n知识库校验证据：情境：串联电压读数一；代入错误式：U<sub>量程</sub>·N/n；校验参照值：6。",
+      "error_type": "数值代入",
+      "judging": "auto",
+      "source_error_index": 1,
+      "source_caught_by": "数值代入",
+      "wrong_expr": "U<sub>读数</sub> = U<sub>量程</sub>·N/n",
+      "trap_test": {
+        "scenario": "串联电压读数一",
+        "expr": "U_range*N/n",
+        "ref": 6
+      },
+      "review": {
+        "confidence": "medium",
+        "checks": {
+          "answer_unique": true,
+          "distractors_plausible": true,
+          "stem_clear": true,
+          "no_cross_segment": true
+        },
+        "note": "本章可用类型不足四类，干扰项包含同章其他错误的类别与原解释；答案按“类别+依据”唯一匹配，建议抽查教学区分度。"
+      }
+    },
+    {
+      "id": "diagnostic-jexp-11-1",
+      "point_id": "jexp-11",
+      "point_title": "用电流表探究串并联电路电流的特点",
+      "chapter": "实验专题：必做项目与教材补充",
+      "stem": "【实验专题：必做项目与教材补充 · 用电流表探究串并联电路电流的特点】学生的错误做法：把并联干路电流误认为两支路电流的乘积（错误表达式：It = I<sub>1</sub>·I<sub>2</sub>）。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
+      "options": [
+        {
+          "label": "A",
+          "text": "量纲一致性：速度是单位时间内通过的路程，需用路程除以时间；相乘的单位也不再是 m/s。"
+        },
+        {
+          "label": "B",
+          "text": "概念混淆：电流表内阻很小，直接并联会形成近似短路并损坏仪表或电源。"
+        },
+        {
+          "label": "C",
+          "text": "概念混淆：电压表应并联在被测元件两端；串联接入会显著改变电路状态。"
+        },
+        {
+          "label": "D",
+          "text": "数值代入：并联支路汇流时干路电流等于各支路电流之和；0.2 A 和 0.3 A 合为 0.5 A。"
+        }
+      ],
+      "correct_answer": "D",
+      "explanation": "并联支路汇流时干路电流等于各支路电流之和；0.2 A 和 0.3 A 合为 0.5 A。\n知识库校验证据：情境：两支路并联一；代入错误式：I<sub>1</sub>·I<sub>2</sub>；校验参照值：0.5。",
+      "error_type": "数值代入",
+      "judging": "auto",
+      "source_error_index": 0,
+      "source_caught_by": "数值代入",
+      "wrong_expr": "It = I<sub>1</sub>·I<sub>2</sub>",
+      "trap_test": {
+        "scenario": "两支路并联一",
+        "expr": "I1*I2",
+        "ref": 0.5
+      },
+      "review": {
+        "confidence": "medium",
+        "checks": {
+          "answer_unique": true,
+          "distractors_plausible": true,
+          "stem_clear": true,
+          "no_cross_segment": true
+        },
+        "note": "本章可用类型不足四类，干扰项包含同章其他错误的类别与原解释；答案按“类别+依据”唯一匹配，建议抽查教学区分度。"
+      }
+    },
+    {
+      "id": "diagnostic-jexp-11-2",
+      "point_id": "jexp-11",
+      "point_title": "用电流表探究串并联电路电流的特点",
+      "chapter": "实验专题：必做项目与教材补充",
+      "stem": "【实验专题：必做项目与教材补充 · 用电流表探究串并联电路电流的特点】学生的错误做法：认为家庭电路中的各用电器都串联，一个坏了全部熄灭。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
+      "options": [
+        {
+          "label": "A",
+          "text": "数值代入：计时测的是两事件之间的间隔，不是表盘上的绝对读数；起点3 s、终点8 s对应5 s，不能写8 s。"
+        },
+        {
+          "label": "B",
+          "text": "量纲一致性：速度是单位时间内通过的路程，需用路程除以时间；相乘的单位也不再是 m/s。"
+        },
+        {
+          "label": "C",
+          "text": "概念混淆：家庭用电器通常并联接入，支路可独立工作；电路图要结合实际连接辨析。"
+        },
+        {
+          "label": "D",
+          "text": "数值代入：用非零刻线起测后，终点读数包含被移动的起点位置。"
+        }
+      ],
+      "correct_answer": "C",
+      "explanation": "家庭用电器通常并联接入，支路可独立工作；电路图要结合实际连接辨析。",
+      "error_type": "概念混淆",
+      "judging": "teacher",
+      "source_error_index": 1,
+      "source_caught_by": "人工审核",
+      "wrong_expr": null,
+      "trap_test": null,
+      "review": {
+        "confidence": "medium",
+        "checks": {
+          "answer_unique": true,
+          "distractors_plausible": true,
+          "stem_clear": true,
+          "no_cross_segment": true
+        },
+        "note": "本章可用类型不足四类，干扰项包含同章其他错误的类别与原解释；答案按“类别+依据”唯一匹配，建议抽查教学区分度。"
+      }
+    },
+    {
+      "id": "diagnostic-jexp-12-1",
+      "point_id": "jexp-12",
+      "point_title": "用电压表探究串并联电路电压的特点",
+      "chapter": "实验专题：必做项目与教材补充",
+      "stem": "【实验专题：必做项目与教材补充 · 用电压表探究串并联电路电压的特点】学生的错误做法：把并联干路电流写成各支路电流的乘积（错误表达式：It = I<sub>1</sub>·I<sub>2</sub>）。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
+      "options": [
+        {
+          "label": "A",
+          "text": "概念混淆：电压表应并联在被测元件两端；串联接入会显著改变电路状态。"
+        },
+        {
+          "label": "B",
+          "text": "数值代入：干路电流是分流前各支路电流的和；0.2 A 与 0.3 A 相加为 0.5 A。"
+        },
+        {
+          "label": "C",
+          "text": "量纲一致性：速度是单位时间内通过的路程，需用路程除以时间；相乘的单位也不再是 m/s。"
+        },
+        {
+          "label": "D",
+          "text": "概念混淆：电流表内阻很小，直接并联会形成近似短路并损坏仪表或电源。"
+        }
+      ],
+      "correct_answer": "B",
+      "explanation": "干路电流是分流前各支路电流的和；0.2 A 与 0.3 A 相加为 0.5 A。\n知识库校验证据：情境：两支路并联一；代入错误式：I<sub>1</sub>·I<sub>2</sub>；校验参照值：0.5。",
+      "error_type": "数值代入",
+      "judging": "auto",
+      "source_error_index": 0,
+      "source_caught_by": "数值代入",
+      "wrong_expr": "It = I<sub>1</sub>·I<sub>2</sub>",
+      "trap_test": {
+        "scenario": "两支路并联一",
+        "expr": "I1*I2",
+        "ref": 0.5
+      },
+      "review": {
+        "confidence": "medium",
+        "checks": {
+          "answer_unique": true,
+          "distractors_plausible": true,
+          "stem_clear": true,
+          "no_cross_segment": true
+        },
+        "note": "本章可用类型不足四类，干扰项包含同章其他错误的类别与原解释；答案按“类别+依据”唯一匹配，建议抽查教学区分度。"
+      }
+    },
+    {
+      "id": "diagnostic-jexp-12-2",
+      "point_id": "jexp-12",
+      "point_title": "用电压表探究串并联电路电压的特点",
+      "chapter": "实验专题：必做项目与教材补充",
+      "stem": "【实验专题：必做项目与教材补充 · 用电压表探究串并联电路电压的特点】学生的错误做法：误以为并联电路各支路电流一定相等。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
+      "options": [
+        {
+          "label": "A",
+          "text": "概念混淆：并联支路电压相等，但支路电流还取决于各支路元件的电阻和电路条件。"
+        },
+        {
+          "label": "B",
+          "text": "数值代入：用非零刻线起测后，终点读数包含被移动的起点位置。"
+        },
+        {
+          "label": "C",
+          "text": "数值代入：计时测的是两事件之间的间隔，不是表盘上的绝对读数；起点3 s、终点8 s对应5 s，不能写8 s。"
+        },
+        {
+          "label": "D",
+          "text": "量纲一致性：速度是单位时间内通过的路程，需用路程除以时间；相乘的单位也不再是 m/s。"
+        }
+      ],
+      "correct_answer": "A",
+      "explanation": "并联支路电压相等，但支路电流还取决于各支路元件的电阻和电路条件。",
+      "error_type": "概念混淆",
+      "judging": "teacher",
+      "source_error_index": 1,
+      "source_caught_by": "人工审核",
+      "wrong_expr": null,
+      "trap_test": null,
+      "review": {
+        "confidence": "medium",
+        "checks": {
+          "answer_unique": true,
+          "distractors_plausible": true,
+          "stem_clear": true,
+          "no_cross_segment": true
+        },
+        "note": "本章可用类型不足四类，干扰项包含同章其他错误的类别与原解释；答案按“类别+依据”唯一匹配，建议抽查教学区分度。"
+      }
+    },
+    {
+      "id": "diagnostic-jexp-13-1",
+      "point_id": "jexp-13",
+      "point_title": "探究影响导体电阻大小的因素",
+      "chapter": "实验专题：必做项目与教材补充",
+      "stem": "【实验专题：必做项目与教材补充 · 探究影响导体电阻大小的因素】学生的错误做法：把欧姆定律误写成电流等于电阻除以电压（错误表达式：I = R/U）。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
+      "options": [
+        {
+          "label": "A",
+          "text": "数值代入：用非零刻线起测后，终点读数包含被移动的起点位置。"
+        },
+        {
+          "label": "B",
+          "text": "数值代入：计时测的是两事件之间的间隔，不是表盘上的绝对读数；起点3 s、终点8 s对应5 s，不能写8 s。"
+        },
+        {
+          "label": "C",
+          "text": "数值代入：游码在标尺上移动也提供平衡作用，示值必须与砝码相加；80 g砝码与4 g游码合为84 g，不是80 g。"
+        },
+        {
+          "label": "D",
+          "text": "量纲一致性：欧姆定律应当用电压除以电阻来求电流；把电阻除以电压不仅关系倒置，所得量纲也不是安培。"
+        }
+      ],
+      "correct_answer": "D",
+      "explanation": "欧姆定律应当用电压除以电阻来求电流；把电阻除以电压不仅关系倒置，所得量纲也不是安培。\n知识库校验证据：被测错误式：I = R/U；左式量纲：I；右式量纲：I⁻¹；左右量纲不匹配；量纲校验说明：实际量纲检查得到等号左边为I、右边为I⁻¹；两边不是同一物理量，因此该等式不成立。；变化方向要求：mismatch；检验说明：实际量纲检查得到等号左边为I、右边为I⁻¹；两边不是同一物理量，因此该等式不成立。。",
+      "error_type": "量纲一致性",
+      "judging": "auto",
+      "source_error_index": 0,
+      "source_caught_by": "量纲一致性",
+      "wrong_expr": "I = R/U",
+      "trap_test": {
+        "kind": "dimension",
+        "target": "I = R/U",
+        "lhs_dim": "I",
+        "rhs_dim": "I^-1",
+        "expect": "mismatch",
+        "note": "实际量纲检查得到等号左边为I、右边为I^-1；两边不是同一物理量，因此该等式不成立。"
+      },
+      "review": {
+        "confidence": "medium",
+        "checks": {
+          "answer_unique": true,
+          "distractors_plausible": true,
+          "stem_clear": true,
+          "no_cross_segment": true
+        },
+        "note": "本章可用类型不足四类，干扰项包含同章其他错误的类别与原解释；答案按“类别+依据”唯一匹配，建议抽查教学区分度。"
+      }
+    },
+    {
+      "id": "diagnostic-jexp-13-2",
+      "point_id": "jexp-13",
+      "point_title": "探究影响导体电阻大小的因素",
+      "chapter": "实验专题：必做项目与教材补充",
+      "stem": "【实验专题：必做项目与教材补充 · 探究影响导体电阻大小的因素】学生的错误做法：把 3 kΩ 的数值 3 直接当成 3 Ω 代入，漏掉千欧到欧姆的 1000 倍换算（错误表达式：I = U/Rk）。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
+      "options": [
+        {
+          "label": "A",
+          "text": "概念混淆：电流表内阻很小，直接并联会形成近似短路并损坏仪表或电源。"
+        },
+        {
+          "label": "B",
+          "text": "概念混淆：电压表应并联在被测元件两端；串联接入会显著改变电路状态。"
+        },
+        {
+          "label": "C",
+          "text": "数值代入：6 V 接在 3 kΩ 电阻上，电流应为 0.002 A；把数值 3 当作 Ω 会错误得到 2 A。"
+        },
+        {
+          "label": "D",
+          "text": "量纲一致性：速度是单位时间内通过的路程，需用路程除以时间；相乘的单位也不再是 m/s。"
+        }
+      ],
+      "correct_answer": "C",
+      "explanation": "6 V 接在 3 kΩ 电阻上，电流应为 0.002 A；把数值 3 当作 Ω 会错误得到 2 A。\n知识库校验证据：情境：千欧换算误区；代入错误式：U/Rk；校验参照值：0.002。",
+      "error_type": "数值代入",
+      "judging": "auto",
+      "source_error_index": 1,
+      "source_caught_by": "数值代入",
+      "wrong_expr": "I = U/Rk",
+      "trap_test": {
+        "scenario": "千欧换算误区",
+        "expr": "U/Rk",
+        "ref": 0.002
+      },
+      "review": {
+        "confidence": "medium",
+        "checks": {
+          "answer_unique": true,
+          "distractors_plausible": true,
+          "stem_clear": true,
+          "no_cross_segment": true
+        },
+        "note": "本章可用类型不足四类，干扰项包含同章其他错误的类别与原解释；答案按“类别+依据”唯一匹配，建议抽查教学区分度。"
+      }
+    },
+    {
+      "id": "diagnostic-jexp-13-3",
+      "point_id": "jexp-13",
+      "point_title": "探究影响导体电阻大小的因素",
+      "chapter": "实验专题：必做项目与教材补充",
+      "stem": "【实验专题：必做项目与教材补充 · 探究影响导体电阻大小的因素】学生的错误做法：不说明条件变化就认为电压改变会使导体电阻按比例改变。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
+      "options": [
+        {
+          "label": "A",
+          "text": "量纲一致性：速度是单位时间内通过的路程，需用路程除以时间；相乘的单位也不再是 m/s。"
+        },
+        {
+          "label": "B",
+          "text": "概念混淆：电阻由导体材料、长度、横截面积和温度等因素决定；欧姆定律的 U/I 比值在相同条件下描述电阻。"
+        },
+        {
+          "label": "C",
+          "text": "数值代入：用非零刻线起测后，终点读数包含被移动的起点位置。"
+        },
+        {
+          "label": "D",
+          "text": "数值代入：计时测的是两事件之间的间隔，不是表盘上的绝对读数；起点3 s、终点8 s对应5 s，不能写8 s。"
+        }
+      ],
+      "correct_answer": "B",
+      "explanation": "电阻由导体材料、长度、横截面积和温度等因素决定；欧姆定律的 U/I 比值在相同条件下描述电阻。",
+      "error_type": "概念混淆",
+      "judging": "teacher",
+      "source_error_index": 2,
+      "source_caught_by": "人工审核",
+      "wrong_expr": null,
+      "trap_test": null,
+      "review": {
+        "confidence": "medium",
+        "checks": {
+          "answer_unique": true,
+          "distractors_plausible": true,
+          "stem_clear": true,
+          "no_cross_segment": true
+        },
+        "note": "本章可用类型不足四类，干扰项包含同章其他错误的类别与原解释；答案按“类别+依据”唯一匹配，建议抽查教学区分度。"
+      }
+    },
+    {
+      "id": "diagnostic-jexp-14-1",
+      "point_id": "jexp-14",
+      "point_title": "用滑动变阻器改变小灯泡亮度",
+      "chapter": "实验专题：必做项目与教材补充",
+      "stem": "【实验专题：必做项目与教材补充 · 用滑动变阻器改变小灯泡亮度】学生的错误做法：把变阻器滑片移动方向与阻值变化关系不看接线柱就固定判断。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
+      "options": [
+        {
+          "label": "A",
+          "text": "概念混淆：阻值变化由实际接入电路的下接线柱和滑片位置共同决定，必须结合电路连接判断。"
+        },
+        {
+          "label": "B",
+          "text": "数值代入：用非零刻线起测后，终点读数包含被移动的起点位置。"
+        },
+        {
+          "label": "C",
+          "text": "数值代入：计时测的是两事件之间的间隔，不是表盘上的绝对读数；起点3 s、终点8 s对应5 s，不能写8 s。"
+        },
+        {
+          "label": "D",
+          "text": "量纲一致性：速度是单位时间内通过的路程，需用路程除以时间；相乘的单位也不再是 m/s。"
+        }
+      ],
+      "correct_answer": "A",
+      "explanation": "阻值变化由实际接入电路的下接线柱和滑片位置共同决定，必须结合电路连接判断。",
+      "error_type": "概念混淆",
+      "judging": "teacher",
+      "source_error_index": 0,
+      "source_caught_by": "人工审核",
+      "wrong_expr": null,
+      "trap_test": null,
+      "review": {
+        "confidence": "medium",
+        "checks": {
+          "answer_unique": true,
+          "distractors_plausible": true,
+          "stem_clear": true,
+          "no_cross_segment": true
+        },
+        "note": "本章可用类型不足四类，干扰项包含同章其他错误的类别与原解释；答案按“类别+依据”唯一匹配，建议抽查教学区分度。"
+      }
+    },
+    {
+      "id": "diagnostic-jexp-14-2",
+      "point_id": "jexp-14",
+      "point_title": "用滑动变阻器改变小灯泡亮度",
+      "chapter": "实验专题：必做项目与教材补充",
+      "stem": "【实验专题：必做项目与教材补充 · 用滑动变阻器改变小灯泡亮度】学生的错误做法：计算定值电阻与变阻器串联总阻值时把二者相乘（错误表达式：Rs = R<sub>1</sub>·R<sub>2</sub>）。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
+      "options": [
+        {
+          "label": "A",
+          "text": "量纲一致性：速度是单位时间内通过的路程，需用路程除以时间；相乘的单位也不再是 m/s。"
+        },
+        {
+          "label": "B",
+          "text": "概念混淆：电流表内阻很小，直接并联会形成近似短路并损坏仪表或电源。"
+        },
+        {
+          "label": "C",
+          "text": "概念混淆：电压表应并联在被测元件两端；串联接入会显著改变电路状态。"
+        },
+        {
+          "label": "D",
+          "text": "数值代入：串联总电阻为各电阻之和；10 Ω 和 20 Ω 串联应为 30 Ω。"
+        }
+      ],
+      "correct_answer": "D",
+      "explanation": "串联总电阻为各电阻之和；10 Ω 和 20 Ω 串联应为 30 Ω。\n知识库校验证据：情境：变阻器接入一；代入错误式：R<sub>1</sub>·R<sub>2</sub>；校验参照值：30。",
+      "error_type": "数值代入",
+      "judging": "auto",
+      "source_error_index": 1,
+      "source_caught_by": "数值代入",
+      "wrong_expr": "Rs = R<sub>1</sub>·R<sub>2</sub>",
+      "trap_test": {
+        "scenario": "变阻器接入一",
+        "expr": "R1*R2",
+        "ref": 30
+      },
+      "review": {
+        "confidence": "medium",
+        "checks": {
+          "answer_unique": true,
+          "distractors_plausible": true,
+          "stem_clear": true,
+          "no_cross_segment": true
+        },
+        "note": "本章可用类型不足四类，干扰项包含同章其他错误的类别与原解释；答案按“类别+依据”唯一匹配，建议抽查教学区分度。"
+      }
+    },
+    {
+      "id": "diagnostic-jexp-15-1",
+      "point_id": "jexp-15",
+      "point_title": "伏安法测电阻",
+      "chapter": "实验专题：必做项目与教材补充",
+      "stem": "【实验专题：必做项目与教材补充 · 伏安法测电阻】学生的错误做法：把欧姆定律误写成电流等于电阻除以电压（错误表达式：I = R/U）。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
+      "options": [
+        {
+          "label": "A",
+          "text": "数值代入：计时测的是两事件之间的间隔，不是表盘上的绝对读数；起点3 s、终点8 s对应5 s，不能写8 s。"
+        },
+        {
+          "label": "B",
+          "text": "数值代入：游码在标尺上移动也提供平衡作用，示值必须与砝码相加；80 g砝码与4 g游码合为84 g，不是80 g。"
+        },
+        {
+          "label": "C",
+          "text": "量纲一致性：欧姆定律应当用电压除以电阻来求电流；把电阻除以电压不仅关系倒置，所得量纲也不是安培。"
+        },
+        {
+          "label": "D",
+          "text": "数值代入：用非零刻线起测后，终点读数包含被移动的起点位置。"
+        }
+      ],
+      "correct_answer": "C",
+      "explanation": "欧姆定律应当用电压除以电阻来求电流；把电阻除以电压不仅关系倒置，所得量纲也不是安培。\n知识库校验证据：被测错误式：I = R/U；左式量纲：I；右式量纲：I⁻¹；左右量纲不匹配；量纲校验说明：实际量纲检查得到等号左边为I、右边为I⁻¹；两边不是同一物理量，因此该等式不成立。；变化方向要求：mismatch；检验说明：实际量纲检查得到等号左边为I、右边为I⁻¹；两边不是同一物理量，因此该等式不成立。。",
+      "error_type": "量纲一致性",
+      "judging": "auto",
+      "source_error_index": 0,
+      "source_caught_by": "量纲一致性",
+      "wrong_expr": "I = R/U",
+      "trap_test": {
+        "kind": "dimension",
+        "target": "I = R/U",
+        "lhs_dim": "I",
+        "rhs_dim": "I^-1",
+        "expect": "mismatch",
+        "note": "实际量纲检查得到等号左边为I、右边为I^-1；两边不是同一物理量，因此该等式不成立。"
+      },
+      "review": {
+        "confidence": "medium",
+        "checks": {
+          "answer_unique": true,
+          "distractors_plausible": true,
+          "stem_clear": true,
+          "no_cross_segment": true
+        },
+        "note": "本章可用类型不足四类，干扰项包含同章其他错误的类别与原解释；答案按“类别+依据”唯一匹配，建议抽查教学区分度。"
+      }
+    },
+    {
+      "id": "diagnostic-jexp-15-2",
+      "point_id": "jexp-15",
+      "point_title": "伏安法测电阻",
+      "chapter": "实验专题：必做项目与教材补充",
+      "stem": "【实验专题：必做项目与教材补充 · 伏安法测电阻】学生的错误做法：把 3 kΩ 的数值 3 直接当成 3 Ω 代入，漏掉千欧到欧姆的 1000 倍换算（错误表达式：I = U/Rk）。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
+      "options": [
+        {
+          "label": "A",
+          "text": "概念混淆：电压表应并联在被测元件两端；串联接入会显著改变电路状态。"
+        },
+        {
+          "label": "B",
+          "text": "数值代入：6 V 接在 3 kΩ 电阻上，电流应为 0.002 A；把数值 3 当作 Ω 会错误得到 2 A。"
+        },
+        {
+          "label": "C",
+          "text": "量纲一致性：速度是单位时间内通过的路程，需用路程除以时间；相乘的单位也不再是 m/s。"
+        },
+        {
+          "label": "D",
+          "text": "概念混淆：电流表内阻很小，直接并联会形成近似短路并损坏仪表或电源。"
+        }
+      ],
+      "correct_answer": "B",
+      "explanation": "6 V 接在 3 kΩ 电阻上，电流应为 0.002 A；把数值 3 当作 Ω 会错误得到 2 A。\n知识库校验证据：情境：千欧换算误区；代入错误式：U/Rk；校验参照值：0.002。",
+      "error_type": "数值代入",
+      "judging": "auto",
+      "source_error_index": 1,
+      "source_caught_by": "数值代入",
+      "wrong_expr": "I = U/Rk",
+      "trap_test": {
+        "scenario": "千欧换算误区",
+        "expr": "U/Rk",
+        "ref": 0.002
+      },
+      "review": {
+        "confidence": "medium",
+        "checks": {
+          "answer_unique": true,
+          "distractors_plausible": true,
+          "stem_clear": true,
+          "no_cross_segment": true
+        },
+        "note": "本章可用类型不足四类，干扰项包含同章其他错误的类别与原解释；答案按“类别+依据”唯一匹配，建议抽查教学区分度。"
+      }
+    },
+    {
+      "id": "diagnostic-jexp-15-3",
+      "point_id": "jexp-15",
+      "point_title": "伏安法测电阻",
+      "chapter": "实验专题：必做项目与教材补充",
+      "stem": "【实验专题：必做项目与教材补充 · 伏安法测电阻】学生的错误做法：不说明条件变化就认为电压改变会使导体电阻按比例改变。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
+      "options": [
+        {
+          "label": "A",
+          "text": "概念混淆：电阻由导体材料、长度、横截面积和温度等因素决定；欧姆定律的 U/I 比值在相同条件下描述电阻。"
+        },
+        {
+          "label": "B",
+          "text": "数值代入：用非零刻线起测后，终点读数包含被移动的起点位置。"
+        },
+        {
+          "label": "C",
+          "text": "数值代入：计时测的是两事件之间的间隔，不是表盘上的绝对读数；起点3 s、终点8 s对应5 s，不能写8 s。"
+        },
+        {
+          "label": "D",
+          "text": "量纲一致性：速度是单位时间内通过的路程，需用路程除以时间；相乘的单位也不再是 m/s。"
+        }
+      ],
+      "correct_answer": "A",
+      "explanation": "电阻由导体材料、长度、横截面积和温度等因素决定；欧姆定律的 U/I 比值在相同条件下描述电阻。",
+      "error_type": "概念混淆",
+      "judging": "teacher",
+      "source_error_index": 2,
+      "source_caught_by": "人工审核",
+      "wrong_expr": null,
+      "trap_test": null,
+      "review": {
+        "confidence": "medium",
+        "checks": {
+          "answer_unique": true,
+          "distractors_plausible": true,
+          "stem_clear": true,
+          "no_cross_segment": true
+        },
+        "note": "本章可用类型不足四类，干扰项包含同章其他错误的类别与原解释；答案按“类别+依据”唯一匹配，建议抽查教学区分度。"
+      }
+    },
+    {
+      "id": "diagnostic-jexp-16-1",
+      "point_id": "jexp-16",
+      "point_title": "探究电流与电压、电阻的关系（欧姆定律）",
+      "chapter": "实验专题：必做项目与教材补充",
+      "stem": "【实验专题：必做项目与教材补充 · 探究电流与电压、电阻的关系（欧姆定律）】学生的错误做法：把欧姆定律的电流公式误写成电阻除以电压（错误表达式：I = R/U）。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
+      "options": [
+        {
+          "label": "A",
+          "text": "量纲一致性：速度是单位时间内通过的路程，需用路程除以时间；相乘的单位也不再是 m/s。"
+        },
+        {
+          "label": "B",
+          "text": "概念混淆：电流表内阻很小，直接并联会形成近似短路并损坏仪表或电源。"
+        },
+        {
+          "label": "C",
+          "text": "概念混淆：电压表应并联在被测元件两端；串联接入会显著改变电路状态。"
+        },
+        {
+          "label": "D",
+          "text": "数值代入：同一电阻器两端电压 6 V、电阻 12 Ω 时，电流为 0.5 A，而不是 2 A。"
+        }
+      ],
+      "correct_answer": "D",
+      "explanation": "同一电阻器两端电压 6 V、电阻 12 Ω 时，电流为 0.5 A，而不是 2 A。\n知识库校验证据：情境：三欧导体；代入错误式：R/U；校验参照值：2。",
+      "error_type": "数值代入",
+      "judging": "auto",
+      "source_error_index": 0,
+      "source_caught_by": "数值代入",
+      "wrong_expr": "I = R/U",
+      "trap_test": {
+        "scenario": "三欧导体",
+        "expr": "R/U",
+        "ref": 2
+      },
+      "review": {
+        "confidence": "medium",
+        "checks": {
+          "answer_unique": true,
+          "distractors_plausible": true,
+          "stem_clear": true,
+          "no_cross_segment": true
+        },
+        "note": "本章可用类型不足四类，干扰项包含同章其他错误的类别与原解释；答案按“类别+依据”唯一匹配，建议抽查教学区分度。"
+      }
+    },
+    {
+      "id": "diagnostic-jexp-16-2",
+      "point_id": "jexp-16",
+      "point_title": "探究电流与电压、电阻的关系（欧姆定律）",
+      "chapter": "实验专题：必做项目与教材补充",
+      "stem": "【实验专题：必做项目与教材补充 · 探究电流与电压、电阻的关系（欧姆定律）】学生的错误做法：认为任何电学元件在任何温度下都保持恒定电阻并严格符合欧姆定律。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
+      "options": [
+        {
+          "label": "A",
+          "text": "数值代入：计时测的是两事件之间的间隔，不是表盘上的绝对读数；起点3 s、终点8 s对应5 s，不能写8 s。"
+        },
+        {
+          "label": "B",
+          "text": "量纲一致性：速度是单位时间内通过的路程，需用路程除以时间；相乘的单位也不再是 m/s。"
+        },
+        {
+          "label": "C",
+          "text": "概念混淆：灯丝等元件温度变化会影响电阻；使用关系式时要看元件和实验条件。"
+        },
+        {
+          "label": "D",
+          "text": "数值代入：用非零刻线起测后，终点读数包含被移动的起点位置。"
+        }
+      ],
+      "correct_answer": "C",
+      "explanation": "灯丝等元件温度变化会影响电阻；使用关系式时要看元件和实验条件。",
+      "error_type": "概念混淆",
+      "judging": "teacher",
+      "source_error_index": 1,
+      "source_caught_by": "人工审核",
+      "wrong_expr": null,
+      "trap_test": null,
+      "review": {
+        "confidence": "medium",
+        "checks": {
+          "answer_unique": true,
+          "distractors_plausible": true,
+          "stem_clear": true,
+          "no_cross_segment": true
+        },
+        "note": "本章可用类型不足四类，干扰项包含同章其他错误的类别与原解释；答案按“类别+依据”唯一匹配，建议抽查教学区分度。"
+      }
+    },
+    {
+      "id": "diagnostic-jexp-17-1",
+      "point_id": "jexp-17",
+      "point_title": "测量小灯泡的电功率",
+      "chapter": "实验专题：必做项目与教材补充",
+      "stem": "【实验专题：必做项目与教材补充 · 测量小灯泡的电功率】学生的错误做法：把功率当作总电能，忽略做功时间。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
+      "options": [
+        {
+          "label": "A",
+          "text": "量纲一致性：速度是单位时间内通过的路程，需用路程除以时间；相乘的单位也不再是 m/s。"
+        },
+        {
+          "label": "B",
+          "text": "概念混淆：功率表示做功或用电的快慢，电能表示一段时间内做功的总量；前者单位是 W，后者常用 J 或 kWh，二者不能混淆。"
+        },
+        {
+          "label": "C",
+          "text": "数值代入：用非零刻线起测后，终点读数包含被移动的起点位置。"
+        },
+        {
+          "label": "D",
+          "text": "数值代入：计时测的是两事件之间的间隔，不是表盘上的绝对读数；起点3 s、终点8 s对应5 s，不能写8 s。"
+        }
+      ],
+      "correct_answer": "B",
+      "explanation": "功率表示做功或用电的快慢，电能表示一段时间内做功的总量；前者单位是 W，后者常用 J 或 kWh，二者不能混淆。",
+      "error_type": "概念混淆",
+      "judging": "teacher",
+      "source_error_index": 0,
+      "source_caught_by": "人工审核",
+      "wrong_expr": null,
+      "trap_test": null,
+      "review": {
+        "confidence": "medium",
+        "checks": {
+          "answer_unique": true,
+          "distractors_plausible": true,
+          "stem_clear": true,
+          "no_cross_segment": true
+        },
+        "note": "本章可用类型不足四类，干扰项包含同章其他错误的类别与原解释；答案按“类别+依据”唯一匹配，建议抽查教学区分度。"
+      }
+    },
+    {
+      "id": "diagnostic-jexp-17-2",
+      "point_id": "jexp-17",
+      "point_title": "测量小灯泡的电功率",
+      "chapter": "实验专题：必做项目与教材补充",
+      "stem": "【实验专题：必做项目与教材补充 · 测量小灯泡的电功率】学生的错误做法：把以 kW 表示的功率数值直接标成 W，换算时多除以 1000（错误表达式：P = U·I/1000）。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
+      "options": [
+        {
+          "label": "A",
+          "text": "数值代入：220 V×1 A=220 W；若要改写成 kW 才是 0.22 kW，不能把 0.22 标成 W。"
+        },
+        {
+          "label": "B",
+          "text": "量纲一致性：速度是单位时间内通过的路程，需用路程除以时间；相乘的单位也不再是 m/s。"
+        },
+        {
+          "label": "C",
+          "text": "概念混淆：电流表内阻很小，直接并联会形成近似短路并损坏仪表或电源。"
+        },
+        {
+          "label": "D",
+          "text": "概念混淆：电压表应并联在被测元件两端；串联接入会显著改变电路状态。"
+        }
+      ],
+      "correct_answer": "A",
+      "explanation": "220 V×1 A=220 W；若要改写成 kW 才是 0.22 kW，不能把 0.22 标成 W。\n知识库校验证据：情境：小灯泡一；代入错误式：U·I/1000；校验参照值：220。",
+      "error_type": "数值代入",
+      "judging": "auto",
+      "source_error_index": 1,
+      "source_caught_by": "数值代入",
+      "wrong_expr": "P = U·I/1000",
+      "trap_test": {
+        "scenario": "小灯泡一",
+        "expr": "U*I/1000",
+        "ref": 220
+      },
+      "review": {
+        "confidence": "medium",
+        "checks": {
+          "answer_unique": true,
+          "distractors_plausible": true,
+          "stem_clear": true,
+          "no_cross_segment": true
+        },
+        "note": "本章可用类型不足四类，干扰项包含同章其他错误的类别与原解释；答案按“类别+依据”唯一匹配，建议抽查教学区分度。"
+      }
+    },
+    {
+      "id": "diagnostic-jexp-17-3",
+      "point_id": "jexp-17",
+      "point_title": "测量小灯泡的电功率",
+      "chapter": "实验专题：必做项目与教材补充",
+      "stem": "【实验专题：必做项目与教材补充 · 测量小灯泡的电功率】学生的错误做法：把电功率写成 U/I（错误表达式：P = U/I）。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
+      "options": [
+        {
+          "label": "A",
+          "text": "数值代入：用非零刻线起测后，终点读数包含被移动的起点位置。"
+        },
+        {
+          "label": "B",
+          "text": "数值代入：计时测的是两事件之间的间隔，不是表盘上的绝对读数；起点3 s、终点8 s对应5 s，不能写8 s。"
+        },
+        {
+          "label": "C",
+          "text": "数值代入：游码在标尺上移动也提供平衡作用，示值必须与砝码相加；80 g砝码与4 g游码合为84 g，不是80 g。"
+        },
+        {
+          "label": "D",
+          "text": "量纲一致性：电功率可由电压与电流相乘得到；电压除以电流不是瓦特，单位组合也不同，因此不能用它表示功率。"
+        }
+      ],
+      "correct_answer": "D",
+      "explanation": "电功率可由电压与电流相乘得到；电压除以电流不是瓦特，单位组合也不同，因此不能用它表示功率。\n知识库校验证据：被测错误式：P = U/I；左式量纲：M·L²·T⁻³；右式量纲：M·L²·T⁻³·I⁻²；左右量纲不匹配；量纲校验说明：实际量纲检查得到等号左边为M·L²·T⁻³、右边为M·L²·T⁻³·I⁻²；两边不是同一物理量，因此该等式不成立。；变化方向要求：mismatch；检验说明：实际量纲检查得到等号左边为M·L²·T⁻³、右边为M·L²·T⁻³·I⁻²；两边不是同一物理量，因此该等式不成立。。",
+      "error_type": "量纲一致性",
+      "judging": "auto",
+      "source_error_index": 2,
+      "source_caught_by": "量纲一致性",
+      "wrong_expr": "P = U/I",
+      "trap_test": {
+        "kind": "dimension",
+        "target": "P = U/I",
+        "lhs_dim": "M·L^2·T^-3",
+        "rhs_dim": "M·L^2·T^-3·I^-2",
+        "expect": "mismatch",
+        "note": "实际量纲检查得到等号左边为M·L^2·T^-3、右边为M·L^2·T^-3·I^-2；两边不是同一物理量，因此该等式不成立。"
+      },
+      "review": {
+        "confidence": "medium",
+        "checks": {
+          "answer_unique": true,
+          "distractors_plausible": true,
+          "stem_clear": true,
+          "no_cross_segment": true
+        },
+        "note": "本章可用类型不足四类，干扰项包含同章其他错误的类别与原解释；答案按“类别+依据”唯一匹配，建议抽查教学区分度。"
+      }
+    },
+    {
+      "id": "diagnostic-jexp-18-1",
+      "point_id": "jexp-18",
+      "point_title": "探究通电螺线管外部磁场的方向",
+      "chapter": "实验专题：必做项目与教材补充",
+      "stem": "【实验专题：必做项目与教材补充 · 探究通电螺线管外部磁场的方向】学生的错误做法：把线圈电流写成电阻除以电压（错误表达式：Ic = Rc/Uc）。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
+      "options": [
+        {
+          "label": "A",
+          "text": "数值代入：计时测的是两事件之间的间隔，不是表盘上的绝对读数；起点3 s、终点8 s对应5 s，不能写8 s。"
+        },
+        {
+          "label": "B",
+          "text": "数值代入：游码在标尺上移动也提供平衡作用，示值必须与砝码相加；80 g砝码与4 g游码合为84 g，不是80 g。"
+        },
+        {
+          "label": "C",
+          "text": "量纲一致性：已测得线圈两端电压和电阻后，应按欧姆定律用电压除以电阻求电流；反过来相除所得量纲不是安培。"
+        },
+        {
+          "label": "D",
+          "text": "数值代入：用非零刻线起测后，终点读数包含被移动的起点位置。"
+        }
+      ],
+      "correct_answer": "C",
+      "explanation": "已测得线圈两端电压和电阻后，应按欧姆定律用电压除以电阻求电流；反过来相除所得量纲不是安培。\n知识库校验证据：被测错误式：Ic = Rc/Uc；左式量纲：I；右式量纲：I⁻¹；左右量纲不匹配；量纲校验说明：实际量纲检查得到等号左边为I、右边为I⁻¹；两边不是同一物理量，因此该等式不成立。；变化方向要求：mismatch；检验说明：实际量纲检查得到等号左边为I、右边为I⁻¹；两边不是同一物理量，因此该等式不成立。。",
+      "error_type": "量纲一致性",
+      "judging": "auto",
+      "source_error_index": 0,
+      "source_caught_by": "量纲一致性",
+      "wrong_expr": "Ic = Rc/Uc",
+      "trap_test": {
+        "kind": "dimension",
+        "target": "Ic = Rc/Uc",
+        "lhs_dim": "I",
+        "rhs_dim": "I^-1",
+        "expect": "mismatch",
+        "note": "实际量纲检查得到等号左边为I、右边为I^-1；两边不是同一物理量，因此该等式不成立。"
+      },
+      "review": {
+        "confidence": "medium",
+        "checks": {
+          "answer_unique": true,
+          "distractors_plausible": true,
+          "stem_clear": true,
+          "no_cross_segment": true
+        },
+        "note": "本章可用类型不足四类，干扰项包含同章其他错误的类别与原解释；答案按“类别+依据”唯一匹配，建议抽查教学区分度。"
+      }
+    },
+    {
+      "id": "diagnostic-jexp-18-2",
+      "point_id": "jexp-18",
+      "point_title": "探究通电螺线管外部磁场的方向",
+      "chapter": "实验专题：必做项目与教材补充",
+      "stem": "【实验专题：必做项目与教材补充 · 探究通电螺线管外部磁场的方向】学生的错误做法：把线圈电流换算成 mA 后仍把数值标成 A，导致电流大 1000 倍（错误表达式：Ic = 1000·Uc/Rc）。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
+      "options": [
+        {
+          "label": "A",
+          "text": "概念混淆：电压表应并联在被测元件两端；串联接入会显著改变电路状态。"
+        },
+        {
+          "label": "B",
+          "text": "数值代入：4 V÷20 Ω=0.2 A；换成毫安是 200 mA，不能仍写作 200 A。"
+        },
+        {
+          "label": "C",
+          "text": "量纲一致性：速度是单位时间内通过的路程，需用路程除以时间；相乘的单位也不再是 m/s。"
+        },
+        {
+          "label": "D",
+          "text": "概念混淆：电流表内阻很小，直接并联会形成近似短路并损坏仪表或电源。"
+        }
+      ],
+      "correct_answer": "B",
+      "explanation": "4 V÷20 Ω=0.2 A；换成毫安是 200 mA，不能仍写作 200 A。\n知识库校验证据：情境：线圈实验一；代入错误式：1000·Uc/Rc；校验参照值：0.2。",
+      "error_type": "数值代入",
+      "judging": "auto",
+      "source_error_index": 1,
+      "source_caught_by": "数值代入",
+      "wrong_expr": "Ic = 1000·Uc/Rc",
+      "trap_test": {
+        "scenario": "线圈实验一",
+        "expr": "1000*Uc/Rc",
+        "ref": 0.2
+      },
+      "review": {
+        "confidence": "medium",
+        "checks": {
+          "answer_unique": true,
+          "distractors_plausible": true,
+          "stem_clear": true,
+          "no_cross_segment": true
+        },
+        "note": "本章可用类型不足四类，干扰项包含同章其他错误的类别与原解释；答案按“类别+依据”唯一匹配，建议抽查教学区分度。"
+      }
+    },
+    {
+      "id": "diagnostic-jexp-18-3",
+      "point_id": "jexp-18",
+      "point_title": "探究通电螺线管外部磁场的方向",
+      "chapter": "实验专题：必做项目与教材补充",
+      "stem": "【实验专题：必做项目与教材补充 · 探究通电螺线管外部磁场的方向】学生的错误做法：只增加电压、同时改变线圈匝数和铁芯，还把磁性变化全归因于电流。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
+      "options": [
+        {
+          "label": "A",
+          "text": "概念混淆：探究一个因素影响时要控制其他变量，避免把多个因素的作用混在一起。"
+        },
+        {
+          "label": "B",
+          "text": "数值代入：用非零刻线起测后，终点读数包含被移动的起点位置。"
+        },
+        {
+          "label": "C",
+          "text": "数值代入：计时测的是两事件之间的间隔，不是表盘上的绝对读数；起点3 s、终点8 s对应5 s，不能写8 s。"
+        },
+        {
+          "label": "D",
+          "text": "量纲一致性：速度是单位时间内通过的路程，需用路程除以时间；相乘的单位也不再是 m/s。"
+        }
+      ],
+      "correct_answer": "A",
+      "explanation": "探究一个因素影响时要控制其他变量，避免把多个因素的作用混在一起。",
+      "error_type": "概念混淆",
+      "judging": "teacher",
+      "source_error_index": 2,
+      "source_caught_by": "人工审核",
+      "wrong_expr": null,
+      "trap_test": null,
+      "review": {
+        "confidence": "medium",
+        "checks": {
+          "answer_unique": true,
+          "distractors_plausible": true,
+          "stem_clear": true,
+          "no_cross_segment": true
+        },
+        "note": "本章可用类型不足四类，干扰项包含同章其他错误的类别与原解释；答案按“类别+依据”唯一匹配，建议抽查教学区分度。"
+      }
+    },
+    {
+      "id": "diagnostic-jexp-19-1",
+      "point_id": "jexp-19",
+      "point_title": "探究导体在磁场中运动时产生感应电流的条件",
+      "chapter": "实验专题：必做项目与教材补充",
+      "stem": "【实验专题：必做项目与教材补充 · 探究导体在磁场中运动时产生感应电流的条件】学生的错误做法：把感应电流写成感应电压乘以回路电阻（错误表达式：I<sub>感</sub> = U<sub>感</sub>·R<sub>回路</sub>）。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
+      "options": [
+        {
+          "label": "A",
+          "text": "数值代入：用非零刻线起测后，终点读数包含被移动的起点位置。"
+        },
+        {
+          "label": "B",
+          "text": "数值代入：计时测的是两事件之间的间隔，不是表盘上的绝对读数；起点3 s、终点8 s对应5 s，不能写8 s。"
+        },
+        {
+          "label": "C",
+          "text": "数值代入：游码在标尺上移动也提供平衡作用，示值必须与砝码相加；80 g砝码与4 g游码合为84 g，不是80 g。"
+        },
+        {
+          "label": "D",
+          "text": "量纲一致性：感应电路测得电压后仍按欧姆定律求电流，应当除以电阻；相乘的单位不是 A。"
+        }
+      ],
+      "correct_answer": "D",
+      "explanation": "感应电路测得电压后仍按欧姆定律求电流，应当除以电阻；相乘的单位不是 A。\n知识库校验证据：被测错误式：I<sub>感</sub> = U<sub>感</sub>·R<sub>回路</sub>；左式量纲：I；右式量纲：M²·L⁴·T⁻⁶·I⁻³；左右量纲不匹配；量纲校验说明：实际量纲检查得到等号左边为I、右边为M²·L⁴·T⁻⁶·I⁻³；两边不是同一物理量，因此该等式不成立。；变化方向要求：mismatch；检验说明：实际量纲检查得到等号左边为I、右边为M²·L⁴·T⁻⁶·I⁻³；两边不是同一物理量，因此该等式不成立。。",
+      "error_type": "量纲一致性",
+      "judging": "auto",
+      "source_error_index": 0,
+      "source_caught_by": "量纲一致性",
+      "wrong_expr": "I<sub>感</sub> = U<sub>感</sub>·R<sub>回路</sub>",
+      "trap_test": {
+        "kind": "dimension",
+        "target": "I_ind = U_ind*R_loop",
+        "lhs_dim": "I",
+        "rhs_dim": "M^2·L^4·T^-6·I^-3",
+        "expect": "mismatch",
+        "note": "实际量纲检查得到等号左边为I、右边为M^2·L^4·T^-6·I^-3；两边不是同一物理量，因此该等式不成立。"
+      },
+      "review": {
+        "confidence": "medium",
+        "checks": {
+          "answer_unique": true,
+          "distractors_plausible": true,
+          "stem_clear": true,
+          "no_cross_segment": true
+        },
+        "note": "本章可用类型不足四类，干扰项包含同章其他错误的类别与原解释；答案按“类别+依据”唯一匹配，建议抽查教学区分度。"
+      }
+    },
+    {
+      "id": "diagnostic-jexp-19-2",
+      "point_id": "jexp-19",
+      "point_title": "探究导体在磁场中运动时产生感应电流的条件",
+      "chapter": "实验专题：必做项目与教材补充",
+      "stem": "【实验专题：必做项目与教材补充 · 探究导体在磁场中运动时产生感应电流的条件】学生的错误做法：把感应电流换算成 mA 后仍将毫安数值标作 A（错误表达式：I<sub>感</sub> = 1000·U<sub>感</sub>/R<sub>回路</sub>）。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
+      "options": [
+        {
+          "label": "A",
+          "text": "概念混淆：电流表内阻很小，直接并联会形成近似短路并损坏仪表或电源。"
+        },
+        {
+          "label": "B",
+          "text": "概念混淆：电压表应并联在被测元件两端；串联接入会显著改变电路状态。"
+        },
+        {
+          "label": "C",
+          "text": "数值代入：0.6 V÷3 Ω=0.2 A=200 mA；若把换算后的 200 写成 A，会大 1000 倍。"
+        },
+        {
+          "label": "D",
+          "text": "量纲一致性：速度是单位时间内通过的路程，需用路程除以时间；相乘的单位也不再是 m/s。"
+        }
+      ],
+      "correct_answer": "C",
+      "explanation": "0.6 V÷3 Ω=0.2 A=200 mA；若把换算后的 200 写成 A，会大 1000 倍。\n知识库校验证据：情境：线圈感应一；代入错误式：1000·U<sub>感</sub>/R<sub>回路</sub>；校验参照值：0.2。",
+      "error_type": "数值代入",
+      "judging": "auto",
+      "source_error_index": 1,
+      "source_caught_by": "数值代入",
+      "wrong_expr": "I<sub>感</sub> = 1000·U<sub>感</sub>/R<sub>回路</sub>",
+      "trap_test": {
+        "scenario": "线圈感应一",
+        "expr": "1000*U_ind/R_loop",
+        "ref": 0.2
+      },
+      "review": {
+        "confidence": "medium",
+        "checks": {
+          "answer_unique": true,
+          "distractors_plausible": true,
+          "stem_clear": true,
+          "no_cross_segment": true
+        },
+        "note": "本章可用类型不足四类，干扰项包含同章其他错误的类别与原解释；答案按“类别+依据”唯一匹配，建议抽查教学区分度。"
+      }
+    },
+    {
+      "id": "diagnostic-jexp-19-3",
+      "point_id": "jexp-19",
+      "point_title": "探究导体在磁场中运动时产生感应电流的条件",
+      "chapter": "实验专题：必做项目与教材补充",
+      "stem": "【实验专题：必做项目与教材补充 · 探究导体在磁场中运动时产生感应电流的条件】学生的错误做法：认为只要线圈和磁体静止放在一起就一定有持续感应电流。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
+      "options": [
+        {
+          "label": "A",
+          "text": "量纲一致性：速度是单位时间内通过的路程，需用路程除以时间；相乘的单位也不再是 m/s。"
+        },
+        {
+          "label": "B",
+          "text": "概念混淆：需要磁场变化或导体与磁场发生相对运动；静止且磁场不变时没有持续感应电流。"
+        },
+        {
+          "label": "C",
+          "text": "数值代入：用非零刻线起测后，终点读数包含被移动的起点位置。"
+        },
+        {
+          "label": "D",
+          "text": "数值代入：计时测的是两事件之间的间隔，不是表盘上的绝对读数；起点3 s、终点8 s对应5 s，不能写8 s。"
+        }
+      ],
+      "correct_answer": "B",
+      "explanation": "需要磁场变化或导体与磁场发生相对运动；静止且磁场不变时没有持续感应电流。",
+      "error_type": "概念混淆",
+      "judging": "teacher",
+      "source_error_index": 2,
+      "source_caught_by": "人工审核",
+      "wrong_expr": null,
+      "trap_test": null,
+      "review": {
+        "confidence": "medium",
+        "checks": {
+          "answer_unique": true,
+          "distractors_plausible": true,
+          "stem_clear": true,
+          "no_cross_segment": true
+        },
+        "note": "本章可用类型不足四类，干扰项包含同章其他错误的类别与原解释；答案按“类别+依据”唯一匹配，建议抽查教学区分度。"
+      }
+    },
+    {
+      "id": "diagnostic-jexp-20-1",
+      "point_id": "jexp-20",
+      "point_title": "探究光的反射定律",
+      "chapter": "实验专题：必做项目与教材补充",
+      "stem": "【实验专题：必做项目与教材补充 · 探究光的反射定律】学生的错误做法：把反射角从镜面而不是法线量起，用余角代替反射角（错误表达式：r = 90-i）。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
+      "options": [
+        {
+          "label": "A",
+          "text": "数值代入：入射角30°时从法线量的反射角也是30°，从镜面量到的60°是它的余角，不是反射角。"
+        },
+        {
+          "label": "B",
+          "text": "量纲一致性：速度是单位时间内通过的路程，需用路程除以时间；相乘的单位也不再是 m/s。"
+        },
+        {
+          "label": "C",
+          "text": "概念混淆：电流表内阻很小，直接并联会形成近似短路并损坏仪表或电源。"
+        },
+        {
+          "label": "D",
+          "text": "概念混淆：电压表应并联在被测元件两端；串联接入会显著改变电路状态。"
+        }
+      ],
+      "correct_answer": "A",
+      "explanation": "入射角30°时从法线量的反射角也是30°，从镜面量到的60°是它的余角，不是反射角。\n知识库校验证据：情境：入射角30度；代入错误式：90-i；校验参照值：30。",
+      "error_type": "数值代入",
+      "judging": "auto",
+      "source_error_index": 0,
+      "source_caught_by": "数值代入",
+      "wrong_expr": "r = 90-i",
+      "trap_test": {
+        "scenario": "入射角30度",
+        "expr": "90-i",
+        "ref": 30
+      },
+      "review": {
+        "confidence": "medium",
+        "checks": {
+          "answer_unique": true,
+          "distractors_plausible": true,
+          "stem_clear": true,
+          "no_cross_segment": true
+        },
+        "note": "本章可用类型不足四类，干扰项包含同章其他错误的类别与原解释；答案按“类别+依据”唯一匹配，建议抽查教学区分度。"
+      }
+    },
+    {
+      "id": "diagnostic-jexp-20-2",
+      "point_id": "jexp-20",
+      "point_title": "探究光的反射定律",
+      "chapter": "实验专题：必做项目与教材补充",
+      "stem": "【实验专题：必做项目与教材补充 · 探究光的反射定律】学生的错误做法：认为只有光滑表面才发生反射。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
+      "options": [
+        {
+          "label": "A",
+          "text": "数值代入：用非零刻线起测后，终点读数包含被移动的起点位置。"
+        },
+        {
+          "label": "B",
+          "text": "数值代入：计时测的是两事件之间的间隔，不是表盘上的绝对读数；起点3 s、终点8 s对应5 s，不能写8 s。"
+        },
+        {
+          "label": "C",
+          "text": "量纲一致性：速度是单位时间内通过的路程，需用路程除以时间；相乘的单位也不再是 m/s。"
+        },
+        {
+          "label": "D",
+          "text": "概念混淆：漫反射和镜面反射都遵守反射定律，差别在于表面是否平整以及反射光的方向分布。"
+        }
+      ],
+      "correct_answer": "D",
+      "explanation": "漫反射和镜面反射都遵守反射定律，差别在于表面是否平整以及反射光的方向分布。",
+      "error_type": "概念混淆",
+      "judging": "teacher",
+      "source_error_index": 1,
+      "source_caught_by": "人工审核",
+      "wrong_expr": null,
+      "trap_test": null,
+      "review": {
+        "confidence": "medium",
+        "checks": {
+          "answer_unique": true,
+          "distractors_plausible": true,
+          "stem_clear": true,
+          "no_cross_segment": true
+        },
+        "note": "本章可用类型不足四类，干扰项包含同章其他错误的类别与原解释；答案按“类别+依据”唯一匹配，建议抽查教学区分度。"
+      }
+    },
+    {
+      "id": "diagnostic-jexp-21-1",
+      "point_id": "jexp-21",
+      "point_title": "探究平面镜成像的特点",
+      "chapter": "实验专题：必做项目与教材补充",
+      "stem": "【实验专题：必做项目与教材补充 · 探究平面镜成像的特点】学生的错误做法：误认为像距只有物距的一半（错误表达式：d<sub>2</sub> = d<sub>1</sub>/2）。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
+      "options": [
+        {
+          "label": "A",
+          "text": "概念混淆：电流表内阻很小，直接并联会形成近似短路并损坏仪表或电源。"
+        },
+        {
+          "label": "B",
+          "text": "概念混淆：电压表应并联在被测元件两端；串联接入会显著改变电路状态。"
+        },
+        {
+          "label": "C",
+          "text": "数值代入：平面镜成像关于镜面对称，像距等于物距；物距 0.5 m 时像距应是 0.5 m。"
+        },
+        {
+          "label": "D",
+          "text": "量纲一致性：速度是单位时间内通过的路程，需用路程除以时间；相乘的单位也不再是 m/s。"
+        }
+      ],
+      "correct_answer": "C",
+      "explanation": "平面镜成像关于镜面对称，像距等于物距；物距 0.5 m 时像距应是 0.5 m。\n知识库校验证据：情境：物距半米；代入错误式：d<sub>1</sub>/2；校验参照值：0.5。",
+      "error_type": "数值代入",
+      "judging": "auto",
+      "source_error_index": 0,
+      "source_caught_by": "数值代入",
+      "wrong_expr": "d<sub>2</sub> = d<sub>1</sub>/2",
+      "trap_test": {
+        "scenario": "物距半米",
+        "expr": "d1/2",
+        "ref": 0.5
+      },
+      "review": {
+        "confidence": "medium",
+        "checks": {
+          "answer_unique": true,
+          "distractors_plausible": true,
+          "stem_clear": true,
+          "no_cross_segment": true
+        },
+        "note": "本章可用类型不足四类，干扰项包含同章其他错误的类别与原解释；答案按“类别+依据”唯一匹配，建议抽查教学区分度。"
+      }
+    },
+    {
+      "id": "diagnostic-jexp-21-2",
+      "point_id": "jexp-21",
+      "point_title": "探究平面镜成像的特点",
+      "chapter": "实验专题：必做项目与教材补充",
+      "stem": "【实验专题：必做项目与教材补充 · 探究平面镜成像的特点】学生的错误做法：认为平面镜所成的像可以用光屏接收到。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
+      "options": [
+        {
+          "label": "A",
+          "text": "量纲一致性：速度是单位时间内通过的路程，需用路程除以时间；相乘的单位也不再是 m/s。"
+        },
+        {
+          "label": "B",
+          "text": "概念混淆：平面镜像是反射光线反向延长线的交点，属于虚像；应通过成像实验和光线图辨析。"
+        },
+        {
+          "label": "C",
+          "text": "数值代入：用非零刻线起测后，终点读数包含被移动的起点位置。"
+        },
+        {
+          "label": "D",
+          "text": "数值代入：计时测的是两事件之间的间隔，不是表盘上的绝对读数；起点3 s、终点8 s对应5 s，不能写8 s。"
+        }
+      ],
+      "correct_answer": "B",
+      "explanation": "平面镜像是反射光线反向延长线的交点，属于虚像；应通过成像实验和光线图辨析。",
+      "error_type": "概念混淆",
+      "judging": "teacher",
+      "source_error_index": 1,
+      "source_caught_by": "人工审核",
+      "wrong_expr": null,
+      "trap_test": null,
+      "review": {
+        "confidence": "medium",
+        "checks": {
+          "answer_unique": true,
+          "distractors_plausible": true,
+          "stem_clear": true,
+          "no_cross_segment": true
+        },
+        "note": "本章可用类型不足四类，干扰项包含同章其他错误的类别与原解释；答案按“类别+依据”唯一匹配，建议抽查教学区分度。"
+      }
+    },
+    {
+      "id": "diagnostic-jexp-22-1",
+      "point_id": "jexp-22",
+      "point_title": "探究凸透镜成像的规律",
+      "chapter": "实验专题：必做项目与教材补充",
+      "stem": "【实验专题：必做项目与教材补充 · 探究凸透镜成像的规律】学生的错误做法：把物距为二倍焦距时的像距误写成物距的一半（错误表达式：v = u/2）。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
+      "options": [
+        {
+          "label": "A",
+          "text": "数值代入：当 u=2f 时，v 也为 2f，因此 v=u；物距为 0.20 m 时像距不是 0.10 m。"
+        },
+        {
+          "label": "B",
+          "text": "量纲一致性：速度是单位时间内通过的路程，需用路程除以时间；相乘的单位也不再是 m/s。"
+        },
+        {
+          "label": "C",
+          "text": "概念混淆：电流表内阻很小，直接并联会形成近似短路并损坏仪表或电源。"
+        },
+        {
+          "label": "D",
+          "text": "概念混淆：电压表应并联在被测元件两端；串联接入会显著改变电路状态。"
+        }
+      ],
+      "correct_answer": "A",
+      "explanation": "当 u=2f 时，v 也为 2f，因此 v=u；物距为 0.20 m 时像距不是 0.10 m。\n知识库校验证据：情境：焦距10厘米物距20厘米；代入错误式：u/2；校验参照值：0.2。",
+      "error_type": "数值代入",
+      "judging": "auto",
+      "source_error_index": 0,
+      "source_caught_by": "数值代入",
+      "wrong_expr": "v = u/2",
+      "trap_test": {
+        "scenario": "焦距10厘米物距20厘米",
+        "expr": "u/2",
+        "ref": 0.2
+      },
+      "review": {
+        "confidence": "medium",
+        "checks": {
+          "answer_unique": true,
+          "distractors_plausible": true,
+          "stem_clear": true,
+          "no_cross_segment": true
+        },
+        "note": "本章可用类型不足四类，干扰项包含同章其他错误的类别与原解释；答案按“类别+依据”唯一匹配，建议抽查教学区分度。"
+      }
+    },
+    {
+      "id": "diagnostic-jexp-22-2",
+      "point_id": "jexp-22",
+      "point_title": "探究凸透镜成像的规律",
+      "chapter": "实验专题：必做项目与教材补充",
+      "stem": "【实验专题：必做项目与教材补充 · 探究凸透镜成像的规律】学生的错误做法：认为凸透镜无论物距如何都成倒立实像。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
+      "options": [
+        {
+          "label": "A",
+          "text": "数值代入：用非零刻线起测后，终点读数包含被移动的起点位置。"
+        },
+        {
+          "label": "B",
+          "text": "数值代入：计时测的是两事件之间的间隔，不是表盘上的绝对读数；起点3 s、终点8 s对应5 s，不能写8 s。"
+        },
+        {
+          "label": "C",
+          "text": "量纲一致性：速度是单位时间内通过的路程，需用路程除以时间；相乘的单位也不再是 m/s。"
+        },
+        {
+          "label": "D",
+          "text": "概念混淆：物体位于焦点以内时，凸透镜成正立、放大的虚像；像的性质必须结合物距和焦距判断。"
+        }
+      ],
+      "correct_answer": "D",
+      "explanation": "物体位于焦点以内时，凸透镜成正立、放大的虚像；像的性质必须结合物距和焦距判断。",
+      "error_type": "概念混淆",
+      "judging": "teacher",
+      "source_error_index": 1,
+      "source_caught_by": "人工审核",
+      "wrong_expr": null,
+      "trap_test": null,
+      "review": {
+        "confidence": "medium",
+        "checks": {
+          "answer_unique": true,
+          "distractors_plausible": true,
+          "stem_clear": true,
+          "no_cross_segment": true
+        },
+        "note": "本章可用类型不足四类，干扰项包含同章其他错误的类别与原解释；答案按“类别+依据”唯一匹配，建议抽查教学区分度。"
+      }
+    }
+  ],
+  "skipped": [],
+  "source_records": {
+    "diagnostic-jexp-01-1": {
+      "error": {
+        "wrong": "零端磨损时仍把终点读数当长度，忘记减去起点。",
+        "wrong_expr": "L = x2",
+        "why": "用非零刻线起测后，终点读数包含被移动的起点位置。4.26 cm的终点和1.00 cm的起点应相减，不是4.26 cm长。",
+        "caught_by": "数值代入",
+        "trap_test": {
+          "scenario": "薄板甲",
+          "expr": "x2",
+          "ref": 0.0326
+        }
+      },
+      "title": "用刻度尺测量长度",
+      "chapter": "实验专题：必做项目与教材补充"
+    },
+    "diagnostic-jexp-01-2": {
+      "error": {
+        "wrong": "毫米分度尺只记3.2 cm，漏写估读位。",
+        "why": "普通毫米尺按中学约定应估读到0.1 mm，记录如3.26 cm；只记3.2 cm丢失了测量精度信息。补位必须来自实际观察，不能任意添数字。",
+        "caught_by": "人工审核"
+      },
+      "title": "用刻度尺测量长度",
+      "chapter": "实验专题：必做项目与教材补充"
+    },
+    "diagnostic-jexp-02-1": {
+      "error": {
+        "wrong": "停表没有归零时直接把终止读数当历时。",
+        "wrong_expr": "t = t2",
+        "why": "计时测的是两事件之间的间隔，不是表盘上的绝对读数；起点3 s、终点8 s对应5 s，不能写8 s。零点偏移可由相减消去，按表延迟不能。",
+        "caught_by": "数值代入",
+        "trap_test": {
+          "scenario": "计时甲",
+          "expr": "t2",
+          "ref": 5
+        }
+      },
+      "title": "用表测量时间",
+      "chapter": "实验专题：必做项目与教材补充"
+    },
+    "diagnostic-jexp-02-2": {
+      "error": {
+        "wrong": "认为电子表没有测量误差，或把一次往返的两个半程各算一周期。",
+        "why": "电子显示仍有分辨率与触发延迟，计时判据必须一致；周期必须对应状态一次完整重复。两类问题要观察记录与实验设计，不能仅靠时间差验算证明。",
+        "caught_by": "人工审核"
+      },
+      "title": "用表测量时间",
+      "chapter": "实验专题：必做项目与教材补充"
+    },
+    "diagnostic-jexp-03-1": {
+      "error": {
+        "wrong": "把速度写成路程乘时间。",
+        "wrong_expr": "v = s*t",
+        "why": "速度是单位时间内通过的路程，需用路程除以时间；相乘的单位也不再是 m/s。",
+        "caught_by": "量纲一致性",
+        "trap_test": {
+          "scenario": "步行测量",
+          "expr": "s*t",
+          "ref": 5
+        }
+      },
+      "title": "测量物体运动的速度",
+      "chapter": "实验专题：必做项目与教材补充"
+    },
+    "diagnostic-jexp-03-2": {
+      "error": {
+        "wrong": "换算 m/s 与 km/h 时忘记乘 3.6，或把乘除方向写反。",
+        "why": "1 m/s=3.6 km/h；5 m/s 应为 18 km/h，而不是约 1.4 km/h。",
+        "caught_by": "数值代入",
+        "trap_test": {
+          "scenario": "步行测量",
+          "expr": "v/3.6",
+          "ref": 18
+        },
+        "wrong_expr": "v_k = v/3.6"
+      },
+      "title": "测量物体运动的速度",
+      "chapter": "实验专题：必做项目与教材补充"
+    },
+    "diagnostic-jexp-04-1": {
+      "error": {
+        "wrong": "天平读数只计砝码，漏掉游码质量。",
+        "wrong_expr": "m = mc",
+        "why": "游码在标尺上移动也提供平衡作用，示值必须与砝码相加；80 g砝码与4 g游码合为84 g，不是80 g。称量时重新调螺母不能弥补漏读。",
+        "caught_by": "数值代入",
+        "trap_test": {
+          "scenario": "液体甲",
+          "expr": "mc",
+          "ref": 0.084
+        }
+      },
+      "title": "用天平测量固体和液体的质量",
+      "chapter": "实验专题：必做项目与教材补充"
+    },
+    "diagnostic-jexp-04-2": {
+      "error": {
+        "wrong": "称量时移动平衡螺母，或先排水后称带水固体。",
+        "why": "调平衡只用于称量前的空载校零，称量中移动会改变仪器条件；固体附着水增加被称质量，所得密度可能偏大。必须区分误差来源与配对样本。",
+        "caught_by": "人工审核"
+      },
+      "title": "用天平测量固体和液体的质量",
+      "chapter": "实验专题：必做项目与教材补充"
+    },
+    "diagnostic-jexp-05-1": {
+      "error": {
+        "wrong": "天平读数只计砝码，漏掉游码质量。",
+        "wrong_expr": "m = mc",
+        "why": "游码在标尺上移动也提供平衡作用，示值必须与砝码相加；80 g砝码与4 g游码合为84 g，不是80 g。称量时重新调螺母不能弥补漏读。",
+        "caught_by": "数值代入",
+        "trap_test": {
+          "scenario": "液体甲",
+          "expr": "mc",
+          "ref": 0.084
+        }
+      },
+      "title": "测量固体和液体的密度",
+      "chapter": "实验专题：必做项目与教材补充"
+    },
+    "diagnostic-jexp-05-2": {
+      "error": {
+        "wrong": "称量时移动平衡螺母，或先排水后称带水固体。",
+        "why": "调平衡只用于称量前的空载校零，称量中移动会改变仪器条件；固体附着水增加被称质量，所得密度可能偏大。必须区分误差来源与配对样本。",
+        "caught_by": "人工审核"
+      },
+      "title": "测量固体和液体的密度",
+      "chapter": "实验专题：必做项目与教材补充"
+    },
+    "diagnostic-jexp-06-1": {
+      "error": {
+        "wrong": "把两个温度读数相加当温度变化。",
+        "wrong_expr": "dT = T2+T1",
+        "why": "温差是终值减初值，与温度所用单位的零点无关；把两次热力学温度相加会得数百开尔文，并不能代表该过程的温度变化。",
+        "caught_by": "数值代入",
+        "trap_test": {
+          "scenario": "沸腾前",
+          "expr": "T2+T1",
+          "ref": 8.0
+        }
+      },
+      "title": "探究水沸腾前后温度变化的特点",
+      "chapter": "实验专题：必做项目与教材补充"
+    },
+    "diagnostic-jexp-06-2": {
+      "error": {
+        "wrong": "温度出现平台就认为没有吸热或放热，或把平台温度当任何条件下的定值。",
+        "why": "保持气压近似稳定，温度计测液体内部而不碰杯底；观察气泡和温度，平台仍持续加热，不能由温度不变推出不吸热。示例平台98 ℃，不能声称所有气压下沸点100 ℃。温度与热量是不同量，气压、纯度、测量位置和过程平衡程度都影响读数，定性结论必须看现象和条件。",
+        "caught_by": "人工审核"
+      },
+      "title": "探究水沸腾前后温度变化的特点",
+      "chapter": "实验专题：必做项目与教材补充"
+    },
+    "diagnostic-jexp-07-1": {
+      "error": {
+        "wrong": "把两个温度读数相加当温度变化。",
+        "wrong_expr": "dT = T2+T1",
+        "why": "温差是终值减初值，与温度所用单位的零点无关；把两次热力学温度相加会得数百开尔文，并不能代表该过程的温度变化。",
+        "caught_by": "数值代入",
+        "trap_test": {
+          "scenario": "升温段",
+          "expr": "T2+T1",
+          "ref": 5.0
+        }
+      },
+      "title": "探究晶体熔化前后温度变化的特点",
+      "chapter": "实验专题：必做项目与教材补充"
+    },
+    "diagnostic-jexp-07-2": {
+      "error": {
+        "wrong": "温度出现平台就认为没有吸热或放热，或把平台温度当任何条件下的定值。",
+        "why": "选冰等安全晶体并缓慢加热，保证测温接触合适；观察固液共存段。相同压强和近似纯物质下熔化平台伴随吸热，非晶体通常没有固定熔点，不能用一次平台概括所有材料。温度与热量是不同量，气压、纯度、测量位置和过程平衡程度都影响读数，定性结论必须看现象和条件。",
+        "caught_by": "人工审核"
+      },
+      "title": "探究晶体熔化前后温度变化的特点",
+      "chapter": "实验专题：必做项目与教材补充"
+    },
+    "diagnostic-jexp-08-1": {
+      "error": {
+        "wrong": "把两个温度读数相加当温度变化。",
+        "wrong_expr": "dT = T2+T1",
+        "why": "温差是终值减初值，与温度所用单位的零点无关；把两次热力学温度相加会得数百开尔文，并不能代表该过程的温度变化。",
+        "caught_by": "数值代入",
+        "trap_test": {
+          "scenario": "降温段",
+          "expr": "T2+T1",
+          "ref": -5.0
+        }
+      },
+      "title": "探究水凝固的特点",
+      "chapter": "实验专题：必做项目与教材补充"
+    },
+    "diagnostic-jexp-08-2": {
+      "error": {
+        "wrong": "温度出现平台就认为没有吸热或放热，或把平台温度当任何条件下的定值。",
+        "why": "将少量水置于冷却浴并记录状态，测温不碰容器壁；在近似平衡、固定气压下水的凝固段约0 ℃并放热。过冷可能使初始读数低于0 ℃，需要结合状态和重复观察解释，不能伪造平直数据。温度与热量是不同量，气压、纯度、测量位置和过程平衡程度都影响读数，定性结论必须看现象和条件。",
+        "caught_by": "人工审核"
+      },
+      "title": "探究水凝固的特点",
+      "chapter": "实验专题：必做项目与教材补充"
+    },
+    "diagnostic-jexp-09-1": {
+      "error": {
+        "wrong": "将电流表误并联到电源两端。",
+        "why": "电流表内阻很小，直接并联会形成近似短路并损坏仪表或电源。接线前要看清仪表符号和它的接入位置。",
+        "caught_by": "人工审核"
+      },
+      "title": "用电流表测电流",
+      "chapter": "实验专题：必做项目与教材补充"
+    },
+    "diagnostic-jexp-09-2": {
+      "error": {
+        "wrong": "读电流表时把指针格数当成电流数值，未按量程换算。",
+        "wrong_expr": "I_read = n",
+        "why": "量程0.6 A、满量程30格、指针偏10格时应读0.20 A；直接把10格标成10 A不表示实际电流。必须先认量程，再算每格电流和偏转格数。",
+        "caught_by": "数值代入",
+        "trap_test": {
+          "scenario": "两灯串联一",
+          "expr": "n",
+          "ref": 0.2
+        }
+      },
+      "title": "用电流表测电流",
+      "chapter": "实验专题：必做项目与教材补充"
+    },
+    "diagnostic-jexp-10-1": {
+      "error": {
+        "wrong": "把电压表误串联接入被测电路。",
+        "why": "电压表应并联在被测元件两端；串联接入会显著改变电路状态。接线前要看清仪表符号和它的接入位置。",
+        "caught_by": "人工审核"
+      },
+      "title": "用电压表测电压",
+      "chapter": "实验专题：必做项目与教材补充"
+    },
+    "diagnostic-jexp-10-2": {
+      "error": {
+        "wrong": "把电压表格数与满量程格数的比例倒过来。",
+        "wrong_expr": "U_read = U_range*N/n",
+        "why": "量程 12 V、满量程 30 格偏转 15 格时，正确读数为 6 V；倒置比例会得到 24 V。",
+        "caught_by": "数值代入",
+        "trap_test": {
+          "scenario": "串联电压读数一",
+          "expr": "U_range*N/n",
+          "ref": 6
+        }
+      },
+      "title": "用电压表测电压",
+      "chapter": "实验专题：必做项目与教材补充"
+    },
+    "diagnostic-jexp-11-1": {
+      "error": {
+        "wrong": "把并联干路电流误认为两支路电流的乘积。",
+        "wrong_expr": "It = I1*I2",
+        "why": "并联支路汇流时干路电流等于各支路电流之和；0.2 A 和 0.3 A 合为 0.5 A。",
+        "caught_by": "数值代入",
+        "trap_test": {
+          "scenario": "两支路并联一",
+          "expr": "I1*I2",
+          "ref": 0.5
+        }
+      },
+      "title": "用电流表探究串并联电路电流的特点",
+      "chapter": "实验专题：必做项目与教材补充"
+    },
+    "diagnostic-jexp-11-2": {
+      "error": {
+        "wrong": "认为家庭电路中的各用电器都串联，一个坏了全部熄灭。",
+        "why": "家庭用电器通常并联接入，支路可独立工作；电路图要结合实际连接辨析。",
+        "caught_by": "人工审核"
+      },
+      "title": "用电流表探究串并联电路电流的特点",
+      "chapter": "实验专题：必做项目与教材补充"
+    },
+    "diagnostic-jexp-12-1": {
+      "error": {
+        "wrong": "把并联干路电流写成各支路电流的乘积。",
+        "wrong_expr": "It = I1*I2",
+        "why": "干路电流是分流前各支路电流的和；0.2 A 与 0.3 A 相加为 0.5 A。",
+        "caught_by": "数值代入",
+        "trap_test": {
+          "scenario": "两支路并联一",
+          "expr": "I1*I2",
+          "ref": 0.5
+        }
+      },
+      "title": "用电压表探究串并联电路电压的特点",
+      "chapter": "实验专题：必做项目与教材补充"
+    },
+    "diagnostic-jexp-12-2": {
+      "error": {
+        "wrong": "误以为并联电路各支路电流一定相等。",
+        "why": "并联支路电压相等，但支路电流还取决于各支路元件的电阻和电路条件。",
+        "caught_by": "人工审核"
+      },
+      "title": "用电压表探究串并联电路电压的特点",
+      "chapter": "实验专题：必做项目与教材补充"
+    },
+    "diagnostic-jexp-13-1": {
+      "error": {
+        "wrong": "把欧姆定律误写成电流等于电阻除以电压。",
+        "wrong_expr": "I = R/U",
+        "why": "欧姆定律应当用电压除以电阻来求电流；把电阻除以电压不仅关系倒置，所得量纲也不是安培。",
+        "caught_by": "量纲一致性",
+        "trap_test": {
+          "kind": "dimension",
+          "target": "I = R/U",
+          "lhs_dim": "I",
+          "rhs_dim": "I^-1",
+          "expect": "mismatch",
+          "note": "实际量纲检查得到等号左边为I、右边为I^-1；两边不是同一物理量，因此该等式不成立。"
+        }
+      },
+      "title": "探究影响导体电阻大小的因素",
+      "chapter": "实验专题：必做项目与教材补充"
+    },
+    "diagnostic-jexp-13-2": {
+      "error": {
+        "wrong": "把 3 kΩ 的数值 3 直接当成 3 Ω 代入，漏掉千欧到欧姆的 1000 倍换算。",
+        "wrong_expr": "I = U/Rk",
+        "why": "6 V 接在 3 kΩ 电阻上，电流应为 0.002 A；把数值 3 当作 Ω 会错误得到 2 A。",
+        "caught_by": "数值代入",
+        "trap_test": {
+          "scenario": "千欧换算误区",
+          "expr": "U/Rk",
+          "ref": 0.002
+        }
+      },
+      "title": "探究影响导体电阻大小的因素",
+      "chapter": "实验专题：必做项目与教材补充"
+    },
+    "diagnostic-jexp-13-3": {
+      "error": {
+        "wrong": "不说明条件变化就认为电压改变会使导体电阻按比例改变。",
+        "why": "电阻由导体材料、长度、横截面积和温度等因素决定；欧姆定律的 U/I 比值在相同条件下描述电阻。",
+        "caught_by": "人工审核"
+      },
+      "title": "探究影响导体电阻大小的因素",
+      "chapter": "实验专题：必做项目与教材补充"
+    },
+    "diagnostic-jexp-14-1": {
+      "error": {
+        "wrong": "把变阻器滑片移动方向与阻值变化关系不看接线柱就固定判断。",
+        "why": "阻值变化由实际接入电路的下接线柱和滑片位置共同决定，必须结合电路连接判断。",
+        "caught_by": "人工审核"
+      },
+      "title": "用滑动变阻器改变小灯泡亮度",
+      "chapter": "实验专题：必做项目与教材补充"
+    },
+    "diagnostic-jexp-14-2": {
+      "error": {
+        "wrong": "计算定值电阻与变阻器串联总阻值时把二者相乘。",
+        "wrong_expr": "Rs = R1*R2",
+        "why": "串联总电阻为各电阻之和；10 Ω 和 20 Ω 串联应为 30 Ω。",
+        "caught_by": "数值代入",
+        "trap_test": {
+          "scenario": "变阻器接入一",
+          "expr": "R1*R2",
+          "ref": 30
+        }
+      },
+      "title": "用滑动变阻器改变小灯泡亮度",
+      "chapter": "实验专题：必做项目与教材补充"
+    },
+    "diagnostic-jexp-15-1": {
+      "error": {
+        "wrong": "把欧姆定律误写成电流等于电阻除以电压。",
+        "wrong_expr": "I = R/U",
+        "why": "欧姆定律应当用电压除以电阻来求电流；把电阻除以电压不仅关系倒置，所得量纲也不是安培。",
+        "caught_by": "量纲一致性",
+        "trap_test": {
+          "kind": "dimension",
+          "target": "I = R/U",
+          "lhs_dim": "I",
+          "rhs_dim": "I^-1",
+          "expect": "mismatch",
+          "note": "实际量纲检查得到等号左边为I、右边为I^-1；两边不是同一物理量，因此该等式不成立。"
+        }
+      },
+      "title": "伏安法测电阻",
+      "chapter": "实验专题：必做项目与教材补充"
+    },
+    "diagnostic-jexp-15-2": {
+      "error": {
+        "wrong": "把 3 kΩ 的数值 3 直接当成 3 Ω 代入，漏掉千欧到欧姆的 1000 倍换算。",
+        "wrong_expr": "I = U/Rk",
+        "why": "6 V 接在 3 kΩ 电阻上，电流应为 0.002 A；把数值 3 当作 Ω 会错误得到 2 A。",
+        "caught_by": "数值代入",
+        "trap_test": {
+          "scenario": "千欧换算误区",
+          "expr": "U/Rk",
+          "ref": 0.002
+        }
+      },
+      "title": "伏安法测电阻",
+      "chapter": "实验专题：必做项目与教材补充"
+    },
+    "diagnostic-jexp-15-3": {
+      "error": {
+        "wrong": "不说明条件变化就认为电压改变会使导体电阻按比例改变。",
+        "why": "电阻由导体材料、长度、横截面积和温度等因素决定；欧姆定律的 U/I 比值在相同条件下描述电阻。",
+        "caught_by": "人工审核"
+      },
+      "title": "伏安法测电阻",
+      "chapter": "实验专题：必做项目与教材补充"
+    },
+    "diagnostic-jexp-16-1": {
+      "error": {
+        "wrong": "把欧姆定律的电流公式误写成电阻除以电压。",
+        "wrong_expr": "I = R/U",
+        "why": "同一电阻器两端电压 6 V、电阻 12 Ω 时，电流为 0.5 A，而不是 2 A。",
+        "caught_by": "数值代入",
+        "trap_test": {
+          "scenario": "三欧导体",
+          "expr": "R/U",
+          "ref": 2
+        }
+      },
+      "title": "探究电流与电压、电阻的关系（欧姆定律）",
+      "chapter": "实验专题：必做项目与教材补充"
+    },
+    "diagnostic-jexp-16-2": {
+      "error": {
+        "wrong": "认为任何电学元件在任何温度下都保持恒定电阻并严格符合欧姆定律。",
+        "why": "灯丝等元件温度变化会影响电阻；使用关系式时要看元件和实验条件。",
+        "caught_by": "人工审核"
+      },
+      "title": "探究电流与电压、电阻的关系（欧姆定律）",
+      "chapter": "实验专题：必做项目与教材补充"
+    },
+    "diagnostic-jexp-17-1": {
+      "error": {
+        "wrong": "把功率当作总电能，忽略做功时间。",
+        "why": "功率表示做功或用电的快慢，电能表示一段时间内做功的总量；前者单位是 W，后者常用 J 或 kWh，二者不能混淆。",
+        "caught_by": "人工审核"
+      },
+      "title": "测量小灯泡的电功率",
+      "chapter": "实验专题：必做项目与教材补充"
+    },
+    "diagnostic-jexp-17-2": {
+      "error": {
+        "wrong": "把以 kW 表示的功率数值直接标成 W，换算时多除以 1000。",
+        "wrong_expr": "P = U*I/1000",
+        "why": "220 V×1 A=220 W；若要改写成 kW 才是 0.22 kW，不能把 0.22 标成 W。",
+        "caught_by": "数值代入",
+        "trap_test": {
+          "scenario": "小灯泡一",
+          "expr": "U*I/1000",
+          "ref": 220
+        }
+      },
+      "title": "测量小灯泡的电功率",
+      "chapter": "实验专题：必做项目与教材补充"
+    },
+    "diagnostic-jexp-17-3": {
+      "error": {
+        "wrong": "把电功率写成 U/I。",
+        "wrong_expr": "P = U/I",
+        "why": "电功率可由电压与电流相乘得到；电压除以电流不是瓦特，单位组合也不同，因此不能用它表示功率。",
+        "caught_by": "量纲一致性",
+        "trap_test": {
+          "kind": "dimension",
+          "target": "P = U/I",
+          "lhs_dim": "M·L^2·T^-3",
+          "rhs_dim": "M·L^2·T^-3·I^-2",
+          "expect": "mismatch",
+          "note": "实际量纲检查得到等号左边为M·L^2·T^-3、右边为M·L^2·T^-3·I^-2；两边不是同一物理量，因此该等式不成立。"
+        }
+      },
+      "title": "测量小灯泡的电功率",
+      "chapter": "实验专题：必做项目与教材补充"
+    },
+    "diagnostic-jexp-18-1": {
+      "error": {
+        "wrong": "把线圈电流写成电阻除以电压。",
+        "wrong_expr": "Ic = Rc/Uc",
+        "why": "已测得线圈两端电压和电阻后，应按欧姆定律用电压除以电阻求电流；反过来相除所得量纲不是安培。",
+        "caught_by": "量纲一致性",
+        "trap_test": {
+          "kind": "dimension",
+          "target": "Ic = Rc/Uc",
+          "lhs_dim": "I",
+          "rhs_dim": "I^-1",
+          "expect": "mismatch",
+          "note": "实际量纲检查得到等号左边为I、右边为I^-1；两边不是同一物理量，因此该等式不成立。"
+        }
+      },
+      "title": "探究通电螺线管外部磁场的方向",
+      "chapter": "实验专题：必做项目与教材补充"
+    },
+    "diagnostic-jexp-18-2": {
+      "error": {
+        "wrong": "把线圈电流换算成 mA 后仍把数值标成 A，导致电流大 1000 倍。",
+        "wrong_expr": "Ic = 1000*Uc/Rc",
+        "why": "4 V÷20 Ω=0.2 A；换成毫安是 200 mA，不能仍写作 200 A。",
+        "caught_by": "数值代入",
+        "trap_test": {
+          "scenario": "线圈实验一",
+          "expr": "1000*Uc/Rc",
+          "ref": 0.2
+        }
+      },
+      "title": "探究通电螺线管外部磁场的方向",
+      "chapter": "实验专题：必做项目与教材补充"
+    },
+    "diagnostic-jexp-18-3": {
+      "error": {
+        "wrong": "只增加电压、同时改变线圈匝数和铁芯，还把磁性变化全归因于电流。",
+        "why": "探究一个因素影响时要控制其他变量，避免把多个因素的作用混在一起。",
+        "caught_by": "人工审核"
+      },
+      "title": "探究通电螺线管外部磁场的方向",
+      "chapter": "实验专题：必做项目与教材补充"
+    },
+    "diagnostic-jexp-19-1": {
+      "error": {
+        "wrong": "把感应电流写成感应电压乘以回路电阻。",
+        "wrong_expr": "I_ind = U_ind*R_loop",
+        "why": "感应电路测得电压后仍按欧姆定律求电流，应当除以电阻；相乘的单位不是 A。",
+        "caught_by": "量纲一致性",
+        "trap_test": {
+          "kind": "dimension",
+          "target": "I_ind = U_ind*R_loop",
+          "lhs_dim": "I",
+          "rhs_dim": "M^2·L^4·T^-6·I^-3",
+          "expect": "mismatch",
+          "note": "实际量纲检查得到等号左边为I、右边为M^2·L^4·T^-6·I^-3；两边不是同一物理量，因此该等式不成立。"
+        }
+      },
+      "title": "探究导体在磁场中运动时产生感应电流的条件",
+      "chapter": "实验专题：必做项目与教材补充"
+    },
+    "diagnostic-jexp-19-2": {
+      "error": {
+        "wrong": "把感应电流换算成 mA 后仍将毫安数值标作 A。",
+        "wrong_expr": "I_ind = 1000*U_ind/R_loop",
+        "why": "0.6 V÷3 Ω=0.2 A=200 mA；若把换算后的 200 写成 A，会大 1000 倍。",
+        "caught_by": "数值代入",
+        "trap_test": {
+          "scenario": "线圈感应一",
+          "expr": "1000*U_ind/R_loop",
+          "ref": 0.2
+        }
+      },
+      "title": "探究导体在磁场中运动时产生感应电流的条件",
+      "chapter": "实验专题：必做项目与教材补充"
+    },
+    "diagnostic-jexp-19-3": {
+      "error": {
+        "wrong": "认为只要线圈和磁体静止放在一起就一定有持续感应电流。",
+        "why": "需要磁场变化或导体与磁场发生相对运动；静止且磁场不变时没有持续感应电流。",
+        "caught_by": "人工审核"
+      },
+      "title": "探究导体在磁场中运动时产生感应电流的条件",
+      "chapter": "实验专题：必做项目与教材补充"
+    },
+    "diagnostic-jexp-20-1": {
+      "error": {
+        "wrong": "把反射角从镜面而不是法线量起，用余角代替反射角。",
+        "wrong_expr": "r = 90-i",
+        "why": "入射角30°时从法线量的反射角也是30°，从镜面量到的60°是它的余角，不是反射角。",
+        "caught_by": "数值代入",
+        "trap_test": {
+          "scenario": "入射角30度",
+          "expr": "90-i",
+          "ref": 30
+        }
+      },
+      "title": "探究光的反射定律",
+      "chapter": "实验专题：必做项目与教材补充"
+    },
+    "diagnostic-jexp-20-2": {
+      "error": {
+        "wrong": "认为只有光滑表面才发生反射。",
+        "why": "漫反射和镜面反射都遵守反射定律，差别在于表面是否平整以及反射光的方向分布。",
+        "caught_by": "人工审核"
+      },
+      "title": "探究光的反射定律",
+      "chapter": "实验专题：必做项目与教材补充"
+    },
+    "diagnostic-jexp-21-1": {
+      "error": {
+        "wrong": "误认为像距只有物距的一半。",
+        "wrong_expr": "d2 = d1/2",
+        "why": "平面镜成像关于镜面对称，像距等于物距；物距 0.5 m 时像距应是 0.5 m。",
+        "caught_by": "数值代入",
+        "trap_test": {
+          "scenario": "物距半米",
+          "expr": "d1/2",
+          "ref": 0.5
+        }
+      },
+      "title": "探究平面镜成像的特点",
+      "chapter": "实验专题：必做项目与教材补充"
+    },
+    "diagnostic-jexp-21-2": {
+      "error": {
+        "wrong": "认为平面镜所成的像可以用光屏接收到。",
+        "why": "平面镜像是反射光线反向延长线的交点，属于虚像；应通过成像实验和光线图辨析。",
+        "caught_by": "人工审核"
+      },
+      "title": "探究平面镜成像的特点",
+      "chapter": "实验专题：必做项目与教材补充"
+    },
+    "diagnostic-jexp-22-1": {
+      "error": {
+        "wrong": "把物距为二倍焦距时的像距误写成物距的一半。",
+        "wrong_expr": "v = u/2",
+        "why": "当 u=2f 时，v 也为 2f，因此 v=u；物距为 0.20 m 时像距不是 0.10 m。",
+        "caught_by": "数值代入",
+        "trap_test": {
+          "scenario": "焦距10厘米物距20厘米",
+          "expr": "u/2",
+          "ref": 0.2
+        }
+      },
+      "title": "探究凸透镜成像的规律",
+      "chapter": "实验专题：必做项目与教材补充"
+    },
+    "diagnostic-jexp-22-2": {
+      "error": {
+        "wrong": "认为凸透镜无论物距如何都成倒立实像。",
+        "why": "物体位于焦点以内时，凸透镜成正立、放大的虚像；像的性质必须结合物距和焦距判断。",
+        "caught_by": "人工审核"
+      },
+      "title": "探究凸透镜成像的规律",
+      "chapter": "实验专题：必做项目与教材补充"
+    }
+  }
+}

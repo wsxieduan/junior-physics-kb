@@ -8,7 +8,7 @@
       "point_id": "fmotion-01",
       "point_title": "二力平衡",
       "chapter": "力与运动",
-      "stem": "【力与运动 · 二力平衡】学生的错误做法：两个反向力大小相等时，把合力写成两力相加（错误表达式：F_net = F1+F2）。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
+      "stem": "【力与运动 · 二力平衡】学生的错误做法：两个反向力大小相等时，把合力写成两力相加（错误表达式：F<sub>合</sub> = F<sub>1</sub>+F<sub>2</sub>）。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
       "options": [
         {
           "label": "A",
@@ -28,12 +28,12 @@
         }
       ],
       "correct_answer": "D",
-      "explanation": "方向相反的共线力应按选定正方向做代数相减；5 N 与 5 N 反向合力为零。\n知识库校验证据：情境：桌面静止木块；代入错误式：F1+F2；校验参照值：0。",
+      "explanation": "方向相反的共线力应按选定正方向做代数相减；5 N 与 5 N 反向合力为零。\n知识库校验证据：情境：桌面静止木块；代入错误式：F<sub>1</sub>+F<sub>2</sub>；校验参照值：0。",
       "error_type": "数值代入",
       "judging": "auto",
       "source_error_index": 0,
       "source_caught_by": "数值代入",
-      "wrong_expr": "F_net = F1+F2",
+      "wrong_expr": "F<sub>合</sub> = F<sub>1</sub>+F<sub>2</sub>",
       "trap_test": {
         "scenario": "桌面静止木块",
         "expr": "F1+F2",
@@ -71,7 +71,7 @@
         },
         {
           "label": "D",
-          "text": "数值代入：牛顿第二定律的拓展模型为 F_net=m*a；2 kg 小车加速度 2 m/s² 时合力应为 4 N。"
+          "text": "数值代入：牛顿第二定律的拓展模型为 F<sub>合</sub>=m·a；2 kg 小车加速度 2 m/s² 时合力应为 4 N。"
         }
       ],
       "correct_answer": "C",
@@ -114,7 +114,7 @@
         },
         {
           "label": "D",
-          "text": "数值代入：牛顿第二定律的拓展模型为 F_net=m*a；2 kg 小车加速度 2 m/s² 时合力应为 4 N。"
+          "text": "数值代入：牛顿第二定律的拓展模型为 F<sub>合</sub>=m·a；2 kg 小车加速度 2 m/s² 时合力应为 4 N。"
         }
       ],
       "correct_answer": "B",
@@ -141,7 +141,7 @@
       "point_id": "fmotion-02",
       "point_title": "牛顿第一定律",
       "chapter": "力与运动",
-      "stem": "【力与运动 · 牛顿第一定律】学生的错误做法：速度已用 m/s 代入路程关系时，又额外乘 3.6，误把 km/h 换算重复做了一次（错误表达式：s = 3.6*v*t）。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
+      "stem": "【力与运动 · 牛顿第一定律】学生的错误做法：速度已用 m/s 代入路程关系时，又额外乘 3.6，误把 km/h 换算重复做了一次（错误表达式：s = 3.6·v·t）。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
       "options": [
         {
           "label": "A",
@@ -161,12 +161,12 @@
         }
       ],
       "correct_answer": "A",
-      "explanation": "匀速小车速度 10 m/s、时间 5 s，路程应为 50 m；再乘 3.6 会错算为 180 m。\n知识库校验证据：情境：匀速小车；代入错误式：3.6*v*t；校验参照值：50。",
+      "explanation": "匀速小车速度 10 m/s、时间 5 s，路程应为 50 m；再乘 3.6 会错算为 180 m。\n知识库校验证据：情境：匀速小车；代入错误式：3.6·v·t；校验参照值：50。",
       "error_type": "数值代入",
       "judging": "auto",
       "source_error_index": 1,
       "source_caught_by": "数值代入",
-      "wrong_expr": "s = 3.6*v*t",
+      "wrong_expr": "s = 3.6·v·t",
       "trap_test": {
         "scenario": "匀速小车",
         "expr": "3.6*v*t",
@@ -196,7 +196,7 @@
         },
         {
           "label": "B",
-          "text": "数值代入：牛顿第二定律的拓展模型为 F_net=m*a；2 kg 小车加速度 2 m/s² 时合力应为 4 N。"
+          "text": "数值代入：牛顿第二定律的拓展模型为 F<sub>合</sub>=m·a；2 kg 小车加速度 2 m/s² 时合力应为 4 N。"
         },
         {
           "label": "C",
@@ -231,7 +231,7 @@
       "point_id": "fmotion-03",
       "point_title": "力与运动的关系",
       "chapter": "力与运动",
-      "stem": "【力与运动 · 力与运动的关系】学生的错误做法：把合力与加速度的乘积误写成其一半（错误表达式：F_net = m*a/2）。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
+      "stem": "【力与运动 · 力与运动的关系】学生的错误做法：把合力误写成质量与加速度乘积的一半（错误表达式：F<sub>合</sub> = m·a/2）。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
       "options": [
         {
           "label": "A",
@@ -243,7 +243,7 @@
         },
         {
           "label": "C",
-          "text": "数值代入：牛顿第二定律的拓展模型为 F_net=m*a；2 kg 小车加速度 2 m/s² 时合力应为 4 N。"
+          "text": "数值代入：牛顿第二定律的拓展模型为 F<sub>合</sub>=m·a；2 kg 小车加速度 2 m/s² 时合力应为 4 N。"
         },
         {
           "label": "D",
@@ -251,12 +251,12 @@
         }
       ],
       "correct_answer": "C",
-      "explanation": "牛顿第二定律的拓展模型为 F_net=m*a；2 kg 小车加速度 2 m/s² 时合力应为 4 N。\n知识库校验证据：情境：二千克小车；代入错误式：m*a/2；校验参照值：4。",
+      "explanation": "牛顿第二定律的拓展模型为 F<sub>合</sub>=m·a；2 kg 小车加速度 2 m/s² 时合力应为 4 N。\n知识库校验证据：情境：二千克小车；代入错误式：m·a/2；校验参照值：4。",
       "error_type": "数值代入",
       "judging": "auto",
       "source_error_index": 0,
       "source_caught_by": "数值代入",
-      "wrong_expr": "F_net = m*a/2",
+      "wrong_expr": "F<sub>合</sub> = m·a/2",
       "trap_test": {
         "scenario": "二千克小车",
         "expr": "m*a/2",
@@ -282,7 +282,7 @@
       "options": [
         {
           "label": "A",
-          "text": "数值代入：牛顿第二定律的拓展模型为 F_net=m*a；2 kg 小车加速度 2 m/s² 时合力应为 4 N。"
+          "text": "数值代入：牛顿第二定律的拓展模型为 F<sub>合</sub>=m·a；2 kg 小车加速度 2 m/s² 时合力应为 4 N。"
         },
         {
           "label": "B",
@@ -317,5 +317,88 @@
       }
     }
   ],
-  "skipped": []
+  "skipped": [],
+  "source_records": {
+    "diagnostic-fmotion-01-1": {
+      "error": {
+        "wrong": "两个反向力大小相等时，把合力写成两力相加。",
+        "wrong_expr": "F_net = F1+F2",
+        "why": "方向相反的共线力应按选定正方向做代数相减；5 N 与 5 N 反向合力为零。",
+        "caught_by": "数值代入",
+        "trap_test": {
+          "scenario": "桌面静止木块",
+          "expr": "F1+F2",
+          "ref": 0
+        }
+      },
+      "title": "二力平衡",
+      "chapter": "力与运动"
+    },
+    "diagnostic-fmotion-01-2": {
+      "error": {
+        "wrong": "认为合力为零就说明物体一定静止。",
+        "why": "合力为零时物体保持原来的运动状态；原来运动的物体可继续做匀速直线运动。",
+        "caught_by": "人工审核"
+      },
+      "title": "二力平衡",
+      "chapter": "力与运动"
+    },
+    "diagnostic-fmotion-02-1": {
+      "error": {
+        "wrong": "把惯性说成物体继续运动的一个力。",
+        "why": "惯性是物体本身的性质，不是力；分析速度改变仍要检查物体受到的合力。",
+        "caught_by": "人工审核"
+      },
+      "title": "牛顿第一定律",
+      "chapter": "力与运动"
+    },
+    "diagnostic-fmotion-02-2": {
+      "error": {
+        "wrong": "速度已用 m/s 代入路程关系时，又额外乘 3.6，误把 km/h 换算重复做了一次。",
+        "wrong_expr": "s = 3.6*v*t",
+        "why": "匀速小车速度 10 m/s、时间 5 s，路程应为 50 m；再乘 3.6 会错算为 180 m。",
+        "caught_by": "数值代入",
+        "trap_test": {
+          "scenario": "匀速小车",
+          "expr": "3.6*v*t",
+          "ref": 50
+        }
+      },
+      "title": "牛顿第一定律",
+      "chapter": "力与运动"
+    },
+    "diagnostic-fmotion-02-3": {
+      "error": {
+        "wrong": "认为只有运动物体才有惯性，静止物体没有惯性。",
+        "why": "惯性是所有物体的固有属性，静止物体也保持静止状态，质量越大惯性越大。",
+        "caught_by": "人工审核"
+      },
+      "title": "牛顿第一定律",
+      "chapter": "力与运动"
+    },
+    "diagnostic-fmotion-03-1": {
+      "error": {
+        "wrong": "把合力误写成质量与加速度乘积的一半。",
+        "wrong_expr": "F_net = m*a/2",
+        "why": "牛顿第二定律的拓展模型为 F_net=m*a；2 kg 小车加速度 2 m/s² 时合力应为 4 N。",
+        "caught_by": "数值代入",
+        "trap_test": {
+          "scenario": "二千克小车",
+          "expr": "m*a/2",
+          "ref": 4
+        }
+      },
+      "title": "力与运动的关系",
+      "chapter": "力与运动"
+    },
+    "diagnostic-fmotion-03-2": {
+      "error": {
+        "wrong": "认为物体只要在运动，就一定受到沿运动方向的合力。",
+        "why": "物体可以在合力为零时保持匀速直线运动；合力决定运动状态如何改变，不是维持运动的必要条件。",
+        "caught_by": "人工审核"
+      },
+      "title": "力与运动的关系",
+      "chapter": "力与运动"
+    }
+  }
 }

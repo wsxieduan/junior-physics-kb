@@ -1,0 +1,808 @@
+{
+  "segment": "初中",
+  "chapter": "测量工具与数据处理",
+  "source_file": "19_tools.json",
+  "questions": [
+    {
+      "id": "diagnostic-tool-01-1",
+      "point_id": "tool-01",
+      "point_title": "刻度尺的使用与估读",
+      "chapter": "测量工具与数据处理",
+      "stem": "【测量工具与数据处理 · 刻度尺的使用与估读】学生的错误做法：零端磨损时仍把终点读数当长度，忘记减去起点（错误表达式：L = x<sub>2</sub>）。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
+      "options": [
+        {
+          "label": "A",
+          "text": "概念混淆：游标根据刻线对齐读数，不按普通连续刻度另估一位。"
+        },
+        {
+          "label": "B",
+          "text": "概念混淆：棘轮限制测量压力，过紧会压缩软物体或损伤仪器；修正须用示值减有符号零误差，不能靠猜测方向。"
+        },
+        {
+          "label": "C",
+          "text": "概念混淆：力应沿弹簧轴线施加，侧向摩擦会改变伸长与示值；只有平衡且无其他竖直支持时悬挂拉力才等于重力，运动状态必须单独判断。"
+        },
+        {
+          "label": "D",
+          "text": "数值代入：用非零刻线起测后，终点读数包含被移动的起点位置。"
+        }
+      ],
+      "correct_answer": "D",
+      "explanation": "用非零刻线起测后，终点读数包含被移动的起点位置。4.26 cm的终点和1.00 cm的起点应相减，不是4.26 cm长。\n知识库校验证据：情境：薄板甲；代入错误式：x<sub>2</sub>；校验参照值：0.0326。",
+      "error_type": "数值代入",
+      "judging": "auto",
+      "source_error_index": 0,
+      "source_caught_by": "数值代入",
+      "wrong_expr": "L = x<sub>2</sub>",
+      "trap_test": {
+        "scenario": "薄板甲",
+        "expr": "x2",
+        "ref": 0.0326
+      },
+      "review": {
+        "confidence": "medium",
+        "checks": {
+          "answer_unique": true,
+          "distractors_plausible": true,
+          "stem_clear": true,
+          "no_cross_segment": true
+        },
+        "note": "本章可用类型不足四类，干扰项包含同章其他错误的类别与原解释；答案按“类别+依据”唯一匹配，建议抽查教学区分度。"
+      }
+    },
+    {
+      "id": "diagnostic-tool-01-2",
+      "point_id": "tool-01",
+      "point_title": "刻度尺的使用与估读",
+      "chapter": "测量工具与数据处理",
+      "stem": "【测量工具与数据处理 · 刻度尺的使用与估读】学生的错误做法：毫米分度尺只记3.2 cm，漏写估读位。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
+      "options": [
+        {
+          "label": "A",
+          "text": "数值代入：固定套筒的半毫米也是已经露出的准确刻度，遗漏它会使直径少0.500 mm。"
+        },
+        {
+          "label": "B",
+          "text": "数值代入：示值由分度值和格数共同决定，格数本身没有牛顿的含义；6格乘0.5 N才是3 N，不能读成6 N，更不能直接记成6 kg。"
+        },
+        {
+          "label": "C",
+          "text": "概念混淆：普通毫米尺按中学约定应估读到0.1 mm，记录如3.26 cm；只记3.2 cm丢失了测量精度信息。"
+        },
+        {
+          "label": "D",
+          "text": "数值代入：格数不是毫米数，必须乘该游标的0.02 mm分度差；12 mm主尺与23格对应12.46 mm，错按0.01 mm每格得到12.23 mm。"
+        }
+      ],
+      "correct_answer": "C",
+      "explanation": "普通毫米尺按中学约定应估读到0.1 mm，记录如3.26 cm；只记3.2 cm丢失了测量精度信息。补位必须来自实际观察，不能任意添数字。",
+      "error_type": "概念混淆",
+      "judging": "teacher",
+      "source_error_index": 1,
+      "source_caught_by": "人工审核",
+      "wrong_expr": null,
+      "trap_test": null,
+      "review": {
+        "confidence": "medium",
+        "checks": {
+          "answer_unique": true,
+          "distractors_plausible": true,
+          "stem_clear": true,
+          "no_cross_segment": true
+        },
+        "note": "本章可用类型不足四类，干扰项包含同章其他错误的类别与原解释；答案按“类别+依据”唯一匹配，建议抽查教学区分度。"
+      }
+    },
+    {
+      "id": "diagnostic-tool-02-1",
+      "point_id": "tool-02",
+      "point_title": "游标卡尺的读数",
+      "chapter": "测量工具与数据处理",
+      "stem": "【测量工具与数据处理 · 游标卡尺的读数】学生的错误做法：50分度游标第23格对齐时，把游标增量当0.23 mm而非0.46 mm（错误表达式：L = x+n·0.00001）。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
+      "options": [
+        {
+          "label": "A",
+          "text": "概念混淆：力应沿弹簧轴线施加，侧向摩擦会改变伸长与示值；只有平衡且无其他竖直支持时悬挂拉力才等于重力，运动状态必须单独判断。"
+        },
+        {
+          "label": "B",
+          "text": "数值代入：格数不是毫米数，必须乘该游标的0.02 mm分度差；12 mm主尺与23格对应12.46 mm，错按0.01 mm每格得到12.23 mm。"
+        },
+        {
+          "label": "C",
+          "text": "概念混淆：普通毫米尺按中学约定应估读到0.1 mm，记录如3.26 cm；只记3.2 cm丢失了测量精度信息。"
+        },
+        {
+          "label": "D",
+          "text": "概念混淆：棘轮限制测量压力，过紧会压缩软物体或损伤仪器；修正须用示值减有符号零误差，不能靠猜测方向。"
+        }
+      ],
+      "correct_answer": "B",
+      "explanation": "格数不是毫米数，必须乘该游标的0.02 mm分度差；12 mm主尺与23格对应12.46 mm，错按0.01 mm每格得到12.23 mm。\n知识库校验证据：情境：五十分度；代入错误式：x+n·0.00001；校验参照值：0.01246。",
+      "error_type": "数值代入",
+      "judging": "auto",
+      "source_error_index": 0,
+      "source_caught_by": "数值代入",
+      "wrong_expr": "L = x+n·0.00001",
+      "trap_test": {
+        "scenario": "五十分度",
+        "expr": "x+n*0.00001",
+        "ref": 0.01246
+      },
+      "review": {
+        "confidence": "medium",
+        "checks": {
+          "answer_unique": true,
+          "distractors_plausible": true,
+          "stem_clear": true,
+          "no_cross_segment": true
+        },
+        "note": "本章可用类型不足四类，干扰项包含同章其他错误的类别与原解释；答案按“类别+依据”唯一匹配，建议抽查教学区分度。"
+      }
+    },
+    {
+      "id": "diagnostic-tool-02-2",
+      "point_id": "tool-02",
+      "point_title": "游标卡尺的读数",
+      "chapter": "测量工具与数据处理",
+      "stem": "【测量工具与数据处理 · 游标卡尺的读数】学生的错误做法：给游标读数额外估读一位或把内外测量爪混用。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
+      "options": [
+        {
+          "label": "A",
+          "text": "概念混淆：游标根据刻线对齐读数，不按普通连续刻度另估一位。"
+        },
+        {
+          "label": "B",
+          "text": "数值代入：用非零刻线起测后，终点读数包含被移动的起点位置。"
+        },
+        {
+          "label": "C",
+          "text": "数值代入：固定套筒的半毫米也是已经露出的准确刻度，遗漏它会使直径少0.500 mm。"
+        },
+        {
+          "label": "D",
+          "text": "数值代入：示值由分度值和格数共同决定，格数本身没有牛顿的含义；6格乘0.5 N才是3 N，不能读成6 N，更不能直接记成6 kg。"
+        }
+      ],
+      "correct_answer": "A",
+      "explanation": "游标根据刻线对齐读数，不按普通连续刻度另估一位。不同测量爪对应不同接触位置，必须先确认对象和校零，不能仅凭计算正确判断操作正确。",
+      "error_type": "概念混淆",
+      "judging": "teacher",
+      "source_error_index": 1,
+      "source_caught_by": "人工审核",
+      "wrong_expr": null,
+      "trap_test": null,
+      "review": {
+        "confidence": "medium",
+        "checks": {
+          "answer_unique": true,
+          "distractors_plausible": true,
+          "stem_clear": true,
+          "no_cross_segment": true
+        },
+        "note": "本章可用类型不足四类，干扰项包含同章其他错误的类别与原解释；答案按“类别+依据”唯一匹配，建议抽查教学区分度。"
+      }
+    },
+    {
+      "id": "diagnostic-tool-03-1",
+      "point_id": "tool-03",
+      "point_title": "螺旋测微器的读数",
+      "chapter": "测量工具与数据处理",
+      "stem": "【测量工具与数据处理 · 螺旋测微器的读数】学生的错误做法：看到半毫米刻线却漏读0.5 mm（错误表达式：D = x-0.0005+n·d-z）。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
+      "options": [
+        {
+          "label": "A",
+          "text": "概念混淆：普通毫米尺按中学约定应估读到0.1 mm，记录如3.26 cm；只记3.2 cm丢失了测量精度信息。"
+        },
+        {
+          "label": "B",
+          "text": "概念混淆：游标根据刻线对齐读数，不按普通连续刻度另估一位。"
+        },
+        {
+          "label": "C",
+          "text": "概念混淆：力应沿弹簧轴线施加，侧向摩擦会改变伸长与示值；只有平衡且无其他竖直支持时悬挂拉力才等于重力，运动状态必须单独判断。"
+        },
+        {
+          "label": "D",
+          "text": "数值代入：固定套筒的半毫米也是已经露出的准确刻度，遗漏它会使直径少0.500 mm。"
+        }
+      ],
+      "correct_answer": "D",
+      "explanation": "固定套筒的半毫米也是已经露出的准确刻度，遗漏它会使直径少0.500 mm。零点修正无法补偿漏掉半毫米这一读数错误。\n知识库校验证据：情境：正零误差；代入错误式：x-0.0005+n·d-z；校验参照值：0.00577。",
+      "error_type": "数值代入",
+      "judging": "auto",
+      "source_error_index": 0,
+      "source_caught_by": "数值代入",
+      "wrong_expr": "D = x-0.0005+n·d-z",
+      "trap_test": {
+        "scenario": "正零误差",
+        "expr": "x-0.0005+n*d-z",
+        "ref": 0.00577
+      },
+      "review": {
+        "confidence": "medium",
+        "checks": {
+          "answer_unique": true,
+          "distractors_plausible": true,
+          "stem_clear": true,
+          "no_cross_segment": true
+        },
+        "note": "本章可用类型不足四类，干扰项包含同章其他错误的类别与原解释；答案按“类别+依据”唯一匹配，建议抽查教学区分度。"
+      }
+    },
+    {
+      "id": "diagnostic-tool-03-2",
+      "point_id": "tool-03",
+      "point_title": "螺旋测微器的读数",
+      "chapter": "测量工具与数据处理",
+      "stem": "【测量工具与数据处理 · 螺旋测微器的读数】学生的错误做法：用主体旋钮硬拧测量面，或不顾正负把零误差总加上。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
+      "options": [
+        {
+          "label": "A",
+          "text": "数值代入：格数不是毫米数，必须乘该游标的0.02 mm分度差；12 mm主尺与23格对应12.46 mm，错按0.01 mm每格得到12.23 mm。"
+        },
+        {
+          "label": "B",
+          "text": "数值代入：示值由分度值和格数共同决定，格数本身没有牛顿的含义；6格乘0.5 N才是3 N，不能读成6 N，更不能直接记成6 kg。"
+        },
+        {
+          "label": "C",
+          "text": "概念混淆：棘轮限制测量压力，过紧会压缩软物体或损伤仪器；修正须用示值减有符号零误差，不能靠猜测方向。"
+        },
+        {
+          "label": "D",
+          "text": "数值代入：用非零刻线起测后，终点读数包含被移动的起点位置。"
+        }
+      ],
+      "correct_answer": "C",
+      "explanation": "棘轮限制测量压力，过紧会压缩软物体或损伤仪器；修正须用示值减有符号零误差，不能靠猜测方向。估读位也须来自刻度观察。",
+      "error_type": "概念混淆",
+      "judging": "teacher",
+      "source_error_index": 1,
+      "source_caught_by": "人工审核",
+      "wrong_expr": null,
+      "trap_test": null,
+      "review": {
+        "confidence": "medium",
+        "checks": {
+          "answer_unique": true,
+          "distractors_plausible": true,
+          "stem_clear": true,
+          "no_cross_segment": true
+        },
+        "note": "本章可用类型不足四类，干扰项包含同章其他错误的类别与原解释；答案按“类别+依据”唯一匹配，建议抽查教学区分度。"
+      }
+    },
+    {
+      "id": "diagnostic-tool-04-1",
+      "point_id": "tool-04",
+      "point_title": "弹簧测力计的使用",
+      "chapter": "测量工具与数据处理",
+      "stem": "【测量工具与数据处理 · 弹簧测力计的使用】学生的错误做法：把0.5 N一格误当1 N一格，读数翻倍（错误表达式：F = n·2·d）。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
+      "options": [
+        {
+          "label": "A",
+          "text": "概念混淆：棘轮限制测量压力，过紧会压缩软物体或损伤仪器；修正须用示值减有符号零误差，不能靠猜测方向。"
+        },
+        {
+          "label": "B",
+          "text": "数值代入：示值由分度值和格数共同决定，格数本身没有牛顿的含义；6格乘0.5 N才是3 N，不能读成6 N，更不能直接记成6 kg。"
+        },
+        {
+          "label": "C",
+          "text": "概念混淆：普通毫米尺按中学约定应估读到0.1 mm，记录如3.26 cm；只记3.2 cm丢失了测量精度信息。"
+        },
+        {
+          "label": "D",
+          "text": "概念混淆：游标根据刻线对齐读数，不按普通连续刻度另估一位。"
+        }
+      ],
+      "correct_answer": "B",
+      "explanation": "示值由分度值和格数共同决定，格数本身没有牛顿的含义；6格乘0.5 N才是3 N，不能读成6 N，更不能直接记成6 kg。\n知识库校验证据：情境：平衡校准甲；代入错误式：n·2·d；校验参照值：3。",
+      "error_type": "数值代入",
+      "judging": "auto",
+      "source_error_index": 0,
+      "source_caught_by": "数值代入",
+      "wrong_expr": "F = n·2·d",
+      "trap_test": {
+        "scenario": "平衡校准甲",
+        "expr": "n*2*d",
+        "ref": 3
+      },
+      "review": {
+        "confidence": "medium",
+        "checks": {
+          "answer_unique": true,
+          "distractors_plausible": true,
+          "stem_clear": true,
+          "no_cross_segment": true
+        },
+        "note": "本章可用类型不足四类，干扰项包含同章其他错误的类别与原解释；答案按“类别+依据”唯一匹配，建议抽查教学区分度。"
+      }
+    },
+    {
+      "id": "diagnostic-tool-04-2",
+      "point_id": "tool-04",
+      "point_title": "弹簧测力计的使用",
+      "chapter": "测量工具与数据处理",
+      "stem": "【测量工具与数据处理 · 弹簧测力计的使用】学生的错误做法：斜拉弹簧或在加速上提时一律把拉力当重力。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
+      "options": [
+        {
+          "label": "A",
+          "text": "概念混淆：力应沿弹簧轴线施加，侧向摩擦会改变伸长与示值；只有平衡且无其他竖直支持时悬挂拉力才等于重力，运动状态必须单独判断。"
+        },
+        {
+          "label": "B",
+          "text": "数值代入：用非零刻线起测后，终点读数包含被移动的起点位置。"
+        },
+        {
+          "label": "C",
+          "text": "数值代入：格数不是毫米数，必须乘该游标的0.02 mm分度差；12 mm主尺与23格对应12.46 mm，错按0.01 mm每格得到12.23 mm。"
+        },
+        {
+          "label": "D",
+          "text": "数值代入：固定套筒的半毫米也是已经露出的准确刻度，遗漏它会使直径少0.500 mm。"
+        }
+      ],
+      "correct_answer": "A",
+      "explanation": "力应沿弹簧轴线施加，侧向摩擦会改变伸长与示值；只有平衡且无其他竖直支持时悬挂拉力才等于重力，运动状态必须单独判断。",
+      "error_type": "概念混淆",
+      "judging": "teacher",
+      "source_error_index": 1,
+      "source_caught_by": "人工审核",
+      "wrong_expr": null,
+      "trap_test": null,
+      "review": {
+        "confidence": "medium",
+        "checks": {
+          "answer_unique": true,
+          "distractors_plausible": true,
+          "stem_clear": true,
+          "no_cross_segment": true
+        },
+        "note": "本章可用类型不足四类，干扰项包含同章其他错误的类别与原解释；答案按“类别+依据”唯一匹配，建议抽查教学区分度。"
+      }
+    },
+    {
+      "id": "diagnostic-tool-05-1",
+      "point_id": "tool-05",
+      "point_title": "托盘天平的使用与密度测量",
+      "chapter": "测量工具与数据处理",
+      "stem": "【测量工具与数据处理 · 托盘天平的使用与密度测量】学生的错误做法：天平读数只计砝码，漏掉游码质量（错误表达式：m = mc）。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
+      "options": [
+        {
+          "label": "A",
+          "text": "概念混淆：普通毫米尺按中学约定应估读到0.1 mm，记录如3.26 cm；只记3.2 cm丢失了测量精度信息。"
+        },
+        {
+          "label": "B",
+          "text": "概念混淆：游标根据刻线对齐读数，不按普通连续刻度另估一位。"
+        },
+        {
+          "label": "C",
+          "text": "概念混淆：棘轮限制测量压力，过紧会压缩软物体或损伤仪器；修正须用示值减有符号零误差，不能靠猜测方向。"
+        },
+        {
+          "label": "D",
+          "text": "数值代入：游码在标尺上移动也提供平衡作用，示值必须与砝码相加；80 g砝码与4 g游码合为84 g，不是80 g。"
+        }
+      ],
+      "correct_answer": "D",
+      "explanation": "游码在标尺上移动也提供平衡作用，示值必须与砝码相加；80 g砝码与4 g游码合为84 g，不是80 g。称量时重新调螺母不能弥补漏读。\n知识库校验证据：情境：液体甲；代入错误式：mc；校验参照值：0.084。",
+      "error_type": "数值代入",
+      "judging": "auto",
+      "source_error_index": 0,
+      "source_caught_by": "数值代入",
+      "wrong_expr": "m = mc",
+      "trap_test": {
+        "scenario": "液体甲",
+        "expr": "mc",
+        "ref": 0.084
+      },
+      "review": {
+        "confidence": "medium",
+        "checks": {
+          "answer_unique": true,
+          "distractors_plausible": true,
+          "stem_clear": true,
+          "no_cross_segment": true
+        },
+        "note": "本章可用类型不足四类，干扰项包含同章其他错误的类别与原解释；答案按“类别+依据”唯一匹配，建议抽查教学区分度。"
+      }
+    },
+    {
+      "id": "diagnostic-tool-05-2",
+      "point_id": "tool-05",
+      "point_title": "托盘天平的使用与密度测量",
+      "chapter": "测量工具与数据处理",
+      "stem": "【测量工具与数据处理 · 托盘天平的使用与密度测量】学生的错误做法：称量时移动平衡螺母，或先排水后称带水固体。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
+      "options": [
+        {
+          "label": "A",
+          "text": "数值代入：格数不是毫米数，必须乘该游标的0.02 mm分度差；12 mm主尺与23格对应12.46 mm，错按0.01 mm每格得到12.23 mm。"
+        },
+        {
+          "label": "B",
+          "text": "数值代入：固定套筒的半毫米也是已经露出的准确刻度，遗漏它会使直径少0.500 mm。"
+        },
+        {
+          "label": "C",
+          "text": "概念混淆：调平衡只用于称量前的空载校零，称量中移动会改变仪器条件；固体附着水增加被称质量，所得密度可能偏大。"
+        },
+        {
+          "label": "D",
+          "text": "数值代入：用非零刻线起测后，终点读数包含被移动的起点位置。"
+        }
+      ],
+      "correct_answer": "C",
+      "explanation": "调平衡只用于称量前的空载校零，称量中移动会改变仪器条件；固体附着水增加被称质量，所得密度可能偏大。必须区分误差来源与配对样本。",
+      "error_type": "概念混淆",
+      "judging": "teacher",
+      "source_error_index": 1,
+      "source_caught_by": "人工审核",
+      "wrong_expr": null,
+      "trap_test": null,
+      "review": {
+        "confidence": "medium",
+        "checks": {
+          "answer_unique": true,
+          "distractors_plausible": true,
+          "stem_clear": true,
+          "no_cross_segment": true
+        },
+        "note": "本章可用类型不足四类，干扰项包含同章其他错误的类别与原解释；答案按“类别+依据”唯一匹配，建议抽查教学区分度。"
+      }
+    },
+    {
+      "id": "diagnostic-tool-06-1",
+      "point_id": "tool-06",
+      "point_title": "量筒与液体体积读数",
+      "chapter": "测量工具与数据处理",
+      "stem": "【测量工具与数据处理 · 量筒与液体体积读数】学生的错误做法：把毫升换立方米时只除1000，误把体积倍率当长度倍率（错误表达式：V = V<sub>m</sub>l/1000）。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
+      "options": [
+        {
+          "label": "A",
+          "text": "概念混淆：棘轮限制测量压力，过紧会压缩软物体或损伤仪器；修正须用示值减有符号零误差，不能靠猜测方向。"
+        },
+        {
+          "label": "B",
+          "text": "数值代入：1 mL=1 cm³=10⁻⁶ m³，因此毫升数除一百万；50 mL是0.00005 m³而不是0.05 m³，错误相差一千倍但量纲相同。"
+        },
+        {
+          "label": "C",
+          "text": "概念混淆：普通毫米尺按中学约定应估读到0.1 mm，记录如3.26 cm；只记3.2 cm丢失了测量精度信息。"
+        },
+        {
+          "label": "D",
+          "text": "概念混淆：游标根据刻线对齐读数，不按普通连续刻度另估一位。"
+        }
+      ],
+      "correct_answer": "B",
+      "explanation": "1 mL=1 cm³=10⁻⁶ m³，因此毫升数除一百万；50 mL是0.00005 m³而不是0.05 m³，错误相差一千倍但量纲相同。\n知识库校验证据：情境：五十毫升；代入错误式：V<sub>m</sub>l/1000；校验参照值：5e-05。",
+      "error_type": "数值代入",
+      "judging": "auto",
+      "source_error_index": 0,
+      "source_caught_by": "数值代入",
+      "wrong_expr": "V = V<sub>m</sub>l/1000",
+      "trap_test": {
+        "scenario": "五十毫升",
+        "expr": "V_ml/1000",
+        "ref": 5e-05
+      },
+      "review": {
+        "confidence": "medium",
+        "checks": {
+          "answer_unique": true,
+          "distractors_plausible": true,
+          "stem_clear": true,
+          "no_cross_segment": true
+        },
+        "note": "本章可用类型不足四类，干扰项包含同章其他错误的类别与原解释；答案按“类别+依据”唯一匹配，建议抽查教学区分度。"
+      }
+    },
+    {
+      "id": "diagnostic-tool-06-2",
+      "point_id": "tool-06",
+      "point_title": "量筒与液体体积读数",
+      "chapter": "测量工具与数据处理",
+      "stem": "【测量工具与数据处理 · 量筒与液体体积读数】学生的错误做法：俯视或仰视凹液面，或读凹面的上沿。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
+      "options": [
+        {
+          "label": "A",
+          "text": "概念混淆：正常视线应与凹液面最低处相平，俯视通常偏大、仰视通常偏小；弯月面读哪一处与液体类型有关，不能把水的规则直接套给凸液面。"
+        },
+        {
+          "label": "B",
+          "text": "数值代入：用非零刻线起测后，终点读数包含被移动的起点位置。"
+        },
+        {
+          "label": "C",
+          "text": "数值代入：格数不是毫米数，必须乘该游标的0.02 mm分度差；12 mm主尺与23格对应12.46 mm，错按0.01 mm每格得到12.23 mm。"
+        },
+        {
+          "label": "D",
+          "text": "数值代入：固定套筒的半毫米也是已经露出的准确刻度，遗漏它会使直径少0.500 mm。"
+        }
+      ],
+      "correct_answer": "A",
+      "explanation": "正常视线应与凹液面最低处相平，俯视通常偏大、仰视通常偏小；弯月面读哪一处与液体类型有关，不能把水的规则直接套给凸液面。",
+      "error_type": "概念混淆",
+      "judging": "teacher",
+      "source_error_index": 1,
+      "source_caught_by": "人工审核",
+      "wrong_expr": null,
+      "trap_test": null,
+      "review": {
+        "confidence": "medium",
+        "checks": {
+          "answer_unique": true,
+          "distractors_plausible": true,
+          "stem_clear": true,
+          "no_cross_segment": true
+        },
+        "note": "本章可用类型不足四类，干扰项包含同章其他错误的类别与原解释；答案按“类别+依据”唯一匹配，建议抽查教学区分度。"
+      }
+    },
+    {
+      "id": "diagnostic-tool-07-1",
+      "point_id": "tool-07",
+      "point_title": "有效数字与测量误差",
+      "chapter": "测量工具与数据处理",
+      "stem": "【测量工具与数据处理 · 有效数字与测量误差】学生的错误做法：把三次读数相加而不除以测量次数（错误表达式：L = L1+L2+L3）。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
+      "options": [
+        {
+          "label": "A",
+          "text": "概念混淆：普通毫米尺按中学约定应估读到0.1 mm，记录如3.26 cm；只记3.2 cm丢失了测量精度信息。"
+        },
+        {
+          "label": "B",
+          "text": "概念混淆：游标根据刻线对齐读数，不按普通连续刻度另估一位。"
+        },
+        {
+          "label": "C",
+          "text": "概念混淆：棘轮限制测量压力，过紧会压缩软物体或损伤仪器；修正须用示值减有符号零误差，不能靠猜测方向。"
+        },
+        {
+          "label": "D",
+          "text": "数值代入：对同一对象重复测量应求平均，直接相加会把长度扩大三倍。"
+        }
+      ],
+      "correct_answer": "D",
+      "explanation": "对同一对象重复测量应求平均，直接相加会把长度扩大三倍。这个算术错误可以避免，与读数末位随机波动造成的测量误差不是一回事。\n知识库校验证据：情境：样件甲；代入错误式：L1+L2+L3；校验参照值：0.0326。",
+      "error_type": "数值代入",
+      "judging": "auto",
+      "source_error_index": 0,
+      "source_caught_by": "数值代入",
+      "wrong_expr": "L = L1+L2+L3",
+      "trap_test": {
+        "scenario": "样件甲",
+        "expr": "L1+L2+L3",
+        "ref": 0.0326
+      },
+      "review": {
+        "confidence": "medium",
+        "checks": {
+          "answer_unique": true,
+          "distractors_plausible": true,
+          "stem_clear": true,
+          "no_cross_segment": true
+        },
+        "note": "本章可用类型不足四类，干扰项包含同章其他错误的类别与原解释；答案按“类别+依据”唯一匹配，建议抽查教学区分度。"
+      }
+    },
+    {
+      "id": "diagnostic-tool-07-2",
+      "point_id": "tool-07",
+      "point_title": "有效数字与测量误差",
+      "chapter": "测量工具与数据处理",
+      "stem": "【测量工具与数据处理 · 有效数字与测量误差】学生的错误做法：认为多测几次能消除所有误差，或把错用刻度说成不可避免误差。以下哪项“错误类别 + 判断依据”最符合题干中的做法？",
+      "options": [
+        {
+          "label": "A",
+          "text": "数值代入：格数不是毫米数，必须乘该游标的0.02 mm分度差；12 mm主尺与23格对应12.46 mm，错按0.01 mm每格得到12.23 mm。"
+        },
+        {
+          "label": "B",
+          "text": "数值代入：固定套筒的半毫米也是已经露出的准确刻度，遗漏它会使直径少0.500 mm。"
+        },
+        {
+          "label": "C",
+          "text": "概念混淆：平均只能减小部分偶然影响，固定零偏不会因重复消失；读错格数、漏单位等属于可避免错误。"
+        },
+        {
+          "label": "D",
+          "text": "数值代入：用非零刻线起测后，终点读数包含被移动的起点位置。"
+        }
+      ],
+      "correct_answer": "C",
+      "explanation": "平均只能减小部分偶然影响，固定零偏不会因重复消失；读错格数、漏单位等属于可避免错误。系统误差需校准和改进方法，不能靠增加计算位数修复。",
+      "error_type": "概念混淆",
+      "judging": "teacher",
+      "source_error_index": 1,
+      "source_caught_by": "人工审核",
+      "wrong_expr": null,
+      "trap_test": null,
+      "review": {
+        "confidence": "medium",
+        "checks": {
+          "answer_unique": true,
+          "distractors_plausible": true,
+          "stem_clear": true,
+          "no_cross_segment": true
+        },
+        "note": "本章可用类型不足四类，干扰项包含同章其他错误的类别与原解释；答案按“类别+依据”唯一匹配，建议抽查教学区分度。"
+      }
+    }
+  ],
+  "skipped": [],
+  "source_records": {
+    "diagnostic-tool-01-1": {
+      "error": {
+        "wrong": "零端磨损时仍把终点读数当长度，忘记减去起点。",
+        "wrong_expr": "L = x2",
+        "why": "用非零刻线起测后，终点读数包含被移动的起点位置。4.26 cm的终点和1.00 cm的起点应相减，不是4.26 cm长。",
+        "caught_by": "数值代入",
+        "trap_test": {
+          "scenario": "薄板甲",
+          "expr": "x2",
+          "ref": 0.0326
+        }
+      },
+      "title": "刻度尺的使用与估读",
+      "chapter": "测量工具与数据处理"
+    },
+    "diagnostic-tool-01-2": {
+      "error": {
+        "wrong": "毫米分度尺只记3.2 cm，漏写估读位。",
+        "why": "普通毫米尺按中学约定应估读到0.1 mm，记录如3.26 cm；只记3.2 cm丢失了测量精度信息。补位必须来自实际观察，不能任意添数字。",
+        "caught_by": "人工审核"
+      },
+      "title": "刻度尺的使用与估读",
+      "chapter": "测量工具与数据处理"
+    },
+    "diagnostic-tool-02-1": {
+      "error": {
+        "wrong": "50分度游标第23格对齐时，把游标增量当0.23 mm而非0.46 mm。",
+        "wrong_expr": "L = x+n*0.00001",
+        "why": "格数不是毫米数，必须乘该游标的0.02 mm分度差；12 mm主尺与23格对应12.46 mm，错按0.01 mm每格得到12.23 mm。",
+        "caught_by": "数值代入",
+        "trap_test": {
+          "scenario": "五十分度",
+          "expr": "x+n*0.00001",
+          "ref": 0.01246
+        }
+      },
+      "title": "游标卡尺的读数",
+      "chapter": "测量工具与数据处理"
+    },
+    "diagnostic-tool-02-2": {
+      "error": {
+        "wrong": "给游标读数额外估读一位或把内外测量爪混用。",
+        "why": "游标根据刻线对齐读数，不按普通连续刻度另估一位。不同测量爪对应不同接触位置，必须先确认对象和校零，不能仅凭计算正确判断操作正确。",
+        "caught_by": "人工审核"
+      },
+      "title": "游标卡尺的读数",
+      "chapter": "测量工具与数据处理"
+    },
+    "diagnostic-tool-03-1": {
+      "error": {
+        "wrong": "看到半毫米刻线却漏读0.5 mm。",
+        "wrong_expr": "D = x-0.0005+n*d-z",
+        "why": "固定套筒的半毫米也是已经露出的准确刻度，遗漏它会使直径少0.500 mm。零点修正无法补偿漏掉半毫米这一读数错误。",
+        "caught_by": "数值代入",
+        "trap_test": {
+          "scenario": "正零误差",
+          "expr": "x-0.0005+n*d-z",
+          "ref": 0.00577
+        }
+      },
+      "title": "螺旋测微器的读数",
+      "chapter": "测量工具与数据处理"
+    },
+    "diagnostic-tool-03-2": {
+      "error": {
+        "wrong": "用主体旋钮硬拧测量面，或不顾正负把零误差总加上。",
+        "why": "棘轮限制测量压力，过紧会压缩软物体或损伤仪器；修正须用示值减有符号零误差，不能靠猜测方向。估读位也须来自刻度观察。",
+        "caught_by": "人工审核"
+      },
+      "title": "螺旋测微器的读数",
+      "chapter": "测量工具与数据处理"
+    },
+    "diagnostic-tool-04-1": {
+      "error": {
+        "wrong": "把0.5 N一格误当1 N一格，读数翻倍。",
+        "wrong_expr": "F = n*2*d",
+        "why": "示值由分度值和格数共同决定，格数本身没有牛顿的含义；6格乘0.5 N才是3 N，不能读成6 N，更不能直接记成6 kg。",
+        "caught_by": "数值代入",
+        "trap_test": {
+          "scenario": "平衡校准甲",
+          "expr": "n*2*d",
+          "ref": 3
+        }
+      },
+      "title": "弹簧测力计的使用",
+      "chapter": "测量工具与数据处理"
+    },
+    "diagnostic-tool-04-2": {
+      "error": {
+        "wrong": "斜拉弹簧或在加速上提时一律把拉力当重力。",
+        "why": "力应沿弹簧轴线施加，侧向摩擦会改变伸长与示值；只有平衡且无其他竖直支持时悬挂拉力才等于重力，运动状态必须单独判断。",
+        "caught_by": "人工审核"
+      },
+      "title": "弹簧测力计的使用",
+      "chapter": "测量工具与数据处理"
+    },
+    "diagnostic-tool-05-1": {
+      "error": {
+        "wrong": "天平读数只计砝码，漏掉游码质量。",
+        "wrong_expr": "m = mc",
+        "why": "游码在标尺上移动也提供平衡作用，示值必须与砝码相加；80 g砝码与4 g游码合为84 g，不是80 g。称量时重新调螺母不能弥补漏读。",
+        "caught_by": "数值代入",
+        "trap_test": {
+          "scenario": "液体甲",
+          "expr": "mc",
+          "ref": 0.084
+        }
+      },
+      "title": "托盘天平的使用与密度测量",
+      "chapter": "测量工具与数据处理"
+    },
+    "diagnostic-tool-05-2": {
+      "error": {
+        "wrong": "称量时移动平衡螺母，或先排水后称带水固体。",
+        "why": "调平衡只用于称量前的空载校零，称量中移动会改变仪器条件；固体附着水增加被称质量，所得密度可能偏大。必须区分误差来源与配对样本。",
+        "caught_by": "人工审核"
+      },
+      "title": "托盘天平的使用与密度测量",
+      "chapter": "测量工具与数据处理"
+    },
+    "diagnostic-tool-06-1": {
+      "error": {
+        "wrong": "把毫升换立方米时只除1000，误把体积倍率当长度倍率。",
+        "wrong_expr": "V = V_ml/1000",
+        "why": "1 mL=1 cm³=10⁻⁶ m³，因此毫升数除一百万；50 mL是0.00005 m³而不是0.05 m³，错误相差一千倍但量纲相同。",
+        "caught_by": "数值代入",
+        "trap_test": {
+          "scenario": "五十毫升",
+          "expr": "V_ml/1000",
+          "ref": 5e-05
+        }
+      },
+      "title": "量筒与液体体积读数",
+      "chapter": "测量工具与数据处理"
+    },
+    "diagnostic-tool-06-2": {
+      "error": {
+        "wrong": "俯视或仰视凹液面，或读凹面的上沿。",
+        "why": "正常视线应与凹液面最低处相平，俯视通常偏大、仰视通常偏小；弯月面读哪一处与液体类型有关，不能把水的规则直接套给凸液面。",
+        "caught_by": "人工审核"
+      },
+      "title": "量筒与液体体积读数",
+      "chapter": "测量工具与数据处理"
+    },
+    "diagnostic-tool-07-1": {
+      "error": {
+        "wrong": "把三次读数相加而不除以测量次数。",
+        "wrong_expr": "L = L1+L2+L3",
+        "why": "对同一对象重复测量应求平均，直接相加会把长度扩大三倍。这个算术错误可以避免，与读数末位随机波动造成的测量误差不是一回事。",
+        "caught_by": "数值代入",
+        "trap_test": {
+          "scenario": "样件甲",
+          "expr": "L1+L2+L3",
+          "ref": 0.0326
+        }
+      },
+      "title": "有效数字与测量误差",
+      "chapter": "测量工具与数据处理"
+    },
+    "diagnostic-tool-07-2": {
+      "error": {
+        "wrong": "认为多测几次能消除所有误差，或把错用刻度说成不可避免误差。",
+        "why": "平均只能减小部分偶然影响，固定零偏不会因重复消失；读错格数、漏单位等属于可避免错误。系统误差需校准和改进方法，不能靠增加计算位数修复。",
+        "caught_by": "人工审核"
+      },
+      "title": "有效数字与测量误差",
+      "chapter": "测量工具与数据处理"
+    }
+  }
+}

@@ -328,6 +328,14 @@
               "target": "电功率",
               "note": "本公式直接求P；参考端显式关系为We/t。两端使用同一情境和阶段，只核对该关系；with字段仅定位来源，不代表调用另一条被覆盖的公式。",
               "verification_kind": "独立关系核对"
+            },
+            {
+              "type": "numeric",
+              "scenario": "小灯泡一",
+              "ref": 220,
+              "rtol": 1e-10,
+              "atol": 0,
+              "note": "设计示例；人工标签保留的指定反例正确控制。功率220 W与一小时电能792000 J不是同一物理量；错误把电能当功率首先被目标量纲门禁拒绝。"
             }
           ]
         },
@@ -383,6 +391,18 @@
           "caught_by": "人工审核",
           "diagnostic": {
             "style": "物理结论与步骤辨析"
+          },
+          "automation_review": {
+            "status": "指定反例已补验；原人工审核标签保留",
+            "basis": "功率220 W与一小时电能792000 J不是同一物理量；错误把电能当功率首先被目标量纲门禁拒绝。",
+            "scenario": "小灯泡一",
+            "correct_expression": "P = U*I",
+            "wrong_expression": "We",
+            "correct_value": 220,
+            "wrong_value": 792000,
+            "unit": "W",
+            "wrong_status": "dimension_conflict",
+            "note": "这是原创设计反例，机器仅验证指定模型、数据及量纲；自然语言命题、学生认知与装置仍待教师确认。"
           }
         },
         {

@@ -60,7 +60,142 @@
           "stem_clear": null,
           "no_cross_segment": null
         },
-        "note": "机器证据不等于教学审核；教师未签署。点评题不计自动正确率。"
+        "note": "机器证据不等于教学审核；教师未签署。点评题不计自动正确率。",
+        "material": {
+          "anchors": [
+            {
+              "kind": "概念或操作",
+              "name": "信息与信息传播",
+              "claim": "把每秒传送的符号数误当成整段信息的符号总数。",
+              "correction_basis": "符号总数还要乘以传送时间；只写每秒速率会漏掉时间因素，题目问总量时尤其要注意。",
+              "note": "概念锚点及命题真假待教师确认；未套用任意第一条公式",
+              "display": "把每秒传送的符号数误当成整段信息的符号总数。"
+            },
+            {
+              "kind": "数值反例补充",
+              "name": "人工标签保留的指定数值反例",
+              "display": "N<sub>符号</sub> = R<sub>符号</sub>·t<sub>信息</sub>",
+              "note": "这是原创设计反例，机器仅验证指定模型、数据及量纲；自然语言命题、学生认知与装置仍待教师确认。 每秒600个符号持续5 s总量3000个；只拿600每秒速率充当总量，被目标量纲门禁拒绝。"
+            }
+          ],
+          "source": {
+            "nature": "原创概念/操作命题；无真实测量记录",
+            "source_error_index": 0
+          },
+          "predicted_errors": [
+            {
+              "option": "B",
+              "text": "该说法成立。",
+              "reason": "符号总数还要乘以传送时间；只写每秒速率会漏掉时间因素，题目问总量时尤其要注意。",
+              "expression": null,
+              "status": "误答原因预测，待教师确认；未采集学生作答证据"
+            }
+          ],
+          "difficulty_note": "建议难度沿用本题level（源卡难度）；尚非题目难度实测，待教师调整",
+          "estimated_seconds": [
+            180,
+            360
+          ],
+          "time_basis": "未做学生计时；按现有难度给出备课估计区间，待教师确认",
+          "machine_checks": [
+            {
+              "name": "题目ID关联源知识点",
+              "passed": true
+            },
+            {
+              "name": "选项标签唯一且参考标签存在",
+              "passed": true
+            },
+            {
+              "name": "选项文本互异",
+              "passed": true
+            },
+            {
+              "name": "指定反例正确控制正式求值通过",
+              "passed": true,
+              "actual": {
+                "type": "numeric",
+                "type_name": "数值代入",
+                "formula": "补充反例正确控制",
+                "ok": true,
+                "detail": "情境「None」：算得N_sym=3000；参考3000；有效容差3e-07",
+                "note": "",
+                "error": null,
+                "evaluation_status": "success",
+                "failure_reason": null,
+                "result_dimension": "无量纲",
+                "reference_dimension": "无量纲",
+                "diagnostics": {
+                  "primary_expression": "R_sym·t_info",
+                  "target_expression": "N_sym",
+                  "follows_primary_formula_changes": true,
+                  "primary_source_rhs": "R_sym·t_info",
+                  "numeric_reference": 3000,
+                  "actual_variables": [
+                    "R_sym",
+                    "t_info"
+                  ],
+                  "target_variables": [
+                    "N_sym"
+                  ],
+                  "rtol": 1e-10,
+                  "atol": 0.0,
+                  "effective_limit": 3e-07,
+                  "declared_limit": 3e-07,
+                  "capped_by_default": false,
+                  "scale": 3000.0,
+                  "policy": "显式rtol/atol（严于默认，照此执行）",
+                  "expected_zero": false,
+                  "zero_basis": null,
+                  "actual_value": 3000.0,
+                  "reference_value": 3000
+                },
+                "physical_error_identified": false
+              }
+            },
+            {
+              "name": "指定反例错误注入被拒绝（非求值失败）",
+              "passed": true,
+              "actual": {
+                "type": "numeric",
+                "type_name": "数值代入",
+                "formula": "补充反例错误注入",
+                "ok": false,
+                "detail": "被测结果与实际目标量纲不同",
+                "note": "",
+                "error": null,
+                "evaluation_status": "dimension_conflict",
+                "failure_reason": "dimension_conflict",
+                "result_dimension": "T^-1",
+                "reference_dimension": "无量纲",
+                "diagnostics": {
+                  "primary_expression": "R_sym",
+                  "target_expression": "N_sym",
+                  "follows_primary_formula_changes": false,
+                  "primary_source_rhs": "R_sym·t_info",
+                  "numeric_reference": 3000,
+                  "actual_variables": [
+                    "R_sym"
+                  ],
+                  "target_variables": [
+                    "N_sym"
+                  ]
+                },
+                "physical_error_identified": true
+              }
+            }
+          ],
+          "machine_boundary": "只列本次逐题实际执行项目；不把关联知识卡的方向、扫描或一致性检查算作本题已验。概念题未验命题真假。",
+          "human_review_items": [
+            "题干条件是否充分、清楚且符合学段",
+            "参考结论在指定条件下是否唯一",
+            "干扰项是否合理、对应真实认知问题且无答案暗示",
+            "公式或概念锚点是否准确",
+            "建议难度及用时是否适合教学",
+            "语言、装置与安全操作是否恰当"
+          ],
+          "reference_answer_note": "现有参考答案保持；即使本地可以判选项，也仍须教师审核教学可用性"
+        }
       }
     },
     {
@@ -140,7 +275,83 @@
           "stem_clear": null,
           "no_cross_segment": null
         },
-        "note": "机器证据不等于教学审核；教师未签署。点评题不计自动正确率。"
+        "note": "机器证据不等于教学审核；教师未签署。点评题不计自动正确率。",
+        "material": {
+          "anchors": [
+            {
+              "kind": "公式",
+              "name": "按符号速率估算传输时间",
+              "expression": "R_sym*t_info",
+              "when": "拓展计算，非本卡初中必背主线。传送速率在该段时间内近似稳定；传送速率 用每秒符号数表示，传送时间 用 s。",
+              "display": "R<sub>符号</sub>·t<sub>信息</sub>"
+            }
+          ],
+          "source": {
+            "nature": "原创设计示例，非教材实测或真实实验记录",
+            "scenario": "短消息传输",
+            "parameters": {
+              "N_sym": 3000,
+              "R_sym": 600,
+              "t_info": 5
+            },
+            "data": [
+              "一段信息中传送的符号总数，按个计数：3000 1",
+              "平均符号传送速率，每秒传送的符号数：600 Hz",
+              "传送这段符号信息所用的时间：5 s"
+            ]
+          },
+          "predicted_errors": [
+            {
+              "option": "A",
+              "text": "3 1",
+              "reason": "情境时间已经用秒表示，不能再次按毫秒缩小；重复换算会让估算结果少 1000 倍。",
+              "expression": "R_sym*(t_info/1000)",
+              "status": "误答原因预测，待教师确认；未采集学生作答证据"
+            }
+          ],
+          "difficulty_note": "建议难度沿用本题level（源卡难度）；尚非题目难度实测，待教师调整",
+          "estimated_seconds": [
+            180,
+            360
+          ],
+          "time_basis": "未做学生计时；按现有难度给出备课估计区间，待教师确认",
+          "machine_checks": [
+            {
+              "name": "题目ID关联源知识点",
+              "passed": true
+            },
+            {
+              "name": "选项标签唯一且参考标签存在",
+              "passed": true
+            },
+            {
+              "name": "选项文本互异",
+              "passed": true
+            },
+            {
+              "name": "正确路径独立数值复算",
+              "passed": true
+            },
+            {
+              "name": "带量纲求值与独立求值一致",
+              "passed": true
+            },
+            {
+              "name": "干扰路径复算且与正确路径分离",
+              "passed": true
+            }
+          ],
+          "machine_boundary": "只列本次逐题实际执行项目；不把关联知识卡的方向、扫描或一致性检查算作本题已验。概念题未验命题真假。",
+          "human_review_items": [
+            "题干条件是否充分、清楚且符合学段",
+            "参考结论在指定条件下是否唯一",
+            "干扰项是否合理、对应真实认知问题且无答案暗示",
+            "公式或概念锚点是否准确",
+            "建议难度及用时是否适合教学",
+            "语言、装置与安全操作是否恰当"
+          ],
+          "reference_answer_note": "现有参考答案保持；即使本地可以判选项，也仍须教师审核教学可用性"
+        }
       }
     },
     {
@@ -200,7 +411,62 @@
           "stem_clear": null,
           "no_cross_segment": null
         },
-        "note": "机器证据不等于教学审核；教师未签署。点评题不计自动正确率。"
+        "note": "机器证据不等于教学审核；教师未签署。点评题不计自动正确率。",
+        "material": {
+          "anchors": [
+            {
+              "kind": "概念或操作",
+              "name": "信息与信息传播",
+              "claim": "把符号传送速率等同于电磁波载波频率或每秒比特数。",
+              "correction_basis": "符号速率、载波频率和比特率的定义不同；没有调制和编码信息时，不能把三者数值直接等同。",
+              "note": "概念锚点及命题真假待教师确认；未套用任意第一条公式",
+              "display": "把符号传送速率等同于电磁波载波频率或每秒比特数。"
+            }
+          ],
+          "source": {
+            "nature": "原创概念/操作命题；无真实测量记录",
+            "source_error_index": 2
+          },
+          "predicted_errors": [
+            {
+              "option": "A",
+              "text": "该说法不成立。",
+              "reason": "符号速率、载波频率和比特率的定义不同；没有调制和编码信息时，不能把三者数值直接等同。",
+              "expression": null,
+              "status": "误答原因预测，待教师确认；未采集学生作答证据"
+            }
+          ],
+          "difficulty_note": "建议难度沿用本题level（源卡难度）；尚非题目难度实测，待教师调整",
+          "estimated_seconds": [
+            180,
+            360
+          ],
+          "time_basis": "未做学生计时；按现有难度给出备课估计区间，待教师确认",
+          "machine_checks": [
+            {
+              "name": "题目ID关联源知识点",
+              "passed": true
+            },
+            {
+              "name": "选项标签唯一且参考标签存在",
+              "passed": true
+            },
+            {
+              "name": "选项文本互异",
+              "passed": true
+            }
+          ],
+          "machine_boundary": "只列本次逐题实际执行项目；不把关联知识卡的方向、扫描或一致性检查算作本题已验。概念题未验命题真假。",
+          "human_review_items": [
+            "题干条件是否充分、清楚且符合学段",
+            "参考结论在指定条件下是否唯一",
+            "干扰项是否合理、对应真实认知问题且无答案暗示",
+            "公式或概念锚点是否准确",
+            "建议难度及用时是否适合教学",
+            "语言、装置与安全操作是否恰当"
+          ],
+          "reference_answer_note": "现有参考答案保持；即使本地可以判选项，也仍须教师审核教学可用性"
+        }
       }
     },
     {
@@ -269,7 +535,99 @@
           "stem_clear": null,
           "no_cross_segment": null
         },
-        "note": "机器证据不等于教学审核；教师未签署。点评题不计自动正确率。"
+        "note": "机器证据不等于教学审核；教师未签署。点评题不计自动正确率。",
+        "material": {
+          "anchors": [
+            {
+              "kind": "公式量纲",
+              "name": "本题目标量与等式",
+              "expression": "c = lambda*f",
+              "when": "量纲相符是必要条件，不能据此证明系数或物理条件正确",
+              "display": "c = λ·f"
+            }
+          ],
+          "source": {
+            "nature": "原创量纲辨析命题；无实测数据",
+            "source_error_index": 0
+          },
+          "predicted_errors": [
+            {
+              "option": "A",
+              "text": "c = f/λ",
+              "reason": "波速关系为波长乘频率；f/lambda 的单位不是 m/s。",
+              "expression": "c = f/lambda",
+              "status": "误答原因预测，待教师确认；未采集学生作答证据"
+            }
+          ],
+          "difficulty_note": "建议难度沿用本题level（源卡难度）；尚非题目难度实测，待教师调整",
+          "estimated_seconds": [
+            60,
+            120
+          ],
+          "time_basis": "未做学生计时；按现有难度给出备课估计区间，待教师确认",
+          "machine_checks": [
+            {
+              "name": "题目ID关联源知识点",
+              "passed": true
+            },
+            {
+              "name": "选项标签唯一且参考标签存在",
+              "passed": true
+            },
+            {
+              "name": "选项文本互异",
+              "passed": true
+            },
+            {
+              "name": "正确式量纲一致",
+              "passed": true,
+              "actual": {
+                "type": "dimension",
+                "type_name": "量纲一致性",
+                "formula": "教师审核证据",
+                "ok": true,
+                "detail": "左端L·T^-1，右端L·T^-1",
+                "note": "",
+                "error": null,
+                "evaluation_status": "success",
+                "failure_reason": null,
+                "result_dimension": "L·T^-1",
+                "reference_dimension": "L·T^-1",
+                "diagnostics": {},
+                "physical_error_identified": false
+              }
+            },
+            {
+              "name": "干扰式量纲冲突",
+              "passed": true,
+              "actual": {
+                "type": "dimension",
+                "type_name": "量纲一致性",
+                "formula": "教师审核证据",
+                "ok": false,
+                "detail": "左端L·T^-1，右端L^-1·T^-1",
+                "note": "",
+                "error": null,
+                "evaluation_status": "dimension_conflict",
+                "failure_reason": "dimension_conflict",
+                "result_dimension": "L^-1·T^-1",
+                "reference_dimension": "L·T^-1",
+                "diagnostics": {},
+                "physical_error_identified": true
+              }
+            }
+          ],
+          "machine_boundary": "只列本次逐题实际执行项目；不把关联知识卡的方向、扫描或一致性检查算作本题已验。概念题未验命题真假。",
+          "human_review_items": [
+            "题干条件是否充分、清楚且符合学段",
+            "参考结论在指定条件下是否唯一",
+            "干扰项是否合理、对应真实认知问题且无答案暗示",
+            "公式或概念锚点是否准确",
+            "建议难度及用时是否适合教学",
+            "语言、装置与安全操作是否恰当"
+          ],
+          "reference_answer_note": "现有参考答案保持；即使本地可以判选项，也仍须教师审核教学可用性"
+        }
       }
     },
     {
@@ -349,7 +707,83 @@
           "stem_clear": null,
           "no_cross_segment": null
         },
-        "note": "机器证据不等于教学审核；教师未签署。点评题不计自动正确率。"
+        "note": "机器证据不等于教学审核；教师未签署。点评题不计自动正确率。",
+        "material": {
+          "anchors": [
+            {
+              "kind": "公式",
+              "name": "波速等于波长乘频率",
+              "expression": "lambda*f",
+              "when": "波长 lambda 用 m、频率 f 用 Hz，c 用 m/s；真空波速取约 3.0×10^8 m/s。",
+              "display": "λ·f"
+            }
+          ],
+          "source": {
+            "nature": "原创设计示例，非教材实测或真实实验记录",
+            "scenario": "无线电波",
+            "parameters": {
+              "c": 300000000,
+              "lambda": 3,
+              "f": 100000000
+            },
+            "data": [
+              "电磁波在真空中的传播速度近似值：300000000 m/s",
+              "电磁波波长：3 m",
+              "电磁波频率：100000000 Hz"
+            ]
+          },
+          "predicted_errors": [
+            {
+              "option": "A",
+              "text": "300 m/s",
+              "reason": "情境中的 100 000 000 已是 Hz；与 3 m 相乘应得到 3.0×10^8 m/s，不应重复换算。",
+              "expression": "lambda*f/1000000",
+              "status": "误答原因预测，待教师确认；未采集学生作答证据"
+            }
+          ],
+          "difficulty_note": "建议难度沿用本题level（源卡难度）；尚非题目难度实测，待教师调整",
+          "estimated_seconds": [
+            60,
+            120
+          ],
+          "time_basis": "未做学生计时；按现有难度给出备课估计区间，待教师确认",
+          "machine_checks": [
+            {
+              "name": "题目ID关联源知识点",
+              "passed": true
+            },
+            {
+              "name": "选项标签唯一且参考标签存在",
+              "passed": true
+            },
+            {
+              "name": "选项文本互异",
+              "passed": true
+            },
+            {
+              "name": "正确路径独立数值复算",
+              "passed": true
+            },
+            {
+              "name": "带量纲求值与独立求值一致",
+              "passed": true
+            },
+            {
+              "name": "干扰路径复算且与正确路径分离",
+              "passed": true
+            }
+          ],
+          "machine_boundary": "只列本次逐题实际执行项目；不把关联知识卡的方向、扫描或一致性检查算作本题已验。概念题未验命题真假。",
+          "human_review_items": [
+            "题干条件是否充分、清楚且符合学段",
+            "参考结论在指定条件下是否唯一",
+            "干扰项是否合理、对应真实认知问题且无答案暗示",
+            "公式或概念锚点是否准确",
+            "建议难度及用时是否适合教学",
+            "语言、装置与安全操作是否恰当"
+          ],
+          "reference_answer_note": "现有参考答案保持；即使本地可以判选项，也仍须教师审核教学可用性"
+        }
       }
     },
     {
@@ -409,7 +843,62 @@
           "stem_clear": null,
           "no_cross_segment": null
         },
-        "note": "机器证据不等于教学审核；教师未签署。点评题不计自动正确率。"
+        "note": "机器证据不等于教学审核；教师未签署。点评题不计自动正确率。",
+        "material": {
+          "anchors": [
+            {
+              "kind": "概念或操作",
+              "name": "电磁波的波速、频率和波长",
+              "claim": "认为电磁波传播必须依赖空气或其他介质。",
+              "correction_basis": "电磁波能够在真空中传播；声波需要介质，两类波的传播条件不同。",
+              "note": "概念锚点及命题真假待教师确认；未套用任意第一条公式",
+              "display": "认为电磁波传播必须依赖空气或其他介质。"
+            }
+          ],
+          "source": {
+            "nature": "原创概念/操作命题；无真实测量记录",
+            "source_error_index": 2
+          },
+          "predicted_errors": [
+            {
+              "option": "B",
+              "text": "该说法不成立。",
+              "reason": "电磁波能够在真空中传播；声波需要介质，两类波的传播条件不同。",
+              "expression": null,
+              "status": "误答原因预测，待教师确认；未采集学生作答证据"
+            }
+          ],
+          "difficulty_note": "建议难度沿用本题level（源卡难度）；尚非题目难度实测，待教师调整",
+          "estimated_seconds": [
+            60,
+            120
+          ],
+          "time_basis": "未做学生计时；按现有难度给出备课估计区间，待教师确认",
+          "machine_checks": [
+            {
+              "name": "题目ID关联源知识点",
+              "passed": true
+            },
+            {
+              "name": "选项标签唯一且参考标签存在",
+              "passed": true
+            },
+            {
+              "name": "选项文本互异",
+              "passed": true
+            }
+          ],
+          "machine_boundary": "只列本次逐题实际执行项目；不把关联知识卡的方向、扫描或一致性检查算作本题已验。概念题未验命题真假。",
+          "human_review_items": [
+            "题干条件是否充分、清楚且符合学段",
+            "参考结论在指定条件下是否唯一",
+            "干扰项是否合理、对应真实认知问题且无答案暗示",
+            "公式或概念锚点是否准确",
+            "建议难度及用时是否适合教学",
+            "语言、装置与安全操作是否恰当"
+          ],
+          "reference_answer_note": "现有参考答案保持；即使本地可以判选项，也仍须教师审核教学可用性"
+        }
       }
     },
     {
@@ -489,7 +978,83 @@
           "stem_clear": null,
           "no_cross_segment": null
         },
-        "note": "机器证据不等于教学审核；教师未签署。点评题不计自动正确率。"
+        "note": "机器证据不等于教学审核；教师未签署。点评题不计自动正确率。",
+        "material": {
+          "anchors": [
+            {
+              "kind": "公式",
+              "name": "由距离和波速求传播时间",
+              "expression": "d/c",
+              "when": "d 为单程距离，c 为这段路径上的近似传播速度。",
+              "display": "d/c"
+            }
+          ],
+          "source": {
+            "nature": "原创设计示例，非教材实测或真实实验记录",
+            "scenario": "传播3千米",
+            "parameters": {
+              "d": 3000,
+              "c": 300000000,
+              "t": 1e-05
+            },
+            "data": [
+              "电磁波传播距离：3000 m",
+              "电磁波传播速度近似值：300000000 m/s",
+              "理想传播所用时间：1e-05 s"
+            ]
+          },
+          "predicted_errors": [
+            {
+              "option": "A",
+              "text": "2e-05 s",
+              "reason": "通信单程时延只对应单程路径；若题目明确发射后返回的回波才计算往返。",
+              "expression": "2*d/c",
+              "status": "误答原因预测，待教师确认；未采集学生作答证据"
+            }
+          ],
+          "difficulty_note": "建议难度沿用本题level（源卡难度）；尚非题目难度实测，待教师调整",
+          "estimated_seconds": [
+            60,
+            120
+          ],
+          "time_basis": "未做学生计时；按现有难度给出备课估计区间，待教师确认",
+          "machine_checks": [
+            {
+              "name": "题目ID关联源知识点",
+              "passed": true
+            },
+            {
+              "name": "选项标签唯一且参考标签存在",
+              "passed": true
+            },
+            {
+              "name": "选项文本互异",
+              "passed": true
+            },
+            {
+              "name": "正确路径独立数值复算",
+              "passed": true
+            },
+            {
+              "name": "带量纲求值与独立求值一致",
+              "passed": true
+            },
+            {
+              "name": "干扰路径复算且与正确路径分离",
+              "passed": true
+            }
+          ],
+          "machine_boundary": "只列本次逐题实际执行项目；不把关联知识卡的方向、扫描或一致性检查算作本题已验。概念题未验命题真假。",
+          "human_review_items": [
+            "题干条件是否充分、清楚且符合学段",
+            "参考结论在指定条件下是否唯一",
+            "干扰项是否合理、对应真实认知问题且无答案暗示",
+            "公式或概念锚点是否准确",
+            "建议难度及用时是否适合教学",
+            "语言、装置与安全操作是否恰当"
+          ],
+          "reference_answer_note": "现有参考答案保持；即使本地可以判选项，也仍须教师审核教学可用性"
+        }
       }
     },
     {
@@ -549,7 +1114,62 @@
           "stem_clear": null,
           "no_cross_segment": null
         },
-        "note": "机器证据不等于教学审核；教师未签署。点评题不计自动正确率。"
+        "note": "机器证据不等于教学审核；教师未签署。点评题不计自动正确率。",
+        "material": {
+          "anchors": [
+            {
+              "kind": "概念或操作",
+              "name": "电磁波传播与通信时延",
+              "claim": "把光速传播时间当成端到端网络响应时间。",
+              "correction_basis": "互联网通信还包含路由、排队和设备处理时间，理想传播时延只是其中一部分。",
+              "note": "概念锚点及命题真假待教师确认；未套用任意第一条公式",
+              "display": "把光速传播时间当成端到端网络响应时间。"
+            }
+          ],
+          "source": {
+            "nature": "原创概念/操作命题；无真实测量记录",
+            "source_error_index": 1
+          },
+          "predicted_errors": [
+            {
+              "option": "A",
+              "text": "该说法成立。",
+              "reason": "互联网通信还包含路由、排队和设备处理时间，理想传播时延只是其中一部分。",
+              "expression": null,
+              "status": "误答原因预测，待教师确认；未采集学生作答证据"
+            }
+          ],
+          "difficulty_note": "建议难度沿用本题level（源卡难度）；尚非题目难度实测，待教师调整",
+          "estimated_seconds": [
+            60,
+            120
+          ],
+          "time_basis": "未做学生计时；按现有难度给出备课估计区间，待教师确认",
+          "machine_checks": [
+            {
+              "name": "题目ID关联源知识点",
+              "passed": true
+            },
+            {
+              "name": "选项标签唯一且参考标签存在",
+              "passed": true
+            },
+            {
+              "name": "选项文本互异",
+              "passed": true
+            }
+          ],
+          "machine_boundary": "只列本次逐题实际执行项目；不把关联知识卡的方向、扫描或一致性检查算作本题已验。概念题未验命题真假。",
+          "human_review_items": [
+            "题干条件是否充分、清楚且符合学段",
+            "参考结论在指定条件下是否唯一",
+            "干扰项是否合理、对应真实认知问题且无答案暗示",
+            "公式或概念锚点是否准确",
+            "建议难度及用时是否适合教学",
+            "语言、装置与安全操作是否恰当"
+          ],
+          "reference_answer_note": "现有参考答案保持；即使本地可以判选项，也仍须教师审核教学可用性"
+        }
       }
     }
   ],
@@ -634,6 +1254,14 @@
                 "target": "一段信息中传送的符号总数，按个计数",
                 "note": "直接求本公式输出，与情境中另列的N_sym设计基准核对；数据是设计示例，不是实测。用于核对定义、反算或边界值，不宣称不同物理原理互证。",
                 "verification_kind": "独立设计情境数据核对"
+              },
+              {
+                "type": "numeric",
+                "scenario": "短消息传输",
+                "ref": 3000,
+                "rtol": 1e-10,
+                "atol": 0,
+                "note": "设计示例；人工标签保留的指定反例正确控制。每秒600个符号持续5 s总量3000个；只拿600每秒速率充当总量，被目标量纲门禁拒绝。"
               }
             ]
           },
@@ -690,6 +1318,18 @@
             "caught_by": "人工审核",
             "diagnostic": {
               "style": "物理结论与步骤辨析"
+            },
+            "automation_review": {
+              "status": "指定反例已补验；原人工审核标签保留",
+              "basis": "每秒600个符号持续5 s总量3000个；只拿600每秒速率充当总量，被目标量纲门禁拒绝。",
+              "scenario": "短消息传输",
+              "correct_expression": "N_sym = R_sym*t_info",
+              "wrong_expression": "R_sym",
+              "correct_value": 3000,
+              "wrong_value": 600,
+              "unit": "1",
+              "wrong_status": "dimension_conflict",
+              "note": "这是原创设计反例，机器仅验证指定模型、数据及量纲；自然语言命题、学生认知与装置仍待教师确认。"
             }
           },
           {
@@ -831,6 +1471,14 @@
                 "target": "一段信息中传送的符号总数，按个计数",
                 "note": "直接求本公式输出，与情境中另列的N_sym设计基准核对；数据是设计示例，不是实测。用于核对定义、反算或边界值，不宣称不同物理原理互证。",
                 "verification_kind": "独立设计情境数据核对"
+              },
+              {
+                "type": "numeric",
+                "scenario": "短消息传输",
+                "ref": 3000,
+                "rtol": 1e-10,
+                "atol": 0,
+                "note": "设计示例；人工标签保留的指定反例正确控制。每秒600个符号持续5 s总量3000个；只拿600每秒速率充当总量，被目标量纲门禁拒绝。"
               }
             ]
           },
@@ -887,6 +1535,18 @@
             "caught_by": "人工审核",
             "diagnostic": {
               "style": "物理结论与步骤辨析"
+            },
+            "automation_review": {
+              "status": "指定反例已补验；原人工审核标签保留",
+              "basis": "每秒600个符号持续5 s总量3000个；只拿600每秒速率充当总量，被目标量纲门禁拒绝。",
+              "scenario": "短消息传输",
+              "correct_expression": "N_sym = R_sym*t_info",
+              "wrong_expression": "R_sym",
+              "correct_value": 3000,
+              "wrong_value": 600,
+              "unit": "1",
+              "wrong_status": "dimension_conflict",
+              "note": "这是原创设计反例，机器仅验证指定模型、数据及量纲；自然语言命题、学生认知与装置仍待教师确认。"
             }
           },
           {
@@ -1028,6 +1688,14 @@
                 "target": "一段信息中传送的符号总数，按个计数",
                 "note": "直接求本公式输出，与情境中另列的N_sym设计基准核对；数据是设计示例，不是实测。用于核对定义、反算或边界值，不宣称不同物理原理互证。",
                 "verification_kind": "独立设计情境数据核对"
+              },
+              {
+                "type": "numeric",
+                "scenario": "短消息传输",
+                "ref": 3000,
+                "rtol": 1e-10,
+                "atol": 0,
+                "note": "设计示例；人工标签保留的指定反例正确控制。每秒600个符号持续5 s总量3000个；只拿600每秒速率充当总量，被目标量纲门禁拒绝。"
               }
             ]
           },
@@ -1084,6 +1752,18 @@
             "caught_by": "人工审核",
             "diagnostic": {
               "style": "物理结论与步骤辨析"
+            },
+            "automation_review": {
+              "status": "指定反例已补验；原人工审核标签保留",
+              "basis": "每秒600个符号持续5 s总量3000个；只拿600每秒速率充当总量，被目标量纲门禁拒绝。",
+              "scenario": "短消息传输",
+              "correct_expression": "N_sym = R_sym*t_info",
+              "wrong_expression": "R_sym",
+              "correct_value": 3000,
+              "wrong_value": 600,
+              "unit": "1",
+              "wrong_status": "dimension_conflict",
+              "note": "这是原创设计反例，机器仅验证指定模型、数据及量纲；自然语言命题、学生认知与装置仍待教师确认。"
             }
           },
           {

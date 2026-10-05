@@ -81,6 +81,14 @@
               "target": "一段信息中传送的符号总数，按个计数",
               "note": "直接求本公式输出，与情境中另列的N_sym设计基准核对；数据是设计示例，不是实测。用于核对定义、反算或边界值，不宣称不同物理原理互证。",
               "verification_kind": "独立设计情境数据核对"
+            },
+            {
+              "type": "numeric",
+              "scenario": "短消息传输",
+              "ref": 3000,
+              "rtol": 1e-10,
+              "atol": 0,
+              "note": "设计示例；人工标签保留的指定反例正确控制。每秒600个符号持续5 s总量3000个；只拿600每秒速率充当总量，被目标量纲门禁拒绝。"
             }
           ]
         },
@@ -137,6 +145,18 @@
           "caught_by": "人工审核",
           "diagnostic": {
             "style": "物理结论与步骤辨析"
+          },
+          "automation_review": {
+            "status": "指定反例已补验；原人工审核标签保留",
+            "basis": "每秒600个符号持续5 s总量3000个；只拿600每秒速率充当总量，被目标量纲门禁拒绝。",
+            "scenario": "短消息传输",
+            "correct_expression": "N_sym = R_sym*t_info",
+            "wrong_expression": "R_sym",
+            "correct_value": 3000,
+            "wrong_value": 600,
+            "unit": "1",
+            "wrong_status": "dimension_conflict",
+            "note": "这是原创设计反例，机器仅验证指定模型、数据及量纲；自然语言命题、学生认知与装置仍待教师确认。"
           }
         },
         {

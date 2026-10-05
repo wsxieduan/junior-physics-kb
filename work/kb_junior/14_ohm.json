@@ -860,6 +860,14 @@
               "target": "两电阻并联的等效电阻",
               "note": "本公式直接求Rp；参考端显式关系为U/It。两端使用同一情境和阶段，只核对该关系；with字段仅定位来源，不代表调用另一条被覆盖的公式。",
               "verification_kind": "独立关系核对"
+            },
+            {
+              "type": "numeric",
+              "scenario": "并联电阻组一",
+              "ref": 2,
+              "rtol": 1e-10,
+              "atol": 0,
+              "note": "设计示例；人工标签保留的指定反例正确控制。原6 Ω支路加入3 Ω并联后总阻值2 Ω，小于6 Ω；错误当串联相加会得9 Ω。本例不判定任意接线图。"
             }
           ]
         },
@@ -923,6 +931,18 @@
           "caught_by": "人工审核",
           "diagnostic": {
             "style": "物理结论与步骤辨析"
+          },
+          "automation_review": {
+            "status": "指定反例已补验；原人工审核标签保留",
+            "basis": "原6 Ω支路加入3 Ω并联后总阻值2 Ω，小于6 Ω；错误当串联相加会得9 Ω。本例不判定任意接线图。",
+            "scenario": "并联电阻组一",
+            "correct_expression": "Rp = 1/(1/R1+1/R2)",
+            "wrong_expression": "R1+R2",
+            "correct_value": 2,
+            "wrong_value": 9,
+            "unit": "Ω",
+            "wrong_status": "numeric_mismatch",
+            "note": "这是原创设计反例，机器仅验证指定模型、数据及量纲；自然语言命题、学生认知与装置仍待教师确认。"
           }
         },
         {

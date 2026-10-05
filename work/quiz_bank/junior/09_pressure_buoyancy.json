@@ -66,7 +66,99 @@
           "stem_clear": null,
           "no_cross_segment": null
         },
-        "note": "机器证据不等于教学审核；教师未签署。点评题不计自动正确率。"
+        "note": "机器证据不等于教学审核；教师未签署。点评题不计自动正确率。",
+        "material": {
+          "anchors": [
+            {
+              "kind": "公式量纲",
+              "name": "本题目标量与等式",
+              "expression": "p = F/S",
+              "when": "量纲相符是必要条件，不能据此证明系数或物理条件正确",
+              "display": "p = F/S"
+            }
+          ],
+          "source": {
+            "nature": "原创量纲辨析命题；无实测数据",
+            "source_error_index": 0
+          },
+          "predicted_errors": [
+            {
+              "option": "A",
+              "text": "p = F·S",
+              "reason": "压强表示单位面积上的压力，应除以面积；F*S 的单位也不是 Pa。",
+              "expression": "p = F*S",
+              "status": "误答原因预测，待教师确认；未采集学生作答证据"
+            }
+          ],
+          "difficulty_note": "建议难度沿用本题level（源卡难度）；尚非题目难度实测，待教师调整",
+          "estimated_seconds": [
+            60,
+            120
+          ],
+          "time_basis": "未做学生计时；按现有难度给出备课估计区间，待教师确认",
+          "machine_checks": [
+            {
+              "name": "题目ID关联源知识点",
+              "passed": true
+            },
+            {
+              "name": "选项标签唯一且参考标签存在",
+              "passed": true
+            },
+            {
+              "name": "选项文本互异",
+              "passed": true
+            },
+            {
+              "name": "正确式量纲一致",
+              "passed": true,
+              "actual": {
+                "type": "dimension",
+                "type_name": "量纲一致性",
+                "formula": "教师审核证据",
+                "ok": true,
+                "detail": "左端M·L^-1·T^-2，右端M·L^-1·T^-2",
+                "note": "",
+                "error": null,
+                "evaluation_status": "success",
+                "failure_reason": null,
+                "result_dimension": "M·L^-1·T^-2",
+                "reference_dimension": "M·L^-1·T^-2",
+                "diagnostics": {},
+                "physical_error_identified": false
+              }
+            },
+            {
+              "name": "干扰式量纲冲突",
+              "passed": true,
+              "actual": {
+                "type": "dimension",
+                "type_name": "量纲一致性",
+                "formula": "教师审核证据",
+                "ok": false,
+                "detail": "左端M·L^-1·T^-2，右端M·L^3·T^-2",
+                "note": "",
+                "error": null,
+                "evaluation_status": "dimension_conflict",
+                "failure_reason": "dimension_conflict",
+                "result_dimension": "M·L^3·T^-2",
+                "reference_dimension": "M·L^-1·T^-2",
+                "diagnostics": {},
+                "physical_error_identified": true
+              }
+            }
+          ],
+          "machine_boundary": "只列本次逐题实际执行项目；不把关联知识卡的方向、扫描或一致性检查算作本题已验。概念题未验命题真假。",
+          "human_review_items": [
+            "题干条件是否充分、清楚且符合学段",
+            "参考结论在指定条件下是否唯一",
+            "干扰项是否合理、对应真实认知问题且无答案暗示",
+            "公式或概念锚点是否准确",
+            "建议难度及用时是否适合教学",
+            "语言、装置与安全操作是否恰当"
+          ],
+          "reference_answer_note": "现有参考答案保持；即使本地可以判选项，也仍须教师审核教学可用性"
+        }
       }
     },
     {
@@ -147,7 +239,85 @@
           "stem_clear": null,
           "no_cross_segment": null
         },
-        "note": "机器证据不等于教学审核；教师未签署。点评题不计自动正确率。"
+        "note": "机器证据不等于教学审核；教师未签署。点评题不计自动正确率。",
+        "material": {
+          "anchors": [
+            {
+              "kind": "公式",
+              "name": "压力与受力面积求压强",
+              "expression": "F/S",
+              "when": "F 垂直接触面，F 用 N、S 用 m2，结果 p 用 Pa。",
+              "display": "F/S"
+            }
+          ],
+          "source": {
+            "nature": "原创设计示例，非教材实测或真实实验记录",
+            "scenario": "窄底物体",
+            "parameters": {
+              "F": 100,
+              "S": 0.02,
+              "p": 5000,
+              "S_cm": 200.0
+            },
+            "data": [
+              "垂直接触面的压力：100 N",
+              "受力面积：0.02 m2",
+              "压强：5000 Pa",
+              "受力面积以平方厘米记录的数值：200.0 cm2"
+            ]
+          },
+          "predicted_errors": [
+            {
+              "option": "A",
+              "text": "50 Pa",
+              "reason": "200 cm²应为0.020 m²，不是2 m²；100 N应产生5000 Pa，误换算只得50 Pa。",
+              "expression": "F/(S_cm/100)",
+              "status": "误答原因预测，待教师确认；未采集学生作答证据"
+            }
+          ],
+          "difficulty_note": "建议难度沿用本题level（源卡难度）；尚非题目难度实测，待教师调整",
+          "estimated_seconds": [
+            60,
+            120
+          ],
+          "time_basis": "未做学生计时；按现有难度给出备课估计区间，待教师确认",
+          "machine_checks": [
+            {
+              "name": "题目ID关联源知识点",
+              "passed": true
+            },
+            {
+              "name": "选项标签唯一且参考标签存在",
+              "passed": true
+            },
+            {
+              "name": "选项文本互异",
+              "passed": true
+            },
+            {
+              "name": "正确路径独立数值复算",
+              "passed": true
+            },
+            {
+              "name": "带量纲求值与独立求值一致",
+              "passed": true
+            },
+            {
+              "name": "干扰路径复算且与正确路径分离",
+              "passed": true
+            }
+          ],
+          "machine_boundary": "只列本次逐题实际执行项目；不把关联知识卡的方向、扫描或一致性检查算作本题已验。概念题未验命题真假。",
+          "human_review_items": [
+            "题干条件是否充分、清楚且符合学段",
+            "参考结论在指定条件下是否唯一",
+            "干扰项是否合理、对应真实认知问题且无答案暗示",
+            "公式或概念锚点是否准确",
+            "建议难度及用时是否适合教学",
+            "语言、装置与安全操作是否恰当"
+          ],
+          "reference_answer_note": "现有参考答案保持；即使本地可以判选项，也仍须教师审核教学可用性"
+        }
       }
     },
     {
@@ -207,7 +377,155 @@
           "stem_clear": null,
           "no_cross_segment": null
         },
-        "note": "机器证据不等于教学审核；教师未签署。点评题不计自动正确率。"
+        "note": "机器证据不等于教学审核；教师未签署。点评题不计自动正确率。",
+        "material": {
+          "anchors": [
+            {
+              "kind": "概念或操作",
+              "name": "压强",
+              "claim": "认为受力面积越大，压力固定时压强也越大。",
+              "correction_basis": "同一压力分摊到更大的受力面积上，单位面积承担的压力会减小，因此压强减小；压力和压强不能混为一个量。",
+              "note": "概念锚点及命题真假待教师确认；未套用任意第一条公式",
+              "display": "认为受力面积越大，压力固定时压强也越大。"
+            },
+            {
+              "kind": "数值反例补充",
+              "name": "人工标签保留的指定数值反例",
+              "display": "p = F/S",
+              "note": "这是原创设计反例，机器仅验证指定模型、数据及量纲；自然语言命题、学生认知与装置仍待教师确认。 压力固定100 N，面积从0.02 m²增加到0.04 m²，压强5000 Pa降到2500 Pa；错误按面积同比增大预测10000 Pa。"
+            }
+          ],
+          "source": {
+            "nature": "原创概念/操作命题；无真实测量记录",
+            "source_error_index": 2
+          },
+          "predicted_errors": [
+            {
+              "option": "B",
+              "text": "该说法成立。",
+              "reason": "同一压力分摊到更大的受力面积上，单位面积承担的压力会减小，因此压强减小；压力和压强不能混为一个量。",
+              "expression": null,
+              "status": "误答原因预测，待教师确认；未采集学生作答证据"
+            }
+          ],
+          "difficulty_note": "建议难度沿用本题level（源卡难度）；尚非题目难度实测，待教师调整",
+          "estimated_seconds": [
+            60,
+            120
+          ],
+          "time_basis": "未做学生计时；按现有难度给出备课估计区间，待教师确认",
+          "machine_checks": [
+            {
+              "name": "题目ID关联源知识点",
+              "passed": true
+            },
+            {
+              "name": "选项标签唯一且参考标签存在",
+              "passed": true
+            },
+            {
+              "name": "选项文本互异",
+              "passed": true
+            },
+            {
+              "name": "指定反例正确控制正式求值通过",
+              "passed": true,
+              "actual": {
+                "type": "numeric",
+                "type_name": "数值代入",
+                "formula": "补充反例正确控制",
+                "ok": true,
+                "detail": "情境「None」：算得p=2500；参考2500；有效容差2.5e-07",
+                "note": "",
+                "error": null,
+                "evaluation_status": "success",
+                "failure_reason": null,
+                "result_dimension": "M·L^-1·T^-2",
+                "reference_dimension": "M·L^-1·T^-2",
+                "diagnostics": {
+                  "primary_expression": "F/S",
+                  "target_expression": "p",
+                  "follows_primary_formula_changes": true,
+                  "primary_source_rhs": "F/S",
+                  "numeric_reference": 2500,
+                  "actual_variables": [
+                    "F",
+                    "S"
+                  ],
+                  "target_variables": [
+                    "p"
+                  ],
+                  "rtol": 1e-10,
+                  "atol": 0.0,
+                  "effective_limit": 2.5e-07,
+                  "declared_limit": 2.5e-07,
+                  "capped_by_default": false,
+                  "scale": 2500.0,
+                  "policy": "显式rtol/atol（严于默认，照此执行）",
+                  "expected_zero": false,
+                  "zero_basis": null,
+                  "actual_value": 2500.0,
+                  "reference_value": 2500
+                },
+                "physical_error_identified": false
+              }
+            },
+            {
+              "name": "指定反例错误注入被拒绝（非求值失败）",
+              "passed": true,
+              "actual": {
+                "type": "numeric",
+                "type_name": "数值代入",
+                "formula": "补充反例错误注入",
+                "ok": false,
+                "detail": "情境「None」：算得p=10000；参考2500；有效容差1e-06",
+                "note": "",
+                "error": null,
+                "evaluation_status": "numeric_mismatch",
+                "failure_reason": "numeric_mismatch",
+                "result_dimension": "M·L^-1·T^-2",
+                "reference_dimension": "M·L^-1·T^-2",
+                "diagnostics": {
+                  "primary_expression": "p_0*S/S_0",
+                  "target_expression": "p",
+                  "follows_primary_formula_changes": false,
+                  "primary_source_rhs": "F/S",
+                  "numeric_reference": 2500,
+                  "actual_variables": [
+                    "S",
+                    "S_0",
+                    "p_0"
+                  ],
+                  "target_variables": [
+                    "p"
+                  ],
+                  "rtol": 1e-10,
+                  "atol": 0.0,
+                  "effective_limit": 1e-06,
+                  "declared_limit": 1e-06,
+                  "capped_by_default": false,
+                  "scale": 10000.0,
+                  "policy": "显式rtol/atol（严于默认，照此执行）",
+                  "expected_zero": false,
+                  "zero_basis": null,
+                  "actual_value": 10000.0,
+                  "reference_value": 2500
+                },
+                "physical_error_identified": true
+              }
+            }
+          ],
+          "machine_boundary": "只列本次逐题实际执行项目；不把关联知识卡的方向、扫描或一致性检查算作本题已验。概念题未验命题真假。",
+          "human_review_items": [
+            "题干条件是否充分、清楚且符合学段",
+            "参考结论在指定条件下是否唯一",
+            "干扰项是否合理、对应真实认知问题且无答案暗示",
+            "公式或概念锚点是否准确",
+            "建议难度及用时是否适合教学",
+            "语言、装置与安全操作是否恰当"
+          ],
+          "reference_answer_note": "现有参考答案保持；即使本地可以判选项，也仍须教师审核教学可用性"
+        }
       }
     },
     {
@@ -273,7 +591,99 @@
           "stem_clear": null,
           "no_cross_segment": null
         },
-        "note": "机器证据不等于教学审核；教师未签署。点评题不计自动正确率。"
+        "note": "机器证据不等于教学审核；教师未签署。点评题不计自动正确率。",
+        "material": {
+          "anchors": [
+            {
+              "kind": "公式量纲",
+              "name": "本题目标量与等式",
+              "expression": "p = rho*g*h",
+              "when": "量纲相符是必要条件，不能据此证明系数或物理条件正确",
+              "display": "p = ρ·g·h"
+            }
+          ],
+          "source": {
+            "nature": "原创量纲辨析命题；无实测数据",
+            "source_error_index": 0
+          },
+          "predicted_errors": [
+            {
+              "option": "A",
+              "text": "p = ρ·g·S",
+              "reason": "深度单位是m，面积是m²；替换后量纲变为Pa·m，不再是压强。这不是斜长与深度的数值混用。",
+              "expression": "p = rho*g*S",
+              "status": "误答原因预测，待教师确认；未采集学生作答证据"
+            }
+          ],
+          "difficulty_note": "建议难度沿用本题level（源卡难度）；尚非题目难度实测，待教师调整",
+          "estimated_seconds": [
+            60,
+            120
+          ],
+          "time_basis": "未做学生计时；按现有难度给出备课估计区间，待教师确认",
+          "machine_checks": [
+            {
+              "name": "题目ID关联源知识点",
+              "passed": true
+            },
+            {
+              "name": "选项标签唯一且参考标签存在",
+              "passed": true
+            },
+            {
+              "name": "选项文本互异",
+              "passed": true
+            },
+            {
+              "name": "正确式量纲一致",
+              "passed": true,
+              "actual": {
+                "type": "dimension",
+                "type_name": "量纲一致性",
+                "formula": "教师审核证据",
+                "ok": true,
+                "detail": "左端M·L^-1·T^-2，右端M·L^-1·T^-2",
+                "note": "",
+                "error": null,
+                "evaluation_status": "success",
+                "failure_reason": null,
+                "result_dimension": "M·L^-1·T^-2",
+                "reference_dimension": "M·L^-1·T^-2",
+                "diagnostics": {},
+                "physical_error_identified": false
+              }
+            },
+            {
+              "name": "干扰式量纲冲突",
+              "passed": true,
+              "actual": {
+                "type": "dimension",
+                "type_name": "量纲一致性",
+                "formula": "教师审核证据",
+                "ok": false,
+                "detail": "左端M·L^-1·T^-2，右端M·T^-2",
+                "note": "",
+                "error": null,
+                "evaluation_status": "dimension_conflict",
+                "failure_reason": "dimension_conflict",
+                "result_dimension": "M·T^-2",
+                "reference_dimension": "M·L^-1·T^-2",
+                "diagnostics": {},
+                "physical_error_identified": true
+              }
+            }
+          ],
+          "machine_boundary": "只列本次逐题实际执行项目；不把关联知识卡的方向、扫描或一致性检查算作本题已验。概念题未验命题真假。",
+          "human_review_items": [
+            "题干条件是否充分、清楚且符合学段",
+            "参考结论在指定条件下是否唯一",
+            "干扰项是否合理、对应真实认知问题且无答案暗示",
+            "公式或概念锚点是否准确",
+            "建议难度及用时是否适合教学",
+            "语言、装置与安全操作是否恰当"
+          ],
+          "reference_answer_note": "现有参考答案保持；即使本地可以判选项，也仍须教师审核教学可用性"
+        }
       }
     },
     {
@@ -356,7 +766,89 @@
           "stem_clear": null,
           "no_cross_segment": null
         },
-        "note": "机器证据不等于教学审核；教师未签署。点评题不计自动正确率。"
+        "note": "机器证据不等于教学审核；教师未签署。点评题不计自动正确率。",
+        "material": {
+          "anchors": [
+            {
+              "kind": "公式",
+              "name": "液体密度和深度求内部压强",
+              "expression": "rho*g*h",
+              "when": "静止液体中测点相对液面的深度 h 用 m，rho 用 kg/m^3。",
+              "display": "ρ·g·h"
+            }
+          ],
+          "source": {
+            "nature": "原创设计示例，非教材实测或真实实验记录",
+            "scenario": "水下10厘米",
+            "parameters": {
+              "p": 1000,
+              "rho": 1000,
+              "g": 10,
+              "h": 0.1,
+              "S": 0.01,
+              "F": 10
+            },
+            "data": [
+              "液体内部压强：1000 Pa",
+              "液体密度：1000 kg/m^3",
+              "当地重力加速度：10 N/kg",
+              "测点到液面的竖直深度：0.1 m",
+              "受液体压强作用的面积：0.01 m2",
+              "该面积上液体压力：10 N"
+            ]
+          },
+          "predicted_errors": [
+            {
+              "option": "B",
+              "text": "100000 Pa",
+              "reason": "水下 0.1 m 的压强为 1000 Pa；重复做厘米换算会错误得到 100 000 Pa。",
+              "expression": "rho*g*100*h",
+              "status": "误答原因预测，待教师确认；未采集学生作答证据"
+            }
+          ],
+          "difficulty_note": "建议难度沿用本题level（源卡难度）；尚非题目难度实测，待教师调整",
+          "estimated_seconds": [
+            60,
+            120
+          ],
+          "time_basis": "未做学生计时；按现有难度给出备课估计区间，待教师确认",
+          "machine_checks": [
+            {
+              "name": "题目ID关联源知识点",
+              "passed": true
+            },
+            {
+              "name": "选项标签唯一且参考标签存在",
+              "passed": true
+            },
+            {
+              "name": "选项文本互异",
+              "passed": true
+            },
+            {
+              "name": "正确路径独立数值复算",
+              "passed": true
+            },
+            {
+              "name": "带量纲求值与独立求值一致",
+              "passed": true
+            },
+            {
+              "name": "干扰路径复算且与正确路径分离",
+              "passed": true
+            }
+          ],
+          "machine_boundary": "只列本次逐题实际执行项目；不把关联知识卡的方向、扫描或一致性检查算作本题已验。概念题未验命题真假。",
+          "human_review_items": [
+            "题干条件是否充分、清楚且符合学段",
+            "参考结论在指定条件下是否唯一",
+            "干扰项是否合理、对应真实认知问题且无答案暗示",
+            "公式或概念锚点是否准确",
+            "建议难度及用时是否适合教学",
+            "语言、装置与安全操作是否恰当"
+          ],
+          "reference_answer_note": "现有参考答案保持；即使本地可以判选项，也仍须教师审核教学可用性"
+        }
       }
     },
     {
@@ -416,7 +908,62 @@
           "stem_clear": null,
           "no_cross_segment": null
         },
-        "note": "机器证据不等于教学审核；教师未签署。点评题不计自动正确率。"
+        "note": "机器证据不等于教学审核；教师未签署。点评题不计自动正确率。",
+        "material": {
+          "anchors": [
+            {
+              "kind": "概念或操作",
+              "name": "液体的压强",
+              "claim": "认为容器越宽或形状不同，同种液体同深度处的压强必然不同。",
+              "correction_basis": "静止同种液体的压强由密度、重力加速度和竖直深度决定，不由容器外形直接决定。",
+              "note": "概念锚点及命题真假待教师确认；未套用任意第一条公式",
+              "display": "认为容器越宽或形状不同，同种液体同深度处的压强必然不同。"
+            }
+          ],
+          "source": {
+            "nature": "原创概念/操作命题；无真实测量记录",
+            "source_error_index": 2
+          },
+          "predicted_errors": [
+            {
+              "option": "B",
+              "text": "该说法成立。",
+              "reason": "静止同种液体的压强由密度、重力加速度和竖直深度决定，不由容器外形直接决定。",
+              "expression": null,
+              "status": "误答原因预测，待教师确认；未采集学生作答证据"
+            }
+          ],
+          "difficulty_note": "建议难度沿用本题level（源卡难度）；尚非题目难度实测，待教师调整",
+          "estimated_seconds": [
+            60,
+            120
+          ],
+          "time_basis": "未做学生计时；按现有难度给出备课估计区间，待教师确认",
+          "machine_checks": [
+            {
+              "name": "题目ID关联源知识点",
+              "passed": true
+            },
+            {
+              "name": "选项标签唯一且参考标签存在",
+              "passed": true
+            },
+            {
+              "name": "选项文本互异",
+              "passed": true
+            }
+          ],
+          "machine_boundary": "只列本次逐题实际执行项目；不把关联知识卡的方向、扫描或一致性检查算作本题已验。概念题未验命题真假。",
+          "human_review_items": [
+            "题干条件是否充分、清楚且符合学段",
+            "参考结论在指定条件下是否唯一",
+            "干扰项是否合理、对应真实认知问题且无答案暗示",
+            "公式或概念锚点是否准确",
+            "建议难度及用时是否适合教学",
+            "语言、装置与安全操作是否恰当"
+          ],
+          "reference_answer_note": "现有参考答案保持；即使本地可以判选项，也仍须教师审核教学可用性"
+        }
       }
     },
     {
@@ -476,7 +1023,62 @@
           "stem_clear": null,
           "no_cross_segment": null
         },
-        "note": "机器证据不等于教学审核；教师未签署。点评题不计自动正确率。"
+        "note": "机器证据不等于教学审核；教师未签署。点评题不计自动正确率。",
+        "material": {
+          "anchors": [
+            {
+              "kind": "概念或操作",
+              "name": "液体的压强",
+              "claim": "把沿容器壁量出的斜长当作液体深度。",
+              "correction_basis": "深度须从液面竖直向下量到测点，斜长通常更大；要结合几何图判断，不由面积式错误实测代替。",
+              "note": "概念锚点及命题真假待教师确认；未套用任意第一条公式",
+              "display": "把沿容器壁量出的斜长当作液体深度。"
+            }
+          ],
+          "source": {
+            "nature": "原创概念/操作命题；无真实测量记录",
+            "source_error_index": 3
+          },
+          "predicted_errors": [
+            {
+              "option": "A",
+              "text": "该说法不成立。",
+              "reason": "深度须从液面竖直向下量到测点，斜长通常更大；要结合几何图判断，不由面积式错误实测代替。",
+              "expression": null,
+              "status": "误答原因预测，待教师确认；未采集学生作答证据"
+            }
+          ],
+          "difficulty_note": "建议难度沿用本题level（源卡难度）；尚非题目难度实测，待教师调整",
+          "estimated_seconds": [
+            60,
+            120
+          ],
+          "time_basis": "未做学生计时；按现有难度给出备课估计区间，待教师确认",
+          "machine_checks": [
+            {
+              "name": "题目ID关联源知识点",
+              "passed": true
+            },
+            {
+              "name": "选项标签唯一且参考标签存在",
+              "passed": true
+            },
+            {
+              "name": "选项文本互异",
+              "passed": true
+            }
+          ],
+          "machine_boundary": "只列本次逐题实际执行项目；不把关联知识卡的方向、扫描或一致性检查算作本题已验。概念题未验命题真假。",
+          "human_review_items": [
+            "题干条件是否充分、清楚且符合学段",
+            "参考结论在指定条件下是否唯一",
+            "干扰项是否合理、对应真实认知问题且无答案暗示",
+            "公式或概念锚点是否准确",
+            "建议难度及用时是否适合教学",
+            "语言、装置与安全操作是否恰当"
+          ],
+          "reference_answer_note": "现有参考答案保持；即使本地可以判选项，也仍须教师审核教学可用性"
+        }
       }
     },
     {
@@ -558,7 +1160,87 @@
           "stem_clear": null,
           "no_cross_segment": null
         },
-        "note": "机器证据不等于教学审核；教师未签署。点评题不计自动正确率。"
+        "note": "机器证据不等于教学审核；教师未签署。点评题不计自动正确率。",
+        "material": {
+          "anchors": [
+            {
+              "kind": "公式",
+              "name": "由水银柱高度估算大气压",
+              "expression": "rho*g*h",
+              "when": "静止水银柱的压强估算，忽略液面压强差；h 为竖直高度。",
+              "display": "ρ·g·h"
+            }
+          ],
+          "source": {
+            "nature": "原创设计示例，非教材实测或真实实验记录",
+            "scenario": "标准大气压水银柱",
+            "parameters": {
+              "p": 101292.8,
+              "rho": 13600,
+              "g": 9.8,
+              "h": 0.76,
+              "h_cm": 76.0
+            },
+            "data": [
+              "水银柱对应的大气压估值：101292.8 Pa",
+              "水银密度：13600 kg/m^3",
+              "重力加速度：9.8 N/kg",
+              "水银柱的竖直高度：0.76 m",
+              "同一水银柱竖直高度以厘米记录的读数：76.0 cm"
+            ]
+          },
+          "predicted_errors": [
+            {
+              "option": "B",
+              "text": "1.01293e+07 Pa",
+              "reason": "76 cm应先换0.76 m；13600×9.8×0.76=101292.8 Pa，把76当米得到10129280 Pa，放大100倍。",
+              "expression": "rho*g*h_cm",
+              "status": "误答原因预测，待教师确认；未采集学生作答证据"
+            }
+          ],
+          "difficulty_note": "建议难度沿用本题level（源卡难度）；尚非题目难度实测，待教师调整",
+          "estimated_seconds": [
+            60,
+            120
+          ],
+          "time_basis": "未做学生计时；按现有难度给出备课估计区间，待教师确认",
+          "machine_checks": [
+            {
+              "name": "题目ID关联源知识点",
+              "passed": true
+            },
+            {
+              "name": "选项标签唯一且参考标签存在",
+              "passed": true
+            },
+            {
+              "name": "选项文本互异",
+              "passed": true
+            },
+            {
+              "name": "正确路径独立数值复算",
+              "passed": true
+            },
+            {
+              "name": "带量纲求值与独立求值一致",
+              "passed": true
+            },
+            {
+              "name": "干扰路径复算且与正确路径分离",
+              "passed": true
+            }
+          ],
+          "machine_boundary": "只列本次逐题实际执行项目；不把关联知识卡的方向、扫描或一致性检查算作本题已验。概念题未验命题真假。",
+          "human_review_items": [
+            "题干条件是否充分、清楚且符合学段",
+            "参考结论在指定条件下是否唯一",
+            "干扰项是否合理、对应真实认知问题且无答案暗示",
+            "公式或概念锚点是否准确",
+            "建议难度及用时是否适合教学",
+            "语言、装置与安全操作是否恰当"
+          ],
+          "reference_answer_note": "现有参考答案保持；即使本地可以判选项，也仍须教师审核教学可用性"
+        }
       }
     },
     {
@@ -618,7 +1300,62 @@
           "stem_clear": null,
           "no_cross_segment": null
         },
-        "note": "机器证据不等于教学审核；教师未签署。点评题不计自动正确率。"
+        "note": "机器证据不等于教学审核；教师未签署。点评题不计自动正确率。",
+        "material": {
+          "anchors": [
+            {
+              "kind": "概念或操作",
+              "name": "气体的压强",
+              "claim": "认为大气压只从上方作用，不会向各个方向传递。",
+              "correction_basis": "静止气体压强向各方向作用，覆杯实验、吸盘等现象都能体现大气压的作用。",
+              "note": "概念锚点及命题真假待教师确认；未套用任意第一条公式",
+              "display": "认为大气压只从上方作用，不会向各个方向传递。"
+            }
+          ],
+          "source": {
+            "nature": "原创概念/操作命题；无真实测量记录",
+            "source_error_index": 1
+          },
+          "predicted_errors": [
+            {
+              "option": "A",
+              "text": "该说法成立。",
+              "reason": "静止气体压强向各方向作用，覆杯实验、吸盘等现象都能体现大气压的作用。",
+              "expression": null,
+              "status": "误答原因预测，待教师确认；未采集学生作答证据"
+            }
+          ],
+          "difficulty_note": "建议难度沿用本题level（源卡难度）；尚非题目难度实测，待教师调整",
+          "estimated_seconds": [
+            60,
+            120
+          ],
+          "time_basis": "未做学生计时；按现有难度给出备课估计区间，待教师确认",
+          "machine_checks": [
+            {
+              "name": "题目ID关联源知识点",
+              "passed": true
+            },
+            {
+              "name": "选项标签唯一且参考标签存在",
+              "passed": true
+            },
+            {
+              "name": "选项文本互异",
+              "passed": true
+            }
+          ],
+          "machine_boundary": "只列本次逐题实际执行项目；不把关联知识卡的方向、扫描或一致性检查算作本题已验。概念题未验命题真假。",
+          "human_review_items": [
+            "题干条件是否充分、清楚且符合学段",
+            "参考结论在指定条件下是否唯一",
+            "干扰项是否合理、对应真实认知问题且无答案暗示",
+            "公式或概念锚点是否准确",
+            "建议难度及用时是否适合教学",
+            "语言、装置与安全操作是否恰当"
+          ],
+          "reference_answer_note": "现有参考答案保持；即使本地可以判选项，也仍须教师审核教学可用性"
+        }
       }
     },
     {
@@ -702,7 +1439,91 @@
           "stem_clear": null,
           "no_cross_segment": null
         },
-        "note": "机器证据不等于教学审核；教师未签署。点评题不计自动正确率。"
+        "note": "机器证据不等于教学审核；教师未签署。点评题不计自动正确率。",
+        "material": {
+          "anchors": [
+            {
+              "kind": "公式",
+              "name": "流体密度和排开体积求浮力",
+              "expression": "rho*g*V",
+              "when": "V 是被排开的流体体积；物体完全浸没时 V 等于物体体积。",
+              "display": "ρ·g·V"
+            }
+          ],
+          "source": {
+            "nature": "原创设计示例，非教材实测或真实实验记录",
+            "scenario": "漂浮木块",
+            "parameters": {
+              "Fb": 20,
+              "rho": 1000,
+              "g": 10,
+              "V": 0.002,
+              "Gd": 20,
+              "G": 20,
+              "V_total": 0.004
+            },
+            "data": [
+              "物体受到的浮力：20 N",
+              "液体密度：1000 kg/m^3",
+              "当地重力加速度：10 N/kg",
+              "物体排开液体的体积：0.002 m^3",
+              "排开液体所受的重力：20 N",
+              "物体所受重力：20 N",
+              "物体总体积，部分浸入时大于排开体积：0.004 m^3"
+            ]
+          },
+          "predicted_errors": [
+            {
+              "option": "A",
+              "text": "40 N",
+              "reason": "木块总体积0.004 m³、仅排水0.002 m³，正确浮力20 N；用总体积计算得40 N。水中完全浸没石块则不区分，必须选择部分浸入情境。",
+              "expression": "rho*g*V_total",
+              "status": "误答原因预测，待教师确认；未采集学生作答证据"
+            }
+          ],
+          "difficulty_note": "建议难度沿用本题level（源卡难度）；尚非题目难度实测，待教师调整",
+          "estimated_seconds": [
+            60,
+            120
+          ],
+          "time_basis": "未做学生计时；按现有难度给出备课估计区间，待教师确认",
+          "machine_checks": [
+            {
+              "name": "题目ID关联源知识点",
+              "passed": true
+            },
+            {
+              "name": "选项标签唯一且参考标签存在",
+              "passed": true
+            },
+            {
+              "name": "选项文本互异",
+              "passed": true
+            },
+            {
+              "name": "正确路径独立数值复算",
+              "passed": true
+            },
+            {
+              "name": "带量纲求值与独立求值一致",
+              "passed": true
+            },
+            {
+              "name": "干扰路径复算且与正确路径分离",
+              "passed": true
+            }
+          ],
+          "machine_boundary": "只列本次逐题实际执行项目；不把关联知识卡的方向、扫描或一致性检查算作本题已验。概念题未验命题真假。",
+          "human_review_items": [
+            "题干条件是否充分、清楚且符合学段",
+            "参考结论在指定条件下是否唯一",
+            "干扰项是否合理、对应真实认知问题且无答案暗示",
+            "公式或概念锚点是否准确",
+            "建议难度及用时是否适合教学",
+            "语言、装置与安全操作是否恰当"
+          ],
+          "reference_answer_note": "现有参考答案保持；即使本地可以判选项，也仍须教师审核教学可用性"
+        }
       }
     },
     {
@@ -762,7 +1583,62 @@
           "stem_clear": null,
           "no_cross_segment": null
         },
-        "note": "机器证据不等于教学审核；教师未签署。点评题不计自动正确率。"
+        "note": "机器证据不等于教学审核；教师未签署。点评题不计自动正确率。",
+        "material": {
+          "anchors": [
+            {
+              "kind": "概念或操作",
+              "name": "浮力",
+              "claim": "认为浮力只作用于漂浮物体。",
+              "correction_basis": "浸没在液体中的石块也受到浮力；只要物体浸在流体中，就应分析浮力。",
+              "note": "概念锚点及命题真假待教师确认；未套用任意第一条公式",
+              "display": "认为浮力只作用于漂浮物体。"
+            }
+          ],
+          "source": {
+            "nature": "原创概念/操作命题；无真实测量记录",
+            "source_error_index": 1
+          },
+          "predicted_errors": [
+            {
+              "option": "B",
+              "text": "该说法不成立。",
+              "reason": "浸没在液体中的石块也受到浮力；只要物体浸在流体中，就应分析浮力。",
+              "expression": null,
+              "status": "误答原因预测，待教师确认；未采集学生作答证据"
+            }
+          ],
+          "difficulty_note": "建议难度沿用本题level（源卡难度）；尚非题目难度实测，待教师调整",
+          "estimated_seconds": [
+            60,
+            120
+          ],
+          "time_basis": "未做学生计时；按现有难度给出备课估计区间，待教师确认",
+          "machine_checks": [
+            {
+              "name": "题目ID关联源知识点",
+              "passed": true
+            },
+            {
+              "name": "选项标签唯一且参考标签存在",
+              "passed": true
+            },
+            {
+              "name": "选项文本互异",
+              "passed": true
+            }
+          ],
+          "machine_boundary": "只列本次逐题实际执行项目；不把关联知识卡的方向、扫描或一致性检查算作本题已验。概念题未验命题真假。",
+          "human_review_items": [
+            "题干条件是否充分、清楚且符合学段",
+            "参考结论在指定条件下是否唯一",
+            "干扰项是否合理、对应真实认知问题且无答案暗示",
+            "公式或概念锚点是否准确",
+            "建议难度及用时是否适合教学",
+            "语言、装置与安全操作是否恰当"
+          ],
+          "reference_answer_note": "现有参考答案保持；即使本地可以判选项，也仍须教师审核教学可用性"
+        }
       }
     },
     {
@@ -845,7 +1721,89 @@
           "stem_clear": null,
           "no_cross_segment": null
         },
-        "note": "机器证据不等于教学审核；教师未签署。点评题不计自动正确率。"
+        "note": "机器证据不等于教学审核；教师未签署。点评题不计自动正确率。",
+        "material": {
+          "anchors": [
+            {
+              "kind": "公式",
+              "name": "漂浮或悬浮时的力平衡",
+              "expression": "G",
+              "when": "物体处于静止漂浮或悬浮状态，合力为零。",
+              "display": "G"
+            }
+          ],
+          "source": {
+            "nature": "原创设计示例，非教材实测或真实实验记录",
+            "scenario": "漂浮木块",
+            "parameters": {
+              "Fb": 20,
+              "G": 20,
+              "Gd": 20,
+              "rho": 1000,
+              "g": 10,
+              "V": 0.002
+            },
+            "data": [
+              "物体受到的浮力：20 N",
+              "物体所受重力：20 N",
+              "排开液体所受的重力：20 N",
+              "液体密度：1000 kg/m^3",
+              "重力加速度：10 N/kg",
+              "物体排开液体体积：0.002 m^3"
+            ]
+          },
+          "predicted_errors": [
+            {
+              "option": "A",
+              "text": "40 N",
+              "reason": "静止漂浮且仅受重力和浮力时两力平衡，20 N重力对应20 N浮力，不是40 N。",
+              "expression": "2*G",
+              "status": "误答原因预测，待教师确认；未采集学生作答证据"
+            }
+          ],
+          "difficulty_note": "建议难度沿用本题level（源卡难度）；尚非题目难度实测，待教师调整",
+          "estimated_seconds": [
+            60,
+            120
+          ],
+          "time_basis": "未做学生计时；按现有难度给出备课估计区间，待教师确认",
+          "machine_checks": [
+            {
+              "name": "题目ID关联源知识点",
+              "passed": true
+            },
+            {
+              "name": "选项标签唯一且参考标签存在",
+              "passed": true
+            },
+            {
+              "name": "选项文本互异",
+              "passed": true
+            },
+            {
+              "name": "正确路径独立数值复算",
+              "passed": true
+            },
+            {
+              "name": "带量纲求值与独立求值一致",
+              "passed": true
+            },
+            {
+              "name": "干扰路径复算且与正确路径分离",
+              "passed": true
+            }
+          ],
+          "machine_boundary": "只列本次逐题实际执行项目；不把关联知识卡的方向、扫描或一致性检查算作本题已验。概念题未验命题真假。",
+          "human_review_items": [
+            "题干条件是否充分、清楚且符合学段",
+            "参考结论在指定条件下是否唯一",
+            "干扰项是否合理、对应真实认知问题且无答案暗示",
+            "公式或概念锚点是否准确",
+            "建议难度及用时是否适合教学",
+            "语言、装置与安全操作是否恰当"
+          ],
+          "reference_answer_note": "现有参考答案保持；即使本地可以判选项，也仍须教师审核教学可用性"
+        }
       }
     },
     {
@@ -905,7 +1863,62 @@
           "stem_clear": null,
           "no_cross_segment": null
         },
-        "note": "机器证据不等于教学审核；教师未签署。点评题不计自动正确率。"
+        "note": "机器证据不等于教学审核；教师未签署。点评题不计自动正确率。",
+        "material": {
+          "anchors": [
+            {
+              "kind": "概念或操作",
+              "name": "物体的浮与沉",
+              "claim": "把“漂浮”和“悬浮”理解成浮力方向不同。",
+              "correction_basis": "两种状态下浮力都竖直向上；区别是物体处于液面还是浸没在液体内部。",
+              "note": "概念锚点及命题真假待教师确认；未套用任意第一条公式",
+              "display": "把“漂浮”和“悬浮”理解成浮力方向不同。"
+            }
+          ],
+          "source": {
+            "nature": "原创概念/操作命题；无真实测量记录",
+            "source_error_index": 1
+          },
+          "predicted_errors": [
+            {
+              "option": "B",
+              "text": "该说法成立。",
+              "reason": "两种状态下浮力都竖直向上；区别是物体处于液面还是浸没在液体内部。",
+              "expression": null,
+              "status": "误答原因预测，待教师确认；未采集学生作答证据"
+            }
+          ],
+          "difficulty_note": "建议难度沿用本题level（源卡难度）；尚非题目难度实测，待教师调整",
+          "estimated_seconds": [
+            60,
+            120
+          ],
+          "time_basis": "未做学生计时；按现有难度给出备课估计区间，待教师确认",
+          "machine_checks": [
+            {
+              "name": "题目ID关联源知识点",
+              "passed": true
+            },
+            {
+              "name": "选项标签唯一且参考标签存在",
+              "passed": true
+            },
+            {
+              "name": "选项文本互异",
+              "passed": true
+            }
+          ],
+          "machine_boundary": "只列本次逐题实际执行项目；不把关联知识卡的方向、扫描或一致性检查算作本题已验。概念题未验命题真假。",
+          "human_review_items": [
+            "题干条件是否充分、清楚且符合学段",
+            "参考结论在指定条件下是否唯一",
+            "干扰项是否合理、对应真实认知问题且无答案暗示",
+            "公式或概念锚点是否准确",
+            "建议难度及用时是否适合教学",
+            "语言、装置与安全操作是否恰当"
+          ],
+          "reference_answer_note": "现有参考答案保持；即使本地可以判选项，也仍须教师审核教学可用性"
+        }
       }
     },
     {
@@ -965,7 +1978,62 @@
           "stem_clear": null,
           "no_cross_segment": null
         },
-        "note": "机器证据不等于教学审核；教师未签署。点评题不计自动正确率。"
+        "note": "机器证据不等于教学审核；教师未签署。点评题不计自动正确率。",
+        "material": {
+          "anchors": [
+            {
+              "kind": "概念或操作",
+              "name": "物体的浮与沉",
+              "claim": "把正在加速下沉的物体也直接按浮力等于重力处理。",
+              "correction_basis": "只有平衡等条件下才能等同；仅受重力与浮力而向下加速时重力大于浮力，须先明确状态。",
+              "note": "概念锚点及命题真假待教师确认；未套用任意第一条公式",
+              "display": "把正在加速下沉的物体也直接按浮力等于重力处理。"
+            }
+          ],
+          "source": {
+            "nature": "原创概念/操作命题；无真实测量记录",
+            "source_error_index": 2
+          },
+          "predicted_errors": [
+            {
+              "option": "B",
+              "text": "该说法不成立。",
+              "reason": "只有平衡等条件下才能等同；仅受重力与浮力而向下加速时重力大于浮力，须先明确状态。",
+              "expression": null,
+              "status": "误答原因预测，待教师确认；未采集学生作答证据"
+            }
+          ],
+          "difficulty_note": "建议难度沿用本题level（源卡难度）；尚非题目难度实测，待教师调整",
+          "estimated_seconds": [
+            60,
+            120
+          ],
+          "time_basis": "未做学生计时；按现有难度给出备课估计区间，待教师确认",
+          "machine_checks": [
+            {
+              "name": "题目ID关联源知识点",
+              "passed": true
+            },
+            {
+              "name": "选项标签唯一且参考标签存在",
+              "passed": true
+            },
+            {
+              "name": "选项文本互异",
+              "passed": true
+            }
+          ],
+          "machine_boundary": "只列本次逐题实际执行项目；不把关联知识卡的方向、扫描或一致性检查算作本题已验。概念题未验命题真假。",
+          "human_review_items": [
+            "题干条件是否充分、清楚且符合学段",
+            "参考结论在指定条件下是否唯一",
+            "干扰项是否合理、对应真实认知问题且无答案暗示",
+            "公式或概念锚点是否准确",
+            "建议难度及用时是否适合教学",
+            "语言、装置与安全操作是否恰当"
+          ],
+          "reference_answer_note": "现有参考答案保持；即使本地可以判选项，也仍须教师审核教学可用性"
+        }
       }
     }
   ],
@@ -1006,6 +2074,14 @@
           "S_cm": {
             "desc": "受力面积以平方厘米记录的数值",
             "unit": "cm2"
+          },
+          "p_0": {
+            "unit": "Pa",
+            "desc": "面积改变前的设计压强"
+          },
+          "S_0": {
+            "unit": "m2",
+            "desc": "面积改变前的设计受力面积"
           }
         },
         "scenarios": {
@@ -1038,6 +2114,14 @@
             "S": 0.01,
             "F": 20,
             "S_cm": 100.0
+          },
+          "固定压力宽底反例设计": {
+            "F": 100,
+            "S": 0.04,
+            "p": 2500,
+            "S_cm": 400,
+            "p_0": 5000,
+            "S_0": 0.02
           }
         },
         "formulas": [
@@ -1086,6 +2170,14 @@
                 "target": "压强",
                 "note": "直接求本公式输出，与情境中另列的p设计基准核对；数据是设计示例，不是实测。用于核对定义、反算或边界值，不宣称不同物理原理互证。",
                 "verification_kind": "独立设计情境数据核对"
+              },
+              {
+                "type": "numeric",
+                "scenario": "固定压力宽底反例设计",
+                "ref": 2500,
+                "rtol": 1e-10,
+                "atol": 0,
+                "note": "设计示例；人工标签保留的指定反例正确控制。压力固定100 N，面积从0.02 m²增加到0.04 m²，压强5000 Pa降到2500 Pa；错误按面积同比增大预测10000 Pa。"
               }
             ]
           },
@@ -1159,6 +2251,18 @@
             "caught_by": "人工审核",
             "diagnostic": {
               "style": "物理结论与步骤辨析"
+            },
+            "automation_review": {
+              "status": "指定反例已补验；原人工审核标签保留",
+              "basis": "压力固定100 N，面积从0.02 m²增加到0.04 m²，压强5000 Pa降到2500 Pa；错误按面积同比增大预测10000 Pa。",
+              "scenario": "固定压力宽底反例设计",
+              "correct_expression": "p = F/S",
+              "wrong_expression": "p_0*S/S_0",
+              "correct_value": 2500,
+              "wrong_value": 10000.0,
+              "unit": "Pa",
+              "wrong_status": "numeric_mismatch",
+              "note": "这是原创设计反例，机器仅验证指定模型、数据及量纲；自然语言命题、学生认知与装置仍待教师确认。"
             }
           }
         ],
@@ -1242,6 +2346,14 @@
           "S_cm": {
             "desc": "受力面积以平方厘米记录的数值",
             "unit": "cm2"
+          },
+          "p_0": {
+            "unit": "Pa",
+            "desc": "面积改变前的设计压强"
+          },
+          "S_0": {
+            "unit": "m2",
+            "desc": "面积改变前的设计受力面积"
           }
         },
         "scenarios": {
@@ -1274,6 +2386,14 @@
             "S": 0.01,
             "F": 20,
             "S_cm": 100.0
+          },
+          "固定压力宽底反例设计": {
+            "F": 100,
+            "S": 0.04,
+            "p": 2500,
+            "S_cm": 400,
+            "p_0": 5000,
+            "S_0": 0.02
           }
         },
         "formulas": [
@@ -1322,6 +2442,14 @@
                 "target": "压强",
                 "note": "直接求本公式输出，与情境中另列的p设计基准核对；数据是设计示例，不是实测。用于核对定义、反算或边界值，不宣称不同物理原理互证。",
                 "verification_kind": "独立设计情境数据核对"
+              },
+              {
+                "type": "numeric",
+                "scenario": "固定压力宽底反例设计",
+                "ref": 2500,
+                "rtol": 1e-10,
+                "atol": 0,
+                "note": "设计示例；人工标签保留的指定反例正确控制。压力固定100 N，面积从0.02 m²增加到0.04 m²，压强5000 Pa降到2500 Pa；错误按面积同比增大预测10000 Pa。"
               }
             ]
           },
@@ -1395,6 +2523,18 @@
             "caught_by": "人工审核",
             "diagnostic": {
               "style": "物理结论与步骤辨析"
+            },
+            "automation_review": {
+              "status": "指定反例已补验；原人工审核标签保留",
+              "basis": "压力固定100 N，面积从0.02 m²增加到0.04 m²，压强5000 Pa降到2500 Pa；错误按面积同比增大预测10000 Pa。",
+              "scenario": "固定压力宽底反例设计",
+              "correct_expression": "p = F/S",
+              "wrong_expression": "p_0*S/S_0",
+              "correct_value": 2500,
+              "wrong_value": 10000.0,
+              "unit": "Pa",
+              "wrong_status": "numeric_mismatch",
+              "note": "这是原创设计反例，机器仅验证指定模型、数据及量纲；自然语言命题、学生认知与装置仍待教师确认。"
             }
           }
         ],
@@ -1478,6 +2618,14 @@
           "S_cm": {
             "desc": "受力面积以平方厘米记录的数值",
             "unit": "cm2"
+          },
+          "p_0": {
+            "unit": "Pa",
+            "desc": "面积改变前的设计压强"
+          },
+          "S_0": {
+            "unit": "m2",
+            "desc": "面积改变前的设计受力面积"
           }
         },
         "scenarios": {
@@ -1510,6 +2658,14 @@
             "S": 0.01,
             "F": 20,
             "S_cm": 100.0
+          },
+          "固定压力宽底反例设计": {
+            "F": 100,
+            "S": 0.04,
+            "p": 2500,
+            "S_cm": 400,
+            "p_0": 5000,
+            "S_0": 0.02
           }
         },
         "formulas": [
@@ -1558,6 +2714,14 @@
                 "target": "压强",
                 "note": "直接求本公式输出，与情境中另列的p设计基准核对；数据是设计示例，不是实测。用于核对定义、反算或边界值，不宣称不同物理原理互证。",
                 "verification_kind": "独立设计情境数据核对"
+              },
+              {
+                "type": "numeric",
+                "scenario": "固定压力宽底反例设计",
+                "ref": 2500,
+                "rtol": 1e-10,
+                "atol": 0,
+                "note": "设计示例；人工标签保留的指定反例正确控制。压力固定100 N，面积从0.02 m²增加到0.04 m²，压强5000 Pa降到2500 Pa；错误按面积同比增大预测10000 Pa。"
               }
             ]
           },
@@ -1631,6 +2795,18 @@
             "caught_by": "人工审核",
             "diagnostic": {
               "style": "物理结论与步骤辨析"
+            },
+            "automation_review": {
+              "status": "指定反例已补验；原人工审核标签保留",
+              "basis": "压力固定100 N，面积从0.02 m²增加到0.04 m²，压强5000 Pa降到2500 Pa；错误按面积同比增大预测10000 Pa。",
+              "scenario": "固定压力宽底反例设计",
+              "correct_expression": "p = F/S",
+              "wrong_expression": "p_0*S/S_0",
+              "correct_value": 2500,
+              "wrong_value": 10000.0,
+              "unit": "Pa",
+              "wrong_status": "numeric_mismatch",
+              "note": "这是原创设计反例，机器仅验证指定模型、数据及量纲；自然语言命题、学生认知与装置仍待教师确认。"
             }
           }
         ],
